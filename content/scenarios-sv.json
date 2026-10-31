@@ -1,0 +1,2217 @@
+[
+  {
+    "id": "flood-line",
+    "title": "Översvämningens linje",
+    "tagline": "En AI-chattbot för översvämningsdrabbade samhällen i Sydasien",
+    "role": "Chef för katastrofinsatsen, Röda Korset i ett deltaland i Sydasien",
+    "context": "Veckor av monsunregn har drivit över 200 000 människor på flykt i deltat. Din telefonlinje är överbelastad — de som ringer väntar i timmar på information om boenden, utdelningar och saknade anhöriga. En telekompartner erbjuder en gratis AI-chattbot som svarar på tre lokala språk. Ditt fyrtioköp är utmattat, och vattnet stiger fortfarande.",
+    "topics": [
+      "AI-chattbotar",
+      "Samverkan med lokalsamhällen",
+      "Dataskydd"
+    ],
+    "roles": [
+      "Katastrofinsats",
+      "Informationshantering",
+      "Samverkan med lokalsamhällen"
+    ],
+    "steps": [
+      {
+        "id": "fl-1",
+        "title": "Fyrtioåtta timmar",
+        "narrative": "Leverantören säger att chattboten kan vara igång inom 48 timmar, tränad på vanliga frågor från tidigare översvämningar. Din informationsansvarige varnar för att svaren inte har verifierats mot just denna katastrof. En fullständig pilot med mänsklig granskning skulle ta två veckor — tid då människor sover under bar himmel.",
+        "options": [
+          {
+            "id": "fl-1a",
+            "label": "Lansera inom 48 timmar",
+            "detail": "Snabbhet före verifiering. Svaren går ut ogranskade, och du åtgärdar problemen allt eftersom de dyker upp.",
+            "consequence": "Inom tre dagar svarar chattboten på 40 000 frågor. Men fältteamen rapporterar att ungefär var tolfte svar är fel — inklusive vägbeskrivningar till ett boende i ett distrikt där platsen stängdes i går kväll. Personalen tillbringar veckan med att jaga rättelser i WhatsApp-grupper.",
+            "reflection": "Snabbhet kan rädda liv, men overifierad automatiserad information kan i sig orsaka skada. IKT-resolutionen ålägger Rörelsen att undvika och mildra skada på drabbade människor — inklusive skada orsakad av verktygen vi använder.",
+            "impacts": {
+              "humanity": 1,
+              "doNoHarm": -2
+            }
+          },
+          {
+            "id": "fl-1b",
+            "label": "Kör en två veckor lång pilot först",
+            "detail": "Mänskliga granskare kontrollerar varje svarsmall före lansering. Långsammare, men verifierat.",
+            "consequence": "Chattboten lanseras dag 14 med 98 procents träffsäkerhet på verifierade svar. Under mellantiden är linjen fortfarande överbelastad och vissa samhällen får information sent — men det de får är tillförlitligt, och förtroendet för tjänsten håller.",
+            "reflection": "Verifiering kostar tid, och tid kostar räckvidd. Men tillförlitlig information är en del av opartisk, humanitär hjälp — ett svar som skickar någon åt fel håll är ingen hjälp alls.",
+            "impacts": {
+              "humanity": -1,
+              "doNoHarm": 2,
+              "impartiality": 1
+            }
+          },
+          {
+            "id": "fl-1c",
+            "label": "Skippa chattboten, förstärk telefonlinjen",
+            "detail": "Rekrytera och utbilda tillfälliga operatörer i stället. Ingen ny teknisk risk, men mycket mindre räckvidd.",
+            "consequence": "Du utbildar 25 tillfälliga operatörer på tio dagar. Svarskvaliteten är hög och varje samtal når en människa — men linjen täcker fortfarande bara en bråkdel av efterfrågan, och många fördrivna familjer kommer helt enkelt aldrig fram.",
+            "reflection": "Att välja bort AI är också ett beslut med konsekvenser. Oberoendet från leverantörer bevaras, men mänskligheten frågar om ett nåbart verktyg, varsamt styrt, kunde ha lindrat mer lidande.",
+            "impacts": {
+              "humanity": -1,
+              "doNoHarm": 1,
+              "independence": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "fl-2",
+        "title": "Vad chattboten minns",
+        "narrative": "Leverantörens standardinställning loggar allt: telefonnummer, ungefärliga platser och varje ställd fråga — ”för att förbättra tjänsten”. Din dataskyddsansvarige påpekar att en lista över fördrivna människor, deras platser och deras behov är exakt den typ av datamängd som Rörelsens dataskyddsstandarder finns till för att skydda.",
+        "options": [
+          {
+            "id": "fl-2a",
+            "label": "Logga allt för en bättre tjänst",
+            "detail": "Fullständiga interaktionsloggar matar leverantörens analysmotor. Personanpassningen förbättras.",
+            "consequence": "Svaren blir märkbart mer relevanta. Månader senare får du veta att loggarna användes för att träna en kommersiell produkt, och det finns inget praktiskt sätt att dra tillbaka uppgifter om 40 000 fördrivna människor som aldrig samtyckte till det.",
+            "reflection": "Drabbade människor får sällan förhandla om sitt samtycke i en kris. IKT-resolutionens dataskyddsåtagande behandlar deras data som deras egna — insamlade för ett angivet syfte, skyddade och aldrig tyst återanvända.",
+            "impacts": {
+              "humanity": 1,
+              "doNoHarm": -2,
+              "independence": -1
+            }
+          },
+          {
+            "id": "fl-2b",
+            "label": "Samla in det minimala",
+            "detail": "Anonyma sessioner, inga identifierare, lagringsgränser i avtalet. Mindre personanpassning.",
+            "consequence": "Chattboten kan inte känna igen återkommande användare, vilket frustrerar vissa. Men när ett departement begär användardata två månader senare finns det inget identifierbart att lämna ut — och dina team kan säga det ärligt i radion.",
+            "reflection": "Dataminimering är den tysta hjälten i ansvarsfull datahantering: du kan varken läcka, förlora eller tvingas lämna ut data du aldrig samlade in. Det skyddar också neutraliteten om konfliktparter senare blir intresserade.",
+            "impacts": {
+              "doNoHarm": 2,
+              "neutrality": 1
+            }
+          },
+          {
+            "id": "fl-2c",
+            "label": "Dela loggarna med telekompartnern",
+            "detail": "De erbjuder nätverksanalys i utbyte. De drabbade användarna tillfrågas inte.",
+            "consequence": "Analysen hjälper dig att kartlägga efterfrågan. Sedan frågar en journalist varför fördrivna människors frågor och platser flödar till ett privat företag. Storyn publiceras rikstäckande; samhällenas förtroende för linjen sjunker kraftigt.",
+            "reflection": "Ansvarsskyldighet gentemot drabbade människor innebär att kunna förklara — innan de läser det i tidningen — vem som förvarar deras data och varför. Etiska partnervillkor hör hemma i upphandlingen, inte i kriskommunikationen efteråt.",
+            "impacts": {
+              "doNoHarm": -2,
+              "independence": -1
+            }
+          }
+        ]
+      },
+      {
+        "id": "fl-3",
+        "title": "Fel väg",
+        "narrative": "En fältdelegat ringer: chattboten har skickat familjer till en utdelningsplats som stängde för två dagar sedan. Cirka 300 människor gick dit i hettan, en del med små barn. Leverantören kan rätta svaret inom några timmar — men du vet nu att andra svar också kan vara föråldrade.",
+        "options": [
+          {
+            "id": "fl-3a",
+            "label": "Håll den igång medan du lagar",
+            "detail": "Tjänsten förblir uppe. Korrigeringar rullas ut svar för svar under veckan.",
+            "consequence": "De flesta användare fortsätter få hjälp — och ett okänt antal fortsätter få föråldrad information. Ytterligare två stängda platser rapporteras innan innehållsgranskningen är klar. Fältteamen tappar förtroendet för verktyget.",
+            "reflection": "Att fortsätta driva en tjänst som du vet skadar vissa användare förskjuter risken till dem som har sämst förmåga att bära den. Att inte skada innebär att vara beredd att stänga av sin egen innovation.",
+            "impacts": {
+              "humanity": -1,
+              "doNoHarm": -2
+            }
+          },
+          {
+            "id": "fl-3b",
+            "label": "Ta den offline och berätta varför",
+            "detail": "Pausa chattboten, meddela korrigeringen via radio och SMS, återlansera efter en fullständig innehållsgranskning.",
+            "consequence": "Tre dagar utan chattbot, och telefonlinjen stönar igen. Men den transparenta korrigeringen tas väl emot: lokala ledare upprepar ditt budskap, och återlanseringsdagen slår användningsrekord — människor litar på en tjänst som erkänner misstag.",
+            "reflection": "Samverkan med lokalsamhällen och ansvarsskyldighet är inte en undersökning i slutet — det är ärlig kommunikation när saker går fel. Att erkänna felet stärkte, snarare än försvagade, tjänsten.",
+            "impacts": {
+              "humanity": -1,
+              "doNoHarm": 2
+            }
+          },
+          {
+            "id": "fl-3c",
+            "label": "Lägg till en ansvarsfriskrivning och fortsätt",
+            "detail": "”Svaren kan vara felaktiga — verifiera lokalt.” Tjänsten går aldrig ner.",
+            "consequence": "Användningen sjunker något. Men för en mamma som funderar på att gå fem kilometer med ett litet barn är ”kan vara felaktig” inte användbart. Klagomålen ökar bland de mest utsatta användarna, som inte har något sätt att ”verifiera lokalt”.",
+            "reflection": "En ansvarsfriskrivning för över ditt ansvar på användaren. Ansvarsskyldighet betyder att organisationen — inte den drabbade personen — bär bördan av att få det rätt.",
+            "impacts": {
+              "doNoHarm": -1,
+              "impartiality": -1
+            }
+          }
+        ]
+      },
+      {
+        "id": "fl-4",
+        "title": "Vem lyssnar?",
+        "narrative": "Sex veckor in stabiliseras katastrofen. Du måste bestämma hur chattboten — som sannolikt blir en permanent tjänst — förblir ansvarsskyldig gentemot dem som använder den.",
+        "options": [
+          {
+            "id": "fl-4a",
+            "label": "Kalla till en panel med återkoppling från lokalsamhället",
+            "detail": "Drabbade människor granskar svar varje vecka, flaggar skador och formar vad chattboten täcker.",
+            "consequence": "Panelen fångar problem som dina mätinstrument aldrig visade: svar som var rimliga i huvudstaden men inte i floddialekterna, och ämnen som människor var rädda att fråga om. Tjänsten blir bättre och mer betrodd.",
+            "reflection": "Samverkan med lokalsamhällen och ansvarsskyldighet — ett centralt åtagande i IKT-resolutionen — behandlar drabbade människor som beslutsfattare om verktygen som tjänar dem, inte bara som användningsstatistik.",
+            "impacts": {
+              "doNoHarm": 2,
+              "impartiality": 1
+            }
+          },
+          {
+            "id": "fl-4b",
+            "label": "Lita på användningsstatistiken",
+            "detail": "Mätinstrumenten visar starkt engagemang. Om människor använder den fungerar den.",
+            "consequence": "Siffrorna ser strålande ut i givarrypporterna. Månader senare visar en utvärdering att användarna med sämst utfall — äldre, personer med funktionsnedsättning, talare av icke-dominerande språk — helt enkelt slutade använda chattboten, osynligt.",
+            "reflection": "Statistik mäter dem som stannade kvar. Opartiskheten frågar om dem som data inte kan se — och de är ofta de mest behövande.",
+            "impacts": {
+              "impartiality": -2,
+              "doNoHarm": -1
+            }
+          },
+          {
+            "id": "fl-4c",
+            "label": "Lämna modereringen till outbildade volontärer",
+            "detail": "Lokal god vilja håller tjänsten vid liv till nästan noll kostnad.",
+            "consequence": "Volontärerna arbetar hårt, men utan utbildning eller eskaleringsvägar står vissa skadliga svar kvar i veckor och känsliga frågor får inkonsekvent behandling. Två volontärer bränner ut sig och slutar.",
+            "reflection": "Ansvarsskyldighet kan inte läggas ut på god vilja. Etisk användning inkluderar att finansiera människorna som håller automatiserade system säkra — annars är automatiseringen inte verkligt styrd.",
+            "impacts": {
+              "humanity": 1,
+              "doNoHarm": -1
+            }
+          }
+        ]
+      }
+    ],
+    "debrief": "Översvämningens linje visar hur snabbt en välmenande chattbot berör varje åtagande i IKT-resolutionen: verifierad information (att inte skada), dataminimering och ändamål (dataskydd), ärlig kommunikation när saker går fel (ansvarsskyldighet gentemot samhällen) och styrning som låter drabbade människor behålla kontrollen över verktygen som är tänkta att tjäna dem."
+  },
+  {
+    "id": "targeting-unseen",
+    "title": "Att sikta på de osynliga",
+    "tagline": "Prediktiv analys för urval av mottagare i Sahel",
+    "role": "Programchef för kontantstöd, Torkinsatsen i Sahel",
+    "context": "En arton månader lång torka i Sahel har drivit 60 000 hushåll mot kris. Ditt kontantprogram kan nå 15 000. Urvalet är det svåraste och mest omtvistade beslutet i insatsen — och ett analysföretag erbjuder en prediktiv modell som rangordnar hushåll efter sannolikt behov på dagar i stället för månader.",
+    "topics": [
+      "Urval av mottagare",
+      "Algoritmisk snedvridning",
+      "Datadelning med teknikpartner"
+    ],
+    "roles": [
+      "Programledning",
+      "Data och analys",
+      "Skydd"
+    ],
+    "steps": [
+      {
+        "id": "tu-1",
+        "title": "Den data du har",
+        "narrative": "Modellen är bara så bra som sin träningsdata. Du har tre realistiska alternativ, inget perfekt, och nästa period av osäker livsmedelsförsörjning stänger om åtta veckor.",
+        "options": [
+          {
+            "id": "tu-1a",
+            "label": "Använd det fyra år gamla registret",
+            "detail": "Snabbt och klart. Men det är äldre än torkan, fördrivningen och gränsstängningen.",
+            "consequence": "Rangordningarna är klara på fem dagar. Fältteamen upptäcker snabbt att modellen poängsätter hushåll som sedan dess har återhämtat sig — och är blind för tusentals nyligen fördrivna familjer som aldrig registrerades. Klagomål om uteslutning strömmar in.",
+            "reflection": "En modell tränad på gårdagens verklighet reproducerar gårdagens bild av behov. Opartiskhet — hjälp enbart efter behov — misslyckas tyst när datan inte kan se vem som lider nu.",
+            "impacts": {
+              "impartiality": -2,
+              "humanity": -1
+            }
+          },
+          {
+            "id": "tu-1b",
+            "label": "Samla in färsk data från dörr till dörr",
+            "detail": "Intervjuare med surfplattor och samtyckesmanus. Sex veckor, verklig täckning av de oregistrerade.",
+            "consequence": "Fördröjningen är smärtsam — en månad av knapphet hinner passera innan pengarna flödar. Men modellen tränas på dagens verklighet, inklusive hushåll som ingen lista någonsin fångat. Lokala ledare kallar det det rättvisaste urval de sett.",
+            "reflection": "Ibland är ansvarsfull AI-användning att sakta ner för att ge den ärliga indata. Samtyckesbaserad insamling förevisar också den dataskyddsstandard som IKT-resolutionen efterfrågar.",
+            "impacts": {
+              "impartiality": 2,
+              "doNoHarm": 1,
+              "humanity": -1
+            }
+          },
+          {
+            "id": "tu-1c",
+            "label": "Blanda registret med satellitproxyer",
+            "detail": "Takmaterial, vegetation, vägåtkomst som behovsindikatorer. Billigt, snabbt, inga nya undersökningar.",
+            "consequence": "Täckningen är snabb och bred. Men proxyerna misslyder hela grupper: nomader vars rikedom går på fyra ben poängsätts som utfattiga, medan fattigdomsdrabbade familjer under solida tak poängsätts som välbärgade. Att rätta felen tar längre tid än undersökningen skulle ha gjort.",
+            "reflection": "Proxyvariabler kodar antaganden om hur fattigdom ser ut. När antagandena är fel blir snedvridningen systematisk — den träffar samma typer av hushåll varje gång, vilket är motsatsen till opartiskhet.",
+            "impacts": {
+              "impartiality": -1,
+              "doNoHarm": -1,
+              "humanity": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "tu-2",
+        "title": "Modellens blinda fläckar",
+        "narrative": "Valideringsresultaten kommer tillbaka: den övergripande träffsäkerheten ser stark ut, men kvinnohushåll och en etnisk minoritetsgrupp rangordnas systematiskt lägre än vad fältbedömningar säger att de borde. Företaget säger att gapet är ”inom acceptabel tolerans”. Utbetalningsdeadline är om tio dagar.",
+        "options": [
+          {
+            "id": "tu-2a",
+            "label": "Driftsätt för att hålla deadline",
+            "detail": "Pengarna flödar i tid. Den kända snedvridningen hamnar i ett ”lärdomar”-dokument.",
+            "consequence": "15 000 hushåll får pengar enligt plan — men bland de uteslutna finns en oproportionerligt stor andel kvinnohushåll. Besvärsavdelningen överbelastas, och en lokal radiopratare frågar varför datorn ”glömde änkorna”.",
+            "reflection": "En känd, oåtgärdad snedvridning är ingen teknisk fotnot; det är ett beslut att diskriminera i stor skala. Att inte skada gäller de skador du kan förutse lika mycket som de du inte kan.",
+            "impacts": {
+              "humanity": 1,
+              "impartiality": -2,
+              "doNoHarm": -1
+            }
+          },
+          {
+            "id": "tu-2b",
+            "label": "Kalibrera om med validering från lokalsamhället",
+            "detail": "Lokala kommittéer granskar uteslutningsfall. Två veckor till före utbetalning.",
+            "consequence": "Fördröjningen är svår att försvara inför givare — tills den reviderade listan landar. Kommittéerna fångar hundratals felaktiga uteslutningar, och eftersom de hjälpt till att forma listan minskar tvisterna kraftigt. Deadlinen spricker; legitimiteten håller.",
+            "reflection": "Samverkan med lokalsamhällen är ett av de starkaste verktygen för att korrigera snedvridning. De som lever verkligheten ser mönster som inga valideringsmått fångar — och deras medverkan bygger den ansvarsskyldighet som IKT-resolutionen efterlyser.",
+            "impacts": {
+              "impartiality": 2,
+              "doNoHarm": 1,
+              "humanity": -1
+            }
+          },
+          {
+            "id": "tu-2c",
+            "label": "Modellen råder, människor beslutar",
+            "detail": "Personal och kommittéer fattar de slutgiltiga urvalsbesluten, med rangordningen som ett av flera underlag.",
+            "consequence": "Urvalet tar längre tid än ren automatisering men håller tidplanen. Modellen snabbar fortfarande upp den inledande sorteringen, medan människor absorberar dess blinda fläckar. Dokumenterade mänskliga åsidosättanden skapar en granskningsbar och förklarbar historik.",
+            "reflection": "Meningsfull mänsklig insyn är skillnaden mellan att använda en modell och att användas av den. Att hålla det slutgiltiga beslutet mänskligt bevarar ansvarsskyldigheten — någon kan svara för varje namn på listan.",
+            "impacts": {
+              "impartiality": 1,
+              "doNoHarm": 1,
+              "independence": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "tu-3",
+        "title": "Partnerns pris",
+        "narrative": "Analysföretagets standardavtal ger det tillgång till hushållsdatan ”för att förbättra modellen och relaterade produkter”, samt rätten att citera projektet i sin marknadsföring. Juristerna flaggar båda klausulerna. Företaget antyder att att ta bort dem kan avsluta gratislicensen.",
+        "options": [
+          {
+            "id": "tu-3a",
+            "label": "Dela pseudonymiserad data enligt avtal",
+            "detail": "Namn borttagna, avtal undertecknat. Programmet behåller sina gratisverktyg.",
+            "consequence": "Programmet sparar pengar. Ett år senare visar en forskare att de ”pseudonymiserade” hushållsuppgifterna kan återidentifieras genom att kombinera plats och hushållsstorlek — och avtalets sanktionsklausul visar sig nästan värdelös över jurisdiktionsgränser.",
+            "reflection": "Pseudonymisering är svagare än det ser ut i små populationer, och ett avtal du inte kan driva igenom är ett hopp, inte en skyddsåtgärd. Dataskydd måste överleva partnerskapets slut.",
+            "impacts": {
+              "doNoHarm": -2,
+              "independence": -1
+            }
+          },
+          {
+            "id": "tu-3b",
+            "label": "Dela bara aggregerade resultat",
+            "detail": "Företaget får modellens prestandamått, aldrig data på radnivå. De invänder.",
+            "consequence": "Förhandlingarna blir spända och företaget hotar kort med att dra sig ur. Du står fast, och de accepterar — aggregerade mätvärden låter dem fortfarande förbättra modellen. Ingen hushållsuppgift lämnar någonsin din kontroll.",
+            "reflection": "Etisk upphandling betyder att Rörelsen sätter villkoren för hur drabbade människors data rör sig, inte leverantören. ”Gratis” verktyg betalas med något — se till att det inte är mottagarnas integritet.",
+            "impacts": {
+              "doNoHarm": 1,
+              "independence": 1
+            }
+          },
+          {
+            "id": "tu-3c",
+            "label": "Dra dig ur och bygg internt",
+            "detail": "Långsammare, dyrare, och helt ditt eget.",
+            "consequence": "Ditt lilla datateam bygger en enklare modell på tre månader. Den är mindre sofistikerad och förseningen är verklig — men varje rad är granskningsbar, varje uppgift stannar internt, och kompetensen lever nu i Rörelsen.",
+            "reflection": "Oberoende kostar ibland snabbhet och pengar. Att äga sin förmåga — i stället för att hyra en svart låda — är en långsiktig investering i ansvarstagande, självständigt humanitärt arbete.",
+            "impacts": {
+              "independence": 2,
+              "doNoHarm": 1,
+              "humanity": -1
+            }
+          }
+        ]
+      },
+      {
+        "id": "tu-4",
+        "title": "Vem skriver under listan?",
+        "narrative": "Sista designbeslutet: hur automatiserad är registreringen? Modellen producerar en rangordnad lista över 15 000 hushåll. Någon — eller något — måste förvandla den rangordningen till en slutgiltig, bindande lista.",
+        "options": [
+          {
+            "id": "tu-4a",
+            "label": "Registrera de 15 000 främsta automatiskt",
+            "detail": "Ingen mänsklig granskning. Snabbaste möjliga pengar, fullt ”objektivt”.",
+            "consequence": "Pengarna flödar i rekordtid. Sedan dyker felen upp: dubblerade hushåll, en by som modellen felmappat, familjer uteslutna av ett inmatningsfel som ingen människa såg. Utan granskningssteg är varje fel slutgiltigt tills besvären malts igenom.",
+            "reflection": "Full automatisering tar inte bort mänskligt omdöme — den gömmer det inuti modellen och datan. Automatiserade beslut om människors överlevnad behöver en människa som kan fånga det systemet inte kan.",
+            "impacts": {
+              "doNoHarm": -2,
+              "impartiality": -1,
+              "humanity": 1
+            }
+          },
+          {
+            "id": "tu-4b",
+            "label": "Personalen verifierar varje fall",
+            "detail": "Noggrant och ansvarsfullt — och den flaskhals alla fruktade.",
+            "consequence": "Verifieringen tillför fyra veckor. Fångade fel: hundratals. Men hungersäsongen biter innan utbetalningen är klar, och du tillbringar svåra nätter med att försvara förseningen inför lokala ledare som lovats snabbhet.",
+            "reflection": "Ansvarsskyldighet har ett pris i tid, och i en hungerkris mäts tid i måltider. Den ärliga läxan: bygg verifieringskapacitet före katastrofen, så att noggrannhet och snabbhet inte är fiender.",
+            "impacts": {
+              "doNoHarm": 1,
+              "impartiality": 1,
+              "humanity": -1
+            }
+          },
+          {
+            "id": "tu-4c",
+            "label": "Människa i loopen plus möjlighet att överklaga",
+            "detail": "Personalen stickprovskontrollerar listan, kriterierna publiceras, och varje hushåll kan ifrågasätta sin uteslutning.",
+            "consequence": "Publicerade kriterier skingrar de flesta misstankar innan de uppstår. Besvärsfönstret fångar 600 felaktiga uteslutningar på två veckor. Listan är inte perfekt — men den är förklarbar, korrigerbar och betrodd.",
+            "reflection": "Transparens plus en fungerande besvärsfunktion är vad ansvarsskyldighet gentemot drabbade människor ser ut som i praktiken: inte en felfri algoritm, utan ett system som människor kan ifrågasätta och korrigera.",
+            "impacts": {
+              "doNoHarm": 2,
+              "impartiality": 1
+            }
+          }
+        ]
+      }
+    ],
+    "debrief": "Att sikta på de osynliga handlar om vem datan inte kan se. Prediktivt urval berör opartiskhet (ser modellen dagens behov?), dataskydd (vem äger hushållsdatan, och kan ”pseudonymiserade” människor återidentifieras?), etisk upphandling (vem sätter villkoren med leverantörerna?) och ansvarsskyldighet (kan en utesluten familj ifrågasätta maskinens svar?)."
+  },
+  {
+    "id": "front-line",
+    "title": "Ögon på frontlinjen",
+    "tagline": "AI-baserad behovsbedömning i en aktiv konflikt i Mellanöstern",
+    "role": "Insatschef, Konfliktinsatsen i Mellanöstern",
+    "context": "I en utdragen konflikt flyttar frontlinjerna varje vecka. Två distrikt är avskurna, och din senaste verifierade behovsbedömning är tre månader gammal. Ett globalt teknikföretag erbjuder sin satellitbildsplattform — med maskininlärningsbaserad skadedetektering — gratis för humanitärt bruk. I detta sammanhang är information om var människor befinner sig och vad de behöver inte bara operativa data. Den är också militärt känslig.",
+    "topics": [
+      "Prediktiv analys",
+      "Konfliktkänslighet",
+      "Molnberoende",
+      "Automatiserat beslutsfattande"
+    ],
+    "roles": [
+      "Insats",
+      "Säkerhet",
+      "Informationshantering"
+    ],
+    "steps": [
+      {
+        "id": "fo-1",
+        "title": "Att se utan att träda in",
+        "narrative": "Förhandlingarna om tillträde har stannat av. Plattformen kan kartlägga skadade byggnader i båda avskurna distrikten inom några dagar. Din fältkoordinator varnar för att en byggnads tak inte säger något om människorna inuti.",
+        "options": [
+          {
+            "id": "fo-1a",
+            "label": "Kör satellitbedömningen nu",
+            "detail": "Snabb, fjärrstyrd och säker för personalen. Acceptera de blinda fläckarna för tillfället.",
+            "consequence": "Du får den första distriktsövergripande bilden på månader, och konvojplaneringen accelererar. Men modellen läser intakta tak som intakta liv: en beskjuten stad med ett nytt marknadstak poängsätts som ”i återhämtning”, medan dess vattensystem är förstört. Behov på osynliga platser räknas inte.",
+            "reflection": "Fjärranalys ser strukturer, inte lidande. Använd ensam snedvrider den hjälpen mot det som är synligt från omloppsbanan — ett opartiskhetsproblem som gömmer sig i en imponerande karta.",
+            "impacts": {
+              "humanity": 1,
+              "impartiality": -1,
+              "doNoHarm": -1
+            }
+          },
+          {
+            "id": "fo-1b",
+            "label": "Vänta på säkert tillträde",
+            "detail": "Ingen bedömning förrän delegater kan verifiera på plats. Verifierad data, veckor bort.",
+            "consequence": "Tillträdet öppnas sju veckor senare och bedömningen är utmärkt. Under mellantiden går två utdelningar till fel städer och ett distrikt får ingenting alls. Väntan var säker för datakvaliteten och farlig för människorna.",
+            "reflection": "Mänskligheten väger kostnaden av att vänta mot kostnaden av fel. Perfekt information är en lyx; disciplinen är att veta vilka beslut som inte kan vänta på den.",
+            "impacts": {
+              "humanity": -2,
+              "impartiality": 1
+            }
+          },
+          {
+            "id": "fo-1c",
+            "label": "Kombinera bilder med rapporter från lokalsamhället",
+            "detail": "Betrodda lokala nätverk rapporterar via säkra kanaler; modellen och fältverkligheten kontrollerar varandra.",
+            "consequence": "Samhällsrapporterarna korrigerar modellens värsta missar inom några dagar — det förstörda vattensystemet, kliniken som drivs från en källare. Den kombinerade bilden är den bästa du någonsin haft i ett område utan tillträde, och de lokala nätverken känner ägarskap för den.",
+            "reflection": "De starkaste AI-insatserna i humanitärt arbete parar maskinens skala med samhällets kunskap. Det är samverkan med lokalsamhällen som gör analytiskt arbete — och det behåller drabbade människor som författare, inte bara subjekt, till datan.",
+            "impacts": {
+              "humanity": 1,
+              "impartiality": 1,
+              "doNoHarm": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "fo-2",
+        "title": "Gratis plattform, dolda kostnader",
+        "narrative": "Företagets plattform är genuint bra — och gratis. Haken: all bildanalys och härledd befolkningsdata bor på företagets moln, under en utländsk jurisdiktion, styrd av dess standardvillkor. Din säkerhetsrådgivare noterar att villkoren tillåter åtkomst för ”tjänsteförbättring”.",
+        "options": [
+          {
+            "id": "fo-2a",
+            "label": "Acceptera med avtalsklausuler",
+            "detail": "Skriv under snabbt med förhandlade skydd. Insatsen kan inte vänta på perfekta villkor.",
+            "consequence": "Plattformen förvandlar din lägesbild. Åtta månader senare köps företaget upp, villkoren ändras, och ditt utrymme att omförhandla är begränsat — datan, och beroendet, finns redan där.",
+            "reflection": "Etisk upphandling ser bortom prislappen: jurisdiktion, villkor och utträdesalternativ. Oberoende eroderar tyst när en kritisk humanitär förmåga beror på en leverantörs goda vilja.",
+            "impacts": {
+              "independence": -2,
+              "doNoHarm": -1
+            }
+          },
+          {
+            "id": "fo-2b",
+            "label": "Insistera på drift som Rörelsen kontrollerar",
+            "detail": "Data och modeller körs på infrastruktur som Rörelsen kontrollerar. Förhandlingarna tar veckor.",
+            "consequence": "Företaget motsätter sig, och går sedan med på en dedikerad driftsättning — långsammare att få upp, men under dina nycklar. När en regering senare kräver tillgång till rörelsedata är svaret strukturellt enkelt: det är inte företagets att ge, och inte ditt att dela.",
+            "reflection": "Var data bor avgör vem som kan tvingas lämna ut den. I konfliktmiljöer är kontroll över infrastruktur inte en IT-detalj — det är ett skyddsbeslut.",
+            "impacts": {
+              "independence": 2,
+              "doNoHarm": 1,
+              "humanity": -1
+            }
+          },
+          {
+            "id": "fo-2c",
+            "label": "Avböj; använd öppna verktyg internt",
+            "detail": "Bildanalys med öppen källkod på egna servrar. Långsammare, sparsammare, helt ditt eget.",
+            "consequence": "Dina analytiker bygger en fungerande pipeline på en månad. Den saknar plattformens polityr och teamet är hårt ansträngt — men det finns inget leverantörsberoende, inget utländskt moln, och förmågan överlever slutet av varje partnerskap.",
+            "reflection": "Ibland kostar det självständiga valet kapacitet. Avvägningen är verklig och bör fattas medvetet, med öppna ögon för vad ”gratis” plattformar faktiskt tar betalt.",
+            "impacts": {
+              "independence": 1,
+              "doNoHarm": 1,
+              "humanity": -1
+            }
+          }
+        ]
+      },
+      {
+        "id": "fo-3",
+        "title": "Vem mer tittar?",
+        "narrative": "Din analys spårar nu befolkningsrörelser över frontlinjen — exakt den typ av information som väpnade aktörer på båda sidor skulle värdesätta. En givare föreslår att publicera en öppen instrumentpanel ”för transparens och samordning”.",
+        "options": [
+          {
+            "id": "fo-3a",
+            "label": "Publicera den öppna instrumentpanelen",
+            "detail": "Maximal transparens. Vem som helst — inklusive kombattanter — kan läsa den.",
+            "consequence": "Samordningen mellan organisationer förbättras. Tre veckor senare beskjuts en fördrivningskorridor som syns på din instrumentpanel. Du kan inte bevisa att panelen möjliggjorde det. Du kan inte bevisa att den inte gjorde det. Personalen i korridoren evakuerad.",
+            "reflection": "I konflikt kan transparens om människors rörelser bli målinformation. Neutralitet och att inte skada kan kräva att publicera mindre än man vet — en svår sanning för en sektor som värdesätter ansvarsskyldighet.",
+            "impacts": {
+              "neutrality": -2,
+              "doNoHarm": -2
+            }
+          },
+          {
+            "id": "fo-3b",
+            "label": "Begränsa till granskade humanitära partner",
+            "detail": "Åtkomst efter behov att veta, delningsprotokoll, aggregering innan något sprids vidare.",
+            "consequence": "Samordningen blir långsammare och vissa partner muttrar om åtkomstnivåerna. Men befolkningsrörelsedata cirkulerar aldrig utanför organisationer bundna av humanitära principer, och dina team kan redovisa varje kopia.",
+            "reflection": "Ansvarsfull datadelning är designad, inte standard: ändamålsbegränsad, åtkomsttrappad och aggregerad där det är möjligt. IKT-resolutionens dataskyddsåtagande gäller mest där insatserna är högst.",
+            "impacts": {
+              "neutrality": 1,
+              "doNoHarm": 2
+            }
+          },
+          {
+            "id": "fo-3c",
+            "label": "Dela lika med alla parter",
+            "detail": "Ge varje konfliktpart samma data, jämlikt. Neutralitet som symmetri.",
+            "consequence": "Båda sidor tar emot datan artigt. Den ena sidans operationer följer sedan iögonfallande de rörelsemönster du tillhandahöll. Din jämlikhet levererade militär underrättelse till vem som ville ha den.",
+            "reflection": "Neutralitet handlar om att inte bidra till fientligheternas förande, inte om lika fördelning av känslig data. Symmetrisk delning av asymmetrisk information är inte neutral i sina effekter.",
+            "impacts": {
+              "neutrality": -1,
+              "doNoHarm": -2,
+              "humanity": -1
+            }
+          }
+        ]
+      },
+      {
+        "id": "fo-4",
+        "title": "Algoritmen rekommenderar",
+        "narrative": "Plattformen rangordnar nu föreslagna utdelningsplatser efter förutspått behov och tillgänglighet. Dess topp lista utesluter en belägrad stad helt — modellen har nästan ingen data därifrån, så den poängsätter dess behov som ”osäkert/lågt”. Tio tusen människor bor där.",
+        "options": [
+          {
+            "id": "fo-4a",
+            "label": "Följ algoritmen",
+            "detail": "Lita på modellens effektivitet. Ingen data, ingen utdelning.",
+            "consequence": "Utdelningarna löper med imponerande effektivitet — överallt utom i staden som behövde det mest. När ett insmugglat brev når ditt kontor har uteslutningen pågått i sex veckor. Modellen hade inte fel om sin data. Den hade fel om världen.",
+            "reflection": "”Ingen data” är inte ”inget behov” — i konflikt betyder det ofta motsatsen. Automatiserat beslutsfattande misslyckas hårdast exakt där människor är mest avskurna, vilket är där opartiskheten betyder mest.",
+            "impacts": {
+              "impartiality": -2,
+              "humanity": -1,
+              "doNoHarm": -1
+            }
+          },
+          {
+            "id": "fo-4b",
+            "label": "Mänskligt åsidosättande, dokumenterat",
+            "detail": "Planerarna justerar listan och skriver ner varför. Historiken är granskningsbar.",
+            "consequence": "Staden läggs tillbaka utifrån data från före konflikten och samhällsrapporter. Att dokumentera åsidosättandet känns byråkratiskt — tills utvärderingen efteråt, där den dokumentationen är hur du försvarar beslutet och förbättrar modellens hantering av dataluckor.",
+            "reflection": "Meningsfull mänsklig kontroll betyder att en person kan åsidosätta maskinen, officiellt, med skäl. Ansvarsskyldigheten lever i den skrivna meningen: vem beslutade, och varför.",
+            "impacts": {
+              "impartiality": 1,
+              "doNoHarm": 1
+            }
+          },
+          {
+            "id": "fo-4c",
+            "label": "Dubbel signering: analytiker plus fältdelegat",
+            "detail": "Ingen automatiserad rekommendation blir beslut utan två mänskliga underskrifter. Långsammare, med avsikt.",
+            "consequence": "Varje utdelningsplan tar en extra dag. I utbyte fångas dataluckor som den belägrade staden strukturellt, inte av en händelse — fältdelegatens jobb är just att fråga vad modellen inte kan se.",
+            "reflection": "I högriskmiljöer är redundans i mänskligt omdöme en skyddsåtgärd, inte en ineffektivitet. IKT-resolutionens uppmaning att undvika och mildra skada talar för exakt denna typ av avsiktlig friktion.",
+            "impacts": {
+              "doNoHarm": 2,
+              "impartiality": 1,
+              "humanity": -1
+            }
+          }
+        ]
+      }
+    ],
+    "debrief": "Ögon på frontlinjen visar AI vid dess högsta insatser. Samma modell som accelererar behovsbedömningen kan förblinda dig för osynligt lidande; samma instrumentpanel som samordnar hjälpen kan göra den till mål; samma algoritm som optimerar utdelningar kan radera en belägrad stad för brist på data. Neutralitet, oberoende och att inte skada är inte begränsningar på tekniken — de är designkraven."
+  },
+  {
+    "id": "cloud-question",
+    "title": "Molnfrågan",
+    "tagline": "Leverantörsneutralitet och datasuveränitet i Karibien",
+    "role": "Ansvarig för digital transformation, Röda Korset i Karibien",
+    "context": "Din nationalförening betjänar östater där orkaner är en fråga om när, inte om. Du digitaliserar allt samtidigt: ett mottagarregister, ett AI-stött skadebedömningsverktyg och en insamlingsplattform. Tre mycket olika dörrar står öppna — en global molnjätte som erbjuder gratis krediter, en regering som erbjuder sitt nationella moln, och ett regionalt konsortium som driver öppen infrastruktur. Bakom varje dörr finns ett annat svar på frågan: vars teknik vilar dina människors liv på?",
+    "topics": [
+      "Val av molnleverantör",
+      "Leverantörsneutralitet",
+      "Datasuveränitet",
+      "Skadobedömning"
+    ],
+    "roles": [
+      "ITK och digitalt",
+      "Upphandling",
+      "Ledarskap"
+    ],
+    "steps": [
+      {
+        "id": "cq-1",
+        "title": "Var datan bor",
+        "narrative": "Mottagarregistret kommer att innehålla namn, platser och sårbarhetsuppgifter för 80 000 hushåll. Molnjättens erbjudande är generöst: fem års krediter, säkerhet i toppklass, datacenter utomlands. Regeringens nationella moln håller datan i landet — och under nationell lag. Konsortiets servrar, som Rörelsen kontrollerar, kostar mer och kommer senare.",
+        "options": [
+          {
+            "id": "cq-1a",
+            "label": "Ta molnjättens gratiskrediter",
+            "detail": "Snabbt, säkert och gratis i fem år. Datan bor i en utländsk jurisdiktion under leverantörens villkor.",
+            "consequence": "Du lanserar i rekordtid och plattformen fungerar utmärkt. År tre tar krediterna slut, priserna räknas om, och att migrera 80 000 hushållsuppgifter ur proprietära format visar sig vara ett projekt som ingen budgeterat för.",
+            "reflection": "Datasuveränitet avgörs dag ett, inte vid förnyelsen. Gratiskrediter är ett upphandlingsbeslut vars kostnad anländer senare — och utträdeskostnader är en del av priset på varje moln.",
+            "impacts": {
+              "humanity": 1,
+              "independence": -2
+            }
+          },
+          {
+            "id": "cq-1b",
+            "label": "Använd regeringens nationella moln",
+            "detail": "Datan stannar i landet och ministeriet är förtjust. Statlig åtkomst kommer med territoriet.",
+            "consequence": "Driften är billig och politiskt smidig. Sedan stäms registret i ett migrationsärende, och du upptäcker att ”i landet” också betyder ”inom räckhåll”. Samhällenas förtroende för registret — byggt över år — vacklar över en natt.",
+            "reflection": "Suveränitet på papper är inte oberoende i praktiken. Ett humanitärt register måste skärmas från varje myndighet som kan använda det för icke-humanitära ändamål — det är vad oberoendet skyddar.",
+            "impacts": {
+              "independence": -2,
+              "doNoHarm": -2
+            }
+          },
+          {
+            "id": "cq-1c",
+            "label": "Bygg på infrastruktur som Rörelsen kontrollerar",
+            "detail": "Det regionala konsortiets öppna stack. Dyrare, långsammare, helt ditt eget.",
+            "consequence": "Lanseringen tar fyra extra månader och äter en tredjedel av digitaliseringsbudgeten. Men varje uppgift vilar under dina nycklar, i öppna format, med en testad säkerhetskopia i ett andra land. När leverantörer och ministerier knackar på senare är svaret redan byggt.",
+            "reflection": "Kontroll över infrastrukturen är grunden som alla andra skydd står på. Det kostar pengar och tid i förskott — IKT-resolutionens åtagande om etisk upphandling inkluderar viljan att betala det priset.",
+            "impacts": {
+              "independence": 2,
+              "doNoHarm": 1,
+              "humanity": -1
+            }
+          }
+        ]
+      },
+      {
+        "id": "cq-2",
+        "title": "Leverantörens andra kunder",
+        "narrative": "Ditt AI-verktyg för skadebedömning körs på en enda kommersiell leverantörs modeller. En regional tidning avslöjar att samma leverantör levererar analys till en part i en väpnad konflikt två gränser bort. En journalist ringer: komprometterar din nationalförenings partnerskap med denna leverantör dess neutralitet?",
+        "options": [
+          {
+            "id": "cq-2a",
+            "label": "Säg ingenting; avtalet är rent",
+            "detail": "Din data är separerad, din användning humanitär. Rida ut nyhetscykeln.",
+            "consequence": "Storyn bleknar på en vecka — men inte överallt. Lokala ledare i ett distrikt slutar dela skadebilder, och en partnerorganisation pausar tyst datadelningen med dig, med hänvisning till ”anseenderisk”. Uppfattningen gjorde skadan som fakta aldrig gjorde.",
+            "reflection": "Neutralitet bedöms lika mycket av uppfattning som av fakta. Leverantörsneutralitet — vars teknik man ses förlita sig på — är numera en del av hur parter och samhällen avläser din opartiskhet.",
+            "impacts": {
+              "neutrality": -2,
+              "independence": -1
+            }
+          },
+          {
+            "id": "cq-2b",
+            "label": "Diversifiera leverantörer och publicera din granskning",
+            "detail": "Lägg till en andra leverantör för kritiska belastningar, anta en offentlig policy för leverantörsgranskning, och säg det öppet.",
+            "consequence": "Migrationen är verkligt arbete och den dubbla uppställningen kostar mer. Men den offentliga policyn svarar på journalistens fråga bättre än något pressmeddelande: du kan visa exakt hur leverantörer granskas, och inget enskilt företags rykte kan dra med ditt i fallet.",
+            "reflection": "Leverantörsneutralitet konstrueras, den proklameras inte: undvik beroende av en enda leverantör för kritiska system, granska leverantörer mot humanitära principer, och kunna visa ditt arbete.",
+            "impacts": {
+              "neutrality": 1,
+              "independence": 1,
+              "doNoHarm": 1
+            }
+          },
+          {
+            "id": "cq-2c",
+            "label": "Säg upp leverantören omedelbart",
+            "detail": "Ett rent brott, offentliggjort. Tjänsterna går offline medan du bygger om.",
+            "consequence": "Beskedet beröms av kommentatorer. Men skadebedömningsverktyget är offline i nio veckor — som spänner över orkansäsongens start — och en insats efter en storm går ut med långsammare, sämre inriktning som följd.",
+            "reflection": "Principfasta utträden har också offer. Att tvärt kapa ett beroende man aldrig planerade att undkomma för över kostnaden på drabbade människor — en utträdesstrategi är en åtgärd för att inte skada, inte en lyx.",
+            "impacts": {
+              "neutrality": 2,
+              "humanity": -2,
+              "doNoHarm": -1
+            }
+          }
+        ]
+      },
+      {
+        "id": "cq-3",
+        "title": "En skadobedömning före orkansäsongen",
+        "narrative": "AI-verktyget för skadebedömning är klart sex veckor före säsongens topp. Samhällets kontaktpersoner varnar dig: modellen tränades mest på formella bostäder, och informella bosättningar — där de mest utsatta bor — kan systematiskt underskattas. En fullständig deltagarbaserad skadobedömning tar sex veckor. Säsongen väntar inte.",
+        "options": [
+          {
+            "id": "cq-3a",
+            "label": "Lansera nu, bedöm senare",
+            "detail": "Säsongen väntar inte. Gör skadobedömningen efter de första stormarna.",
+            "consequence": "Verktyget fungerar bra i formella distrikt och dåligt i informella — precis som varnat. Hjälpen efter stormen flödar mot skadorna som modellen kunde se. Den retrospektiva skadobedömningen dokumenterar, i detalj, vilka som missades.",
+            "reflection": "En skadobedömning skriven efter skadan är en obduktion. Att inte skada betyder att bedöma förutsebara risker för drabbade samhällen före driftsättning — särskilt riskerna för dem som datan representerar minst.",
+            "impacts": {
+              "humanity": 1,
+              "doNoHarm": -2,
+              "impartiality": -1
+            }
+          },
+          {
+            "id": "cq-3b",
+            "label": "Gör den fullständiga deltagarbedömningen först",
+            "detail": "Samhällsrepresentanter hjälper till att testa verktyget, identifiera skador och sätta mildrande åtgärder. Säsongsstarten missas.",
+            "consequence": "Den första stormen hanteras med gamla metoder — långsammare, men inte sämre än förra året. Bedömningen hittar gapet för informella bosättningar plus två skador som ingen förutspådde, och de samhällsdesignade mildringarna blir en del av verktygets driftmanual.",
+            "reflection": "IKT-resolutionens åtagande om samverkan med lokalsamhällen gäller risk, inte bara återkoppling: människorna som utsätts för ett verktygs fel är experterna på vad dessa fel skulle betyda.",
+            "impacts": {
+              "doNoHarm": 2,
+              "impartiality": 1,
+              "humanity": -1
+            }
+          },
+          {
+            "id": "cq-3c",
+            "label": "Lansera begränsat, med en nödbrytare",
+            "detail": "Driftsätt bara i två pilotdistrikt, med återkopplingskanaler från samhället, mänsklig verifiering av osäkra poäng, och en förutbestämd avstängningströskel.",
+            "consequence": "Piloterna avslöjar bosättningsgapet inom några dagar, mänskliga verifierare fångar de flesta felpoängen, och när felfrekvensen passerar din tröskel i ett distrikt pausas verktyget där utan drama. Verktyget förbättras storm för storm.",
+            "reflection": "När förseningen i sig bär risk är en avgränsad lansering med övervakning, mänsklig back-up och en inövad nödbrytare en legitim strategi för skademildring — förutsatt att gränserna är verkliga och att någon har mandat att dra i brytaren.",
+            "impacts": {
+              "doNoHarm": 1,
+              "humanity": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "cq-4",
+        "title": "Förnyelsen",
+        "narrative": "Tre år in fungerar din teknikstack — och är djupt invävd i en leverantörs proprietära tjänster. Förnyelseerbjudandet inkluderar rabatt för djupare integration. Din styrelse ber om en rekommendation.",
+        "options": [
+          {
+            "id": "cq-4a",
+            "label": "Fördjupa integrationen för rabatten",
+            "detail": "Bäst pris, bäst funktioner, en enda ansvarig. Inlåsningen blir total.",
+            "consequence": "Budgetarna ser strålande ut i år. Två år senare köps leverantören upp, prioriteringarna skiftar, och din ”enkla” migrationsuppskattning kommer tillbaka med arton månader och en siffra som styrelsen vägrar läsa högt.",
+            "reflection": "Beroende växer tyst. Varje proprietär krok är en framtida faktura — finansiell, operativ eller principiell. Oberoende bevaras i upphandlingsbeslut som fattas år före krisen som prövar det.",
+            "impacts": {
+              "independence": -2,
+              "doNoHarm": -1
+            }
+          },
+          {
+            "id": "cq-4b",
+            "label": "Förnya med portabilitetsklausuler och en testad utträdesplan",
+            "detail": "Öppna dataformat, regelbundna exportövningar, deponerade konfigurationer, och en utträdesrepetition varje år.",
+            "consequence": "Leverantören muttrar, och skriver sedan under — din utträdesplan är anledningen till att prissättningen förblir ärlig. Den första exportövningen misslyckas pinsamt; vid den tredje kan ditt team få upp registret på annan plats på nio dagar.",
+            "reflection": "En utträdesplan du aldrig testat är en hypotes. Inövad portabilitet förvandlar beroende till en relation du väljer att fortsätta — vilket är hur oberoende ser ut i praktiken.",
+            "impacts": {
+              "independence": 2,
+              "doNoHarm": 1
+            }
+          },
+          {
+            "id": "cq-4c",
+            "label": "För hem kärnan, hyr bara toppkapacitet",
+            "detail": "Registret och modellerna flyttar internt; leverantören behåller bara elastisk beräkning för toppar efter katastrofer.",
+            "consequence": "Övergången kostar ett hårt år och vissa funktioner försämras. Efteråt lyder dina kritiska system inte under någon leverantörs färdplan, och topparna efter orkaner skalar fortfarande — på infrastruktur du kan lämna.",
+            "reflection": "Hybridarkitekturer kan balansera suveränitet mot skala. Designfrågan är alltid: vilka funktioner skulle vi kunna förlora en leverantör för i morgon — och vad skulle den förlusten kosta drabbade människor?",
+            "impacts": {
+              "independence": 1,
+              "doNoHarm": 1,
+              "humanity": -1
+            }
+          }
+        ]
+      }
+    ],
+    "debrief": "Molnfrågan handlar om infrastrukturen under varje annat AI-beslut. Var data bor avgör vem som kan nå den (datasuveränitet); vars modeller du är beroende av formar hur parter och samhällen avläser din neutralitet (leverantörsneutralitet); och om du kan lämna avgör om dina val verkligen är dina (oberoende). Skadobedömning hör hemma före driftsättning — och de samhällen som är mest utsatta för ett verktygs fel hör hemma inuti den bedömningen."
+  },
+  {
+    "id": "edge-network",
+    "title": "Vid nätverkets ytterkant",
+    "tagline": "AI-verktyg där uppkoppling och el är knappa i Östafrika",
+    "role": "ITK- och innovationsansvarig, regional insats i Östafrika",
+    "context": "Torka och fördrivning spänner över en avlägsen gränsregion. Fältteam och samhällsvolontärer behöver översättning, fallanteckningar och vägledning för remisser — men uppkopplingen är ojämn, elen kommer från generatorer och några solpaneler, och det närmaste stora datacentret ligger på en annan kontinent. Du måste bestämma vilken sorts AI, om någon, som hör hemma här.",
+    "topics": [
+      "AI vid låg uppkoppling",
+      "Miljöavtryck",
+      "Små språkmodeller"
+    ],
+    "roles": [
+      "ITK och innovation",
+      "Fältinsatser",
+      "Samverkan med lokalsamhällen"
+    ],
+    "steps": [
+      {
+        "id": "en-1",
+        "title": "Stor modell, liten modell, eller ingen?",
+        "narrative": "En leverantörsdemo visar en AI-assistent i molnet som svarar på fältfrågor briljant — över en uppkoppling som dina fältplatser saknar. Alternativet är en liten språkmodell som körs offline på solladdade surfplattor: mindre flytande, men alltid på. En tredje röst i rummet säger att det ärliga svaret kanske är ingen AI alls.",
+        "options": [
+          {
+            "id": "en-1a",
+            "label": "Driftsätt molnassistenten",
+            "detail": "Bäst svar, rikaste språkstöd — där det finns signal. Varje fråga vilar på avlägsna, energihungriga datacenter.",
+            "consequence": "På regionala hubben älskar personalen den. På fältplatserna — där frågorna finns — visar den mestadels ett snurrande hjul. Du får senare veta att varje tusen frågor också bar en osynlig faktura: datacentrens el och kylvatten, i en region som räknar båda i dunkar.",
+            "reflection": "Kapacitet som bara fungerar där infrastruktur redan finns vidgar klyftan mellan de uppkopplade och de avskurna. Varje AI-fråga har en energi- och vattenkostnad; i knappa miljöer är den kostnaden en del av den humanitära kalkylen, inte en fotnot.",
+            "impacts": {
+              "humanity": 1,
+              "doNoHarm": -1,
+              "impartiality": -1
+            }
+          },
+          {
+            "id": "en-1b",
+            "label": "Kör en liten modell på solplattor",
+            "detail": "En kompakt modell, nedladdad en gång, körs helt offline. Svaren är enklare och smalare — och tillgängliga överallt.",
+            "consequence": "Uppsättningen tar en fjorton dagar av finjustering på era verkliga fältguider. Den lilla modellen snubblar på ovanliga frågor men hanterar de vardagliga — översättning, remisssteg, formulär — på varje plats, i mörker, under strömavbrott. Hela dess veckovisa energiförbrukning ryms på en solpanel.",
+            "reflection": "Små språkmodeller byter polityr mot suveränitet: de körs där människor faktiskt finns, på en bråkdel av en stor modells energi och vatten, utan att data lämnar enheten. Anpassat till ändamålet slår senaste tekniken.",
+            "impacts": {
+              "doNoHarm": 1,
+              "independence": 1,
+              "impartiality": 1
+            }
+          },
+          {
+            "id": "en-1c",
+            "label": "Ingen AI — förstärk radio och papper",
+            "detail": "Investera i fältguiderna, radioschemat och det mänskliga remissnätverket i stället.",
+            "consequence": "Pålitligt, betrott och noll nytt avtryck — men översättningsköerna växer, fallanteckningar hopas obearbetade, och nattvolontärer fortsätter improvisera svar som en tränad liten modell kunde ha hanterat.",
+            "reflection": "Att avstå från AI är ett legitimt val med verkliga kostnader. Frågan är inte ”AI eller principer” utan vilket verktyg, dimensionerat för platsen, som tjänar människor bäst — och vem som beslutade, på vilka bevis.",
+            "impacts": {
+              "humanity": -1,
+              "doNoHarm": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "en-2",
+        "title": "Hålla det vid liv",
+        "narrative": "Vad som än körs här måste överleva infrastrukturen. Leverantören erbjuder en förvaltad tjänst: nattlig satellitsynk, automatiska uppdateringar, fjärrövervakning — mot en avgift och ett dataflöde hem. Din fältkoordinator föreslår ett samhällsdrivet alternativ: solcellsladdningshubbar, ett lokalt mesh-nät mellan platserna, och data som synkas när teamen når uppkoppling.",
+        "options": [
+          {
+            "id": "en-2a",
+            "label": "Ta den förvaltade satellittjänsten",
+            "detail": "Uppdateringar och övervakning utan ansträngning. En ständig ström av användningsdata flödar till leverantören, och månadsavgiften tar aldrig slut.",
+            "consequence": "Allt hålls aktuellt utan personalinsats. Sex månader in skär en budgetöversyn ner prenumerationen, och plattorna degraderar graciöst till dyra pappersböcker — ingen lokalt lärde sig någonsin att underhålla dem.",
+            "reflection": "Bekvämlighet som inte överlever en budgetpost är sårbarhet i förklädnad. Beroende handlar inte bara om data; det handlar om vem som har kompetensen när avtalet tar slut.",
+            "impacts": {
+              "independence": -2,
+              "doNoHarm": -1
+            }
+          },
+          {
+            "id": "en-2b",
+            "label": "Samhällsdrivna solhubbar och lokal synk",
+            "detail": "Laddhubbar på samhällscenter, ett mesh mellan platser, uppdateringar som bärs av teamen på resa. Långsammare, lokalt, och ägt.",
+            "consequence": "Uppdateringar anländer dagar, inte sekunder, efter release. Men hubbarna blir samhällsinfrastruktur — telefoner laddas där också — och teknikerna som håller systemet vid liv är grannar till dem det tjänar.",
+            "reflection": "Infrastruktur som samhällen äger tenderar att överleva projekt. Att bygga in lokal kraft, uppkoppling och underhåll i designen är att tillämpa att-inte-skada på lång sikt.",
+            "impacts": {
+              "independence": 1,
+              "doNoHarm": 2,
+              "humanity": -1
+            }
+          },
+          {
+            "id": "en-2c",
+            "label": "Hybrid: leverantörens moln i hubben, offline i utkanten",
+            "detail": "Tung bearbetning och uppdateringar sker i den uppkopplade hubben; fältplatserna förblir offline först.",
+            "consequence": "En fungerande kompromiss: hubben får leverantörens pipeline, fältet behåller sin självständighet. Men det kräver disciplinerad arkitektur — två gånger upptäcker du nya funktioner som tyst förutsätter uppkoppling, och skjuter tillbaka dem.",
+            "reflection": "Hybriddesigner kan balansera räckvidd och motståndskraft, men bara om offline-först är en regel som leverantörer måste lyda, inte en preferens de kan urholka release för release.",
+            "impacts": {
+              "independence": 1,
+              "doNoHarm": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "en-3",
+        "title": "Avtrycksfrågan",
+        "narrative": "På ett samhällsmöte håller en ung volontär upp en telefon som visar en nyhet: datacenter som tränar stora AI-modeller förbrukar enorma mängder el och miljontals liter kylvatten — ibland i torkdrabbade regioner som din. Hon frågar: ”Hur mycket vatten drack er AI i dag?”",
+        "options": [
+          {
+            "id": "en-3a",
+            "label": "Behandla det som en PR-fråga",
+            "detail": "Försäkra rummet att leverantören är ”engagerad i hållbarhet” och gå vidare.",
+            "consequence": "Mötet går vidare; frågan gör det inte. Volontärens video om ”NGO:ns törstiga AI” överträffar era tio senaste inlägg, och teamet har inga riktiga siffror att svara med.",
+            "reflection": "Samhällen frågar alltmer om den miljömässiga kostnaden för verktygen som används på dem. ”Leverantören säger att det är okej” är inte ansvarsskyldighet — det är en obesvarad fråga med en logotyp på.",
+            "impacts": {
+              "doNoHarm": -2,
+              "independence": -1
+            }
+          },
+          {
+            "id": "en-3b",
+            "label": "Mät, redovisa och sätt en budget",
+            "detail": "Spåra frågor, modellstorlekar och uppskattad energi och vatten; publicera siffrorna; sätt en effektivitetsbudget per svar.",
+            "consequence": "Den första ärliga uppskattningen är obekväm — molnfrågorna fördunklar allt annat. Du publicerar den ändå, sätter ett tak, och den unga volontären går med i granskningsgruppen som kontrollerar siffrorna kvartalsvis.",
+            "reflection": "Du kan inte förvalta ett avtryck du vägrar mäta. Att publicera den verkliga kostnaden — energi, vatten, utvinning bakom hårdvaran — förvandlar en besvärlig fråga till en ansvarspraktik som samhällen kan verifiera.",
+            "impacts": {
+              "doNoHarm": 2
+            }
+          },
+          {
+            "id": "en-3c",
+            "label": "Gör den lilla modellen till standard",
+            "detail": "Gör den offline-lilla modellen till standard överallt; reservera den stora molnmodellen för sällsynta, komplexa fall med mänsklig granskning.",
+            "consequence": "Molnfrågorna sjunker med 90 procent. Några nyanserade svar blir långsammare, för att en människa nu kontrollerar dem först — vilket visar sig förbättra dem. Avtrycksfrågan på nästa möte har ett konkret svar.",
+            "reflection": "Sparsamhet är en designprincip: det lättaste verktyget som gör jobbet är oftast det mest humana att driva. Att rätt dimensionera modeller är skademildring för människor och planet samtidigt.",
+            "impacts": {
+              "doNoHarm": 2,
+              "independence": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "en-4",
+        "title": "Vem håller det igång?",
+        "narrative": "Arton månader senare fungerar systemet. Bidragsfinansieringen som betalade för det tar slut nästa kvartal. Vad som händer nu avgör om detta var ett projekt eller en förmåga.",
+        "options": [
+          {
+            "id": "en-4a",
+            "label": "Förnya leverantörens underhållsavtal",
+            "detail": "Enklast på papper: leverantören fortsätter patcha, drifta uppdateringsflödet och inneha kunskapen.",
+            "consequence": "Förnyelsen skrivs under på en vecka. Kunskapen stannar där den alltid varit — utanför. När leverantören avvecklar produktlinjen två år senare är överlämningsdokumentet en säljbroschyr för dess efterträdare.",
+            "reflection": "Ett system som bara dess leverantör förstår är hyrt, inte ägt. Underhållsavtal är bra; att vara beroende av dem för all kunskap är det inte.",
+            "impacts": {
+              "independence": -2,
+              "doNoHarm": -1
+            }
+          },
+          {
+            "id": "en-4b",
+            "label": "Utbilda lokala tekniker att äga det",
+            "detail": "Finansiera ett års utbildning så att regional personal och samhällstekniker kan underhålla, uppdatera och anpassa modellerna själva.",
+            "consequence": "Långsammare i början, och två praktikanter rekryteras bort av ett telekombolag — en förlust som också är en framgångshistoria. De som stannar håller systemet vid liv genom nästa finansieringsglapp utan att missa en vecka.",
+            "reflection": "Lokal teknisk kapacitet är den mest hållbara infrastruktur du kan bygga. Kompetens som stannar i regionen fortsätter att tjäna den långt efter att din projektkod är glömd.",
+            "impacts": {
+              "independence": 2,
+              "doNoHarm": 1,
+              "humanity": 1
+            }
+          },
+          {
+            "id": "en-4c",
+            "label": "Överlämna det till Rörelsens regionala pool",
+            "detail": "Nationalföreningen ansluter sig till en delad regional tjänst som underhåller gemensamma modeller och verktyg för många föreningar.",
+            "consequence": "Du förlorar lite lokal anpassning, vinner delad kostnad och delad expertis. Den lilla modell som ditt team stämde av för lokala språk blir poolens mest använda tillgång — din investering skalar bortom dina gränser.",
+            "reflection": "Delad Rörelseinfrastruktur sprider både kostnad och suveränitet. Vad en förening bygger kan, med öppna format och poolat underhåll, skydda många.",
+            "impacts": {
+              "independence": 1,
+              "doNoHarm": 1
+            }
+          }
+        ]
+      }
+    ],
+    "debrief": "Vid nätverkets ytterkant handlar om att dimensionera tekniken efter platsen den tjänar. Små modeller, offline-först-design, lokal kraft och lokal kompetens är inte kompromisser — i miljöer med låg uppkoppling är de det motståndskraftiga valet. Och varje AI-fråga bär en miljökostnad i energi, vatten och utvinning; att mäta den, redovisa den och minimera den är en del av att inte skada, inte en separat agenda."
+  },
+  {
+    "id": "signals-noise",
+    "title": "Signaler i bruset",
+    "tagline": "AI-driven social bevakning under en tyfoninsats i Sydostasien",
+    "role": "Rådgivare för samhällsengagemang och ansvarsskyldighet, tyfoninsatsen",
+    "context": "En tyfon av kategori 4 har gått i land över en ögrupp. Rykten sprids snabbare än översvämningsvattnet: om hjälp, om evakueringar, om vem som bär skulden. En plattform för social bevakning erbjuder AI som skannar offentliga inlägg på fyra lokala språk och flaggar desinformation i nära realtid. Dina team drunknar i overifierade rapporter — men att lyssna i stor skala betyder att övervaka samhällen i stor skala.",
+    "topics": [
+      "Social bevakning",
+      "Desinformation",
+      "Integritet och förtroende"
+    ],
+    "roles": [
+      "Samverkan med lokalsamhällen",
+      "Kommunikation",
+      "Skydd"
+    ],
+    "steps": [
+      {
+        "id": "sn-1",
+        "title": "Att lyssna, och hur",
+        "narrative": "Plattformen kan suga in offentliga inlägg från de stora sociala nätverken, klassificera dem och skicka larm. Din skyddsrådgivare ställer den obekväma frågan först: vad händer med inläggen — och med människorna som skrev dem — efter krisen?",
+        "options": [
+          {
+            "id": "sn-1a",
+            "label": "Full skanning med larm",
+            "detail": "Sug in offentliga inlägg, klassificera, larma. Maximal lägesbild, maximal insamling.",
+            "consequence": "Ryktessajten är genuint användbar — du fångar en falsk evakueringsorder inom en timme. Men plattformen behåller data på inläggsnivå ”för modellförbättring”, och du inser att du har byggt ett avlyssningsutan utan avstängningsknapp och utan avslutningsklausul.",
+            "reflection": "Offentligt betyder inte konsekvensfritt: människor publicerar i kris utan att föreställa sig humanitär — eller någon — övervakning. Insamling som överlever sitt syfte är ett dataskyddsfel klädd i en användbar instrumentpanel.",
+            "impacts": {
+              "humanity": 1,
+              "doNoHarm": -2
+            }
+          },
+          {
+            "id": "sn-1b",
+            "label": "Bara aggregerade trender",
+            "detail": "Ingen lagring på inläggsnivå: systemet räknar teman och toppar, och raderar råflödet dagligen.",
+            "consequence": "Du förlorar viss detaljrikedom — du kan inte alltid spåra ett rykte till dess källa — men du behåller förvarningen. När ett departement senare begär ”rådatan” är det ärliga svaret att den inte längre finns.",
+            "reflection": "Aggregering är den sociala bevakningens version av dataminimering: du behåller signalen, kasserar människorna. Att designa för radering är att designa för förtroende.",
+            "impacts": {
+              "doNoHarm": 2,
+              "humanity": -1
+            }
+          },
+          {
+            "id": "sn-1c",
+            "label": "Bara samhällskanaler",
+            "detail": "Hoppa över social bevakning; förlita dig på återkopplingslinjer, samhällsvolontärer och partnernätverk.",
+            "consequence": "Betrott, mänskligt och långsammare. Ett giftigt rykte om förgiftat vatten cirkulerar i två dagar innan ditt nätverk lyfter det — två dagar då vissa familjer drack osäkert vatten hellre än att riskera de ”förgiftade” utdelningsplatserna.",
+            "reflection": "Att vägra lyssna är också ett val med konsekvenser. Frågan är inte om man ska höra samhällena, utan hur man hör dem utan att förvandla lyssnande till övervakning.",
+            "impacts": {
+              "humanity": -2,
+              "doNoHarm": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "sn-2",
+        "title": "Att agera på ett rykte",
+        "narrative": "Systemet flaggar ett snabbt spridande påstående om att din nationalförening leder om hjälp till en politisk grupp. Det är falskt. Men ett offentligt dementerande skulle nämna påståendet, gruppen och anklagelsen — i en polariserad region där din neutralitet redan ifrågasätts varje vecka.",
+        "options": [
+          {
+            "id": "sn-2a",
+            "label": "Publicera ett direkt offentligt dementi",
+            "detail": "Nämn ryktet, redovisa fakta, publicera överallt. Snabbt och transparent.",
+            "consequence": "Fakta landar — och ramen med dem. Under två nyhetscykler är ditt namn svetsat till en politisk anklagelse du inte reste. En lokal avdelning rapporterar hot; en annan rapporterar rekordinsamlingar. Sanningen serverades; neutralitetsräkningen kommer senare.",
+            "reflection": "Att förstärka en osanning för att dementera den kan sprida ramen längre än lögnen. Neutralitet prövas inte bara av vad du säger, utan av vad du väljer att upprepa.",
+            "impacts": {
+              "neutrality": -2,
+              "humanity": 1
+            }
+          },
+          {
+            "id": "sn-2b",
+            "label": "Korrigera via betrodda röster i samhället",
+            "detail": "Briefa lokala ledare, radiovärdar och volontärnätverk med fakta; låt betrodda lokala röster bära korrigeringen.",
+            "consequence": "Korrigeringen rör sig långsammare än ryktet en dag, och hinner sedan i kapp. Eftersom dementin kommer från röster som människor redan litar på fastnar den utan att svetsa ditt namn till anklagelsen.",
+            "reflection": "Samverkan med lokalsamhällen är också en neutralitetsstrategi. Korrigeringar reser på förtroende, och förtroende är lokalt — budbäraren är ofta budskapet.",
+            "impacts": {
+              "neutrality": 1,
+              "doNoHarm": 1
+            }
+          },
+          {
+            "id": "sn-2c",
+            "label": "Bevaka men svara inte",
+            "detail": "Att mata ryktet med uppmärksamhet kan vara värre; observera och vänta.",
+            "consequence": "Ryktet toppar och bleknar i vissa områden — och stelnar i ett distrikt, där utdelningar bojkottas i en vecka. Att vänta besparade dig ramen; det kostade de bojkottade familjerna deras ransoner.",
+            "reflection": "Tystnad är också ett beslut. Att bedöma när ett rykte behöver ett svar är ett hantverk: bevaka skadan, inte bara volymen, och kom överens om trösklar för att agera i förväg.",
+            "impacts": {
+              "humanity": -1,
+              "doNoHarm": -1
+            }
+          }
+        ]
+      },
+      {
+        "id": "sn-3",
+        "title": "Deepfaken",
+        "narrative": "Ett röstmeddelande på perfekt lokal dialekt, till synes från din chef, tillkännager en utdelning på en plats som inte finns. Hundratals samlas; vissa blir arga; en äldre man förs till sjukhus efter trängseln. Din AI, tränad på text och bilder, lyssnade aldrig på ljud alls.",
+        "options": [
+          {
+            "id": "sn-3a",
+            "label": "Lägg till en leverantör för deepfake-detektering",
+            "detail": "En specialiserad leverantör kan skanna ljud och video — om du strömmar samhällsinnehåll till deras moln.",
+            "consequence": "Detekteringen förbättras, och ännu ett dataflöde lämnar din kontroll. Tre månader senare landar leverantörens intrångsunderrättelse i din inkorg; ljudet du skickade till dem innehöll röstavtryck från människor som aldrig samtyckte till något.",
+            "reflection": "Att jaga varje nytt hot med en ny leverantör multiplicerar exponeringen snabbare än den multiplicerar säkerheten. Röst är biometrisk data; att behandla den som ännu ett flöde är ett dataskyddsfel.",
+            "impacts": {
+              "doNoHarm": -2,
+              "independence": -1
+            }
+          },
+          {
+            "id": "sn-3b",
+            "label": "Bygg verifierade kanaler som människor kan kontrollera",
+            "detail": "Alla officiella tillkännagivanden bär en enkel verifiering: ett kodord i radion, en signerad SMS, en linje att bekräfta mot. Lär ut mönstret innan du behöver det.",
+            "consequence": "Nästa falska röstmeddelande sprids i några timmar, och stannar sedan: människor frågar efter kodordet. Verifiering blir en samhällsvana, inte en leverantörsprodukt — och den fungerar även när dina system ligger nere.",
+            "reflection": "Motståndskraft mot syntetiska medier är mestadels social: förutbestämda verifieringsvanor slår detekteringskapprustningar, och de stärker, snarare än förbrukar, samhällsförtroendet.",
+            "impacts": {
+              "doNoHarm": 2,
+              "neutrality": 1
+            }
+          },
+          {
+            "id": "sn-3c",
+            "label": "Stäng ner all AI-bevakning",
+            "detail": "Om systemet inte kan fånga den farligaste förfalskningen är hela apparaten misstänkt.",
+            "consequence": "Du förlorar ryktesförvarningen som tyst hade förhindrat två paniker. Desinformation går inte i pension när dina verktyg gör det; nästa falska evakueringsorder cirkulerar osedd en hel dag.",
+            "reflection": "Verktyg misslyckas; frågan är om misslyckandet var designat för. Att överge ett användbart system för att det är ofullkomligt lämnar fältet åt ryktena — graderad, ärlig förmåga slår ingen alls.",
+            "impacts": {
+              "humanity": -2,
+              "doNoHarm": -1
+            }
+          }
+        ]
+      },
+      {
+        "id": "sn-4",
+        "title": "När stormen passerar",
+        "narrative": "Återuppbyggnaden börjar. Bevakningsplattformens testlicens förnyas automatiskt nästa månad. Ledningen gillar instrumentpanelen. Ingen har besvarat skyddsrådgivarens ursprungliga fråga: vad händer med allt detta i fredstid?",
+        "options": [
+          {
+            "id": "sn-4a",
+            "label": "Behåll den igång som förvarning",
+            "detail": "Krisnivåbevakning blir permanent ”beredskap”. Instrumentpanelen sover aldrig.",
+            "consequence": "Beredskapen förbättras på papper. Men ett system byggt för tyfonveckor bevakar nu ordinära politiska säsonger, och dess existens blir en valårsnyhet: den humanitära organisationen som aldrig slutade lyssna.",
+            "reflection": "Krisbefogenheter tenderar att bli inredning. En lyssnande förmåga som aldrig avvecklas kommer så småningom att användas för syften dess första användare aldrig föreställde sig — neutralitet inkluderad.",
+            "impacts": {
+              "neutrality": -2,
+              "doNoHarm": -2
+            }
+          },
+          {
+            "id": "sn-4b",
+            "label": "Avveckla den med en offentlig redovisning",
+            "detail": "Avsluta insamlingen, radera arkiven, och publicera vad som samlades in, varför, och vad som lärde sig.",
+            "consequence": "Den offentliga redovisningen är kortvarigt obekväm — människor får veta omfattningen av bevakningen — och blir sedan en förtroendetillgång: din nationalförening är den som sa vad den gjorde och slutade. Spelboken arkiveras för nästa aktivering.",
+            "reflection": "Ansvarsskyldighet inkluderar ett slut. Att publicera vad du samlade in och varför, och sedan verifierbart sluta, är vad ansvarsfull datapraxis betyder när kamerorna har åkt.",
+            "impacts": {
+              "doNoHarm": 2,
+              "neutrality": 1
+            }
+          },
+          {
+            "id": "sn-4c",
+            "label": "Överlämna den till nationalföreningen under samhällstillsyn",
+            "detail": "Verktyget fortsätter under nationalföreningen, styrt av en stadga med samhällsrepresentanter och en årlig offentlig granskning.",
+            "consequence": "Överlämningen är byråkratisk och verklig: stadgan namnger vad som får bevakas, vad som aldrig får det, och vem som kan stänga av. Den första årliga granskningen är offentlig, glest besökt, och exakt poängen.",
+            "reflection": "Lokalt ägande med samhällstillsyn kan göra ett dubbelanvändbart verktyg legitimt: skillnaden mellan övervakning och lyssnande är vem som styr det, i vars namn, med vilken makt att stoppa det.",
+            "impacts": {
+              "doNoHarm": 1,
+              "independence": 1,
+              "neutrality": 1
+            }
+          }
+        ]
+      }
+    ],
+    "debrief": "Signaler i bruset handlar om att lyssna utan att övervaka. Aggregering framför insamling, betrodda budbärare framför högljudda dementier, verifieringsvanor framför detekteringskapprustningar, och en avveckling framför en instrumentpanel som aldrig sover — så hör en humanitär organisation en kris utan att bli något som samhällen borde frukta."
+  },
+  {
+    "id": "outbreak-signal",
+    "title": "Utbrottssignalen",
+    "tagline": "Epidemiologisk underrättelse och AI-triage under ett feberutbrott vid en gränsövergång",
+    "role": "Samordnare för hälsokriser, regional utbrottsinsats",
+    "context": "Ett kluster av svåra feberfall dyker upp nära en livlig gränsövergång. En plattform för epidemiologisk underrättelse — som skannar klinikrapporter, apoteksförsäljning och offentliga inlägg — flaggar ”möjlig hemorragisk feber, 72 procents konfidens”. Labben ligger två dagar bort, övergången passerar tusentals resenärer dagligen, och din nationalförening driver de två närmaste klinikerna. Varje timmes tvekan har sitt pris — och det har varje falskt larm också.",
+    "topics": [
+      "Epidemiologisk underrättelse",
+      "Hälsodata",
+      "Riskkommunikation"
+    ],
+    "roles": [
+      "Hälsa",
+      "Epidemiologi",
+      "Samhällshälsa"
+    ],
+    "steps": [
+      {
+        "id": "os-1",
+        "title": "72-procentssignalen",
+        "narrative": "Plattformen vill att du eskalerar nu. Din epidemiolog påpekar att modellen tränats mestadels på urbana data och aldrig sett regionens malariasäsong, som härmar signalen. Den regionala hälso-myndigheten frågar vad du vet till fredag.",
+        "options": [
+          {
+            "id": "os-1a",
+            "label": "Utfärda larm omedelbart",
+            "detail": "Behandla 72 procent som handlingsbart. Utlös beredskapsplanen, larma partner, briefa medierna före ryktena.",
+            "consequence": "I 48 timmar mobiliserar regionen — sedan svarar labben: svår malaria, inte hemorragisk feber. Avblåsningen är tekniskt korrekt och socialt kostsam: nästa kvartal, när plattformen flaggar ett verkligt kolerakluster, tvekar två distriktskontor en hel dag innan de agerar.",
+            "reflection": "I utbrottsinsatser förbrukar falska larm det förtroende som verkliga larm vilar på. En AI-konfidenspoäng är ett underlag för ett beslut, inte beslutet — eskaleringströsklar tillhör ansvarstagande människor, kalibrerade mot lokal epidemiologi.",
+            "impacts": {
+              "humanity": 1,
+              "doNoHarm": -2,
+              "neutrality": -1
+            }
+          },
+          {
+            "id": "os-1b",
+            "label": "Vänta på laboratoriebekräftelse",
+            "detail": "Inga offentliga drag förrän labben bekräftar. Förbered tyst förråd under tiden.",
+            "consequence": "Labben bekräftar svår malaria — inget utbrott. Din tysta förberedelse visar sig ändå användbar. Men ditt team modellerar motfaktiskan: hade det varit hemorragisk feber hade 48 tysta timmar vid en gränsövergång varit katastrofala.",
+            "reflection": "Att vänta på visshet är bara säkert när sjukdomen är långsam. Disciplinen är att matcha tröskeln mot insatserna: vad kostar ett falskt larm, vad kostar två förlorade dagar, och vem bär vardera?",
+            "impacts": {
+              "humanity": -1,
+              "doNoHarm": 1
+            }
+          },
+          {
+            "id": "os-1c",
+            "label": "Skicka ett verifieringsteam inom timmar",
+            "detail": "Snabbt bedömningsteam till klusterplatsen, kliniker granskar signalens rådata, förråd förbereds utan offentligt larm.",
+            "consequence": "Teamet hittar sanningen på nio timmar: svår malaria förstärkt av ett medicinlager i botten — och plattformens signal, läst av mänskliga ögon, identifierar korrekt ett andra, orelaterat kluster värt att bevaka. Du eskalerar ingetdera; du förbereder dig för båda.",
+            "reflection": "Den starkaste epidemiologiska underrättelsen parar maskinens vaksamhet med snabb mänsklig verifiering. AI:n bevakar allt så att människor kan kontrollera det som spelar roll — den arbetsfördelningen är designen, inte en nödlösning.",
+            "impacts": {
+              "humanity": 1,
+              "doNoHarm": 2,
+              "impartiality": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "os-2",
+        "title": "Triage under press",
+        "narrative": "Bekräftade fall stiger och dina två kliniker är överbelastade. Ett hälsoteknikföretag erbjuder ett AI-triageverktyg: patienter svarar på frågor på en surfplatta, modellen poängsätter brådskan, och personalen ser patienterna i modellens ordning. Dina erfarna sjuksköterskor är skeptiska; kön är det inte.",
+        "options": [
+          {
+            "id": "os-2a",
+            "label": "Låt modellen styra kön",
+            "detail": "Full automatisering: poängen sätter ordningen. Snabbast genomflöde, minst friktion med personalen.",
+            "consequence": "Genomflödet hoppar 40 procent. Sedan framträder mönstret: äldre patienter som beskriver symtom indirekt får låga poäng; liksom talare av en gränsdialekt som frågeformuläret översätter dåligt. Ingen nekas vård — vissa väntar bara tills de kollapsar, utom synhåll för statistiken.",
+            "reflection": "En kö är ett värderingsdokument. Automatiserad triage optimerar för det dess frågeformulär kan höra; patienterna den hör sämst är ofta de sjukaste. Opartiskhet på en klinik betyder att granska ordningen, inte bara hastigheten.",
+            "impacts": {
+              "humanity": 1,
+              "impartiality": -2,
+              "doNoHarm": -1
+            }
+          },
+          {
+            "id": "os-2b",
+            "label": "Modellen som andra opinion, sjuksköterskorna beslutar",
+            "detail": "Poängen visas för triagesjuksköterskan, som kan åsidosätta den — varje åsidosättande loggas och granskas veckovis.",
+            "consequence": "Genomflödet förbättras 25 procent, inte 40 — men åsidosättandeloggen blir guld: den visar exakt var modellen misstolkar det lokala symtomspråket, och sjuksköterskornas korrigeringar tränar om den. Personalen litar på verktyget eftersom det synbart lär av dem.",
+            "reflection": "Att behålla sjuksköterskan vid rodret bevarar ansvarsskyldigheten och skapar en inlärningsloop som leverantören aldrig erbjöd. Inom hälso är ”människan i loopen” inte en broms på systemet — det är systemets mest exakta sensor.",
+            "impacts": {
+              "doNoHarm": 2,
+              "impartiality": 1
+            }
+          },
+          {
+            "id": "os-2c",
+            "label": "Håll fast vid standardtriageprotokollet",
+            "detail": "Inga nya verktyg mitt i utbrottet. Beprövat protokoll, extra volontärscreeners, längre väntetider.",
+            "consequence": "Vården förblir rättvis och förklarbar — och långsam. Två kritiska fall försämras i en kö som ett poängverktyg kunde ha dragit fram. Protokollet var säkert; väntan var det inte.",
+            "reflection": "Att avvisa ett verktyg fryser inte avvägningarna; det gör dem bara mindre synliga. Den ärliga jämförelsen är aldrig ”AI mot perfekt vård” — det är AI mot den faktiska kön, med sin egen tysta triage genom utmattning.",
+            "impacts": {
+              "impartiality": 1,
+              "humanity": -2
+            }
+          }
+        ]
+      },
+      {
+        "id": "os-3",
+        "title": "Fallistan",
+        "narrative": "Ett universitetskonsortium som modellerar utbrottet ber om era klinikers fallista: anonymiserade patientuppgifter med symtom, åldrar, platser, utfall. Deras modell skulle kunna förutsäga spridningen — och deras publiceringskö, karriärdrivkrafter och servrar finns alla utomlands.",
+        "options": [
+          {
+            "id": "os-3a",
+            "label": "Dela den anonymiserade fallistan",
+            "detail": "Namn borttagna, avtal undertecknat. Prognosen förbättras för alla.",
+            "consequence": "Konsortiets modell hjälper två ministerier att planera. Men fallistan är en tunn förklädnad: symtomdatum, ålder och by tillsammans återidentifierar patienter, och en lokal journalist visar det med ett telefonsamtal. I en gränsregion är det inte ett neutralt faktum att vara identifierbar som patient.",
+            "reflection": "I små populationer är ”anonymiserad” hälsodata ofta en pseudonym, inte ett skydd. Utbrottslistor bär dubbel känslighet — sjukdom och plats — och IKT-resolutionens dataskyddsstandard behandlar dem därefter.",
+            "impacts": {
+              "humanity": 1,
+              "doNoHarm": -2,
+              "independence": -1
+            }
+          },
+          {
+            "id": "os-3b",
+            "label": "Dela aggregat, håll analysen i landet",
+            "detail": "Veckovisa aggregerade räkningar går ut; rålistan stannar i landet, där konsortiets forskare är välkomna att arbeta under era dataskyddsregler.",
+            "consequence": "Långsammare vetenskap, suverän data. Två forskare accepterar residensarrangemanget; konsortiet muttrar, och citerar sedan er styrningsmodell som mall för sina nästa tre studier.",
+            "reflection": "Du kan dela insikten utan att skicka människorna. Datasuveränitet inom hälsa betyder att analysen reser till datan, inte tvärtom — och bra partner gör resan.",
+            "impacts": {
+              "doNoHarm": 2,
+              "independence": 1,
+              "humanity": -1
+            }
+          },
+          {
+            "id": "os-3c",
+            "label": "Avböj; skydda listan absolut",
+            "detail": "Ingen extern åtkomst alls förrän krisen är över och en fullständig etikgranskning är klar.",
+            "consequence": "Ingenting läcker, och ingenting lärs. Den regionala prognosen — som skulle ha styrt vaccinförberedelserna nästa säsong — byggs utan era klinikers data och är synbart svagare i just era distrikt.",
+            "reflection": "Absolut skydd har ett pris som betalas i framsyn. Målet är inte noll delning utan styrd delning: samtycke där det är möjligt, aggregering som standard, och granskning av människor som står till svars inför samhällena i listan.",
+            "impacts": {
+              "humanity": -1,
+              "doNoHarm": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "os-4",
+        "title": "Att tala till allmänheten",
+        "narrative": "Dags för riskkommunikation. Plattformen erbjuder AI-skrivna, automatiskt översatta hälsomeddelanden på alla lokala språk inom en timme. Era samhällshälsoutövare erbjuder något långsammare: sig själva, på motorcyklar, med megafoner och förtroende byggt över år.",
+        "options": [
+          {
+            "id": "os-4a",
+            "label": "Sänd AI-meddelandena överallt",
+            "detail": "Snabbhet och täckning: SMS, radiomanus, sociala inlägg, alla språk, denna timme.",
+            "consequence": "Täckningen är omedelbar. Det är felen också: en översatt symtomlista använder ett ord som betyder ”dödlig” i en dialekt, panikköp slår till i två städer, och en formulering om isolering läses som ”överge de sjuka”. Korrigeringar jagas efter meddelandena i dagar.",
+            "reflection": "Inom hälso är ett meddelande en dos — fel formulering skadar som fel medicin. Maskinöversättning i utbrottstakt behöver en mänsklig läsare som vet vad orden gör i varje samhälle, inte bara vad de säger.",
+            "impacts": {
+              "humanity": -1,
+              "doNoHarm": -2
+            }
+          },
+          {
+            "id": "os-4b",
+            "label": "Samhällshälsoutövarna bär budskapet",
+            "detail": "Briefa utövarna; de anpassar budskapet by för by. Långsammare, mindre räckvidd, djupare förtroende.",
+            "consequence": "Räckvidden den första veckan är en bråkdel av utsändningen — men förståelsen är total, frågor besvaras på plats, och ryktet om att ”överge de sjuka” får aldrig fäste för att någons moster förklarar isolering på sin tröskel.",
+            "reflection": "Samverkan med lokalsamhällen och ansvarsskyldighet är den ursprungliga riskkommunikationskanalen. Betrodda människor är långsammare än sändningar och snabbare än rykten — för förtroende är den verkliga hastighetsgränsen.",
+            "impacts": {
+              "doNoHarm": 2,
+              "impartiality": 1,
+              "humanity": -1
+            }
+          },
+          {
+            "id": "os-4c",
+            "label": "Blanda: AI:n skriver, lokala röster godkänner och levererar",
+            "detail": "Modellen skriver och översätter på en timme; samhällsgranskare för varje språk godkänner eller korrigerar innan något skickas; hälsoutövare levererar de svåra delarna personligen.",
+            "consequence": "Meddelanden går ut samma dag på fyra språk, var och ett undertecknat av någon som talar det som modersmål. Granskningssteget fångar den ”dödliga” översättningen innan den skickas. Täckning och förtroende, mestadels båda.",
+            "reflection": "Mönstret generaliserar: maskiner för snabbhet, samhällen för mening. IKT-resolutionens engagemangsåtagande är det som förvandlar en översättningspipeline till kommunikation som människor kan agera på säkert.",
+            "impacts": {
+              "humanity": 1,
+              "doNoHarm": 2
+            }
+          }
+        ]
+      }
+    ],
+    "debrief": "Utbrottssignalen handlar om snabbhet under osäkerhet. Epidemiologisk AI bevakar bredare än något team kan, men dess konfidenspoäng är inte beslut, dess triageköer kodar vad frågeformulär kan höra, dess datahunger kolliderar med känsligheten i att vara identifierbar som patient, och dess meddelanden behöver modersmålsögon före modersmålsöron. Hälsa är där ”rör dig snabbt” möter ”först, skada inte” mest direkt — verktygen måste byggas för båda."
+  },
+  {
+    "id": "boardroom-test",
+    "title": "Styrelsens prov",
+    "tagline": "En AI-strategi för hela organisationen, för en nationalförenings ledning",
+    "role": "Generalsekreterare för en nationalförening",
+    "context": "Din styrelse sammanträder om tre veckor, och AI är plötsligt på varje dagordning: en stor givare antyder att framtida finansiering gynnar ”AI-framsynta” partner, era revisorer har upptäckt personal som klistrar interna dokument i offentliga chattbottar, och er logistikchef vill automatisera en administrativ funktion som sysselsätter fyrtio personer. Vad du än tar med dig till det rummet kommer att definiera hur er organisation använder AI i åratal — och vem som får ifrågasätta det.",
+    "topics": [
+      "AI-styrning",
+      "Strategi och finansiering",
+      "Personal"
+    ],
+    "roles": [
+      "Ledarskap",
+      "Styrning",
+      "Personalvård"
+    ],
+    "steps": [
+      {
+        "id": "bt-1",
+        "title": "Givarens knuff",
+        "narrative": "Givarens brev är vänligt och omisskännligt: organisationer som visar ”konkret AI-användning” kommer att prioriteras. Din programchef varnar för att jaga signalen kommer att splittra organisationen i ett dussin ostyrda piloter. Din insamlingschef varnar för att ignorera den kostar sju siffror.",
+        "options": [
+          {
+            "id": "bt-1a",
+            "label": "Tillkännage en AI-satsning",
+            "detail": "Tio piloter, snabbt, synligt. Visa givaren momentum; red ut styrningen efter hand.",
+            "consequence": "Givaren är förtjust och pressmeddelandet skriver sig självt. Vid fjärde månaden har du elva piloter, tre leverantörer med tillgång till intern data, två dubblerade verktyg, och ingen som kan svara på en enkel styrelsefråga: vem godkände var och en av dessa, mot vilka kriterier?",
+            "reflection": "Finansieringsbetingad entusiasm är fortfarande entusiasm. Oberoende inkluderar friheten att anta teknik i den takt din styrning faktiskt kan styra — givare finansierar er mission, inte ert verktygsantal.",
+            "impacts": {
+              "humanity": 1,
+              "independence": -2,
+              "doNoHarm": -1
+            }
+          },
+          {
+            "id": "bt-1b",
+            "label": "Tacka artigt nej till villkoret",
+            "detail": "Tacka givaren, bekräfta era missionsstyrda kriterier, acceptera finansieringsrisken.",
+            "consequence": "Bidragsmedlen går till en högljuddare organisation. Er återhållsamhet bekräftas ett år senare när givarens paradprojekt kollapsar i en dataskandal — men bekräftelse betalar inte för vattenprojekten som bidraget skulle ha finansierat.",
+            "reflection": "Att säga nej till felanpassade pengar är en verklig kostnad som bärs av verkliga program. Oberoende är inte gratis; styrelsefrågan är om det prissätts ärligt, och omprövas när fakta ändras.",
+            "impacts": {
+              "independence": 1,
+              "humanity": -2
+            }
+          },
+          {
+            "id": "bt-1c",
+            "label": "Anta ett principförsta AI-ramverk",
+            "detail": "Ett kort, offentligt ramverk: vad ni kommer att använda AI till, vad ni aldrig kommer att använda det till, hur verktyg godkänns, och två paradpiloter valda efter behov, inte synlighet.",
+            "consequence": "Ramverket tar sex veckor och tre utkast. Givaren, inför det, går från skeptisk till imponerad — det ger dem något försvarbart att finansiera. Två piloter går vidare med kriterier som styrelsen faktiskt kan läsa.",
+            "reflection": "Ett skriftligt ramverk omvandlar värderingar till upphandlingskriterier. Det är långsammare än ett pressmeddelande och snabbare än en skandal — och det låter er möta finansiärer med ett dokument i stället för en stämning.",
+            "impacts": {
+              "independence": 1,
+              "doNoHarm": 2
+            }
+          }
+        ]
+      },
+      {
+        "id": "bt-2",
+        "title": "Skugg-AI:n",
+        "narrative": "Revisionen är pinsam: personal i alla avdelningar använder offentliga chattbottar dagligen — för att skriva givarrapporter, översätta fältanteckningar, sammanfatta akter. Vissa av dessa dokument innehåller mottagardata. Att förbjuda driver det under jord; att godkänna känns som att sanktionera en läcka.",
+        "options": [
+          {
+            "id": "bt-2a",
+            "label": "Förbjud offentliga AI-verktyg på arbetsenheter",
+            "detail": "Tydlig policy, blockerade domäner, disciplinär notering. Läckan stoppas — officiellt.",
+            "consequence": "Officiellt är efterlevnaden total. Inofficiellt flyttar arbetet till privata telefoner — samma dokument, samma offentliga verktyg, nu osynliga för både IT-teamet och dataskyddsombudet.",
+            "reflection": "Ett förbud utan alternativ omfördelar risken i stället för att minska den. Policyer som ignorerar varför människor nådde efter verktyget — arbetsbelastning, översättning, snabbhet — läses som instruktioner att gömma sig.",
+            "impacts": {
+              "doNoHarm": -1,
+              "independence": -1
+            }
+          },
+          {
+            "id": "bt-2b",
+            "label": "Erbjud ett sanktionerat, styrt alternativ",
+            "detail": "Teckna en företags-AI-tjänst med garantier om ingen träning och ingen lagring, publicera en tvåsidig guide för acceptabel användning på klarspråk, och utbilda teamen i vad som aldrig får matas in.",
+            "consequence": "Införandet av det styrda verktyget går snabbt eftersom det svarar på det verkliga behovet. Guidens röda linjer — ingen mottagaridentifierande data, inga akter, inget säkerhetskänsligt innehåll — håller eftersom personalen hjälpte till att skriva dem.",
+            "reflection": "Styrning som möter människors faktiska arbetsflöde blir följd. En sanktionerad fil med tydliga röda linjer slår både den förbjudna skuggpraktiken och det ogranskade friförallt — dataskydd by design, på skrivbordsnivå.",
+            "impacts": {
+              "doNoHarm": 2,
+              "independence": 1
+            }
+          },
+          {
+            "id": "bt-2c",
+            "label": "Se åt andra hållet tills vidare",
+            "detail": "Notera fyndet, återkom nästa år. Personalproduktiviteten är verklig och budgetarna är snäva.",
+            "consequence": "Ingenting förändras — synbart. Månader senare klistrar en översättare en skyddsincidentrapport i en gratis chattbot för att hinna en deadline. Leverantörens villkor tillåter träning på indata. Du får veta det av en journalist.",
+            "reflection": "Uppskjuten styrning är styrning som standard — med standardvärdena satta av leverantörer. Organisationen är ansvarig för data den låtsas inte veta rör på sig.",
+            "impacts": {
+              "doNoHarm": -2,
+              "humanity": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "bt-3",
+        "title": "Fyrtio jobb",
+        "narrative": "Affärscaset för logistikautomatisering är starkt: det skulle frigöra betydande medel för program varje år — och det skulle eliminera fyrtio administrativa tjänster, många innehavda av människor som tjänat organisationen i decennier, i en stad där er nationalförening är en stor arbetsgivare.",
+        "options": [
+          {
+            "id": "bt-3a",
+            "label": "Automatisera fullt ut och omdirigera besparingarna",
+            "detail": "Missionsmatematiken är skoningslös: de medlen vaccinerar, huserar, mättar. Tjänsterna avslutas med standardpaket.",
+            "consequence": "Programbudgetarna växer som prognostiserat. I stan är storyn inte matematiken utan metoden: fyrtio familjer får veta via ett omstruktureringsbrev. Fackliga samtal blir fientliga, lokalmedia bevakar de ”humanitära uppsägningarna”, och två programanställda säger upp sig i solidaritet.",
+            "reflection": "Mänsklighet är inte bara en fältprincip. En organisation som automatiserar sina egna utan omsorg lär varje betraktare — personal, samhälle, partner — hur bokstavligt man ska läsa dess värderingar.",
+            "impacts": {
+              "humanity": -2,
+              "doNoHarm": -1,
+              "independence": 1
+            }
+          },
+          {
+            "id": "bt-3b",
+            "label": "Automatisera långsamt, med omskolning och omplacering",
+            "detail": "Tvåårig övergång: automatisera i faser, omskola personal till nya roller (inklusive AI-tillsyn), garantera inga tvingade uppsägningar år ett.",
+            "consequence": "Besparingarna anländer i halvfart. Men tjugosex anställda flyttar till nya roller — åtta av dem till de datakvalitets- och tillsynsjobb som det nya systemet genuint behöver — och övergången blir storyn du berättar för nyanställda i stället för den du fruktar.",
+            "reflection": "Att inte skada inkluderar människorna inne i byggnaden. En rättvis övergång är långsammare och billigare än en fientlig när man räknar förtroende, retention och den institutionella kunskap som går ut med ett omstruktureringsbrev.",
+            "impacts": {
+              "humanity": 1,
+              "doNoHarm": 2,
+              "impartiality": 1
+            }
+          },
+          {
+            "id": "bt-3c",
+            "label": "Skjut upp automatiseringen helt",
+            "detail": "Den sociala kostnaden är för hög. Behåll funktionen manuell; återkom när avgångar öppnar utrymme.",
+            "consequence": "Ingen förlorar sitt jobb. Besparingarna materialiseras aldrig, en grannstads förening levererar snabbare, och ert logistikteam — medvetet om att beslutet fattades för dem, inte med dem — slutar tyst att föreslå förbättringar.",
+            "reflection": "Att skydda jobb genom att frysa frågan skyddar årets lista och inte nästa års relevans. Den humana vägen är inte ”automatisera aldrig” utan ”automatisera med människorna i designen, och tid att anpassa”.",
+            "impacts": {
+              "humanity": 1,
+              "independence": -1
+            }
+          }
+        ]
+      },
+      {
+        "id": "bt-4",
+        "title": "Vem styr maskinerna",
+        "narrative": "Sista styrelsepunkten: permanent styrning. Era piloter mångfaldigas, ramverket behöver en ägare, och någon måste kunna säga nej. Frågan är vem, med vilket mandat, och ansvarsskyldig inför vem.",
+        "options": [
+          {
+            "id": "bt-4a",
+            "label": "Lämna det åt ledningsgruppen",
+            "detail": "Ledningen hanterar redan risk. Inga nya strukturer, ingen overhead.",
+            "consequence": "Det fungerar tills det är mycket att göra. Beslut fattas i springorna mellan andra beslut; en högriskdriftsättning skickas under en insatstopp helt utan granskning, och efterhandsfrågan — ”vem höll utkik?” — har inget namn till svar.",
+            "reflection": "Styrning som lever i allas fritid lever ingenstans. Ansvarsskyldighet behöver ett namngivet organ med mandat, kalender och makt att pausa en driftsättning.",
+            "impacts": {
+              "doNoHarm": -2,
+              "independence": -1
+            }
+          },
+          {
+            "id": "bt-4b",
+            "label": "Skapa en AI-tillsynsgrupp med extern och samhällelig röst",
+            "detail": "En liten permanent grupp — program, ITK, dataskydd, en extern etiker och en samhällsrepresentant — med makt att godkänna, villkorlägga eller stoppa AI-användning, granskad årligen offentligt.",
+            "consequence": "Mötena är månatliga och ibland obekväma. Samhällsmedlemmens första veto — mot en ansiktsigenkänningspilot vid utdelningsplatser — besparar er en rubrik ni aldrig ser. Den årliga offentliga granskningen är stilla, och den stillheten är bedriften.",
+            "reflection": "Detta är IKT-resolutionen gjord till struktur: dataskydd, samhällsengagemang och skademildring förkroppsligade i ett organ som kan agera. Tillsyn med en utomstående röst fångar det insiders betalas för att inte märka.",
+            "impacts": {
+              "doNoHarm": 2,
+              "independence": 1
+            }
+          },
+          {
+            "id": "bt-4c",
+            "label": "Anlita en extern revisor en gång om året",
+            "detail": "Oberoende granskning, årlig rapport, ledningen agerar på fynden. På armlängds avstånd och prisvärt.",
+            "consequence": "Den första revisionen är noggrann och landar elva månader efter besluten den granskar. Fynden är korrekta, rekommendationerna förnuftiga, och den riskfylldaste piloten avslutades — av orelaterade skäl — tre månader innan rapporten anlände.",
+            "reflection": "Revision är en backspegel: oumbärlig, och blind för vad som närmar sig. Årlig extern granskning kompletterar stående tillsyn; den kan inte ersätta någon som tittar på vägen.",
+            "impacts": {
+              "doNoHarm": 1,
+              "independence": -1
+            }
+          }
+        ]
+      }
+    ],
+    "debrief": "Styrelsens prov är där varje annat scenario avgörs i förväg. Givartryck, skugg-AI, automatisering av er egen personal och frågan om vem som får säga nej — inget av detta är teknikfrågor; det är styrningsfrågor med teknik inuti. En nationalförening som skriver ner sina röda linjer, ger personalen en styrd fil, behandlar sina egna som en del av ”mänskligheten” och sätter samhällsröster där besluten fattas kommer automatiskt att fatta bättre fältval."
+  },
+  {
+    "id": "clinic-notes",
+    "title": "Den lyssnande mottagningen",
+    "tagline": "AI-transkribering på en vårdmottagning för papperslösa migranter i Sverige",
+    "role": "Verksamhetschef för vården, Röda Korsets vårdmottagning i Göteborg",
+    "context": "Din mottagning tar emot människor som inte kan eller vågar söka vård i den ordinarie sjukvården: papperslösa migranter, EU-medborgare utan försäkring och personer som har fått avslag på sin asylansökan. Frivilliga sjuksköterskor och läkare ägnar nästan halva varje besök åt att skriva journalanteckningar, ofta med hjälp av tolk. Ett nystartat vårdteknikföretag erbjuder gratis AI-transkribering som lyssnar på samtalet, översätter det och skriver journalanteckningen. Väntelistorna är långa och dina frivilliga håller på att bli utmattade.",
+    "topics": [
+      "AI-transkribering",
+      "Hälsouppgifter",
+      "Energiförbrukning"
+    ],
+    "roles": [
+      "Hälso- och sjukvård",
+      "Dataskydd",
+      "Frivilligsamordning"
+    ],
+    "debrief": "Den lyssnande mottagningen visar att administrativ AI aldrig bara handlar om administration. När människorna i rummet har all anledning att vara rädda för att spelas in är uppgiftsminimering, informerat samtycke, lokal behandling och en ärligt redovisad energibudget inga tillägg — de avgör om mottagningen över huvud taget förblir en trygg plats.",
+    "steps": [
+      {
+        "id": "cn-1",
+        "title": "Gratiserbjudandet",
+        "narrative": "Företagets verktyg spelar in hela vårdsamtalet, skickar ljudet till en stor talmodell som körs utanför EU och levererar en välformulerad anteckning på svenska inom en minut. Det är gratis i ett år — företaget vill visa upp ”AI för en god sak”. Ditt dataskyddsombud frågar vart inspelningarna tar vägen. Din mest erfarna frivilliga läkare undrar om patienterna fortfarande kommer att våga prata.",
+        "options": [
+          {
+            "id": "cn-1a",
+            "label": "Tacka ja till det kostnadsfria molnverktyget",
+            "detail": "Snabbast avlastning för de frivilliga. Fullständiga inspelningar lämnar mottagningen och behandlas utomlands av en modell som ni inte kan granska.",
+            "consequence": "Dokumentationstiden halveras inom en vecka. Sedan frågar en patients advokat om myndigheter kan begära ut inspelningar av hennes klient i ett utvisningsärende. Du kan inte säkert säga var ljudet lagras, hur länge eller vem som har tillgång till det. Ryktet sprids bland dem ni möter och tre återkommande patienter slutar komma.",
+            "reflection": "För människor som lever i rädsla för myndigheter kan själva inspelningen vara skadan. Ett gratisverktyg som betalas med de mest utsatta människornas känsligaste uppgifter är inte gratis. Resolutionen om informations- och kommunikationsteknik förpliktar rödakors- och rödahalvmånerörelsen att skydda personuppgifter just där konsekvenserna av en läcka är som störst.",
+            "impacts": {
+              "humanity": 1,
+              "doNoHarm": -2,
+              "independence": -1
+            }
+          },
+          {
+            "id": "cn-1b",
+            "label": "Prova en liten modell som körs på mottagningen",
+            "detail": "En kompakt talmodell på en lokal dator. Inget ljud lämnar byggnaden; anteckningarna är mindre välformulerade och behöver bearbetas mer.",
+            "consequence": "Det tar en månad att komma i gång och anteckningarna behöver rättas, särskilt på tigrinja och dari. Men inget lämnar mottagningen, ljudet raderas så snart anteckningen godkänts och datorn drar ungefär lika mycket el som en skrivbordslampa. De frivilliga sparar en tredjedel av sin skrivtid i stället för hälften.",
+            "reflection": "Lokala, rätt dimensionerade modeller ger mer kontroll på bekostnad av språklig finish. När behandlingen sker på plats vet ni var uppgifterna finns, hur länge de sparas och hur mycket energi behandlingen kräver — tre frågor som en humanitär organisation alltid bör kunna svara på.",
+            "impacts": {
+              "doNoHarm": 2,
+              "independence": 1,
+              "humanity": 1
+            }
+          },
+          {
+            "id": "cn-1c",
+            "label": "Ingen AI — finansiera frivilligt administrativt stöd i stället",
+            "detail": "Rekrytera frivilliga medicinska sekreterare som skriver anteckningar efter varje arbetspass.",
+            "consequence": "Det går bra att rekrytera bland studenter i Göteborg och patienterna märker ingen skillnad. Men det är svårt att behålla sekreterarna under tentamensperioderna och på kvällsmottagningen sitter läkarna åter och skriver till midnatt.",
+            "reflection": "Att säga nej till AI är ett legitimt val med verkliga kostnader, som ofta bärs av utmattade anställda och frivilliga. Frågan är inte om AI är bra eller dålig, utan om ett mindre resurskrävande alternativ hjälper människor bättre här.",
+            "impacts": {
+              "doNoHarm": 1,
+              "humanity": -1
+            }
+          }
+        ]
+      },
+      {
+        "id": "cn-2",
+        "title": "Samtycke i väntrummet",
+        "narrative": "Oavsett vilket verktyg ni använder måste patienterna få veta att de spelas in. Ditt team tar fram en samtyckesblankett. En frivillig föreslår en enkel kryssruta vid inskrivningen. En tolk varnar för att många patienter kommer att kryssa i vad som helst som någon i en rödakorsväst räcker fram, av rädsla för att bli avvisade.",
+        "options": [
+          {
+            "id": "cn-2a",
+            "label": "En kryssruta vid inskrivningen",
+            "detail": "Snabbt och juridiskt prydligt. Patienterna lämnar ett enda samtycke för alla framtida besök.",
+            "consequence": "99% lämnar samtycke. En senare granskning visar att de flesta patienter inte förstod vad de hade gått med på — flera trodde att det var ett villkor för att få vård.",
+            "reflection": "Samtycke i en beroendeställning är inte ett fritt samtycke. När människor behöver hjälp mäter en kryssruta följsamhet, inte förståelse.",
+            "impacts": {
+              "doNoHarm": -2,
+              "humanity": -1
+            }
+          },
+          {
+            "id": "cn-2b",
+            "label": "Fråga vid varje besök, med verklig möjlighet att säga nej",
+            "detail": "Vårdpersonalen frågar på patientens språk i början av varje besök. Ett nej påverkar inte vården.",
+            "consequence": "Ungefär en av fem patienter säger nej, främst de som nyligen har kommit. Deras anteckningar skrivs manuellt. Förtroendet växer: patienterna berättar för andra att mottagningen frågar och verkligen menar det.",
+            "reflection": "En möjlighet att avstå utan negativa följder är det som gör AI-stöd acceptabelt. Att behålla ett alternativ utan AI skyddar dem som behöver det mest.",
+            "impacts": {
+              "doNoHarm": 2,
+              "humanity": 1,
+              "impartiality": 1
+            }
+          },
+          {
+            "id": "cn-2c",
+            "label": "Spela bara in vårdpersonalens sammanfattning",
+            "detail": "Patientens röst spelas inte in. Efter besöket dikterar vårdpersonalen en kort sammanfattning i verktyget.",
+            "consequence": "Patientens egna ord hamnar aldrig i datorn. Tidsvinsten är mindre, men dikteringen går snabbt, ljudfilen är mycket liten och behandlingen kräver en bråkdel av energin för att transkribera hela samtalet.",
+            "reflection": "Uppgiftsminimering kan byggas in från början: ändra vad ni samlar in i stället för att skydda sådant ni inte borde ha samlat in. Mindre data innebär också mindre beräkning, lagring och energianvändning.",
+            "impacts": {
+              "doNoHarm": 2,
+              "humanity": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "cn-3",
+        "title": "Den dolda kostnaden",
+        "narrative": "Röda Korsets regionala organisation vill införa transkribering på alla tolv platser för vård och psykosocialt stöd i västra Sverige — och spara varje inspelning i fem år ”för att träna en bättre modell senare”. Din IT-frivilliga räknar på det: att lagra och gång på gång bearbeta tusentals timmar ljud skulle varje år kräva lika mycket el och kylning som ett helt serverrum.",
+        "options": [
+          {
+            "id": "cn-3a",
+            "label": "Spara allt för framtida träning",
+            "detail": "Mer data kan ge bättre modeller. Lagring är billigt och Sveriges elförsörjning är till största delen fossilfri.",
+            "consequence": "Arkivet växer till terabyte med de känsligaste samtal er organisation någonsin haft. Energianvändningen ökar varje månad. Ingen tränar någonsin modellen, men arkivet måste ändå skyddas, säkerhetskopieras och hållas i drift.",
+            "reflection": "Ren el gör inte slöseri ofarligt: el som används här kan inte användas för andra behov, och hårdvara har stor miljöpåverkan redan innan den slås på. Uppgifter som sparas ”för säkerhets skull” medför integritetsrisker och energikostnader utan slutdatum.",
+            "impacts": {
+              "doNoHarm": -2,
+              "humanity": -1
+            }
+          },
+          {
+            "id": "cn-3b",
+            "label": "Radera ljudet, mät och redovisa energianvändningen",
+            "detail": "Ljudet raderas inom 24 timmar. Varje mottagning redovisar energiåtgången per besök och siffrorna tas med i årsredovisningen.",
+            "consequence": "De första siffrorna överraskar alla: molnpiloten använde ungefär trettio gånger mer energi per anteckning än den lokala modellen. Styrelsen antar en energibudget per besök och två lokala verksamheter väljer den lokala modellen utifrån detta.",
+            "reflection": "Ni kan inte hantera en miljöpåverkan som ni vägrar mäta. Att redovisa AI:s energikostnad gör hållbarhet till en beslutsregel som lokalsamhällen och givare kan granska, i stället för en slogan.",
+            "impacts": {
+              "doNoHarm": 2,
+              "independence": 1
+            }
+          },
+          {
+            "id": "cn-3c",
+            "label": "Inför det bara där de frivilliga efterfrågar det",
+            "detail": "Inget krav för hela regionen. Verksamheterna väljer själva efter att ha granskat resultaten från din mottagning.",
+            "consequence": "Fem verksamheter inför det, sju avstår. Användningen — och energiförbrukningen — står i proportion till de faktiska behoven, men arbetssätten skiljer sig åt och dataskyddsombudet har nu fem konfigurationer att kontrollera.",
+            "reflection": "Uppskalning bör bygga på belagd nytta, inte entusiasm. Mindre miljöpåverkan uppnås ofta genom att helt enkelt inte införa verktyg där de inte behövs.",
+            "impacts": {
+              "doNoHarm": 1,
+              "humanity": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "cn-4",
+        "title": "När anteckningen är fel",
+        "narrative": "En patient kommer tillbaka med en infektion som har förvärrats. Den AI-skrivna anteckningen från hennes första besök angav ”inga kända allergier”. Hon hade sagt genom tolken att hon var allergisk mot penicillin. Den frivilliga läkaren godkände anteckningen i slutet av ett tolvtimmarspass utan att läsa den noggrant.",
+        "options": [
+          {
+            "id": "cn-4a",
+            "label": "Behandla det som ett enskilt mänskligt misstag",
+            "detail": "Påminn läkaren om att läsa mer noggrant. Behåll arbetsflödet som det är.",
+            "consequence": "Två månader senare godkänner en annan frivillig en annan felaktig anteckning. Mönstret är detsamma: trötta människor, långa pass och anteckningar som ser övertygande ut.",
+            "reflection": "Övertro på automatiserade system är förutsägbar: välformulerad text lockar till godkännande. Att skuldbelägga enskilda döljer ett konstruktionsfel som kommer att återkomma.",
+            "impacts": {
+              "doNoHarm": -2,
+              "humanity": -1
+            }
+          },
+          {
+            "id": "cn-4b",
+            "label": "Låt bara människor fylla i kritiska fält",
+            "detail": "Vårdpersonalen frågar alltid om och skriver själv in allergier, läkemedel och säkerhetsrisker. AI:n skriver bara den löpande texten.",
+            "consequence": "Anteckningarna tar lite längre tid och vid nästa granskning har felen i kritiska fält minskat till noll. Du berättar för patienten vad som hände, ber om ursäkt och förklarar förändringen — hon vill fortsätta komma.",
+            "reflection": "Meningsfull mänsklig kontroll innebär att utforma var människor fattar beslut, inte bara be dem skriva under. Att vara öppen mot den som berörs är en del av ansvarstagandet.",
+            "impacts": {
+              "doNoHarm": 2,
+              "humanity": 1
+            }
+          },
+          {
+            "id": "cn-4c",
+            "label": "Pausa AI och se över arbetssättet med patienterna",
+            "detail": "Stoppa transkriberingen i en månad och bjud in tidigare patienter och tolkar för att diskutera hur den bör fungera.",
+            "consequence": "Pausen kostar frivilligtimmar. Genomgången ger mottagningens hittills bästa idé: tolkarna läser tillbaka de viktigaste uppgifterna för patienterna innan anteckningen godkänns. Det går långsammare och fel blir sällsynta.",
+            "reflection": "De som berörs av ett system har ofta bäst förutsättningar att se var det brister. Att pausa för att lyssna är inte ett misslyckande — det är så humanitärt ansvarstagande fungerar i praktiken.",
+            "impacts": {
+              "doNoHarm": 2,
+              "humanity": -1,
+              "impartiality": 1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "invoice-engine",
+    "title": "Fakturamotorn",
+    "tagline": "Automatiserad ekonomiadministration på ett nationellt kontor i Nederländerna",
+    "role": "Ekonomi- och administrationschef, den nationella föreningens huvudkontor i Haag",
+    "context": "Ditt ekonomiteam hanterar 40 000 fakturor om året: leverantörer till tillfälliga boenden, kostnadsersättningar till frivilliga, betalningar till partnerorganisationer utomlands och kontantstöd till människor som drabbats av översvämningarna i Limburg. Tre av dina åtta anställda ska gå i pension. En stor programvaruleverantör erbjuder en AI-agent som läser och konterar fakturor, flaggar misstänkta bedrägerier och automatiskt godkänner rutinbetalningar. Styrelsen vill frigöra pengar till verksamheten.",
+    "topics": [
+      "Processautomatisering",
+      "Ekonomiskt ansvarstagande",
+      "Energiförbrukning"
+    ],
+    "roles": [
+      "Ekonomi och administration",
+      "Informations- och kommunikationsteknik",
+      "Revision och regelefterlevnad"
+    ],
+    "debrief": "Fakturamotorn visar att AI i administrationen påverkar vem som får betalt, vem som flaggas och hur mycket energi organisationen använder för detta. Effektivitet är ett legitimt humanitärt mål — men bara om människor behåller ansvaret för betalningar, flaggningar kan ifrågasättas och det minst resurskrävande verktyget som fungerar väljs framför det mest imponerande.",
+    "steps": [
+      {
+        "id": "ie-1",
+        "title": "Vilket verktyg passar uppgiften?",
+        "narrative": "Leverantörens agent kör varje faktura genom en stor generell AI-modell i molnet — även enkla fakturor som följer samma mall varje månad. Din controller konstaterar att 80% av era fakturor kommer från bara 200 återkommande leverantörer. En IT-frivillig föreslår att vanlig regelbaserad automatisering, tillsammans med en liten modell för resten som är mer svårtolkat, skulle klara det mesta.",
+        "options": [
+          {
+            "id": "ie-1a",
+            "label": "Köp hela AI-agenten",
+            "detail": "En plattform för allt. Varje faktura, enkel eller komplicerad, går genom en stor modell.",
+            "consequence": "Det fungerar imponerande bra. Det kostar också mer än personalen det ersätter, och användningsrapporten visar att varje enkel återkommande faktura kräver lika mycket beräkning som en lång chattkonversation — tiotusentals gånger om året.",
+            "reflection": "Att använda en stor AI-modell för en uppgift som en enkel regel klarar är som att skicka en lastbil för att leverera ett brev. Varje onödig förfrågan kostar energi, vatten och hårdvaruresurser.",
+            "impacts": {
+              "doNoHarm": -1,
+              "independence": -1
+            }
+          },
+          {
+            "id": "ie-1b",
+            "label": "Regler först, liten AI för resten",
+            "detail": "Enkel automatisering för återkommande fakturor; en liten modell läser bara de ovanliga; personalen hanterar undantag.",
+            "consequence": "Det tar tre månader att bygga tillsammans med ert IT-team. Återkommande fakturor går igenom med nästan ingen beräkning alls. Den lilla modellen hanterar handskrivna kvitton från frivilliga. Driftskostnaderna och energianvändningen är en bråkdel av leverantörens erbjudande.",
+            "reflection": "Resurssnål utformning är en princip, inte en kompromiss: börja med det enklaste verktyget och lägg bara till AI där den ger tydlig nytta. Så håller ni också systemet begripligt för revisorer.",
+            "impacts": {
+              "doNoHarm": 2,
+              "independence": 1
+            }
+          },
+          {
+            "id": "ie-1c",
+            "label": "Anställ och utbilda i stället",
+            "detail": "Ersätt dem som går i pension med två nyanställda och förbättra det befintliga systemet.",
+            "consequence": "Betalningarna förblir korrekta och ansvaret ligger kvar hos människor. Men rekryteringen tar månader, ärendebalansen växer till sex veckor och vissa små leverantörer i översvämningsområden får vänta för länge på betalning.",
+            "reflection": "Att inte automatisera är ett legitimt val — men sena betalningar orsakar också skada, särskilt för små lokala företag och frivilliga som lägger ut egna pengar.",
+            "impacts": {
+              "doNoHarm": 1,
+              "humanity": -1
+            }
+          }
+        ]
+      },
+      {
+        "id": "ie-2",
+        "title": "Bedrägeriflaggan",
+        "narrative": "De automatiska kontrollerna börjar flagga betalningar med ”hög risk”. Du ser ett mönster: ersättningar till frivilliga med icke-nederländska namn och överföringar till partnerorganisationer i Syrien och Sudan flaggas tre gånger så ofta. Varje flaggning stoppar betalningen i upp till tre veckor.",
+        "options": [
+          {
+            "id": "ie-2a",
+            "label": "Lita på flaggningarna — riskerna går först",
+            "detail": "Regelefterlevnad är inte förhandlingsbar. Stoppade betalningar är priset för säkerhet.",
+            "consequence": "Två partnerorganisationer i Sudan kan inte betala ut löner i tid. En frivillig med eritreansk bakgrund som köpt filtar för egna pengar väntar en månad på ersättning och slutar. Flaggningarna avslöjar inga verkliga bedrägerier.",
+            "reflection": "En modell som tränats på tidigare mönster återskapar tidigare misstänksamhet. När den tillämpas på namn och destinationer blir det diskriminering — av just de människor och partner som en humanitär organisation finns till för.",
+            "impacts": {
+              "impartiality": -2,
+              "humanity": -1,
+              "doNoHarm": -1
+            }
+          },
+          {
+            "id": "ie-2b",
+            "label": "Granska om flaggningarna är snedvridna",
+            "detail": "Pausa automatiska betalningsstopp, jämför flaggningarna med faktiska utfall och ta bort namn och nationalitet som signaler.",
+            "consequence": "Granskningen visar att flaggningarna främst fångade upp namn och geografi, inte risk. Efter ändringarna är andelen flaggningar jämn mellan grupperna, och årets två verkliga bedrägerifall upptäcks ändå — av en mänsklig utredare som följer upp ett tips.",
+            "reflection": "Opartiskhet gäller även administrativa system. Att pröva om automatiserade beslut leder till ojämlika utfall är en skyldighet, inte något valfritt.",
+            "impacts": {
+              "impartiality": 2,
+              "doNoHarm": 1
+            }
+          },
+          {
+            "id": "ie-2c",
+            "label": "Flaggorna ger bara råd; människor beslutar inom 48 timmar",
+            "detail": "Inga automatiska betalningsstopp. En ekonom granskar varje flaggning och måste fatta beslut inom två dagar.",
+            "consequence": "Teamet muttrar över merarbetet, men antalet stoppade betalningar minskar till nästan noll. Ekonomerna börjar också dokumentera varför de avfärdar flaggningar, vilket blir ett värdefullt underlag för att förbättra reglerna.",
+            "reflection": "Att behålla människor i beslutsfattandet — med en tidsgräns som skyddar den som väntar — balanserar kontroll och värdighet.",
+            "impacts": {
+              "impartiality": 1,
+              "humanity": 1,
+              "doNoHarm": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "ie-3",
+        "title": "Var sker beräkningarna?",
+        "narrative": "Leverantören planerar att flytta all databehandling till ett nytt datacenter i norra Nederländerna — samma region där lokalbefolkningen har protesterat mot att datacenter tar mark, el och vatten i anspråk. En lokal journalist frågar om Röda Korset är en del av problemet.",
+        "options": [
+          {
+            "id": "ie-3a",
+            "label": "Överlåt det åt leverantören",
+            "detail": "Var leverantören gör sina beräkningar är leverantörens sak. Deras hållbarhetsrapport säger ”koldioxidneutral”.",
+            "consequence": "Journalistens artikel lyfter fram er tystnad. När du ber leverantören om siffror visar sig ”koldioxidneutral” bygga på köpt klimatkompensation på annat håll; den faktiska vatten- och elanvändningen offentliggörs inte.",
+            "reflection": "Ansvaret slutar inte vid avtalet. Etisk upphandling innebär att fråga var beräkningarna sker och vad de kostar lokalsamhället och miljön.",
+            "impacts": {
+              "doNoHarm": -2,
+              "independence": -1
+            }
+          },
+          {
+            "id": "ie-3b",
+            "label": "Gör energiredovisning till ett avtalsvillkor",
+            "detail": "Kräv att leverantören årligen redovisar energi, vatten och driftplats, med rätt att säga upp avtalet om målen inte uppfylls.",
+            "consequence": "Förhandlingarna tar två månader extra. Leverantören går med på kraven, delvis för att andra ideella organisationer följer ert exempel. Ni publicerar den första rapporten — siffrorna är måttliga tack vare att ert system i första hand bygger på regler.",
+            "reflection": "Upphandling ger inflytande. När humanitära organisationer ställer gemensamma krav börjar leverantörer redovisa sådant de annars döljer.",
+            "impacts": {
+              "doNoHarm": 2,
+              "independence": 1
+            }
+          },
+          {
+            "id": "ie-3c",
+            "label": "Kör den lilla modellen på egna servrar",
+            "detail": "Kör fakturamodellen i ert befintliga serverrum, med el från solpanelerna på taket och ert gröna elavtal.",
+            "consequence": "Ert IT-team får ännu ett system att underhålla och prestandan sjunker under arbetstoppen vid årsskiftet. Men ni vet exakt vad systemet använder — och det är mindre än kontorets kaffemaskiner.",
+            "reflection": "Att äga infrastrukturen innebär både ansvar och kontroll. För små, jämna arbetsbelastningar kan lokal drift ge både större oberoende och lägre resursförbrukning.",
+            "impacts": {
+              "independence": 2,
+              "doNoHarm": 1,
+              "humanity": -1
+            }
+          }
+        ]
+      },
+      {
+        "id": "ie-4",
+        "title": "Vem godkänner?",
+        "narrative": "Systemet fungerar nu bra. Styrelsen föreslår det sista steget: låt det automatiskt godkänna och betala alla fakturor under 5 000 euro — även de små kontantstöden till översvämningsdrabbade hushåll i Limburg. Ingen människa skulle granska dem.",
+        "options": [
+          {
+            "id": "ie-4a",
+            "label": "Full automatisering under 5 000 euro",
+            "detail": "Maximal effektivitet. Undantag utreds i efterhand.",
+            "consequence": "Ett datafel vid import av en lista leder till dubbla utbetalningar till 300 hushåll, som sedan återkrävs automatiskt en vecka senare. Familjer som redan lagt pengarna på reparationer får kravbrev. Rubrikerna handlar inte om effektivitet.",
+            "reflection": "När automatiserade betalningar rör krisdrabbade människor kan fel orsaka skada i stor skala. Små belopp är inte små för dem som tar emot dem.",
+            "impacts": {
+              "doNoHarm": -2,
+              "humanity": -1
+            }
+          },
+          {
+            "id": "ie-4b",
+            "label": "Automatisera leverantörsbetalningar, låt människor godkänna stöd till enskilda",
+            "detail": "Vanliga leverantörsfakturor går igenom automatiskt. Betalningar till enskilda personer godkänns alltid av en människa.",
+            "consequence": "Större delen av volymen automatiseras; betalningarna som påverkar människors liv har fortfarande en namngiven ansvarig. När importfelet uppstår upptäcker en ekonom det innan en enda dubbelbetalning görs.",
+            "reflection": "Dra gränsen för automatisering där fel slutar vara administrativa och börjar få personliga konsekvenser.",
+            "impacts": {
+              "doNoHarm": 2,
+              "humanity": 1
+            }
+          },
+          {
+            "id": "ie-4c",
+            "label": "Automatisera, men publicera hur man begär rättelse",
+            "detail": "Automatisering under 5 000 euro, med ett tydligt telefonnummer och ett löfte om att rätta felaktiga betalningar inom 5 dagar.",
+            "consequence": "Telefonlinjen fångar snabbt upp problem och de flesta rättas inom några dagar. Men ansvaret för att upptäcka fel och klaga läggs på de drabbade — och de som har minst tid och svagast språkkunskaper klagar minst.",
+            "reflection": "En möjlighet att begära rättelse är nödvändig, men ersätter inte arbetet med att förebygga skada. Ansvarstagande fungerar bäst före felet, inte bara efteråt.",
+            "impacts": {
+              "doNoHarm": 1,
+              "humanity": 1,
+              "impartiality": -1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "volunteer-roster",
+    "title": "Frivilligschemat",
+    "tagline": "AI-baserad schemaläggning för frivilliga inom flyktingmottagandet i Polen",
+    "role": "Frivilligsamordnare, Röda Korsets lokalförening i Kraków",
+    "context": "Två år efter den första vågen av människor från Ukraina driver din lokalförening fortfarande mottagning, språkkaféer och en matutdelning. Du samordnar 1 800 frivilliga med kalkylblad, WhatsApp-grupper och många sena telefonsamtal. Pass står obemannade och samma pålitliga personer får frågan gång på gång. Ett polskt teknikföretag erbjuder ett AI-system som förutser behov, lägger schemat och skickar meddelanden till frivilliga automatiskt.",
+    "topics": [
+      "AI-baserad schemaläggning",
+      "Frivilligas välbefinnande",
+      "Energiförbrukning"
+    ],
+    "roles": [
+      "Frivilligsamordning",
+      "Operativ verksamhet",
+      "Skydd"
+    ],
+    "debrief": "Frivilligschemat visar att en AI som optimerar människors tid också fattar beslut om människor — vem som får förtroende, vem som förbises och vem som pressas för hårt. Frivilliga är inte resurser som ska utnyttjas maximalt. Ett bra system skyddar deras välbefinnande, samlar in så lite uppgifter om dem som möjligt och använder inte mer beräkningskraft än problemet kräver.",
+    "steps": [
+      {
+        "id": "vr-1",
+        "title": "Vad systemet vill veta",
+        "narrative": "För att förutse vem som kommer vill leverantören få tillgång till de frivilligas platsdata från mobilen, aktivitet på sociala medier och kalendrar, och ge varje person ett ”tillförlitlighetsbetyg”. Demonstrationen imponerar: systemet förutser utebliven närvaro med 85% träffsäkerhet.",
+        "options": [
+          {
+            "id": "vr-1a",
+            "label": "Koppla ihop allt — träffsäkerheten är viktig",
+            "detail": "Ju mer data, desto bättre schema.",
+            "consequence": "Förutsägelserna stämmer. Sedan får de frivilliga veta vad som sker. Flera ukrainska frivilliga, som själva är flyktingar, slutar omedelbart — de flydde ett krig där mobilspårning innebar fara. Andra känner sig övervakade på fritiden.",
+            "reflection": "Frivilliga är människor, inte datakällor. Att följa deras liv utanför uppdraget bryter förtroendet och kan utsätta dem som själva har skyddsbehov för fara.",
+            "impacts": {
+              "doNoHarm": -2,
+              "humanity": -1
+            }
+          },
+          {
+            "id": "vr-1b",
+            "label": "Bara det de frivilliga själva väljer att dela",
+            "detail": "Tillgänglighet som de själva anger, deras färdigheter och språk. Ingen spårning, inga tillförlitlighetsbetyg.",
+            "consequence": "Förutsägelserna blir mindre exakta. Men de frivilliga litar på systemet och håller sin tillgänglighet uppdaterad — vilket visar sig vara viktigare än någon spårningssignal.",
+            "reflection": "Uppgiftsminimering är respekt i praktiken. Information som människor lämnar frivilligt är ofta mer tillförlitlig än information som samlas in utan deras medverkan.",
+            "impacts": {
+              "doNoHarm": 2,
+              "humanity": 1
+            }
+          },
+          {
+            "id": "vr-1c",
+            "label": "En gemensam kalender, ingen AI",
+            "detail": "Ett enkelt schemaverktyg med öppen källkod. De frivilliga väljer sina egna pass.",
+            "consequence": "Det kostar nästan inget att driva och använder knappt någon energi. Populära pass fylls direkt; matutdelningen tidigt på morgonen står fortfarande obemannad och du ringer fortfarande samtalen klockan 6.",
+            "reflection": "Enkla verktyg räcker ofta — men det är värt att fråga vilka problem de lämnar olösta och för vem.",
+            "impacts": {
+              "doNoHarm": 1,
+              "independence": 1,
+              "humanity": -1
+            }
+          }
+        ]
+      },
+      {
+        "id": "vr-2",
+        "title": "Det optimerade schemat",
+        "narrative": "Schemaläggningssystemet lär sig att en liten grupp frivilliga nästan alltid säger ja. Det börjar ge dem de flesta tunga passen. En av dem — en pensionerad lärare som varit frivillig varje vecka i två år — berättar att hon inte längre kan sova.",
+        "options": [
+          {
+            "id": "vr-2a",
+            "label": "Fortsätt optimera bemanningen",
+            "detail": "De som kommer behöver full bemanning. Villiga frivilliga vill hjälpa till.",
+            "consequence": "Bemanningsgraden når 98%. Inom tre månader blir sex av era mest erfarna frivilliga utmattade och slutar samtidigt. Systemet anpassar sig genom att pressa nästa villiga grupp hårdare.",
+            "reflection": "När man optimerar för ett enda mått blir allt annat osynligt. Frivilligas välbefinnande är en del av humaniteten — den gäller både dem som hjälper och dem som får hjälp.",
+            "impacts": {
+              "humanity": -2,
+              "doNoHarm": -1
+            }
+          },
+          {
+            "id": "vr-2b",
+            "label": "Bygg in gränser och vila",
+            "detail": "Ett högsta antal pass per vecka, obligatorisk vila efter nattpass och ett ”nej tack” som aldrig räknas någon till nackdel.",
+            "consequence": "Bemanningsgraden sjunker till 90% och ni rekryterar för att fylla luckorna. Betydligt fler frivilliga stannar kvar och den pensionerade läraren kommer tillbaka efter en månads vila.",
+            "reflection": "Bra system bygger in omsorg. Regler som skyddar människor från överbelastning är humanitära skyddsåtgärder, inte ineffektivitet.",
+            "impacts": {
+              "humanity": 2,
+              "doNoHarm": 1
+            }
+          },
+          {
+            "id": "vr-2c",
+            "label": "Låt de frivilliga se och påverka reglerna",
+            "detail": "Publicera hur schemat läggs och inrätta en frivilligpanel som kan ändra prioriteringarna.",
+            "consequence": "Panelen efterfrågar rättvisa mellan språkgrupper och rullande helgpass. Det tar längre tid att ändra systemet, men förtroendet för det blir mycket större.",
+            "reflection": "Öppenhet om hur beslut fattas gör det möjligt att ifrågasätta dem. Gemensamma regler är lättare att acceptera än dolda.",
+            "impacts": {
+              "humanity": 1,
+              "impartiality": 1,
+              "doNoHarm": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "vr-3",
+        "title": "Meddelanden som aldrig tar slut",
+        "narrative": "Leverantören föreslår en AI-chattassistent som skickar personliga meddelanden, påminnelser och ”motiverande puffar” till varje frivillig. En stor språkmodell skriver varje meddelande från grunden — ungefär 30 000 meddelanden i månaden på polska, ukrainska och engelska.",
+        "options": [
+          {
+            "id": "vr-3a",
+            "label": "Aktivera personliga AI-meddelanden",
+            "detail": "Varma, anpassade meddelanden på tre språk, genererade ett i taget.",
+            "consequence": "De frivilliga tycker först att meddelandena är trevliga, sedan märkliga — en får ”vi saknar dig!” medan hon ligger på sjukhus. Energirapporten visar att meddelandena nu står för systemets största energianvändning, för texter som säger ungefär samma sak varje gång.",
+            "reflection": "Att generera ny text för varje rutinmeddelande mångdubblar beräkningarna för liten nytta. Generativ AI är inte gratis: varje meddelande kostar energi och vatten.",
+            "impacts": {
+              "doNoHarm": -2,
+              "humanity": -1
+            }
+          },
+          {
+            "id": "vr-3b",
+            "label": "Mänskligt skrivna mallar på varje språk",
+            "detail": "Frivilliga från varje språkgrupp skriver korta meddelandemallar en gång. Systemet fyller i namn och tider.",
+            "consequence": "Meddelandena låter som riktiga människor eftersom riktiga människor har skrivit dem. Beräkningsbehovet minskar till nästan ingenting och de frivilliga uppskattar att skriva mallarna tillsammans.",
+            "reflection": "Ofta är rätt mängd AI mindre AI. Att återanvända mänskligt skriven text är billigare, resurssnålare och mer förtroendeingivande.",
+            "impacts": {
+              "doNoHarm": 2,
+              "humanity": 1,
+              "independence": 1
+            }
+          },
+          {
+            "id": "vr-3c",
+            "label": "Färre meddelanden, på de frivilligas villkor",
+            "detail": "De frivilliga väljer hur och hur ofta de vill bli kontaktade. Standardinställningen är en sammanfattning i veckan.",
+            "consequence": "Antalet meddelanden minskar med 80%. Vissa pass fylls lite långsammare, men de frivilliga säger att de känner sig respekterade i stället för jagade.",
+            "reflection": "Att låta människor sätta sina egna gränser minskar både pressen och miljöpåverkan.",
+            "impacts": {
+              "doNoHarm": 1,
+              "humanity": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "vr-4",
+        "title": "En begäran från myndigheterna",
+        "narrative": "De regionala myndigheterna ber om uppgifter från ert frivilligschema — namn, nationalitet och tillgänglighet — för att planera sina egna insatser inom civilt försvar. Systemet kan exportera allt med ett klick. Många av era frivilliga är ukrainska medborgare med tillfälligt skydd.",
+        "options": [
+          {
+            "id": "vr-4a",
+            "label": "Dela hela exporten",
+            "detail": "Gott samarbete med myndigheterna stärker den samlade insatsen.",
+            "consequence": "Uppgifterna används för planering och senare för att kontrollera uppehållsstatus. De frivilliga får veta det genom en lokal nyhetsrapport. Rekryteringen av ukrainska frivilliga rasar.",
+            "reflection": "Uppgifter som lämnats för ett syfte och används för ett annat sviker förtroendet — och kan äventyra rörelsens självständighet och neutralitet i de berörda samhällenas ögon.",
+            "impacts": {
+              "independence": -2,
+              "neutrality": -1,
+              "doNoHarm": -2
+            }
+          },
+          {
+            "id": "vr-4b",
+            "label": "Dela bara sammanställda siffror",
+            "detail": "Erbjud antal per kompetens, språk och distrikt — inga namn eller nationaliteter.",
+            "consequence": "Myndigheterna får vad de behöver för planeringen. Först muttrar de, sedan använder de ert format som mall för andra organisationer.",
+            "reflection": "Ändamålsbegränsning innebär att dela det som behövs för det angivna syftet, och inget mer. Sammanställda uppgifter skyddar individer och möjliggör samtidigt samarbete.",
+            "impacts": {
+              "independence": 1,
+              "neutrality": 1,
+              "doNoHarm": 2
+            }
+          },
+          {
+            "id": "vr-4c",
+            "label": "Be de frivilliga att aktivt samtycka",
+            "detail": "Förklara begäran och låt varje frivillig bestämma om de vill finnas med på myndigheternas lista.",
+            "consequence": "Ungefär hälften samtycker. Resten är tacksamma för att ha blivit tillfrågade. Det tar tre veckor — myndigheterna tycker att det är långsamt, men accepterar det.",
+            "reflection": "Samtycke och öppenhet låter människor behålla kontrollen över sina egna uppgifter, även när begäran kommer från en samarbetspartner.",
+            "impacts": {
+              "independence": 1,
+              "doNoHarm": 1,
+              "humanity": 1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "heat-wave",
+    "title": "Värmekartan",
+    "tagline": "AI-prognoser för att skydda äldre under en värmebölja på Sicilien",
+    "role": "Ansvarig för akut hälso- och sjukvård, Röda Korsets regionala kommitté i Palermo",
+    "context": "Sommartemperaturerna på Sicilien överstiger nu regelbundet 45°C. Förra juli dog äldre ensamboende i sina lägenheter innan någon hann se till dem. Ett europeiskt forskningskonsortium erbjuder en AI-modell som kombinerar väderprognoser, journaluppgifter, telefondata och satellitbilder för att förutse vilka gator och människor som löper störst risk — så att era frivilliga vet var de ska knacka på först. För att köra modellen krävs ett kraftfullt datorkluster i Nordeuropa.",
+    "topics": [
+      "Prediktiv AI",
+      "Klimatanpassning",
+      "Energiförbrukning"
+    ],
+    "roles": [
+      "Akut hälso- och sjukvård",
+      "Informationshantering",
+      "Lokalsamhällets delaktighet"
+    ],
+    "debrief": "Värmekartan belyser en svår paradox: AI som används för att hantera klimatförändringarna kan själv bidra till den energi- och resursanvändning som driver dem. Prognoser kan rädda liv, men bara om de inte utestänger människor som modellen inte ser, inte samlar in mer data än nödvändigt och dimensioneras med en ärlig bedömning av sin egen miljöpåverkan.",
+    "steps": [
+      {
+        "id": "hw-1",
+        "title": "Hur stor modell behövs?",
+        "narrative": "Konsortiets modell är enorm: den bearbetar europeiska satellitbilder och klimatsimuleringar på nytt med några timmars mellanrum. Din informationsansvariga uppskattar att en sommars drift skulle förbruka lika mycket el som en liten siciliansk by. Ett lokalt universitet erbjuder ett enklare alternativ: ett statistiskt värmeriskindex som bygger på prognoser, byggnaders ålder och åldersuppgifter per bostadsområde.",
+        "options": [
+          {
+            "id": "hw-1a",
+            "label": "Använd den stora AI-modellen",
+            "detail": "De mest exakta prognoserna som finns — med samma energiförbrukning som en by.",
+            "consequence": "Prognoserna är utmärkta för stadskärnan. Men modellens stora beräkningsbehov gör att den bara körs två gånger om dagen, och dess stora miljöpåverkan blir en nyhet i italiensk press: ”Röda Korset bekämpar värme med en maskin som värmer planeten”.",
+            "reflection": "Verktyg för klimatanpassning måste bedömas utifrån sin egen klimatpåverkan. Den kraftfullaste modellen är inte automatiskt den mest humana.",
+            "impacts": {
+              "humanity": 1,
+              "doNoHarm": -2
+            }
+          },
+          {
+            "id": "hw-1b",
+            "label": "Använd det enkla värmeriskindexet",
+            "detail": "Mindre exakt, kan köras på en bärbar dator och går att förklara för alla frivilliga.",
+            "consequence": "Indexet pekar ut samma högriskområden i 90% av fallen. De frivilliga förstår varför en gata är röd och lokala företrädare kan korrigera underlaget — vilket de gör genom att lägga till två bostadsområden som saknades i uppgifterna.",
+            "reflection": "Enkla, förklarbara modeller öppnar för delaktighet och rättelser. Ändamålsenligt är ofta bättre än det allra senaste.",
+            "impacts": {
+              "doNoHarm": 2,
+              "humanity": 1,
+              "independence": 1
+            }
+          },
+          {
+            "id": "hw-1c",
+            "label": "Stor modell, men bara vid värmevarningar",
+            "detail": "Kör den stora modellen bara när den nationella myndigheten utfärdar en röd varning.",
+            "consequence": "Energianvändningen minskar med 80%. Men modellen får en ”kallstart” på varningsdagarna och behöver timmar för att ge användbara resultat — den första och dödligaste dagen är den som täcks sämst.",
+            "reflection": "Att begränsa användningen är en god utgångspunkt. Men kompromisser måste prövas mot när människor faktiskt löper störst risk.",
+            "impacts": {
+              "doNoHarm": 1,
+              "humanity": -1
+            }
+          }
+        ]
+      },
+      {
+        "id": "hw-2",
+        "title": "Vem är osynlig?",
+        "narrative": "Modellen bygger på telefondata och registrerade journaluppgifter. Era frivilliga påpekar vilka som saknas: papperslösa migrantarbetare inom jordbruket som bor i informella bosättningar utanför staden och äldre utan smarttelefon. Ingen av grupperna syns på värmekartan.",
+        "options": [
+          {
+            "id": "hw-2a",
+            "label": "Lita på kartan",
+            "detail": "Antalet frivilliga är begränsat. Gå dit uppgifterna visar att risken är störst.",
+            "consequence": "Besöken är effektiva och många liv skyddas i staden. I en informell bosättning nära Campobello läggs två lantarbetare in på sjukhus med värmeslag. Ingen hade besökt dem.",
+            "reflection": "Data visar vilka som räknas, inte vilka som är i fara. Att fördela hjälp enbart utifrån data kan i det tysta utestänga de mest utsatta.",
+            "impacts": {
+              "impartiality": -2,
+              "humanity": -1
+            }
+          },
+          {
+            "id": "hw-2b",
+            "label": "Avsätt team för dem som saknas på kartan",
+            "detail": "En tredjedel av frivilligkapaciteten går till platser och grupper som uppgifterna inte fångar upp, med vägledning från lokala kontakter.",
+            "consequence": "Täckningen i staden blir något glesare. Besöken i bosättningarna ger vatten, skugga och tidig behandling till hundratals arbetare som modellen aldrig visste fanns.",
+            "reflection": "Opartiskhet innebär hjälp efter behov, inte efter synlighet. Mänsklig kunskap måste korrigera uppgifternas blinda fläckar.",
+            "impacts": {
+              "impartiality": 2,
+              "humanity": 1
+            }
+          },
+          {
+            "id": "hw-2c",
+            "label": "Samla in mer data om dem som saknas",
+            "detail": "Be migrantarbetare registrera sin plats i en mobilapp så att modellen kan ta med dem.",
+            "consequence": "Få registrerar sig — många är rädda för migrationsmyndigheterna. De som gör det skapar en datamängd som konsortiet senare ber att få dela med andra partner.",
+            "reflection": "Att göra osynliga människor synliga för ett system kan utsätta dem för nya risker. Ibland är det säkrare att arbeta utan dessa uppgifter än att fylla luckorna.",
+            "impacts": {
+              "impartiality": 1,
+              "doNoHarm": -2
+            }
+          }
+        ]
+      },
+      {
+        "id": "hw-3",
+        "title": "Att kyla servrarna",
+        "narrative": "Konsortiet föreslår att ett lokalt datorkluster installeras i Palermo för att göra prognoserna snabbare. Under en värmebölja skulle servrarna själva behöva ständig luftkonditionering — med el från samma ansträngda elnät som håller äldres fläktar i gång. Under förra årets värmebölja blev delar av staden strömlösa.",
+        "options": [
+          {
+            "id": "hw-3a",
+            "label": "Installera det lokala klustret",
+            "detail": "Snabbare prognoser, lokal kontroll.",
+            "consequence": "På den hetaste dagen ber nätoperatören om frivilliga neddragningar. Era servrar fortsätter att köras — och kylas — medan två bostadsområden har roterande strömavbrott.",
+            "reflection": "AI-infrastruktur konkurrerar med människor om energi och vatten, ibland just när båda resurserna är som knappast. Den konkurrensen är en humanitär fråga.",
+            "impacts": {
+              "doNoHarm": -2,
+              "humanity": -1
+            }
+          },
+          {
+            "id": "hw-3b",
+            "label": "Välj en resurssnål lösning med solenergi",
+            "detail": "Kör det enkla indexet på bärbara datorer i ledningscentralen, med el från solpaneler på taket och batterireserv.",
+            "consequence": "Systemet fungerar även under strömavbrottet. Batterierna håller också ledningscentralens telefoner och läkemedelskylskåp i gång.",
+            "reflection": "Motståndskraftig, energisnål utformning skyddar verksamheten när infrastrukturen sviktar — just då krisverktyg behövs mest.",
+            "impacts": {
+              "doNoHarm": 2,
+              "independence": 1
+            }
+          },
+          {
+            "id": "hw-3c",
+            "label": "Gör beräkningarna i Nordeuropa med förnybar energi",
+            "detail": "Låt de tunga beräkningarna ske i ett vattenkraftsdrivet datacenter i Norge eller Sverige.",
+            "consequence": "Det lokala elnätet skonas och elen är förnybar. Men uppkopplingen under värmeböljan är opålitlig och ni är beroende av en förbindelse som ni inte kontrollerar när den behövs som mest.",
+            "reflection": "Att flytta beräkningar till ren energi minskar utsläppen men inte beroendet. Väg in både miljöpåverkan och vem som behåller kontrollen i en kris.",
+            "impacts": {
+              "doNoHarm": 1,
+              "independence": -1
+            }
+          }
+        ]
+      },
+      {
+        "id": "hw-4",
+        "title": "Att knacka på dörren",
+        "narrative": "På varningsdagar ger systemet varje frivillig en adresslista rangordnad efter beräknad risk. En frivillig frågar: ”Vad säger jag när en äldre man frågar varför vi valde honom?” En annan berättar att vissa boende känner sig stämplade som ”på väg att dö”.",
+        "options": [
+          {
+            "id": "hw-4a",
+            "label": "Förklara inte — hjälp bara",
+            "detail": "Modellen är för komplicerad för att förklara vid dörren.",
+            "consequence": "De flesta tar emot besöket. Några öppnar inte dörren. Ett rykte sprids om att Röda Korset har hemliga listor från sjukhuset.",
+            "reflection": "När människor inte vet varför de har valts ut fylls tomrummet av misstänksamhet. Brist på insyn urholkar det förtroende som humanitärt arbete bygger på.",
+            "impacts": {
+              "doNoHarm": -1,
+              "humanity": -1
+            }
+          },
+          {
+            "id": "hw-4b",
+            "label": "Förklara enkelt och ge möjlighet att avstå",
+            "detail": "En enkel formulering: ”Den här gatan är varm och här bor många äldre. Vill du att vi tittar till dig under värmeböljan?” Människor kan säga nej och tas bort från listan.",
+            "consequence": "Nästan alla säger ja. Några avstår och deras val respekteras. Grannar börjar tipsa de frivilliga om andra som bor ensamma.",
+            "reflection": "Att tydligt förklara varför hjälp erbjuds — och acceptera ett nej — respekterar människors värdighet och gör en prognos till en relation.",
+            "impacts": {
+              "humanity": 2,
+              "doNoHarm": 1
+            }
+          },
+          {
+            "id": "hw-4c",
+            "label": "Låt bostadsområdena ansvara för listan",
+            "detail": "Dela värmekartan på områdesnivå med församlingsgrupper och boendeföreningar, som bestämmer vilka de ska se till.",
+            "consequence": "Täckningen blir ojämn — stark i välorganiserade områden, svag på andra håll. Men där det fungerar fortsätter tillsynen hela sommaren, utan att någon modell behövs.",
+            "reflection": "Att ge lokalsamhällen ansvar bygger varaktig kapacitet, men ni behöver fortfarande uppmärksamma dem som saknar en stark gemenskap omkring sig.",
+            "impacts": {
+              "humanity": 1,
+              "independence": 1,
+              "impartiality": -1
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

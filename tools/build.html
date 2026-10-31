@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Build the game — AI in Humanitarian Action</title>
+  <link rel="stylesheet" href="tools.css" />
+</head>
+<body>
+  <main>
+    <h1>Build the game</h1>
+    <p>After editing files in <b>content/</b>, use this page to make a fresh <b>START-HERE.html</b>. Everything happens on your computer — nothing is uploaded.</p>
+    <ol>
+      <li>Click the button and choose the whole game folder (<b>ai-humanitarian-game</b>). Your browser may ask to confirm — that is fine.</li>
+      <li>Your content is checked first. Fix any red items and try again.</li>
+      <li>Click <b>Download START-HERE.html</b> and save it into the game folder, replacing the old one.</li>
+    </ol>
+    <label class="pick">Choose game folder<input id="dir" type="file" webkitdirectory directory multiple /></label>
+    <div id="out"></div>
+  </main>
+  <script src="checker.js"></script>
+  <script src="builder.js"></script>
+  <script src="tools.js"></script>
+  <script>
+    pickFolder(function (files, out) {
+      var r = checkContent(files);
+      out.innerHTML = report(r);
+      if (r.errors.length) return;
+      try {
+        var g = buildGame(files);
+        var url = URL.createObjectURL(new Blob([g.html], { type: "text/html" }));
+        out.innerHTML += '<p class="ok">Ready: ' + g.scenarioCount + " scenarios, languages: " + g.languages.join(", ") +
+          '.</p><a class="btn" download="START-HERE.html" href="' + url + '">Download START-HERE.html</a>' +
+          ' <a class="btn ghost" target="_blank" href="' + url + '">Try it first</a>';
+      } catch (e) { out.innerHTML += '<p class="err">' + esc(e.message) + "</p>"; }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+{
+  "_help": "Copy everything inside the { } of \"scenario\" below and paste it into the list in scenarios-en.json (add a comma after the previous scenario). Keep ids short, lowercase, with dashes, and unique. Impacts are -2 (harms the principle) to +2 (strengthens it); leave a principle out if it is not affected. Principles: humanity, impartiality, neutrality, independence, doNoHarm. Energy and environmental costs count under doNoHarm. 'colors' is optional: two hex colours for the card.",
+  "scenario": {
+    "id": "my-new-scenario",
+    "title": "The Translation Desk",
+    "tagline": "Machine translation for asylum information in Vienna",
+    "role": "Communications Lead, Red Cross branch in Vienna",
+    "context": "Write 3–5 sentences: where, who is affected, what pressure the team is under, and what AI option is on the table — including its energy or environmental cost.",
+    "topics": ["Machine translation", "Information access"],
+    "roles": ["Communications", "Protection"],
+    "colors": ["#1d4ed8", "#38bdf8"],
+    "debrief": "One or two sentences to reflect on after the last decision.",
+    "steps": [
+      {
+        "id": "mn-1",
+        "title": "First decision title",
+        "narrative": "What is happening now and what you must decide.",
+        "options": [
+          {
+            "id": "mn-1a",
+            "label": "Short name of option A",
+            "detail": "One line describing the option.",
+            "consequence": "What happens as a result.",
+            "reflection": "A question or insight for the player.",
+            "impacts": { "humanity": 1, "doNoHarm": -1 }
+          },
+          {
+            "id": "mn-1b",
+            "label": "Short name of option B",
+            "detail": "One line describing the option.",
+            "consequence": "What happens as a result.",
+            "reflection": "A question or insight for the player.",
+            "impacts": { "impartiality": 1, "doNoHarm": 1 }
+          },
+          {
+            "id": "mn-1c",
+            "label": "Short name of option C",
+            "detail": "One line describing the option.",
+            "consequence": "What happens as a result.",
+            "reflection": "A question or insight for the player.",
+            "impacts": { "independence": -1, "humanity": 2 }
+          }
+        ]
+      },
+      {
+        "id": "mn-2",
+        "title": "Second decision title",
+        "narrative": "Repeat the step block for each decision (the other scenarios use 4).",
+        "options": [
+          {
+            "id": "mn-2a",
+            "label": "Option A",
+            "detail": "…",
+            "consequence": "…",
+            "reflection": "…",
+            "impacts": { "neutrality": 1 }
+          },
+          {
+            "id": "mn-2b",
+            "label": "Option B",
+            "detail": "…",
+            "consequence": "…",
+            "reflection": "…",
+            "impacts": { "doNoHarm": -2 }
+          }
+        ]
+      }
+    ]
+  }
+}

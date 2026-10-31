@@ -1,0 +1,2217 @@
+[
+  {
+    "id": "flood-line",
+    "title": "La ligne de crue",
+    "tagline": "Un chatbot IA pour les communautés sinistrées en Asie du Sud",
+    "role": "Chef(fe) des opérations d’urgence, Société nationale d’un pays du delta en Asie du Sud",
+    "context": "Des semaines de pluies de mousson ont déplacé plus de 200 000 personnes à travers le delta. Votre ligne téléphonique est débordée : les appelants attendent des heures pour obtenir des informations sur les abris, les distributions et les proches disparus. Un partenaire télécom propose un chatbot IA gratuit qui répond dans trois langues locales. Votre équipe de quarante personnes est épuisée, et l’eau continue de monter.",
+    "topics": [
+      "Chatbots IA",
+      "Engagement communautaire",
+      "Protection des données"
+    ],
+    "roles": [
+      "Opérations d’urgence",
+      "Gestion de l’information",
+      "Engagement communautaire"
+    ],
+    "steps": [
+      {
+        "id": "fl-1",
+        "title": "Quarante-huit heures",
+        "narrative": "Le fournisseur affirme que le chatbot peut être en ligne en 48 heures, entraîné sur les FAQ des inondations passées. Votre chargé(e) de gestion de l’information prévient que les réponses n’ont pas été vérifiées pour cette urgence. Un pilote complet avec révision humaine prendrait deux semaines — pendant que des gens dorment dehors.",
+        "options": [
+          {
+            "id": "fl-1a",
+            "label": "Lancer en 48 heures",
+            "detail": "La vitesse avant la vérification. Les réponses partent sans révision, et vous corrigez au fur et à mesure.",
+            "consequence": "En trois jours, le chatbot répond à 40 000 questions. Mais les équipes de terrain rapportent qu’environ une réponse sur douze est fausse — y compris des indications vers un abri d’un district où le site a fermé la veille. Le personnel passe la semaine à courir après les corrections sur WhatsApp.",
+            "reflection": "La vitesse peut sauver des vies, mais une information automatisée non vérifiée peut elle-même causer du tort. La Résolution TIC engage le Mouvement à éviter et à atténuer les préjudices causés aux personnes affectées — y compris ceux causés par les outils que nous déployons.",
+            "impacts": {
+              "humanity": 1,
+              "doNoHarm": -2
+            }
+          },
+          {
+            "id": "fl-1b",
+            "label": "Mener d’abord un pilote de deux semaines",
+            "detail": "Des réviseurs humains vérifient chaque modèle de réponse avant le lancement. Plus lent, mais vérifié.",
+            "consequence": "Le chatbot est lancé le jour 14 avec un taux de précision de 98 % sur les réponses vérifiées. Entre-temps, la ligne reste saturée et certaines communautés reçoivent l’information tard — mais ce qu’elles reçoivent est fiable, et la confiance dans le service tient bon.",
+            "reflection": "La vérification coûte du temps, et le temps coûte de la portée. Mais une information fiable fait partie d’une assistance humaine et impartiale : une réponse qui envoie quelqu’un dans la mauvaise direction n’est pas de l’aide.",
+            "impacts": {
+              "humanity": -1,
+              "doNoHarm": 2,
+              "impartiality": 1
+            }
+          },
+          {
+            "id": "fl-1c",
+            "label": "Renoncer au chatbot, renforcer la ligne",
+            "detail": "Recruter et former des opérateurs temporaires. Aucun risque technologique nouveau, mais beaucoup moins de portée.",
+            "consequence": "Vous formez 25 opérateurs temporaires en dix jours. La qualité des réponses est élevée et chaque appelant parle à une personne — mais la ligne ne couvre toujours qu’une fraction de la demande, et de nombreuses familles déplacées ne parviennent tout simplement jamais à passer.",
+            "reflection": "Choisir de ne pas utiliser l’IA est aussi une décision qui a des conséquences. L’indépendance vis-à-vis des fournisseurs est préservée, mais l’humanité demande si un outil accessible, soigneusement gouverné, aurait pu soulager davantage de souffrances.",
+            "impacts": {
+              "humanity": -1,
+              "doNoHarm": 1,
+              "independence": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "fl-2",
+        "title": "Ce dont le chatbot se souvient",
+        "narrative": "La configuration par défaut du fournisseur enregistre tout : numéros de téléphone, localisations approximatives et chaque question posée — « pour améliorer le service ». Votre point focal protection des données remarque qu’une liste de personnes déplacées, leurs localisations et leurs besoins est exactement le type de jeu de données que les normes de protection des données du Mouvement existent pour protéger.",
+        "options": [
+          {
+            "id": "fl-2a",
+            "label": "Tout enregistrer pour un meilleur service",
+            "detail": "Les journaux complets alimentent l’analytique du fournisseur. La personnalisation s’améliore.",
+            "consequence": "Les réponses deviennent nettement plus pertinentes. Des mois plus tard, vous apprenez que les journaux ont servi à entraîner un produit commercial, et qu’il n’existe aucun moyen pratique de retirer les données de 40 000 personnes déplacées qui n’ont jamais accepté cela.",
+            "reflection": "Les personnes affectées ont rarement l’occasion de négocier leur consentement en temps de crise. L’engagement de protection des données de la Résolution TIC considère leurs données comme leur appartenant : collectées pour une finalité déclarée, protégées, et jamais réutilisées en silence.",
+            "impacts": {
+              "humanity": 1,
+              "doNoHarm": -2,
+              "independence": -1
+            }
+          },
+          {
+            "id": "fl-2b",
+            "label": "Collecter le minimum",
+            "detail": "Sessions anonymes, aucun identifiant, limites de conservation au contrat. Moins de personnalisation.",
+            "consequence": "Le chatbot ne peut pas reconnaître les utilisateurs qui reviennent, ce qui en frustre certains. Mais lorsqu’un ministère demande les données des utilisateurs deux mois plus tard, il n’y a rien d’identifiant à remettre — et vos équipes peuvent le dire honnêtement à la radio.",
+            "reflection": "La minimisation des données est le héros discret de la pratique responsable des données : on ne peut ni fuiter, ni perdre, ni être forcé de remettre des données jamais collectées. Cela protège aussi la neutralité si des parties au conflit s’y intéressent plus tard.",
+            "impacts": {
+              "doNoHarm": 2,
+              "neutrality": 1
+            }
+          },
+          {
+            "id": "fl-2c",
+            "label": "Partager les journaux avec le partenaire télécom",
+            "detail": "Ils offrent de l’analytique réseau en échange. Les utilisateurs affectés ne sont pas consultés.",
+            "consequence": "L’analytique vous aide à cartographier la demande. Puis un journaliste demande pourquoi les questions et localisations de personnes déplacées affluent vers une entreprise privée. L’article paraît dans la presse nationale ; la confiance des communautés dans la ligne chute brutalement.",
+            "reflection": "La redevabilité envers les personnes affectées inclut la capacité d’expliquer — avant qu’elles ne le lisent dans la presse — qui détient leurs données et pourquoi. Les conditions éthiques des partenariats relèvent de l’achat, pas de la communication de crise après coup.",
+            "impacts": {
+              "doNoHarm": -2,
+              "independence": -1
+            }
+          }
+        ]
+      },
+      {
+        "id": "fl-3",
+        "title": "Mauvaises directions",
+        "narrative": "Un délégué de terrain appelle : le chatbot envoie des familles vers un point de distribution fermé depuis deux jours. Environ 300 personnes ont marché sous la chaleur, certaines avec de jeunes enfants. Le fournisseur peut corriger la réponse en quelques heures — mais vous savez désormais que d’autres réponses peuvent être périmées.",
+        "options": [
+          {
+            "id": "fl-3a",
+            "label": "Le laisser en ligne pendant les corrections",
+            "detail": "Le service reste actif. Les correctifs arrivent réponse par réponse au fil de la semaine.",
+            "consequence": "La plupart des utilisateurs continuent d’être aidés — et un nombre inconnu continue de recevoir des informations périmées. Deux autres sites fermés sont signalés avant la fin de l’audit de contenu. Les équipes de terrain perdent confiance dans l’outil.",
+            "reflection": "Poursuivre un service dont vous savez qu’il nuit à certains utilisateurs transfère le risque sur les personnes les moins à même de l’absorber. Ne pas nuire signifie être prêt à éteindre sa propre innovation.",
+            "impacts": {
+              "humanity": -1,
+              "doNoHarm": -2
+            }
+          },
+          {
+            "id": "fl-3b",
+            "label": "Le mettre hors ligne et expliquer pourquoi",
+            "detail": "Suspendre le chatbot, annoncer la correction par radio et SMS, relancer après un audit complet du contenu.",
+            "consequence": "Trois jours sans chatbot, et la ligne téléphonique souffre à nouveau. Mais la correction transparente est bien reçue : les leaders communautaires relaient votre message, et le jour du relancement bat des records d’utilisation — les gens font confiance à un service qui admet ses erreurs.",
+            "reflection": "L’engagement communautaire et la redevabilité ne sont pas une enquête en fin de parcours — c’est une communication honnête quand les choses tournent mal. Admettre l’erreur a renforcé, plutôt qu’affaibli, le service.",
+            "impacts": {
+              "humanity": -1,
+              "doNoHarm": 2
+            }
+          },
+          {
+            "id": "fl-3c",
+            "label": "Ajouter un avertissement et continuer",
+            "detail": "« Les réponses peuvent être inexactes — vérifiez localement. » Le service ne s’arrête jamais.",
+            "consequence": "L’utilisation baisse légèrement. Mais pour une mère qui décide de marcher cinq kilomètres avec un bébé, « peut être inexact » n’est pas exploitable. Les plaintes augmentent parmi les utilisateurs les plus vulnérables, qui n’ont aucun moyen de « vérifier localement ».",
+            "reflection": "Un avertissement transfère votre responsabilité à l’utilisateur. La redevabilité signifie que c’est l’organisation — et non la personne affectée — qui porte la charge de bien faire.",
+            "impacts": {
+              "doNoHarm": -1,
+              "impartiality": -1
+            }
+          }
+        ]
+      },
+      {
+        "id": "fl-4",
+        "title": "Qui écoute ?",
+        "narrative": "Six semaines plus tard, l’urgence se stabilise. Vous devez décider comment le chatbot — qui deviendra probablement un service permanent — reste comptable envers les personnes qui l’utilisent.",
+        "options": [
+          {
+            "id": "fl-4a",
+            "label": "Convoquer un panel communautaire de retour",
+            "detail": "Des personnes affectées révisent les réponses chaque semaine, signalent les préjudices et orientent ce que couvre le chatbot.",
+            "consequence": "Le panel détecte des problèmes que vos tableaux de bord n’ont jamais montrés : des réponses sensées dans la capitale mais pas dans les dialectes riverains, et des sujets que les gens n’osaient pas aborder. Le service s’améliore et gagne en confiance.",
+            "reflection": "L’engagement communautaire et la redevabilité — un engagement central de la Résolution TIC — traitent les personnes affectées comme des décisionnaires sur les outils qui les servent, et non comme de simples statistiques d’usage.",
+            "impacts": {
+              "doNoHarm": 2,
+              "impartiality": 1
+            }
+          },
+          {
+            "id": "fl-4b",
+            "label": "Faire confiance aux métriques d’usage",
+            "detail": "Les tableaux de bord montrent un engagement fort. Si les gens l’utilisent, cela fonctionne.",
+            "consequence": "Les chiffres sont superbes dans le rapport au donateur. Des mois plus tard, une évaluation révèle que les utilisateurs aux pires résultats — personnes âgées, en situation de handicap, locuteurs de langues non dominantes — ont simplement cessé d’utiliser le chatbot, en silence.",
+            "reflection": "Les métriques mesurent ceux qui sont restés. L’impartialité interroge les personnes que les données ne voient pas — et ce sont souvent celles qui en ont le plus besoin.",
+            "impacts": {
+              "impartiality": -2,
+              "doNoHarm": -1
+            }
+          },
+          {
+            "id": "fl-4c",
+            "label": "Confier la modération à des volontaires non formés",
+            "detail": "La bonne volonté locale maintient le service en vie à coût quasi nul.",
+            "consequence": "Les volontaires travaillent dur, mais sans formation ni filière d’escalade, certaines réponses nuisibles restent en ligne des semaines et les questions sensibles reçoivent un traitement incohérent. Deux volontaires s’épuisent et démissionnent.",
+            "reflection": "La redevabilité ne se sous-traite pas à la bonne volonté. Un déploiement éthique inclut le financement des humains qui gardent les systèmes automatisés sûrs — sinon l’automatisation n’est pas vraiment gouvernée.",
+            "impacts": {
+              "humanity": 1,
+              "doNoHarm": -1
+            }
+          }
+        ]
+      }
+    ],
+    "debrief": "La ligne de crue montre à quelle vitesse un chatbot bien intentionné touche chaque engagement de la Résolution TIC : information vérifiée (ne pas nuire), minimisation et finalité des données (protection des données), communication honnête en cas d’échec (redevabilité envers les communautés), et gouvernance qui laisse les personnes affectées maîtresses des outils censés les servir."
+  },
+  {
+    "id": "targeting-unseen",
+    "title": "Cibler les invisibles",
+    "tagline": "Analytique prédictive pour la sélection des bénéficiaires au Sahel",
+    "role": "Directeur(-trice) du programme de transferts monétaires, Réponse à la sécheresse au Sahel",
+    "context": "Dix-huit mois de sécheresse au Sahel ont poussé 60 000 ménages vers la crise. Votre programme de transferts monétaires peut en atteindre 15 000. La sélection est la décision la plus dure et la plus contestée de l’opération — et un cabinet d’analytique propose un modèle prédictif qui classe les ménages par besoin probable en quelques jours au lieu de plusieurs mois.",
+    "topics": [
+      "Ciblage des bénéficiaires",
+      "Biais algorithmique",
+      "Partage de données avec des partenaires technologiques"
+    ],
+    "roles": [
+      "Gestion de programmes",
+      "Données et analytique",
+      "Protection"
+    ],
+    "steps": [
+      {
+        "id": "tu-1",
+        "title": "Les données dont vous disposez",
+        "narrative": "Le modèle ne vaut que par ses données d’entraînement. Vous avez trois options réalistes, aucune parfaite, et la prochaine fenêtre d’insécurité alimentaire se ferme dans huit semaines.",
+        "options": [
+          {
+            "id": "tu-1a",
+            "label": "Utiliser le registre vieux de quatre ans",
+            "detail": "Rapide et prêt. Mais il est antérieur à la sécheresse, au déplacement et à la fermeture de la frontière.",
+            "consequence": "Les classements sont prêts en cinq jours. Les équipes de terrain découvrent vite que le modèle note des ménages qui se sont depuis remis — et qu’il est aveugle à des milliers de familles nouvellement déplacées jamais enregistrées. Les plaintes d’exclusion affluent.",
+            "reflection": "Un modèle entraîné sur la réalité d’hier reproduit l’image des besoins d’hier. L’impartialité — aider selon le besoin seul — échoue silencieusement quand les données ne voient pas qui souffre aujourd’hui.",
+            "impacts": {
+              "impartiality": -2,
+              "humanity": -1
+            }
+          },
+          {
+            "id": "tu-1b",
+            "label": "Collecter des données fraîches porte à porte",
+            "detail": "Des enquêteurs avec tablettes et scripts de consentement. Six semaines, une vraie couverture des non-enregistrés.",
+            "consequence": "Le retard est douloureux — un mois de soudure passe avant que l’argent ne coule. Mais le modèle s’entraîne sur la réalité actuelle, y compris des ménages qu’aucune liste n’avait jamais captés. Les leaders communautaires parlent de la sélection la plus juste qu’ils aient vue.",
+            "reflection": "Parfois, l’usage responsable de l’IA consiste à ralentir pour lui donner des intrants honnêtes. La collecte fondée sur le consentement incarne aussi la norme de protection des données demandée par la Résolution TIC.",
+            "impacts": {
+              "impartiality": 2,
+              "doNoHarm": 1,
+              "humanity": -1
+            }
+          },
+          {
+            "id": "tu-1c",
+            "label": "Croiser registre et indicateurs satellites",
+            "detail": "Matériaux de toiture, végétation, accès routier comme indicateurs de besoin. Bon marché, rapide, sans nouvelle enquête.",
+            "consequence": "La couverture est rapide et large. Mais les indicateurs trompent sur des groupes entiers : les pasteurs dont la richesse marche à quatre pattes sont notés comme démunis, tandis que des familles appauvries sous des toits solides sont notées comme aisées. Corriger les erreurs prend plus longtemps que l’enquête.",
+            "reflection": "Les variables indirectes encodent des hypothèses sur ce à quoi ressemble la pauvreté. Quand les hypothèses sont fausses, le biais est systématique — il frappe les mêmes types de ménages à chaque fois, c’est-à-dire l’inverse de l’impartialité.",
+            "impacts": {
+              "impartiality": -1,
+              "doNoHarm": -1,
+              "humanity": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "tu-2",
+        "title": "Les angles morts du modèle",
+        "narrative": "Les résultats de validation arrivent : la précision globale semble solide, mais les ménages dirigés par des femmes et un groupe ethnique minoritaire sont systématiquement classés plus bas que ce que les évaluations de terrain indiquent. Le cabinet dit que l’écart est « dans la tolérance acceptable ». La date limite de décaissement est dans dix jours.",
+        "options": [
+          {
+            "id": "tu-2a",
+            "label": "Déployer pour tenir le délai",
+            "detail": "L’argent circule à temps. Le biais connu part dans un document de « leçons apprises ».",
+            "consequence": "15 000 ménages reçoivent l’argent comme prévu — mais les exclus comptent une part disproportionnée de ménages dirigés par des femmes. Le bureau des appels est débordé, et un animateur radio local demande pourquoi l’ordinateur a « oublié les veuves ».",
+            "reflection": "Un biais connu et non corrigé n’est pas une note technique de bas de page ; c’est une décision de discriminer à grande échelle. Ne pas nuire s’applique autant aux préjudices prévisibles qu’aux imprévisibles.",
+            "impacts": {
+              "humanity": 1,
+              "impartiality": -2,
+              "doNoHarm": -1
+            }
+          },
+          {
+            "id": "tu-2b",
+            "label": "Recalibrer avec une validation communautaire",
+            "detail": "Des comités locaux examinent les cas d’exclusion. Deux semaines de plus avant le décaissement.",
+            "consequence": "Le retard est difficile à défendre devant les donateurs — jusqu’à l’arrivée de la liste révisée. Les comités détectent des centaines d’exclusions injustifiées et, parce qu’ils ont contribué à façonner la liste, les contestations chutent fortement. Le délai glisse ; la légitimité tient.",
+            "reflection": "L’engagement communautaire est l’un des outils de correction des biais les plus puissants. Ceux qui vivent la réalité voient des schémas qu’aucune métrique de validation ne capture — et leur implication construit la redevabilité que la Résolution TIC appelle de ses vœux.",
+            "impacts": {
+              "impartiality": 2,
+              "doNoHarm": 1,
+              "humanity": -1
+            }
+          },
+          {
+            "id": "tu-2c",
+            "label": "Le modèle conseille, les humains décident",
+            "detail": "Le personnel et les comités font les sélections finales, en utilisant le classement comme un intrant parmi d’autres.",
+            "consequence": "La sélection prend plus de temps que l’automatisation pure mais reste dans les délais. Le modèle accélère toujours le tri initial, tandis que les humains absorbent ses angles morts. Les corrections humaines documentées créent un dossier auditable et explicable.",
+            "reflection": "Une supervision humaine réelle fait la différence entre utiliser un modèle et être utilisé par lui. Garder humaine la décision finale préserve la redevabilité — quelqu’un peut répondre de chaque nom sur la liste.",
+            "impacts": {
+              "impartiality": 1,
+              "doNoHarm": 1,
+              "independence": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "tu-3",
+        "title": "Le prix du partenaire",
+        "narrative": "Le contrat standard du cabinet lui donne accès au jeu de données des ménages « pour améliorer le modèle et les produits associés », ainsi que le droit de citer le projet dans son marketing. Le juridique signale les deux clauses. Le cabinet laisse entendre que les retirer pourrait mettre fin à la licence gratuite.",
+        "options": [
+          {
+            "id": "tu-3a",
+            "label": "Partager des données pseudonymisées sous contrat",
+            "detail": "Noms retirés, contrat signé. Le programme garde ses outils gratuits.",
+            "consequence": "Le programme économise de l’argent. Un an plus tard, un chercheur démontre que les dossiers de ménages « pseudonymisés » peuvent être ré-identifiés en croisant localisation et taille du ménage — et la clause d’exécution du contrat s’avère quasi inutilisable d’une juridiction à l’autre.",
+            "reflection": "La pseudonymisation est plus faible qu’il n’y paraît dans les petites populations, et un contrat inapplicable est un espoir, pas une garantie. La protection des données doit survivre à la fin du partenariat.",
+            "impacts": {
+              "doNoHarm": -2,
+              "independence": -1
+            }
+          },
+          {
+            "id": "tu-3b",
+            "label": "Ne partager que des résultats agrégés",
+            "detail": "Le cabinet reçoit des métriques de performance du modèle, jamais de données ligne par ligne. Ils protestent.",
+            "consequence": "Les négociations se tendent et le cabinet menace brièvement de partir. Vous tenez bon, et ils acceptent — les métriques agrégées leur permettent toujours d’améliorer le modèle. Aucun dossier de ménage ne quitte jamais votre contrôle.",
+            "reflection": "L’achat éthique signifie que c’est le Mouvement qui fixe les conditions de circulation des données des personnes affectées, pas le fournisseur. Les outils « gratuits » se paient en quelque chose — veillez à ce que ce ne soit pas la vie privée des bénéficiaires.",
+            "impacts": {
+              "doNoHarm": 1,
+              "independence": 1
+            }
+          },
+          {
+            "id": "tu-3c",
+            "label": "Partir et développer en interne",
+            "detail": "Plus lent, plus coûteux, et entièrement à vous.",
+            "consequence": "Votre petite équipe données construit un modèle plus simple en trois mois. Il est moins sophistiqué et le retard est réel — mais chaque ligne est auditable, chaque dossier reste en interne, et la compétence vit désormais dans le Mouvement.",
+            "reflection": "L’indépendance coûte parfois de la vitesse et de l’argent. Posséder sa capacité — plutôt que louer une boîte noire — est un investissement à long terme dans une action humanitaire autonome et comptable.",
+            "impacts": {
+              "independence": 2,
+              "doNoHarm": 1,
+              "humanity": -1
+            }
+          }
+        ]
+      },
+      {
+        "id": "tu-4",
+        "title": "Qui signe la liste ?",
+        "narrative": "Décision de conception finale : quel degré d’automatisation pour l’inscription ? Le modèle produit une liste classée de 15 000 ménages. Quelqu’un — ou quelque chose — doit transformer ce classement en liste finale et contraignante.",
+        "options": [
+          {
+            "id": "tu-4a",
+            "label": "Inscrire automatiquement les 15 000 premiers",
+            "detail": "Aucune révision humaine. L’argent le plus rapide possible, totalement « objectif ».",
+            "consequence": "L’argent circule en un temps record. Puis les erreurs affleurent : ménages en double, village mal cartographié par le modèle, familles exclues par une faute de saisie qu’aucun humain n’a vue. Sans étape de révision, chaque erreur est définitive jusqu’à ce que les appels aboutissent.",
+            "reflection": "L’automatisation totale ne supprime pas le jugement humain — elle le cache dans le modèle et les données. Une décision automatisée sur la survie des personnes a besoin d’un humain capable d’attraper ce que le système ne voit pas.",
+            "impacts": {
+              "doNoHarm": -2,
+              "impartiality": -1,
+              "humanity": 1
+            }
+          },
+          {
+            "id": "tu-4b",
+            "label": "Le personnel vérifie chaque cas",
+            "detail": "Minutieux et comptable — et le goulot d’étranglement que tous redoutaient.",
+            "consequence": "La vérification ajoute quatre semaines. Erreurs détectées : des centaines. Mais la soudure mord avant la fin du décaissement, et vous passez des nuits difficiles à défendre le retard devant des leaders communautaires à qui l’on a promis la rapidité.",
+            "reflection": "La redevabilité a un prix en temps, et dans une crise de faim le temps se mesure en repas. La leçon honnête : construire la capacité de vérification avant l’urgence, pour que rigueur et rapidité ne soient pas ennemies.",
+            "impacts": {
+              "doNoHarm": 1,
+              "impartiality": 1,
+              "humanity": -1
+            }
+          },
+          {
+            "id": "tu-4c",
+            "label": "Supervision humaine plus appels communautaires",
+            "detail": "Le personnel contrôle la liste par échantillons, les critères sont publiés, et tout ménage peut contester son exclusion.",
+            "consequence": "Des critères publiés désamorcent la plupart des soupçons avant qu’ils ne naissent. La fenêtre d’appel détecte 600 exclusions injustifiées en deux semaines. La liste n’est pas parfaite — mais elle est explicable, corrigeable et fiable.",
+            "reflection": "Transparence plus un mécanisme d’appel fonctionnel : voilà à quoi ressemble la redevabilité envers les personnes affectées dans la pratique — non un algorithme irréprochable, mais un système que l’on peut interroger et corriger.",
+            "impacts": {
+              "doNoHarm": 2,
+              "impartiality": 1
+            }
+          }
+        ]
+      }
+    ],
+    "debrief": "Cibler les invisibles porte sur ceux que les données ne voient pas. Le ciblage prédictif touche à l’impartialité (le modèle voit-il le besoin d’aujourd’hui ?), à la protection des données (qui possède les données des ménages, et les personnes « pseudonymisées » peuvent-elles être ré-identifiées ?), à l’achat éthique (qui fixe les conditions avec les fournisseurs ?) et à la redevabilité (une famille exclue peut-elle contester la réponse de la machine ?)."
+  },
+  {
+    "id": "front-line",
+    "title": "Les yeux sur la ligne de front",
+    "tagline": "Évaluation des besoins par IA dans un conflit actif au Moyen-Orient",
+    "role": "Directeur(-trice) des opérations, Réponse au conflit au Moyen-Orient",
+    "context": "Dans un conflit prolongé, les lignes de front bougent chaque semaine. Deux districts sont coupés, et votre dernière évaluation des besoins vérifiée date de trois mois. Une entreprise technologique mondiale offre sa plateforme d’imagerie satellite — avec détection des dégâts par apprentissage automatique — gratuitement pour usage humanitaire. Dans ce contexte, l’information sur où sont les gens et ce dont ils ont besoin n’est pas seulement une donnée opérationnelle. Elle est aussi militairement sensible.",
+    "topics": [
+      "Analytique prédictive",
+      "Sensibilité au conflit",
+      "Dépendance au cloud",
+      "Décision automatisée"
+    ],
+    "roles": [
+      "Opérations",
+      "Sécurité",
+      "Gestion de l’information"
+    ],
+    "steps": [
+      {
+        "id": "fo-1",
+        "title": "Voir sans entrer",
+        "narrative": "Les négociations d’accès sont bloquées. La plateforme peut cartographier les bâtiments endommagés dans les deux districts coupés en quelques jours. Votre coordinateur de terrain prévient : le toit d’un bâtiment ne dit rien des personnes à l’intérieur.",
+        "options": [
+          {
+            "id": "fo-1a",
+            "label": "Lancer l’évaluation satellite maintenant",
+            "detail": "Rapide, à distance, sans danger pour le personnel. Accepter les angles morts pour l’instant.",
+            "consequence": "Vous obtenez la première image d’ensemble des districts depuis des mois, et la planification des convois s’accélère. Mais le modèle lit des toits intacts comme des vies intactes : une ville bombardée avec un toit de marché neuf est notée « en rétablissement » alors que son réseau d’eau est détruit. Les besoins des lieux invisibles restent non comptés.",
+            "reflection": "La télédétection voit des structures, pas des souffrances. Utilisée seule, elle biaise l’aide vers ce qui est visible depuis l’orbite — un problème d’impartialité caché dans une carte impressionnante.",
+            "impacts": {
+              "humanity": 1,
+              "impartiality": -1,
+              "doNoHarm": -1
+            }
+          },
+          {
+            "id": "fo-1b",
+            "label": "Attendre un accès sûr",
+            "detail": "Pas d’évaluation tant que les délégués ne peuvent vérifier sur le terrain. Des données vérifiées, à des semaines.",
+            "consequence": "L’accès s’ouvre sept semaines plus tard et l’évaluation est excellente. Entre-temps, deux distributions partent vers les mauvaises villes et un district ne reçoit rien du tout. L’attente était sûre pour la qualité des données, et dangereuse pour les personnes.",
+            "reflection": "L’humanité pèse le coût de l’attente contre le coût de l’erreur. L’information parfaite est un luxe ; la discipline consiste à savoir quelles décisions ne peuvent pas l’attendre.",
+            "impacts": {
+              "humanity": -2,
+              "impartiality": 1
+            }
+          },
+          {
+            "id": "fo-1c",
+            "label": "Croiser images et rapports communautaires",
+            "detail": "Des réseaux locaux de confiance rapportent par canaux sécurisés ; le modèle et le terrain se vérifient mutuellement.",
+            "consequence": "Les rapporteurs communautaires corrigent les pires erreurs du modèle en quelques jours — le réseau d’eau détruit, la clinique qui fonctionne depuis un sous-sol. L’image combinée est la meilleure que vous ayez eue dans une zone sans accès, et les réseaux locaux s’en sentent propriétaires.",
+            "reflection": "Les déploiements d’IA les plus solides en action humanitaire associent l’échelle de la machine au savoir communautaire. C’est l’engagement communautaire qui fait un travail analytique — et cela maintient les personnes affectées auteures, et non simples sujets, des données.",
+            "impacts": {
+              "humanity": 1,
+              "impartiality": 1,
+              "doNoHarm": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "fo-2",
+        "title": "Plateforme gratuite, coûts cachés",
+        "narrative": "La plateforme de l’entreprise est vraiment bonne — et gratuite. Le hic : toute l’analyse d’images et les données de population dérivées vivent sur le cloud de l’entreprise, sous une juridiction étrangère, régies par ses conditions standard. Votre conseiller sécurité note que ces conditions autorisent un accès pour « amélioration du service ».",
+        "options": [
+          {
+            "id": "fo-2a",
+            "label": "Accepter avec des clauses contractuelles",
+            "detail": "Signer vite avec des protections négociées. L’opération ne peut pas attendre des conditions parfaites.",
+            "consequence": "La plateforme transforme votre connaissance de la situation. Huit mois plus tard, l’entreprise est rachetée, les conditions changent, et votre marge de renégociation est limitée — les données, et la dépendance, sont déjà là.",
+            "reflection": "L’achat éthique regarde au-delà du prix : juridiction, conditions et options de sortie. L’indépendance s’érode silencieusement quand une capacité humanitaire critique dépend de la bonne volonté d’un fournisseur.",
+            "impacts": {
+              "independence": -2,
+              "doNoHarm": -1
+            }
+          },
+          {
+            "id": "fo-2b",
+            "label": "Exiger un hébergement contrôlé par le Mouvement",
+            "detail": "Données et modèles tournent sur une infrastructure contrôlée par le Mouvement. Les négociations prennent des semaines.",
+            "consequence": "L’entreprise résiste, puis accepte un déploiement dédié — plus lent à monter, mais sous vos clés. Quand un gouvernement exige plus tard l’accès aux données de mouvement, la réponse est structurellement simple : elles ne sont ni à l’entreprise pour être données, ni à vous pour être partagées.",
+            "reflection": "L’endroit où vivent les données décide qui peut être forcé de les remettre. En contexte de conflit, le contrôle de l’infrastructure n’est pas un détail informatique — c’est une décision de protection.",
+            "impacts": {
+              "independence": 2,
+              "doNoHarm": 1,
+              "humanity": -1
+            }
+          },
+          {
+            "id": "fo-2c",
+            "label": "Décliner ; utiliser des outils ouverts en interne",
+            "detail": "Analyse d’images open source sur vos propres serveurs. Plus lent, plus sobre, entièrement à vous.",
+            "consequence": "Vos analystes construisent une chaîne de traitement fonctionnelle en un mois. Elle manque du polish de la plateforme et l’équipe est tendue — mais il n’y a ni dépendance à un fournisseur, ni cloud étranger, et la capacité survit à la fin de tout partenariat.",
+            "reflection": "Parfois, le choix indépendant coûte de la capacité. L’arbitrage est réel et doit être fait délibérément, les yeux ouverts sur ce que les plateformes « gratuites » facturent réellement.",
+            "impacts": {
+              "independence": 1,
+              "doNoHarm": 1,
+              "humanity": -1
+            }
+          }
+        ]
+      },
+      {
+        "id": "fo-3",
+        "title": "Qui d’autre regarde ?",
+        "narrative": "Votre analyse suit désormais les mouvements de population à travers la ligne de front — exactement le type d’information que les acteurs armés des deux camps apprécieraient. Un donateur propose de publier un tableau de bord ouvert « pour la transparence et la coordination ».",
+        "options": [
+          {
+            "id": "fo-3a",
+            "label": "Publier le tableau de bord ouvert",
+            "detail": "Transparence maximale. Tout le monde — combattants compris — peut le lire.",
+            "consequence": "La coordination entre agences s’améliore. Trois semaines plus tard, un couloir de déplacement visible sur votre tableau de bord est bombardé. Vous ne pouvez pas prouver que le tableau l’a permis. Vous ne pouvez pas prouver le contraire. Le personnel du couloir est évacué.",
+            "reflection": "En conflit, la transparence sur les mouvements des personnes peut devenir une information de ciblage. La neutralité et le non-nuisance peuvent exiger de publier moins que ce que l’on sait — une vérité difficile pour un secteur soucieux de redevabilité.",
+            "impacts": {
+              "neutrality": -2,
+              "doNoHarm": -2
+            }
+          },
+          {
+            "id": "fo-3b",
+            "label": "Restreindre aux partenaires humanitaires habilités",
+            "detail": "Accès selon le besoin d’en connaître, protocole de partage, agrégation avant toute diffusion plus large.",
+            "consequence": "La coordination est plus lente et certains partenaires râlent devant les niveaux d’accès. Mais les données de mouvement de population ne circulent jamais au-delà d’organisations liées par les principes humanitaires, et vos équipes peuvent rendre compte de chaque copie.",
+            "reflection": "Le partage responsable des données se conçoit, il n’est pas le défaut : limité par la finalité, gradué par l’accès, agrégé dès que possible. L’engagement de protection des données de la Résolution TIC s’applique d’autant plus que les enjeux sont élevés.",
+            "impacts": {
+              "neutrality": 1,
+              "doNoHarm": 2
+            }
+          },
+          {
+            "id": "fo-3c",
+            "label": "Partager également avec toutes les parties",
+            "detail": "Donner à chaque partie au conflit les mêmes données, de façon équitable. La neutralité comme symétrie.",
+            "consequence": "Les deux camps acceptent les données poliment. Les opérations de l’un d’eux suivent ensuite de façon flagrante les schémas de mouvement que vous avez fournis. Votre impartialité a fourni du renseignement militaire à quiconque le voulait.",
+            "reflection": "La neutralité consiste à ne pas contribuer à la conduite des hostilités, pas à distribuer également des données sensibles. Un partage symétrique d’une information asymétrique n’est pas neutre dans ses effets.",
+            "impacts": {
+              "neutrality": -1,
+              "doNoHarm": -2,
+              "humanity": -1
+            }
+          }
+        ]
+      },
+      {
+        "id": "fo-4",
+        "title": "L’algorithme recommande",
+        "narrative": "La plateforme classe désormais les points de distribution proposés selon le besoin et l’accès prévus. Sa liste prioritaire exclut entièrement une ville assiégée — le modèle n’en a presque aucune donnée, donc il note son besoin comme « incertain/faible ». Dix mille personnes y vivent.",
+        "options": [
+          {
+            "id": "fo-4a",
+            "label": "Suivre l’algorithme",
+            "detail": "Faire confiance à l’efficacité du modèle. Pas de données, pas de distribution.",
+            "consequence": "Les distributions fonctionnent avec une efficacité impressionnante — partout sauf dans la ville qui en avait le plus besoin. Le temps qu’une lettre de contrebande parvienne à votre bureau, l’exclusion dure depuis six semaines. Le modèle n’avait pas tort sur ses données. Il avait tort sur le monde.",
+            "reflection": "« Pas de données » ne signifie pas « pas de besoin » — en conflit, cela signifie souvent l’inverse. La décision automatisée échoue le plus durement exactement là où les gens sont les plus coupés, c’est-à-dire là où l’impartialité compte le plus.",
+            "impacts": {
+              "impartiality": -2,
+              "humanity": -1,
+              "doNoHarm": -1
+            }
+          },
+          {
+            "id": "fo-4b",
+            "label": "Correction humaine, documentée",
+            "detail": "Les planificateurs ajustent la liste et écrivent pourquoi. Le dossier est auditable.",
+            "consequence": "La ville est réintégrée à partir de données d’avant le conflit et de rapports communautaires. Documenter la correction semble bureaucratique — jusqu’à la revue après action, où ce dossier sert à défendre la décision et à améliorer la gestion des lacunes de données du modèle.",
+            "reflection": "Un contrôle humain réel signifie qu’une personne peut passer outre la machine, officiellement, avec des raisons. La redevabilité vit dans cette phrase écrite : qui a décidé, et pourquoi.",
+            "impacts": {
+              "impartiality": 1,
+              "doNoHarm": 1
+            }
+          },
+          {
+            "id": "fo-4c",
+            "label": "Double signature : analyste plus délégué de terrain",
+            "detail": "Aucune recommandation automatisée ne devient décision sans deux signatures humaines. Plus lent, volontairement.",
+            "consequence": "Chaque plan de distribution prend un jour de plus. En échange, les pièges de lacunes de données comme la ville assiégée sont détectés structurellement, pas par chance — le travail du délégué de terrain est précisément de demander ce que le modèle ne peut pas voir.",
+            "reflection": "Dans les contextes à haut risque, la redondance du jugement humain est une garantie, pas une inefficacité. L’appel de la Résolution TIC à éviter et atténuer les préjudices plaide exactement pour ce type de friction délibérée.",
+            "impacts": {
+              "doNoHarm": 2,
+              "impartiality": 1,
+              "humanity": -1
+            }
+          }
+        ]
+      }
+    ],
+    "debrief": "Les yeux sur la ligne de front montrent l’IA à ses enjeux les plus élevés. Le même modèle qui accélère l’évaluation des besoins peut vous aveugler à la souffrance invisible ; le même tableau de bord qui coordonne l’aide peut la transformer en cible ; le même algorithme qui optimise les distributions peut effacer une ville assiégée faute de données. Neutralité, indépendance et non-nuisance ne sont pas des contraintes sur la technologie — ce sont les exigences de conception."
+  },
+  {
+    "id": "cloud-question",
+    "title": "La question du cloud",
+    "tagline": "Neutralité des fournisseurs et souveraineté des données dans les Caraïbes",
+    "role": "Responsable de la transformation numérique, Société nationale des Caraïbes",
+    "context": "Votre Société nationale sert des États insulaires où les ouragans sont une question de « quand », pas de « si ». Vous numérisez tout à la fois : un registre de bénéficiaires, un outil d’évaluation des dégâts assisté par IA et une plateforme de dons. Trois portes très différentes sont ouvertes : un géant mondial du cloud offrant des crédits gratuits, un gouvernement offrant son cloud national, et un consortium régional exploitant une infrastructure ouverte. Derrière chaque porte se trouve une réponse différente à la question : sur la technologie de qui reposent les vies de vos populations ?",
+    "topics": [
+      "Choix du fournisseur cloud",
+      "Neutralité des fournisseurs",
+      "Souveraineté des données",
+      "Évaluation des préjudices"
+    ],
+    "roles": [
+      "TIC et numérique",
+      "Achats",
+      "Leadership"
+    ],
+    "steps": [
+      {
+        "id": "cq-1",
+        "title": "Où vivent les données",
+        "narrative": "Le registre des bénéficiaires contiendra noms, localisations et détails de vulnérabilité de 80 000 ménages. L’offre de l’hyperscaler est généreuse : cinq ans de crédits, sécurité de premier ordre, centres de données à l’étranger. Le cloud national du gouvernement garde les données dans le pays — et sous la loi nationale. Les serveurs du consortium, contrôlés par le Mouvement, coûtent plus cher et arrivent plus tard.",
+        "options": [
+          {
+            "id": "cq-1a",
+            "label": "Prendre les crédits gratuits de l’hyperscaler",
+            "detail": "Rapide, sécurisé et gratuit pendant cinq ans. Les données résident dans une juridiction étrangère, aux conditions du fournisseur.",
+            "consequence": "Vous lancez en un temps record et la plateforme fonctionne à merveille. La troisième année, les crédits s’épuisent, les prix sont recalculés, et migrer 80 000 dossiers de ménages hors de formats propriétaires s’avère être un projet que personne n’a budgété.",
+            "reflection": "La souveraineté des données se décide le premier jour, pas au renouvellement. Les crédits gratuits sont une décision d’achat dont le coût arrive plus tard — et les coûts de sortie font partie du prix de tout cloud.",
+            "impacts": {
+              "humanity": 1,
+              "independence": -2
+            }
+          },
+          {
+            "id": "cq-1b",
+            "label": "Utiliser le cloud national du gouvernement",
+            "detail": "Les données restent dans le pays et le ministère est ravi. L’accès de l’État vient avec le territoire.",
+            "consequence": "L’hébergement est bon marché et politiquement fluide. Puis le registre est réquisitionné dans une affaire de contrôle migratoire, et vous découvrez que « dans le pays » signifie aussi « à portée de main ». La confiance des communautés dans le registre — bâtie pendant des années — vacille du jour au lendemain.",
+            "reflection": "La souveraineté sur le papier n’est pas l’indépendance en pratique. Un registre humanitaire doit être protégé de toute autorité susceptible de l’utiliser à des fins non humanitaires — c’est ce que l’indépendance protège.",
+            "impacts": {
+              "independence": -2,
+              "doNoHarm": -2
+            }
+          },
+          {
+            "id": "cq-1c",
+            "label": "Bâtir sur une infrastructure contrôlée par le Mouvement",
+            "detail": "La pile ouverte du consortium régional. Plus chère, plus lente, entièrement à vous.",
+            "consequence": "Le lancement prend quatre mois de plus et absorbe un tiers du budget de numérisation. Mais chaque dossier repose sous vos clés, dans des formats ouverts, avec une sauvegarde testée dans un second pays. Quand fournisseurs et ministères viendront frapper plus tard, la réponse sera déjà construite.",
+            "reflection": "Le contrôle de l’infrastructure est la fondation sur laquelle toutes les autres garanties reposent. Il coûte de l’argent et du temps d’avance — l’engagement d’achat éthique de la Résolution TIC inclut la volonté de payer ce prix.",
+            "impacts": {
+              "independence": 2,
+              "doNoHarm": 1,
+              "humanity": -1
+            }
+          }
+        ]
+      },
+      {
+        "id": "cq-2",
+        "title": "Les autres clients du fournisseur",
+        "narrative": "Votre outil d’évaluation des dégâts par IA fonctionne sur les modèles d’un seul fournisseur commercial. Un journal régional révèle que ce même fournisseur livre de l’analytique à une partie à un conflit armé à deux frontières de là. Un journaliste appelle : le partenariat de votre Société nationale avec ce fournisseur compromet-il sa neutralité ?",
+        "options": [
+          {
+            "id": "cq-2a",
+            "label": "Ne rien dire ; le contrat est propre",
+            "detail": "Vos données sont séparées, votre usage est humanitaire. Laisser passer le cycle médiatique.",
+            "consequence": "L’affaire s’estompe en une semaine — mais pas partout. Des leaders communautaires d’un district cessent de partager des photos de dégâts, et une organisation partenaire suspend discrètement le partage de données avec vous, invoquant une « exposition réputationnelle ». La perception a fait les dégâts que les faits n’ont jamais faits.",
+            "reflection": "La neutralité se juge autant à la perception qu’aux faits. La neutralité des fournisseurs — de la technologie de qui l’on vous voit dépendre — fait désormais partie de la façon dont les parties et les communautés lisent votre impartialité.",
+            "impacts": {
+              "neutrality": -2,
+              "independence": -1
+            }
+          },
+          {
+            "id": "cq-2b",
+            "label": "Diversifier les fournisseurs et publier votre diligence",
+            "detail": "Ajouter un second fournisseur pour les charges critiques, adopter une politique publique de sélection des fournisseurs, et le dire ouvertement.",
+            "consequence": "La migration est un vrai travail et la configuration double coûte plus cher. Mais la politique publique répond à la question du journaliste mieux que tout communiqué : vous pouvez montrer exactement comment les fournisseurs sont évalués, et la réputation d’aucune entreprise ne peut entraîner la vôtre dans sa chute.",
+            "reflection": "La neutralité des fournisseurs se construit, elle ne se décrète pas : éviter la dépendance à un fournisseur unique pour les systèmes critiques, évaluer les fournisseurs au regard des principes humanitaires, et pouvoir montrer ses preuves.",
+            "impacts": {
+              "neutrality": 1,
+              "independence": 1,
+              "doNoHarm": 1
+            }
+          },
+          {
+            "id": "cq-2c",
+            "label": "Résilier le fournisseur immédiatement",
+            "detail": "Une rupture nette, annoncée publiquement. Les services passent hors ligne pendant la reconstruction.",
+            "consequence": "L’annonce est saluée par les commentateurs. Mais l’outil d’évaluation des dégâts reste hors ligne neuf semaines — couvrant le début de la saison des ouragans — et une réponse post-tempête part avec un ciblage plus lent et plus pauvre en conséquence.",
+            "reflection": "Les sorties de principe ont aussi leurs victimes. Couper brutalement une dépendance à laquelle on n’a jamais prévu d’échapper transfère le coût sur les personnes affectées — une stratégie de sortie est une mesure de non-nuisance, pas un luxe.",
+            "impacts": {
+              "neutrality": 2,
+              "humanity": -2,
+              "doNoHarm": -1
+            }
+          }
+        ]
+      },
+      {
+        "id": "cq-3",
+        "title": "Une évaluation des préjudices avant la saison",
+        "narrative": "L’outil d’évaluation des dégâts par IA est prêt six semaines avant le pic de la saison. Les points focaux communautaires vous préviennent : le modèle a été entraîné surtout sur de l’habitat formel, et les quartiers informels — où vivent les plus vulnérables — risquent d’être systématiquement sous-évalués. Une évaluation participative complète des préjudices prend six semaines. La saison n’attendra pas.",
+        "options": [
+          {
+            "id": "cq-3a",
+            "label": "Lancer maintenant, évaluer plus tard",
+            "detail": "La saison n’attend pas. Mener l’évaluation des préjudices après les premières tempêtes.",
+            "consequence": "L’outil fonctionne bien dans les quartiers formels et mal dans les informels — exactement comme prévu. L’aide post-tempête afflue vers les dégâts que le modèle a pu voir. L’évaluation rétrospective des préjudices documente, en détail, qui a été manqué.",
+            "reflection": "Une évaluation des préjudices écrite après le préjudice est une autopsie. Ne pas nuire signifie évaluer les risques prévisibles pour les communautés affectées avant le déploiement — en particulier les risques pour ceux que les données représentent le moins.",
+            "impacts": {
+              "humanity": 1,
+              "doNoHarm": -2,
+              "impartiality": -1
+            }
+          },
+          {
+            "id": "cq-3b",
+            "label": "Mener d’abord l’évaluation participative complète",
+            "detail": "Des représentants communautaires aident à tester l’outil, à identifier les préjudices et à fixer les atténuations. Le début de saison est manqué.",
+            "consequence": "La première tempête est gérée avec les anciennes méthodes — plus lentement, mais pas pire que l’an dernier. L’évaluation trouve l’écart des quartiers informels plus deux préjudices que personne n’avait prévus, et les atténuations conçues par la communauté entrent dans le manuel opérationnel de l’outil.",
+            "reflection": "L’engagement communautaire de la Résolution TIC s’applique au risque, pas seulement au retour d’expérience : les personnes exposées aux défaillances d’un outil sont les expertes de ce que ces défaillances signifieraient.",
+            "impacts": {
+              "doNoHarm": 2,
+              "impartiality": 1,
+              "humanity": -1
+            }
+          },
+          {
+            "id": "cq-3c",
+            "label": "Lancer de façon limitée, avec un coupe-circuit",
+            "detail": "Déployer dans deux districts pilotes seulement, avec canaux de retour communautaires, vérification humaine des scores à faible confiance, et un seuil d’arrêt convenu à l’avance.",
+            "consequence": "Les pilotes révèlent l’écart des quartiers informels en quelques jours, les vérificateurs humains attrapent la plupart des erreurs de score, et quand le taux d’erreur franchit votre seuil dans un district, l’outil y est suspendu sans drame. L’outil s’améliore de tempête en tempête.",
+            "reflection": "Quand le retard lui-même comporte un risque, un lancement borné avec surveillance, garde-fou humain et coupe-circuit répété est une stratégie légitime d’atténuation des préjudices — à condition que les limites soient réelles et que quelqu’un ait le pouvoir d’actionner l’interrupteur.",
+            "impacts": {
+              "doNoHarm": 1,
+              "humanity": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "cq-4",
+        "title": "Le renouvellement",
+        "narrative": "Trois ans plus tard, votre pile technologique fonctionne — et est profondément imbriquée dans les services propriétaires d’un fournisseur. L’offre de renouvellement inclut une remise pour une intégration plus profonde. Votre conseil d’administration demande une recommandation.",
+        "options": [
+          {
+            "id": "cq-4a",
+            "label": "Approfondir l’intégration pour la remise",
+            "detail": "Meilleur prix, meilleures fonctionnalités, un interlocuteur unique. La dépendance devient totale.",
+            "consequence": "Les budgets sont superbes cette année. Deux ans plus tard, le fournisseur est racheté, les priorités changent, et votre « simple » estimation de migration revient avec dix-huit mois et un chiffre que le conseil refuse de lire à voix haute.",
+            "reflection": "La dépendance s’accumule silencieusement. Chaque crochet propriétaire est une facture future — financière, opérationnelle ou de principe. L’indépendance se préserve dans des décisions d’achat prises des années avant la crise qui la met à l’épreuve.",
+            "impacts": {
+              "independence": -2,
+              "doNoHarm": -1
+            }
+          },
+          {
+            "id": "cq-4b",
+            "label": "Renouveler avec des clauses de portabilité et un plan de sortie testé",
+            "detail": "Formats de données ouverts, exercices d’exportation réguliers, configurations sous séquestre, et une répétition de sortie chaque année.",
+            "consequence": "Le fournisseur grommelle, puis signe — votre plan de sortie est la raison pour laquelle ses prix restent honnêtes. Le premier exercice d’exportation échoue de façon embarrassante ; au troisième, votre équipe peut remonter le registre ailleurs en neuf jours.",
+            "reflection": "Un plan de sortie jamais testé est une hypothèse. La portabilité répétée transforme la dépendance en une relation que l’on choisit de poursuivre — voilà à quoi ressemble l’indépendance en pratique.",
+            "impacts": {
+              "independence": 2,
+              "doNoHarm": 1
+            }
+          },
+          {
+            "id": "cq-4c",
+            "label": "Rapatrier le cœur, ne louer que la capacité de pointe",
+            "detail": "Le registre et les modèles reviennent en interne ; le fournisseur ne garde que le calcul élastique pour les pics post-catastrophe.",
+            "consequence": "La transition coûte une année difficile et certaines fonctionnalités se dégradent. Ensuite, vos systèmes critiques ne dépendent plus de la feuille de route d’aucun fournisseur, et les pics post-ouragan montent toujours en charge — sur une infrastructure que vous pouvez quitter.",
+            "reflection": "Les architectures hybrides peuvent concilier souveraineté et échelle. La question de conception est toujours : quelles fonctions pourrions-nous perdre demain avec un fournisseur — et que coûterait cette perte aux personnes affectées ?",
+            "impacts": {
+              "independence": 1,
+              "doNoHarm": 1,
+              "humanity": -1
+            }
+          }
+        ]
+      }
+    ],
+    "debrief": "La question du cloud porte sur l’infrastructure qui sous-tend toute autre décision d’IA. L’endroit où vivent les données décide qui peut y accéder (souveraineté des données) ; les modèles dont vous dépendez façonnent la façon dont les parties et les communautés lisent votre neutralité (neutralité des fournisseurs) ; et votre capacité à partir décide si vos choix sont vraiment les vôtres (indépendance). L’évaluation des préjudices a sa place avant le déploiement — et les communautés les plus exposées aux défaillances d’un outil ont leur place au cœur de cette évaluation."
+  },
+  {
+    "id": "edge-network",
+    "title": "Aux confins du réseau",
+    "tagline": "Des outils d’IA là où la connectivité et l’électricité se font rares, en Afrique de l’Est",
+    "role": "Chargé(e) TIC et innovation, Réponse régionale en Afrique de l’Est",
+    "context": "La sécheresse et le déplacement chevauchent une région frontalière reculée. Les équipes de terrain et les volontaires communautaires ont besoin de traduction, de résumés de cas et d’orientations pour les références — mais la connectivité est capricieuse, l’électricité vient de générateurs et de quelques panneaux solaires, et le grand centre de données le plus proche est sur un autre continent. Vous devez décider quel type d’IA, s’il en faut une, a sa place ici.",
+    "topics": [
+      "IA à faible connectivité",
+      "Empreinte environnementale",
+      "Petits modèles de langage"
+    ],
+    "roles": [
+      "TIC et innovation",
+      "Opérations de terrain",
+      "Engagement communautaire"
+    ],
+    "steps": [
+      {
+        "id": "en-1",
+        "title": "Grand modèle, petit modèle, ou rien ?",
+        "narrative": "Une démonstration du fournisseur montre un assistant IA dans le cloud qui répond magnifiquement aux questions de terrain — via une connexion que vos sites n’ont pas. L’alternative est un petit modèle de langage qui fonctionne hors ligne sur des tablettes à charge solaire : moins fluide, mais toujours disponible. Une troisième voix dans la salle dit que la réponse honnête pourrait être de ne pas utiliser d’IA du tout.",
+        "options": [
+          {
+            "id": "en-1a",
+            "label": "Déployer l’assistant IA cloud",
+            "detail": "Les meilleures réponses, le support linguistique le plus riche — là où il y a du signal. Chaque requête repose sur des centres de données lointains et énergivores.",
+            "consequence": "Au hub régional, le personnel l’adore. Sur les sites de terrain — là où sont les questions — il affiche surtout une roue de chargement. Vous apprenez plus tard que chaque millier de requêtes portait aussi une facture invisible : l’électricité des centres de données et l’eau de refroidissement, dans une région qui compte les deux en jerricans.",
+            "reflection": "Une capacité qui ne fonctionne que là où l’infrastructure existe déjà creuse l’écart entre les connectés et les coupés. Chaque requête d’IA a un coût en énergie et en eau ; dans les contextes de pénurie, ce coût fait partie du calcul humanitaire, pas d’une note de bas de page.",
+            "impacts": {
+              "humanity": 1,
+              "doNoHarm": -1,
+              "impartiality": -1
+            }
+          },
+          {
+            "id": "en-1b",
+            "label": "Faire tourner un petit modèle sur tablettes solaires",
+            "detail": "Un modèle compact, téléchargé une fois, fonctionne entièrement hors ligne. Des réponses plus simples et plus étroites — mais disponibles partout.",
+            "consequence": "L’installation prend quinze jours d’ajustement sur vos vrais guides de terrain. Le petit modèle trébuche sur les questions rares mais gère les quotidiennes — traduction, étapes de référence, formulaires — sur chaque site, dans le noir, pendant les coupures. Toute sa consommation hebdomadaire tient sur un seul panneau solaire.",
+            "reflection": "Les petits modèles de langage échangent le polish contre la souveraineté : ils tournent là où les gens sont vraiment, sur une fraction de l’énergie et de l’eau d’un grand modèle, sans qu’aucune donnée ne quitte l’appareil. L’adéquation à l’usage bat la pointe de la technologie.",
+            "impacts": {
+              "doNoHarm": 1,
+              "independence": 1,
+              "impartiality": 1
+            }
+          },
+          {
+            "id": "en-1c",
+            "label": "Pas d’IA — renforcer la radio et le papier",
+            "detail": "Investir dans les guides de terrain, le calendrier radio et le réseau humain de références.",
+            "consequence": "Fiable, éprouvé, et zéro nouvelle empreinte — mais les retards de traduction s’accumulent, les notes de cas s’empilent non traitées, et les volontaires de nuit continuent d’improviser des réponses qu’un petit modèle entraîné aurait pu gérer.",
+            "reflection": "Refuser l’IA est un choix légitime avec de vrais coûts. La question n’est pas « l’IA ou les principes », mais quel outil, dimensionné au lieu, sert le mieux les gens — et qui l’a décidé, sur quelles preuves.",
+            "impacts": {
+              "humanity": -1,
+              "doNoHarm": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "en-2",
+        "title": "Le garder en vie",
+        "narrative": "Ce qui tourne ici doit survivre à l’infrastructure. Le fournisseur propose un service géré : synchronisation satellite nocturne, mises à jour automatiques, supervision à distance — contre des frais et un flux de données vers lui. Votre coordinateur de terrain propose une alternative gérée par la communauté : des hubs solaires de recharge, un maillage local entre les sites, et des données qui se synchronisent quand les équipes atteignent la connectivité.",
+        "options": [
+          {
+            "id": "en-2a",
+            "label": "Prendre le service satellite géré",
+            "detail": "Mises à jour et supervision sans effort. Un filet constant de données d’usage coule vers le fournisseur, et la facture mensuelle ne s’arrête jamais.",
+            "consequence": "Tout reste à jour sans aucun effort du personnel. Six mois plus tard, une revue budgétaire supprime l’abonnement, et les tablettes se dégradent avec grâce en presse-papiers coûteux — personne localement n’a jamais appris à les entretenir.",
+            "reflection": "Une commodité qui ne survit pas à une ligne budgétaire est une fragilité déguisée. La dépendance ne concerne pas que les données ; c’est aussi qui détient les compétences quand le contrat s’achève.",
+            "impacts": {
+              "independence": -2,
+              "doNoHarm": -1
+            }
+          },
+          {
+            "id": "en-2b",
+            "label": "Hubs solaires communautaires et synchronisation locale",
+            "detail": "Des points de recharge dans les centres communautaires, un maillage entre sites, des mises à jour portées par les équipes en déplacement. Plus lent, local, et approprié.",
+            "consequence": "Les mises à jour arrivent en jours, pas en secondes. Mais les hubs deviennent une infrastructure communautaire — les téléphones s’y rechargent aussi — et les techniciens qui gardent le système en vie sont les voisins des personnes qu’il sert.",
+            "reflection": "Une infrastructure que les communautés possèdent survit généralement aux projets. Intégrer l’énergie, la connectivité et la maintenance locales dans la conception, c’est appliquer la non-nuisance au long terme.",
+            "impacts": {
+              "independence": 1,
+              "doNoHarm": 2,
+              "humanity": -1
+            }
+          },
+          {
+            "id": "en-2c",
+            "label": "Hybride : cloud du fournisseur au hub, hors ligne à la périphérie",
+            "detail": "Le traitement lourd et les mises à jour se font au hub connecté ; les sites de terrain restent en priorité hors ligne.",
+            "consequence": "Un compromis viable : le hub obtient la chaîne du fournisseur, le terrain garde son autonomie. Cela exige une architecture disciplinée, cependant — à deux reprises vous repérez de nouvelles fonctions qui supposent silencieusement la connectivité, et les rejetez.",
+            "reflection": "Les conceptions hybrides peuvent équilibrer portée et résilience, mais seulement si le hors-ligne-d’abord est une règle que les fournisseurs doivent respecter, pas une préférence qu’ils peuvent éroder version après version.",
+            "impacts": {
+              "independence": 1,
+              "doNoHarm": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "en-3",
+        "title": "La question de l’empreinte",
+        "narrative": "Lors d’une réunion communautaire, une jeune volontaire brandit un téléphone montrant un article : les centres de données qui entraînent les grands modèles d’IA consomment une électricité immense et des millions de litres d’eau de refroidissement — parfois dans des régions de sécheresse comme la vôtre. Elle demande : « Combien d’eau votre IA a-t-elle bue aujourd’hui ? »",
+        "options": [
+          {
+            "id": "en-3a",
+            "label": "La traiter comme une question de relations publiques",
+            "detail": "Rassurer la salle : le fournisseur est « engagé pour la durabilité ». Passer à autre chose.",
+            "consequence": "La réunion avance ; pas la question. La vidéo de la volontaire sur « l’IA assoiffée de l’ONG » surpasse vos dix dernières publications, et l’équipe n’a aucun vrai chiffre pour répondre.",
+            "reflection": "Les communautés interrogent de plus en plus le coût environnemental des outils utilisés sur elles. « Le fournisseur dit que ça va » n’est pas de la redevabilité — c’est une question sans réponse avec un logo dessus.",
+            "impacts": {
+              "doNoHarm": -2,
+              "independence": -1
+            }
+          },
+          {
+            "id": "en-3b",
+            "label": "Mesurer, publier, et fixer un budget",
+            "detail": "Suivre les requêtes, les tailles de modèles et les estimations d’énergie et d’eau ; publier les chiffres ; fixer un budget d’efficience par réponse.",
+            "consequence": "La première estimation honnête est inconfortable — les requêtes cloud éclipsent tout le reste. Vous la publiez quand même, fixez un plafond, et la jeune volontaire rejoint le groupe de revue qui vérifie les chiffres chaque trimestre.",
+            "reflection": "On ne gère pas une empreinte qu’on refuse de mesurer. Publier le coût réel — énergie, eau, extraction derrière le matériel — transforme une question gênante en une pratique de redevabilité que les communautés peuvent vérifier.",
+            "impacts": {
+              "doNoHarm": 2
+            }
+          },
+          {
+            "id": "en-3c",
+            "label": "Faire du petit modèle le défaut",
+            "detail": "Le petit modèle hors ligne devient le défaut partout ; le grand modèle cloud est réservé aux cas rares et complexes, avec revue humaine.",
+            "consequence": "Les requêtes cloud chutent de 90 %. Quelques réponses nuancées deviennent plus lentes, parce qu’un humain les vérifie d’abord — ce qui s’avère les améliorer. La question de l’empreinte à la réunion suivante a une réponse concrète.",
+            "reflection": "La frugalité est un principe de conception : l’outil le plus léger qui fait le travail est généralement le plus humain à faire tourner. Dimensionner juste les modèles est une atténuation des préjudices pour les personnes et la planète à la fois.",
+            "impacts": {
+              "doNoHarm": 2,
+              "independence": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "en-4",
+        "title": "Qui le fait vivre ?",
+        "narrative": "Dix-huit mois plus tard, le système fonctionne. La subvention qui l’a payé s’achève le trimestre prochain. Ce qui se joue maintenant décide si c’était un projet ou une capacité.",
+        "options": [
+          {
+            "id": "en-4a",
+            "label": "Renouveler le contrat de maintenance du fournisseur",
+            "detail": "Le plus simple sur le papier : le fournisseur continue de corriger, d’héberger la chaîne de mises à jour et de détenir le savoir.",
+            "consequence": "Le renouvellement est signé en une semaine. Le savoir reste là où il a toujours été — à l’extérieur. Quand le fournisseur abandonne la gamme deux ans plus tard, le document de passation est une brochure commerciale pour son successeur.",
+            "reflection": "Un système que seul son fournisseur comprend est loué, pas possédé. Les contrats de maintenance sont légitimes ; y puiser tout le savoir ne l’est pas.",
+            "impacts": {
+              "independence": -2,
+              "doNoHarm": -1
+            }
+          },
+          {
+            "id": "en-4b",
+            "label": "Former des techniciens locaux pour en devenir propriétaires",
+            "detail": "Financer une année de formation pour que le personnel régional et des techniciens communautaires maintiennent, mettent à jour et adaptent les modèles eux-mêmes.",
+            "consequence": "Plus lent au début, et deux stagiaires sont recrutés par un opérateur télécom — une perte qui est aussi une réussite. Ceux qui restent gardent le système en vie à travers la prochaine disette budgétaire sans manquer une semaine.",
+            "reflection": "La capacité technique locale est l’infrastructure la plus durable que vous puissiez construire. Les compétences qui restent dans la région continuent de la servir longtemps après que votre code de projet est oublié.",
+            "impacts": {
+              "independence": 2,
+              "doNoHarm": 1,
+              "humanity": 1
+            }
+          },
+          {
+            "id": "en-4c",
+            "label": "Le confier au pool régional du Mouvement",
+            "detail": "La Société nationale rejoint un service régional mutualisé qui maintient des modèles et des outils communs pour de nombreuses sociétés.",
+            "consequence": "Vous perdez un peu d’adaptation locale, vous gagnez coûts et expertise partagés. Le petit modèle que votre équipe a accordé aux langues locales devient l’actif le plus utilisé du pool — votre investissement dépasse vos frontières.",
+            "reflection": "Une infrastructure mutualisée du Mouvement partage à la fois les coûts et la souveraineté. Ce qu’une société construit peut, avec des formats ouverts et une maintenance mutualisée, en protéger beaucoup d’autres.",
+            "impacts": {
+              "independence": 1,
+              "doNoHarm": 1
+            }
+          }
+        ]
+      }
+    ],
+    "debrief": "Aux confins du réseau parle de dimensionner la technologie au lieu qu’elle sert. Petits modèles, conception hors-ligne-d’abord, énergie locale et compétences locales ne sont pas des compromis — dans les contextes de faible connectivité, ce sont les choix résilients. Et chaque requête d’IA porte un coût environnemental en énergie, en eau et en extraction ; le mesurer, le publier et le minimiser fait partie de ne pas nuire, pas d’un agenda séparé."
+  },
+  {
+    "id": "signals-noise",
+    "title": "Des signaux dans le bruit",
+    "tagline": "Écoute sociale par IA pendant une réponse à un typhon en Asie du Sud-Est",
+    "role": "Conseiller(-ère) Engagement communautaire et redevabilité, Réponse au typhon",
+    "context": "Un typhon de catégorie 4 a touché terre sur un archipel. Les rumeurs voyagent plus vite que les eaux de crue : sur l’aide, sur les évacuations, sur les responsables. Une plateforme d’écoute sociale propose une IA qui analyse les publications publiques dans quatre langues locales et signale la désinformation en quasi temps réel. Vos équipes se noient dans les signalements non vérifiés — mais écouter à grande échelle, c’est observer les communautés à grande échelle.",
+    "topics": [
+      "Écoute sociale",
+      "Désinformation",
+      "Vie privée et confiance"
+    ],
+    "roles": [
+      "Engagement communautaire",
+      "Communication",
+      "Protection"
+    ],
+    "steps": [
+      {
+        "id": "sn-1",
+        "title": "Écouter, et comment",
+        "narrative": "La plateforme peut ingérer les publications publiques des principaux réseaux sociaux, les classer et pousser des alertes. Votre conseiller protection pose d’abord la question inconfortable : qu’advient-il des publications — et des personnes qui les ont écrites — après la crise ?",
+        "options": [
+          {
+            "id": "sn-1a",
+            "label": "Analyse complète avec alertes",
+            "detail": "Ingérer les publications publiques, classer, alerter. Connaissance de la situation maximale, collecte maximale.",
+            "consequence": "La carte des rumeurs est vraiment utile — vous repérez un faux ordre d’évacuation en une heure. Mais la plateforme conserve les données au niveau des publications « pour améliorer le modèle », et vous réalisez avoir bâti un poste d’écoute sans interrupteur ni clause d’extinction.",
+            "reflection": "Public ne veut pas dire sans conséquences : les gens publient en crise sans imaginer une surveillance humanitaire — ou aucune. Une collecte qui survit à sa finalité est un échec de protection des données coiffé d’un tableau de bord utile.",
+            "impacts": {
+              "humanity": 1,
+              "doNoHarm": -2
+            }
+          },
+          {
+            "id": "sn-1b",
+            "label": "Tendances agrégées uniquement",
+            "detail": "Aucun stockage au niveau des publications : le système compte les thèmes et les pics, et supprime le flux brut chaque jour.",
+            "consequence": "Vous perdez un peu de détail — vous ne pouvez pas toujours remonter une rumeur à sa source — mais vous gardez l’alerte précoce. Quand un ministère demande plus tard « les données brutes », la réponse honnête est qu’elles n’existent plus.",
+            "reflection": "L’agrégation est la version écoute sociale de la minimisation des données : on garde le signal, on écarte les personnes. Concevoir pour l’effacement, c’est concevoir pour la confiance.",
+            "impacts": {
+              "doNoHarm": 2,
+              "humanity": -1
+            }
+          },
+          {
+            "id": "sn-1c",
+            "label": "Canaux communautaires uniquement",
+            "detail": "Renoncer à l’écoute sociale ; s’en remettre aux lignes de retour, aux volontaires communautaires et aux réseaux partenaires.",
+            "consequence": "Fiable, humain, et plus lent. Une rumeur empoisonnée sur de l’eau contaminée circule deux jours avant que votre réseau ne la relève — deux jours pendant lesquels des familles ont bu de l’eau insalubre plutôt que de risquer les points de distribution « empoisonnés ».",
+            "reflection": "Refuser d’écouter est aussi un choix à conséquences. La question n’est pas d’entendre ou non les communautés, mais comment les entendre sans transformer l’écoute en surveillance.",
+            "impacts": {
+              "humanity": -2,
+              "doNoHarm": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "sn-2",
+        "title": "Agir sur une rumeur",
+        "narrative": "Le système signale une affirmation qui se propage vite : votre Société nationale détournerait l’aide vers un groupe politique. C’est faux. Mais un démenti public nommerait l’affirmation, le groupe et l’accusation — dans une région polarisée où votre neutralité est déjà contestée chaque semaine.",
+        "options": [
+          {
+            "id": "sn-2a",
+            "label": "Publier un démenti public direct",
+            "detail": "Nommer la rumeur, énoncer les faits, publier partout. Rapide et transparent.",
+            "consequence": "Les faits passent — et le cadre aussi. Pendant deux cycles d’actualité, votre nom est soudé à une accusation politique que vous n’avez pas portée. Une branche locale signale des menaces ; une autre, des dons records. La vérité a été servie ; la facture de neutralité arrive plus tard.",
+            "reflection": "Amplifier un mensonge pour le nier peut diffuser le cadre plus loin que le mensonge. La neutralité se teste non seulement à ce que vous dites, mais à ce que vous choisissez de répéter.",
+            "impacts": {
+              "neutrality": -2,
+              "humanity": 1
+            }
+          },
+          {
+            "id": "sn-2b",
+            "label": "Corriger via des voix communautaires de confiance",
+            "detail": "Briefer leaders communautaires, animateurs radio et réseaux de volontaires avec les faits ; laisser des voix locales de confiance porter la correction.",
+            "consequence": "La correction avance plus lentement que la rumeur pendant un jour, puis la dépasse. Parce que le démenti vient de voix auxquelles les gens font déjà confiance, il tient sans souder votre nom à l’accusation.",
+            "reflection": "L’engagement communautaire est aussi une stratégie de neutralité. Les corrections voyagent sur la confiance, et la confiance est locale — le messager est souvent le message.",
+            "impacts": {
+              "neutrality": 1,
+              "doNoHarm": 1
+            }
+          },
+          {
+            "id": "sn-2c",
+            "label": "Surveiller sans répondre",
+            "detail": "Nourrir la rumeur d’attention peut être pire ; observer et attendre.",
+            "consequence": "La rumeur culmine puis s’éteint dans certaines zones — et se durcit dans un district, où les distributions sont boycottées pendant une semaine. Attendre vous a épargné le cadre ; il a coûté leurs rations aux familles du boycott.",
+            "reflection": "Le silence est une décision aussi. Juger quand une rumeur appelle une réponse est un métier : surveillez le tort, pas seulement le volume, et convenez à l’avance des seuils d’action.",
+            "impacts": {
+              "humanity": -1,
+              "doNoHarm": -1
+            }
+          }
+        ]
+      },
+      {
+        "id": "sn-3",
+        "title": "L’hypertrucage",
+        "narrative": "Une note vocale dans un dialecte local parfait, apparemment de votre directeur, annonce une distribution sur un site qui n’existe pas. Des centaines de personnes se rassemblent ; certaines se fâchent ; un homme âgé est hospitalisé après la bousculade. Votre IA, entraînée sur le texte et les images, n’a jamais écouté l’audio.",
+        "options": [
+          {
+            "id": "sn-3a",
+            "label": "Ajouter un fournisseur de détection d’hypertrucages",
+            "detail": "Un fournisseur spécialisé peut analyser l’audio et la vidéo — si vous lui envoyez le contenu communautaire vers son cloud.",
+            "consequence": "La détection s’améliore, et un flux de données de plus échappe à votre contrôle. Trois mois plus tard, la notification de violation de données du fournisseur arrive dans votre boîte ; l’audio que vous lui avez transmis contenait des empreintes vocales de personnes qui n’ont jamais consenti à rien.",
+            "reflection": "Poursuivre chaque nouvelle menace avec un nouveau fournisseur multiplie l’exposition plus vite que la sécurité. La voix est une donnée biométrique ; la traiter comme un flux de plus est un échec de protection des données.",
+            "impacts": {
+              "doNoHarm": -2,
+              "independence": -1
+            }
+          },
+          {
+            "id": "sn-3b",
+            "label": "Construire des canaux vérifiés que les gens peuvent contrôler",
+            "detail": "Toute annonce officielle porte une vérification simple : un mot de code à la radio, un SMS signé, une ligne pour confirmer. Enseigner le réflexe avant d’en avoir besoin.",
+            "consequence": "La fausse note vocale suivante se propage quelques heures, puis cale : les gens demandent le mot de code. La vérification devient une habitude communautaire, pas un produit de fournisseur — et elle fonctionne même quand vos systèmes sont en panne.",
+            "reflection": "La résilience aux médias synthétiques est surtout sociale : des habitudes de vérification convenues à l’avance battent les courses à la détection, et elles renforcent, au lieu de la consommer, la confiance communautaire.",
+            "impacts": {
+              "doNoHarm": 2,
+              "neutrality": 1
+            }
+          },
+          {
+            "id": "sn-3c",
+            "label": "Arrêter toute écoute par IA",
+            "detail": "Si le système ne peut pas attraper le faux le plus dangereux, tout l’appareil est suspect.",
+            "consequence": "Vous perdez l’alerte précoce aux rumeurs qui avait discrètement évité deux paniques. La désinformation ne prend pas sa retraite quand vos outils la prennent ; le faux ordre d’évacuation suivant circule invisible pendant un jour entier.",
+            "reflection": "Les outils échouent ; la question est de savoir si l’échec a été prévu. Abandonner un système utile parce qu’imparfait laisse le champ aux rumeurs — une capacité honnête et graduée vaut mieux que rien.",
+            "impacts": {
+              "humanity": -2,
+              "doNoHarm": -1
+            }
+          }
+        ]
+      },
+      {
+        "id": "sn-4",
+        "title": "Quand la tempête passe",
+        "narrative": "Le relèvement commence. La licence d’essai de la plateforme d’écoute se renouvelle automatiquement le mois prochain. La direction aime le tableau de bord. Personne n’a répondu à la question initiale de la conseillère protection : qu’advient-il de tout cela en temps de paix ?",
+        "options": [
+          {
+            "id": "sn-4a",
+            "label": "La garder en alerte précoce",
+            "detail": "La surveillance de niveau crise devient une « préparation » permanente. Le tableau de bord ne dort jamais.",
+            "consequence": "La préparation s’améliore sur le papier. Mais un système conçu pour les semaines de typhon observe désormais les saisons politiques ordinaires, et son existence devient un sujet d’année électorale : l’organisation humanitaire qui n’a jamais cessé d’écouter.",
+            "reflection": "Les pouvoirs d’urgence ont tendance à devenir des meubles. Une capacité d’écoute qui ne s’éteint jamais finira par servir des fins que ses premiers utilisateurs n’ont jamais imaginées — neutralité comprise.",
+            "impacts": {
+              "neutrality": -2,
+              "doNoHarm": -2
+            }
+          },
+          {
+            "id": "sn-4b",
+            "label": "L’éteindre avec un compte rendu public",
+            "detail": "Mettre fin à la collecte, effacer les archives, et publier ce qui a été collecté, pourquoi, et ce qui a été appris.",
+            "consequence": "Le compte rendu public est brièvement inconfortable — les gens découvrent l’ampleur de l’écoute — puis devient un atout de confiance : votre Société nationale est celle qui a dit ce qu’elle a fait, et qui a arrêté. Le manuel est archivé pour la prochaine activation.",
+            "reflection": "La redevabilité inclut une fin. Publier ce que vous avez collecté et pourquoi, puis arrêter de façon vérifiable, voilà ce que signifie la pratique responsable des données quand les caméras sont parties.",
+            "impacts": {
+              "doNoHarm": 2,
+              "neutrality": 1
+            }
+          },
+          {
+            "id": "sn-4c",
+            "label": "La transmettre à la Société nationale sous contrôle communautaire",
+            "detail": "L’outil continue sous la Société nationale, gouverné par une charte avec des représentants communautaires et une revue publique annuelle.",
+            "consequence": "La passation est bureaucratique et réelle : la charte nomme ce qui peut être surveillé, ce qui ne doit jamais l’être, et qui peut éteindre. La première revue annuelle est publique, peu suivie, et c’est exactement le but.",
+            "reflection": "L’appropriation locale sous contrôle communautaire peut rendre légitime un outil à double usage : la différence entre surveillance et écoute tient à qui gouverne, au nom de qui, avec quel pouvoir d’arrêt.",
+            "impacts": {
+              "doNoHarm": 1,
+              "independence": 1,
+              "neutrality": 1
+            }
+          }
+        ]
+      }
+    ],
+    "debrief": "Des signaux dans le bruit parle d’écouter sans surveiller. L’agrégation plutôt que la collecte, les messagers de confiance plutôt que les démentis bruyants, les habitudes de vérification plutôt que les courses à la détection, et une extinction plutôt qu’un tableau de bord qui ne dort jamais — voilà comment une organisation humanitaire entend une crise sans devenir quelque chose que les communautés devraient craindre."
+  },
+  {
+    "id": "outbreak-signal",
+    "title": "Le signal de l’épidémie",
+    "tagline": "Veille épidémiologique et triage par IA pendant une flambée de fièvre à un poste frontière",
+    "role": "Coordinateur(-trice) des urgences sanitaires, Réponse régionale à l’épidémie",
+    "context": "Un cluster de cas de fièvre sévère apparaît près d’un poste frontière très fréquenté. Une plateforme de veille épidémiologique — qui analyse les rapports de cliniques, les ventes de pharmacies et les publications publiques — signale « possible fièvre hémorragique, 72 % de confiance ». Les laboratoires sont à deux jours, le poste voit passer des milliers de voyageurs chaque jour, et votre Société nationale gère les deux cliniques les plus proches. Chaque heure d’hésitation a un prix — et chaque fausse alerte aussi.",
+    "topics": [
+      "Veille épidémiologique",
+      "Données de santé",
+      "Communication des risques"
+    ],
+    "roles": [
+      "Santé",
+      "Épidémiologie",
+      "Santé communautaire"
+    ],
+    "steps": [
+      {
+        "id": "os-1",
+        "title": "Le signal à 72 pour cent",
+        "narrative": "La plateforme veut que vous escaladiez maintenant. Votre épidémiologiste souligne que le modèle a été entraîné surtout sur des données urbaines et n’a jamais vu la saison de paludisme de cette région, qui imite le signal. L’autorité sanitaire régionale demande ce que vous savez d’ici vendredi.",
+        "options": [
+          {
+            "id": "os-1a",
+            "label": "Déclarer l’alerte immédiatement",
+            "detail": "Considérer 72 % comme exploitable. Déclencher le plan de contingence, alerter les partenaires, briefer les médias avant les rumeurs.",
+            "consequence": "Pendant 48 heures, la région se mobilise — puis les laboratoires répondent : paludisme sévère, pas fièvre hémorragique. L’annulation est techniquement correcte et socialement coûteuse : le trimestre suivant, quand la plateforme signale un vrai foyer de choléra, deux bureaux de district hésitent une journée entière avant d’agir.",
+            "reflection": "Dans la réponse aux épidémies, les fausses alertes dépensent la confiance dont dépendent les vraies. Un score de confiance d’IA est un intrant pour une décision, pas la décision — les seuils d’escalade appartiennent à des humains comptables, calibrés avec l’épidémiologie locale.",
+            "impacts": {
+              "humanity": 1,
+              "doNoHarm": -2,
+              "neutrality": -1
+            }
+          },
+          {
+            "id": "os-1b",
+            "label": "Attendre la confirmation du laboratoire",
+            "detail": "Aucun geste public avant la confirmation des laboratoires. Préparer discrètement les stocks entre-temps.",
+            "consequence": "Les laboratoires confirment un paludisme sévère — pas d’épidémie. Votre prépositionnement discret s’avère utile quand même. Mais votre équipe modélise le contrefactuel : s’il s’était agi d’une fièvre hémorragique, 48 heures de silence à un poste frontière auraient été catastrophiques.",
+            "reflection": "Attendre la certitude n’est sûr que lorsque la maladie est lente. La discipline consiste à ajuster le seuil aux enjeux : que coûte une fausse alerte, que coûtent deux jours perdus, et qui paie chacun ?",
+            "impacts": {
+              "humanity": -1,
+              "doNoHarm": 1
+            }
+          },
+          {
+            "id": "os-1c",
+            "label": "Envoyer une équipe de vérification en quelques heures",
+            "detail": "Équipe d’évaluation rapide sur le site du cluster, les cliniciens examinent les preuves brutes du signal, stocks prépositionnés sans alarme publique.",
+            "consequence": "L’équipe trouve la vérité en neuf heures : un paludisme sévère amplifié par une rupture de stock de médicaments — et le signal de la plateforme, lu par des yeux humains, identifie correctement un second cluster, sans lien, qui mérite surveillance. Vous n’escaladez ni l’un ni l’autre ; vous vous préparez pour les deux.",
+            "reflection": "La veille épidémiologique la plus solide associe la vigilance de la machine à une vérification humaine rapide. L’IA surveille tout pour que les personnes vérifient ce qui compte — cette répartition du travail est la conception, pas un pis-aller.",
+            "impacts": {
+              "humanity": 1,
+              "doNoHarm": 2,
+              "impartiality": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "os-2",
+        "title": "Le triage sous pression",
+        "narrative": "Les cas confirmés grimpent et vos deux cliniques sont débordées. Une entreprise de santé numérique propose un outil de triage par IA : les patients répondent à des questions sur une tablette, le modèle note l’urgence, et le personnel voit les patients dans l’ordre du modèle. Vos infirmières cheffes sont sceptiques ; la file, elle, ne l’est pas.",
+        "options": [
+          {
+            "id": "os-2a",
+            "label": "Laisser le modèle ordonner la file",
+            "detail": "Automatisation totale : le score fixe l’ordre. Débit maximal, friction minimale pour le personnel.",
+            "consequence": "Le débit bondit de 40 %. Puis le schéma émerge : les patients âgés qui décrivent leurs symptômes indirectement obtiennent des scores bas ; de même que les locuteurs d’un dialecte frontalier que le questionnaire traduit mal. Personne n’est refusé — certains attendent simplement jusqu’à s’effondrer, hors de vue des métriques.",
+            "reflection": "Une file d’attente est une déclaration de valeurs. Le triage automatisé optimise ce que son questionnaire peut entendre ; les patients qu’il entend le moins bien sont souvent les plus graves. L’impartialité dans une clinique, c’est auditer l’ordre, pas seulement la vitesse.",
+            "impacts": {
+              "humanity": 1,
+              "impartiality": -2,
+              "doNoHarm": -1
+            }
+          },
+          {
+            "id": "os-2b",
+            "label": "Le modèle en second avis, les infirmières décident",
+            "detail": "Le score est montré à l’infirmière de triage, qui peut l’outrepasser — chaque correction est consignée et revue chaque semaine.",
+            "consequence": "Le débit s’améliore de 25 %, pas de 40 % — mais le registre des corrections devient de l’or : il montre exactement où le modèle lit mal le langage local des symptômes, et les corrections des infirmières le réentraînent. Le personnel fait confiance à l’outil parce qu’il apprend visiblement d’elles.",
+            "reflection": "Garder l’infirmière aux commandes préserve la redevabilité et crée une boucle d’apprentissage que le fournisseur n’avait jamais offerte. En santé, « l’humain dans la boucle » n’est pas un frein au système — c’est son capteur le plus précis.",
+            "impacts": {
+              "doNoHarm": 2,
+              "impartiality": 1
+            }
+          },
+          {
+            "id": "os-2c",
+            "label": "S’en tenir au protocole de triage standard",
+            "detail": "Pas de nouvel outil en pleine épidémie. Protocole éprouvé, trieurs volontaires supplémentaires, attentes plus longues.",
+            "consequence": "Les soins restent équitables et explicables — et lents. Deux cas critiques se dégradent dans une file qu’un outil de score aurait pu faire remonter. Le protocole était sûr ; l’attente ne l’était pas.",
+            "reflection": "Refuser un outil ne fige pas les compromis ; cela les rend juste moins visibles. La comparaison honnête n’est jamais « l’IA contre des soins parfaits » — c’est l’IA contre la file réelle, avec son propre triage silencieux par l’épuisement.",
+            "impacts": {
+              "impartiality": 1,
+              "humanity": -2
+            }
+          }
+        ]
+      },
+      {
+        "id": "os-3",
+        "title": "La liste des cas",
+        "narrative": "Un consortium universitaire qui modélise l’épidémie demande la liste nominative de vos cliniques : des dossiers anonymisés par patient — symptômes, âges, localisations, issues. Leur modèle pourrait prévoir la propagation — et leur file de publications, leurs incitations de carrière et leurs serveurs sont tous à l’étranger.",
+        "options": [
+          {
+            "id": "os-3a",
+            "label": "Partager la liste anonymisée",
+            "detail": "Noms retirés, accord signé. La prévision s’améliore pour tout le monde.",
+            "consequence": "Le modèle du consortium aide deux ministères à planifier. Mais la liste est un déguisement mince : date des symptômes, âge et village ensemble ré-identifient les patients, et un journaliste local le démontre d’un coup de fil. Dans une région frontalière, être identifiable comme patient n’est pas un fait neutre.",
+            "reflection": "Dans les petites populations, les données de santé « anonymisées » sont souvent un pseudonyme, pas une protection. Les listes d’épidémie portent une double sensibilité — maladie et localisation — et la norme de protection des données de la Résolution TIC les traite en conséquence.",
+            "impacts": {
+              "humanity": 1,
+              "doNoHarm": -2,
+              "independence": -1
+            }
+          },
+          {
+            "id": "os-3b",
+            "label": "Partager des agrégats, héberger l’analyse dans le pays",
+            "detail": "Des comptages agrégés hebdomadaires sortent ; la liste brute reste dans le pays, où les chercheurs du consortium sont bienvenus pour travailler selon vos règles de protection des données.",
+            "consequence": "Une science plus lente, des données souveraines. Deux chercheurs acceptent l’arrangement de résidence ; le consortium grommelle, puis cite votre modèle de gouvernance comme gabarit pour ses trois prochaines études.",
+            "reflection": "On peut partager la connaissance sans expédier les personnes. La souveraineté des données en santé signifie que l’analyse voyage vers les données, et non l’inverse — et les bons partenaires feront le voyage.",
+            "impacts": {
+              "doNoHarm": 2,
+              "independence": 1,
+              "humanity": -1
+            }
+          },
+          {
+            "id": "os-3c",
+            "label": "Refuser ; protéger la liste absolument",
+            "detail": "Aucun accès externe avant la fin de l’urgence et l’achèvement d’une revue éthique complète.",
+            "consequence": "Rien ne fuit, et rien ne s’apprend. La prévision régionale — qui aurait guidé le prépositionnement des vaccins la saison prochaine — est construite sans les données de vos cliniques et est visiblement plus faible précisément dans vos districts.",
+            "reflection": "La protection absolue a un prix payé en prévoyance. L’objectif n’est pas le partage zéro mais le partage gouverné : consentement quand c’est possible, agrégation par défaut, et revue par des personnes comptables envers les communautés de la liste.",
+            "impacts": {
+              "humanity": -1,
+              "doNoHarm": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "os-4",
+        "title": "Informer le public",
+        "narrative": "Vient l’heure de la communication des risques. La plateforme propose des messages de santé rédigés par IA, auto-traduits dans toutes les langues locales en une heure. Vos agents de santé communautaire proposent quelque chose de plus lent : eux-mêmes, à moto, avec des mégaphones et une confiance construite au fil des ans.",
+        "options": [
+          {
+            "id": "os-4a",
+            "label": "Diffuser les messages de l’IA partout",
+            "detail": "Vitesse et couverture : SMS, scripts radio, publications, toutes langues, dans l’heure.",
+            "consequence": "La couverture est instantanée. Les erreurs aussi : une liste de symptômes traduite utilise un mot qui signifie « mortel » dans un dialecte, les achats de panique frappent deux villes, et une phrase sur l’isolement se lit comme « abandonner les malades ». Les corrections courent après les messages pendant des jours.",
+            "reflection": "En santé, un message est une dose — une mauvaise formulation nuit comme un mauvais médicament. La traduction automatique à vitesse d’épidémie a besoin d’un lecteur humain qui sait ce que les mots font dans chaque communauté, pas seulement ce qu’ils disent.",
+            "impacts": {
+              "humanity": -1,
+              "doNoHarm": -2
+            }
+          },
+          {
+            "id": "os-4b",
+            "label": "Les agents de santé communautaire portent le message",
+            "detail": "Briefer les agents ; ils adaptent le message village par village. Plus lent, portée moindre, confiance plus profonde.",
+            "consequence": "La portée de la première semaine est une fraction du blast — mais la compréhension est totale, les questions trouvent des réponses sur place, et la rumeur d’« abandonner les malades » ne prend jamais racine parce que la tante de quelqu’un explique l’isolement sur le pas de sa porte.",
+            "reflection": "L’engagement communautaire et la redevabilité sont le canal originel de communication des risques. Les humains de confiance sont plus lents que les diffusions et plus rapides que les rumeurs — parce que la confiance est la vraie limite de vitesse.",
+            "impacts": {
+              "doNoHarm": 2,
+              "impartiality": 1,
+              "humanity": -1
+            }
+          },
+          {
+            "id": "os-4c",
+            "label": "Combiner : l’IA rédige, les voix locales approuvent et diffusent",
+            "detail": "Le modèle rédige et traduit en une heure ; des réviseurs communautaires de chaque langue approuvent ou corrigent avant toute publication ; les agents de santé livrent les parties délicates en personne.",
+            "consequence": "Les messages sortent le jour même en quatre langues, chacun validé par quelqu’un qui la parle nativement. L’étape de révision attrape la traduction « mortelle » avant publication. Couverture et confiance, pour l’essentiel les deux.",
+            "reflection": "Le schéma se généralise : les machines pour la vitesse, les communautés pour le sens. L’engagement de la Résolution TIC en matière de participation est ce qui transforme un pipeline de traduction en une communication sur laquelle on peut agir en sécurité.",
+            "impacts": {
+              "humanity": 1,
+              "doNoHarm": 2
+            }
+          }
+        ]
+      }
+    ],
+    "debrief": "Le signal de l’épidémie parle de la vitesse dans l’incertitude. L’IA épidémiologique surveille plus large que n’importe quelle équipe, mais ses scores de confiance ne sont pas des décisions, ses files de triage encodent ce que les questionnaires peuvent entendre, son appétit de données se heurte à la sensibilité d’être identifiable comme patient, et ses messages ont besoin d’yeux natifs avant les oreilles natives. La santé est l’endroit où « aller vite » rencontre le plus directement « d’abord, ne pas nuire » — l’outillage doit être conçu pour les deux."
+  },
+  {
+    "id": "boardroom-test",
+    "title": "L’épreuve du conseil",
+    "tagline": "Une stratégie IA à l’échelle de l’organisation pour la direction d’une Société nationale",
+    "role": "Secrétaire général(e) d’une Société nationale",
+    "context": "Votre conseil se réunit dans trois semaines, et l’IA est soudain à tous les ordres du jour : un donateur majeur laisse entendre que les financements futurs favoriseront les partenaires « à la pointe de l’IA », vos auditeurs ont découvert des employés collant des documents internes dans des chatbots publics, et votre directeur de la logistique veut automatiser une fonction administrative qui emploie quarante personnes. Ce que vous apporterez à cette salle définira comment votre organisation utilisera l’IA pour des années — et qui pourra le contester.",
+    "topics": [
+      "Gouvernance de l’IA",
+      "Stratégie et financement",
+      "Personnel"
+    ],
+    "roles": [
+      "Leadership",
+      "Gouvernance",
+      "Bien-être du personnel"
+    ],
+    "steps": [
+      {
+        "id": "bt-1",
+        "title": "Le coup de pouce du donateur",
+        "narrative": "La lettre du donateur est amicale et sans équivoque : les organisations démontrant une « adoption concrète de l’IA » seront priorisées. Votre directrice des programmes prévient que courir après le signal dispersera l’organisation en une douzaine de pilotes non gouvernés. Votre responsable de collecte prévient que l’ignorer coûte sept chiffres.",
+        "options": [
+          {
+            "id": "bt-1a",
+            "label": "Annoncer une offensive d’adoption de l’IA",
+            "detail": "Dix pilotes, vite, visiblement. Montrer l’élan au donateur ; régler la gouvernance en chemin.",
+            "consequence": "Le donateur est ravi et le communiqué s’écrit tout seul. Au quatrième mois vous avez onze pilotes, trois fournisseurs avec accès à des données internes, deux outils en double, et personne pour répondre à une question simple du conseil : qui a approuvé chacun d’eux, selon quels critères ?",
+            "reflection": "L’enthousiasme conditionné par le financement reste de l’enthousiasme. L’indépendance inclut la liberté d’adopter la technologie à la vitesse que votre gouvernance peut réellement piloter — les donateurs financent votre mission, pas votre compteur d’outils.",
+            "impacts": {
+              "humanity": 1,
+              "independence": -2,
+              "doNoHarm": -1
+            }
+          },
+          {
+            "id": "bt-1b",
+            "label": "Décliner poliment la condition",
+            "detail": "Remercier le donateur, réaffirmer vos critères guidés par la mission, accepter le risque financier.",
+            "consequence": "La subvention va à une organisation plus bruyante. Votre retenue est validée un an plus tard quand le projet vitrine du donateur s’effondre dans un scandale de données — mais la validation ne paie pas les projets d’eau que la subvention aurait financés.",
+            "reflection": "Dire non à un argent mal aligné est un coût réel porté par de vrais programmes. L’indépendance n’est pas gratuite ; la question du conseil est de savoir si elle est évaluée honnêtement, et réexaminée quand les faits changent.",
+            "impacts": {
+              "independence": 1,
+              "humanity": -2
+            }
+          },
+          {
+            "id": "bt-1c",
+            "label": "Adopter un cadre IA d’abord fondé sur les principes",
+            "detail": "Un cadre court et public : à quoi vous utiliserez l’IA, à quoi vous ne l’utiliserez jamais, comment les outils sont approuvés, et deux pilotes phares choisis selon le besoin, pas la visibilité.",
+            "consequence": "Le cadre prend six semaines et trois brouillons. Le donateur, à sa lecture, passe de sceptique à impressionné — il lui donne quelque chose de défendable à financer. Deux pilotes avancent avec des critères que le conseil peut réellement lire.",
+            "reflection": "Un cadre écrit convertit les valeurs en critères d’achat. Il est plus lent qu’un communiqué et plus rapide qu’un scandale — et il vous permet de rencontrer les bailleurs avec un document plutôt qu’une humeur.",
+            "impacts": {
+              "independence": 1,
+              "doNoHarm": 2
+            }
+          }
+        ]
+      },
+      {
+        "id": "bt-2",
+        "title": "L’IA de l’ombre",
+        "narrative": "L’audit est gênant : des employés de tous les départements utilisent quotidiennement des chatbots publics — rédiger des rapports de donateurs, traduire des notes de terrain, résumer des dossiers de cas. Certains de ces documents contiennent des données de bénéficiaires. L’interdire les poussera dans la clandestinité ; l’autoriser ressemble à avaliser une fuite.",
+        "options": [
+          {
+            "id": "bt-2a",
+            "label": "Interdire les outils d’IA publics sur les appareils de travail",
+            "detail": "Politique claire, domaines bloqués, note disciplinaire. La fuite s’arrête — officiellement.",
+            "consequence": "Officiellement, la conformité est totale. Officieusement, le travail migre vers les téléphones personnels — mêmes documents, mêmes outils publics, désormais invisibles à votre équipe informatique comme à votre délégué à la protection des données.",
+            "reflection": "Une interdiction sans alternative déplace le risque au lieu de le réduire. Les politiques qui ignorent pourquoi les gens ont cherché l’outil — charge de travail, traduction, rapidité — se lisent comme des consignes de se cacher.",
+            "impacts": {
+              "doNoHarm": -1,
+              "independence": -1
+            }
+          },
+          {
+            "id": "bt-2b",
+            "label": "Fournir une alternative agréée et gouvernée",
+            "detail": "Contracter un service d’IA d’entreprise avec garanties de non-entraînement et de conservation, publier un guide d’usage acceptable de deux pages en langage clair, et former les équipes sur ce qui ne doit jamais y entrer.",
+            "consequence": "L’adoption de l’outil gouverné est rapide parce qu’il répond au besoin réel. Les lignes rouges du guide — aucune donnée identifiant des bénéficiaires, aucun dossier de cas, aucun contenu sensible pour la sécurité — tiennent parce que le personnel a participé à les rédiger.",
+            "reflection": "Une gouvernance qui rejoint le flux de travail réel des gens est suivie. Une voie agréée avec des lignes rouges claires bat à la fois la pratique interdite dans l’ombre et le laisser-faire non examiné — la protection des données dès la conception, au niveau du bureau.",
+            "impacts": {
+              "doNoHarm": 2,
+              "independence": 1
+            }
+          },
+          {
+            "id": "bt-2c",
+            "label": "Fermer les yeux pour l’instant",
+            "detail": "Noter le constat, y revenir l’an prochain. La productivité du personnel est réelle et les budgets sont serrés.",
+            "consequence": "Rien ne change — visiblement. Des mois plus tard, une traductrice colle un rapport d’incidents de protection dans un chatbot gratuit pour tenir un délai. Les conditions du fournisseur autorisent l’entraînement sur les entrées. Vous l’apprenez par un journaliste.",
+            "reflection": "La gouvernance différée est une gouvernance par défaut — avec les défauts fixés par les fournisseurs. L’organisation est comptable de données qu’elle fait semblant de ne pas savoir en mouvement.",
+            "impacts": {
+              "doNoHarm": -2,
+              "humanity": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "bt-3",
+        "title": "Quarante emplois",
+        "narrative": "Le cas d’affaires de l’automatisation logistique est solide : elle libérerait chaque année des fonds significatifs pour les programmes — et éliminerait quarante postes administratifs, dont beaucoup occupés par des personnes au service de l’organisation depuis des décennies, dans une ville où votre Société nationale est un employeur majeur.",
+        "options": [
+          {
+            "id": "bt-3a",
+            "label": "Automatiser pleinement et rediriger les économies",
+            "detail": "Le calcul de mission est brutal : ces fonds vaccinent, abritent, nourrissent. Les postes s’achèvent avec des indemnités standard.",
+            "consequence": "Les budgets des programmes croissent comme prévu. En ville, l’histoire n’est pas le calcul mais la méthode : quarante familles l’apprennent par une lettre de restructuration. Les discussions syndicales s’enveniment, la presse locale couvre les « licenciements humanitaires », et deux agents de programmes démissionnent par solidarité.",
+            "reflection": "L’humanité n’est pas qu’un principe de terrain. Une organisation qui automatise ses propres gens sans soin enseigne à chaque observateur — personnel, communauté, partenaires — à quel point lire ses valeurs littéralement.",
+            "impacts": {
+              "humanity": -2,
+              "doNoHarm": -1,
+              "independence": 1
+            }
+          },
+          {
+            "id": "bt-3b",
+            "label": "Automatiser lentement, avec reformation et redéploiement",
+            "detail": "Transition sur deux ans : automatiser par phases, reformer le personnel vers de nouveaux rôles (dont la supervision de l’IA), garantir zéro licenciement forcé la première année.",
+            "consequence": "Les économies arrivent à mi-vitesse. Mais vingt-six employés passent à de nouveaux rôles — huit d’entre eux aux postes de qualité des données et de supervision dont le nouveau système a vraiment besoin — et la transition devient l’histoire que vous racontez aux recrues, et non celle que vous craignez.",
+            "reflection": "Ne pas nuire inclut les personnes à l’intérieur du bâtiment. Une transition juste est plus lente et moins chère qu’une hostile dès qu’on compte la confiance, la rétention et le savoir institutionnel qui part avec une lettre de restructuration.",
+            "impacts": {
+              "humanity": 1,
+              "doNoHarm": 2,
+              "impartiality": 1
+            }
+          },
+          {
+            "id": "bt-3c",
+            "label": "Remiser l’automatisation entièrement",
+            "detail": "Le coût social est trop élevé. Garder la fonction manuelle ; y revenir quand les départs naturels ouvriront de l’espace.",
+            "consequence": "Personne ne perd son emploi. Les économies ne se matérialisent jamais, la société d’une ville voisine livre plus vite, et votre équipe logistique — consciente que la décision a été prise pour elle, pas avec elle — cesse discrètement de proposer des améliorations.",
+            "reflection": "Protéger les emplois en gelant la question protège l’effectif de cette année et hypothèque la pertinence de l’année prochaine. La voie humaine n’est pas « ne jamais automatiser » mais « automatiser avec les gens dans la conception, et du temps pour s’adapter ».",
+            "impacts": {
+              "humanity": 1,
+              "independence": -1
+            }
+          }
+        ]
+      },
+      {
+        "id": "bt-4",
+        "title": "Qui gouverne les machines",
+        "narrative": "Dernier point de l’ordre du jour : la gouvernance permanente. Vos pilotes se multiplient, le cadre a besoin d’un propriétaire, et quelqu’un doit pouvoir dire non. La question est qui, avec quel mandat, et redevable devant qui.",
+        "options": [
+          {
+            "id": "bt-4a",
+            "label": "Le laisser à la direction exécutive",
+            "detail": "L’équipe de direction gère déjà le risque. Pas de nouvelles structures, pas de surcoût.",
+            "consequence": "Cela marche jusqu’à ce que ce soit chargé. Les décisions se prennent dans les interstices entre d’autres décisions ; un déploiement à haut risque part pendant un pic de réponse sans aucune revue, et la question d’après-incident — « qui regardait ? » — n’a pas de nom pour réponse.",
+            "reflection": "Une gouvernance qui vit dans le temps libre de chacun ne vit nulle part. La redevabilité a besoin d’un organe nommé, avec un mandat, un calendrier, et le pouvoir de suspendre un déploiement.",
+            "impacts": {
+              "doNoHarm": -2,
+              "independence": -1
+            }
+          },
+          {
+            "id": "bt-4b",
+            "label": "Créer un groupe de supervision de l’IA avec une voix extérieure et communautaire",
+            "detail": "Un petit groupe permanent — programmes, TIC, protection des données, un éthicien externe et un représentant communautaire — avec pouvoir d’approuver, conditionner ou arrêter les usages de l’IA, revu chaque année en public.",
+            "consequence": "Les réunions sont mensuelles et parfois inconfortables. Le premier veto du membre communautaire — sur un pilote de reconnaissance faciale aux points de distribution — vous épargne un titre de presse que vous ne verrez jamais. La revue publique annuelle est calme, et ce calme est la réussite.",
+            "reflection": "C’est la Résolution TIC rendue structurelle : protection des données, engagement communautaire et atténuation des préjudices incarnés dans un organe qui peut agir. Une supervision avec une voix extérieure attrape ce que les insiders sont payés pour ne pas remarquer.",
+            "impacts": {
+              "doNoHarm": 2,
+              "independence": 1
+            }
+          },
+          {
+            "id": "bt-4c",
+            "label": "Mandater un auditeur externe une fois par an",
+            "detail": "Revue indépendante, rapport annuel, la direction donne suite aux constats. À distance et abordable.",
+            "consequence": "Le premier audit est minutieux et arrive onze mois après les décisions qu’il examine. Les constats sont exacts, les recommandations sensées, et le pilote le plus risqué s’est terminé — pour des raisons sans rapport — trois mois avant l’arrivée du rapport.",
+            "reflection": "L’audit est un rétroviseur : indispensable, et aveugle à ce qui approche. La revue externe annuelle complète la supervision permanente ; elle ne peut pas remplacer quelqu’un qui regarde la route.",
+            "impacts": {
+              "doNoHarm": 1,
+              "independence": -1
+            }
+          }
+        ]
+      }
+    ],
+    "debrief": "L’épreuve du conseil est l’endroit où tous les autres scénarios se décident par avance. La pression des donateurs, l’IA de l’ombre, l’automatisation de vos propres effectifs et la question de qui peut dire non — rien de tout cela n’est une question de technologie ; ce sont des questions de gouvernance avec de la technologie dedans. Une Société nationale qui écrit ses lignes rouges, offre à son personnel une voie gouvernée, traite ses propres gens comme partie de « l’humanité » et assoit des voix communautaires là où les décisions se prennent fera automatiquement de meilleurs choix sur le terrain."
+  },
+  {
+    "id": "clinic-notes",
+    "title": "La clinique à l’écoute",
+    "tagline": "La transcription par IA dans une clinique pour migrants sans papiers en Suède",
+    "role": "Responsable des services de santé, clinique de la Croix-Rouge à Gothenburg",
+    "context": "Votre clinique accueille des personnes qui ne peuvent pas ou n’osent pas recourir au système de santé ordinaire : migrants sans papiers, citoyens de l’UE sans assurance maladie, personnes déboutées de l’asile. Les infirmiers et médecins bénévoles consacrent près de la moitié de chaque consultation à saisir des notes, souvent avec l’aide d’un interprète. Une jeune entreprise de technologies de santé propose gratuitement un outil de transcription par IA qui écoute la consultation, la traduit et rédige la note médicale. Les listes d’attente sont longues et vos bénévoles s’épuisent.",
+    "topics": [
+      "Transcription par IA",
+      "Données de santé",
+      "Empreinte énergétique"
+    ],
+    "roles": [
+      "Services de santé",
+      "Protection des données",
+      "Gestion des bénévoles"
+    ],
+    "debrief": "La clinique à l’écoute montre que l’IA administrative n’est jamais seulement administrative. Lorsque les personnes présentes ont toutes les raisons de craindre d’être enregistrées, la minimisation des données, le consentement éclairé, le traitement local et un budget énergétique transparent ne sont pas des options : ils déterminent si la clinique reste un lieu sûr.",
+    "steps": [
+      {
+        "id": "cn-1",
+        "title": "L’offre gratuite",
+        "narrative": "L’outil de la jeune entreprise enregistre toute la consultation, envoie l’audio à un grand modèle de traitement de la parole hébergé hors de l’UE et restitue en une minute une note soignée en suédois. Il est gratuit pendant un an : l’entreprise veut mettre en avant « l’IA au service du bien ». Votre délégué à la protection des données demande où vont les enregistrements. Votre médecin bénévole le plus expérimenté se demande si les patients continueront à se confier.",
+        "options": [
+          {
+            "id": "cn-1a",
+            "label": "Accepter l’outil gratuit dans le cloud",
+            "detail": "Le soulagement le plus rapide pour les bénévoles. Les enregistrements complets quittent la clinique et sont traités à l’étranger par un modèle que vous ne pouvez pas examiner.",
+            "consequence": "En une semaine, le temps consacré à la documentation est divisé par deux. Puis l’avocate d’une patiente demande si les autorités pourraient réclamer les enregistrements de sa cliente dans le cadre d’une procédure d’expulsion. Vous ne pouvez pas dire avec certitude où l’audio est stocké, pendant combien de temps ni qui peut y accéder. La nouvelle se répand dans la communauté et trois patients réguliers cessent de venir.",
+            "reflection": "Pour les personnes qui vivent dans la crainte des autorités, l’enregistrement lui-même peut être source de préjudice. Un outil gratuit payé avec les données les plus sensibles des personnes les plus exposées n’est pas gratuit. La résolution sur les TIC engage le Mouvement à protéger les données à caractère personnel précisément là où les conséquences d’une fuite seraient les plus graves.",
+            "impacts": {
+              "humanity": 1,
+              "doNoHarm": -2,
+              "independence": -1
+            }
+          },
+          {
+            "id": "cn-1b",
+            "label": "Tester un petit modèle fonctionnant dans la clinique",
+            "detail": "Un modèle compact de traitement de la parole installé sur un ordinateur local. Aucun enregistrement audio ne quitte le bâtiment ; les notes sont moins abouties et nécessitent davantage de corrections.",
+            "consequence": "L’installation prend un mois et les notes doivent être corrigées, surtout en tigrigna et en dari. Mais rien ne quitte la clinique, l’audio est supprimé dès que la note est validée et la machine consomme à peu près autant qu’une lampe de bureau. Les bénévoles économisent un tiers de leur temps de saisie plutôt que la moitié.",
+            "reflection": "Les modèles locaux, dimensionnés selon les besoins, privilégient la maîtrise à la qualité de présentation. Lorsque le traitement reste sur place, vous savez où sont les données, combien de temps elles sont conservées et combien d’énergie leur traitement consomme : trois questions auxquelles une organisation humanitaire devrait toujours pouvoir répondre.",
+            "impacts": {
+              "doNoHarm": 2,
+              "independence": 1,
+              "humanity": 1
+            }
+          },
+          {
+            "id": "cn-1c",
+            "label": "Pas d’IA : financer plutôt des bénévoles administratifs",
+            "detail": "Recruter des secrétaires médicaux bénévoles pour saisir les notes après chaque permanence.",
+            "consequence": "Le recrutement fonctionne auprès des étudiants de Gothenburg et les patients ne remarquent aucun changement. Mais il est difficile de garder les secrétaires pendant les examens et, lors des consultations du soir, les médecins se remettent à saisir leurs notes jusqu’à minuit.",
+            "reflection": "Refuser l’IA est un choix légitime qui a un coût réel, souvent supporté par du personnel et des bénévoles épuisés. La question n’est pas de savoir si l’IA est bonne ou mauvaise, mais si une solution plus légère répond mieux aux besoins des personnes dans ce contexte.",
+            "impacts": {
+              "doNoHarm": 1,
+              "humanity": -1
+            }
+          }
+        ]
+      },
+      {
+        "id": "cn-2",
+        "title": "Le consentement dans la salle d’attente",
+        "narrative": "Quel que soit l’outil utilisé, les patients doivent être informés qu’ils sont enregistrés. Votre équipe rédige un formulaire de consentement. Un bénévole propose une simple case à cocher à l’inscription. Un interprète prévient que beaucoup de patients cocheront tout ce qu’une personne portant un gilet de la Croix-Rouge leur présentera, de peur de se voir refuser l’accès aux soins.",
+        "options": [
+          {
+            "id": "cn-2a",
+            "label": "Une case à cocher à l’inscription",
+            "detail": "Rapide et en ordre sur le plan juridique. Les patients donnent leur accord une fois pour toutes les consultations à venir.",
+            "consequence": "Le taux de consentement atteint 99 %. Un audit révèle ensuite que la plupart des patients n’avaient pas compris ce qu’ils avaient accepté ; plusieurs pensaient que c’était une condition pour être soignés.",
+            "reflection": "Un consentement donné dans une situation de dépendance n’est pas un consentement libre. Lorsque les personnes ont besoin d’aide, une case cochée mesure leur acquiescement, pas leur compréhension.",
+            "impacts": {
+              "doNoHarm": -2,
+              "humanity": -1
+            }
+          },
+          {
+            "id": "cn-2b",
+            "label": "Demander à chaque visite, avec une véritable possibilité de refus",
+            "detail": "Le soignant pose la question dans la langue du patient au début de chaque consultation. Un refus ne change rien aux soins.",
+            "consequence": "Environ un patient sur cinq refuse, surtout parmi les nouveaux arrivants. Leurs notes sont saisies manuellement. La confiance grandit : les patients disent à d’autres que la clinique leur demande leur avis et qu’elle en tient réellement compte.",
+            "reflection": "C’est la possibilité de refuser sans aucune conséquence défavorable qui rend l’appui de l’IA acceptable. Maintenir une solution sans IA protège les personnes qui en ont le plus besoin.",
+            "impacts": {
+              "doNoHarm": 2,
+              "humanity": 1,
+              "impartiality": 1
+            }
+          },
+          {
+            "id": "cn-2c",
+            "label": "Enregistrer uniquement le résumé du soignant",
+            "detail": "La voix du patient n’est jamais enregistrée. Après la consultation, le soignant dicte un bref résumé à l’outil.",
+            "consequence": "Les paroles du patient ne passent jamais par la machine. Le gain de temps est moindre, mais la dictée est rapide, le fichier audio est minuscule et son traitement ne nécessite qu’une fraction de l’énergie consommée par la transcription de toute la conversation.",
+            "reflection": "La minimisation des données peut être un choix de conception : modifier ce que l’on recueille plutôt que protéger ce que l’on n’aurait pas dû recueillir. Moins de données, c’est aussi moins de calcul, de stockage et d’énergie.",
+            "impacts": {
+              "doNoHarm": 2,
+              "humanity": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "cn-3",
+        "title": "La facture cachée",
+        "narrative": "La section régionale de la Croix-Rouge souhaite déployer la transcription dans les douze points de santé et de soutien psychosocial de l’ouest de la Suède, et conserver chaque enregistrement pendant cinq ans « pour entraîner un meilleur modèle plus tard ». Votre bénévole informatique fait le calcul : stocker et retraiter régulièrement des milliers d’heures d’audio nécessiterait chaque année autant d’électricité et de refroidissement qu’une salle de serveurs.",
+        "options": [
+          {
+            "id": "cn-3a",
+            "label": "Tout conserver pour un entraînement futur",
+            "detail": "Davantage de données pourrait permettre de meilleurs modèles. Le stockage est peu coûteux et le réseau électrique suédois repose principalement sur des sources non fossiles.",
+            "consequence": "Les archives atteignent plusieurs téraoctets de conversations parmi les plus sensibles que votre organisation ait jamais recueillies. La consommation d’énergie augmente chaque mois. Personne n’entraîne finalement le modèle, mais il faut toujours sécuriser les archives, les sauvegarder et alimenter les équipements.",
+            "reflection": "Une électricité décarbonée ne rend pas le gaspillage inoffensif : l’électricité utilisée ici n’est pas disponible pour d’autres besoins et le matériel a déjà une lourde empreinte avant même sa mise sous tension. Les données conservées « au cas où » entraînent indéfiniment des risques pour la vie privée et des coûts énergétiques.",
+            "impacts": {
+              "doNoHarm": -2,
+              "humanity": -1
+            }
+          },
+          {
+            "id": "cn-3b",
+            "label": "Supprimer l’audio, mesurer et publier la consommation d’énergie",
+            "detail": "L’audio est supprimé sous 24 heures. Chaque site communique sa consommation d’énergie par consultation et les chiffres figurent dans le rapport annuel.",
+            "consequence": "Les premiers chiffres surprennent tout le monde : le projet pilote dans le cloud consommait environ trente fois plus d’énergie par note que le modèle local. Le conseil d’administration adopte un budget énergétique par consultation et deux sections choisissent le modèle local sur cette base.",
+            "reflection": "On ne peut pas maîtriser une empreinte que l’on refuse de mesurer. Publier le coût énergétique de l’IA transforme la durabilité, jusque-là simple slogan, en un critère de décision que les communautés et les donateurs peuvent vérifier.",
+            "impacts": {
+              "doNoHarm": 2,
+              "independence": 1
+            }
+          },
+          {
+            "id": "cn-3c",
+            "label": "Déployer uniquement là où les bénévoles le demandent",
+            "detail": "Aucune obligation à l’échelle régionale. Les sites choisissent de participer après avoir examiné les résultats de votre clinique.",
+            "consequence": "Cinq sites l’adoptent, sept ne le font pas. L’utilisation, et donc la consommation d’énergie, reste proportionnée aux besoins réels, mais les pratiques divergent et le délégué à la protection des données doit désormais vérifier cinq configurations.",
+            "reflection": "Le déploiement à plus grande échelle doit reposer sur des preuves d’utilité, pas sur l’enthousiasme. Réduire l’empreinte consiste souvent simplement à ne pas installer un outil là où il n’est pas nécessaire.",
+            "impacts": {
+              "doNoHarm": 1,
+              "humanity": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "cn-4",
+        "title": "Quand la note est erronée",
+        "narrative": "Une patiente revient avec une infection qui s’aggrave. La note rédigée par l’IA lors de sa première visite indiquait « aucune allergie connue ». Elle avait pourtant précisé, par l’intermédiaire de l’interprète, qu’elle était allergique à la pénicilline. Le médecin bénévole avait validé la note à la fin d’une permanence de douze heures sans la lire attentivement.",
+        "options": [
+          {
+            "id": "cn-4a",
+            "label": "Traiter l’incident comme une erreur humaine individuelle",
+            "detail": "Rappeler au médecin de lire plus attentivement. Conserver le fonctionnement actuel.",
+            "consequence": "Deux mois plus tard, un autre bénévole valide une autre note erronée. Le schéma est identique : des personnes fatiguées, de longues permanences et des notes qui paraissent fiables.",
+            "reflection": "Le biais d’automatisation est prévisible : un texte soigné incite à l’approuver. Rejeter la faute sur les individus masque un problème de conception qui se reproduira.",
+            "impacts": {
+              "doNoHarm": -2,
+              "humanity": -1
+            }
+          },
+          {
+            "id": "cn-4b",
+            "label": "Réserver les champs critiques à une saisie humaine",
+            "detail": "Les allergies, les médicaments et les risques pour la sécurité font toujours l’objet de questions et d’une saisie par le soignant. L’IA rédige uniquement la partie descriptive.",
+            "consequence": "Les notes prennent un peu plus de temps et, lors de l’audit suivant, les erreurs dans les champs critiques sont nulles. Vous expliquez à la patiente ce qui s’est passé, lui présentez des excuses et lui décrivez le changement ; elle accepte de continuer à venir.",
+            "reflection": "Un contrôle humain effectif suppose de prévoir où les humains prennent les décisions, et pas seulement de leur demander de signer. La transparence envers la personne touchée fait partie de la redevabilité.",
+            "impacts": {
+              "doNoHarm": 2,
+              "humanity": 1
+            }
+          },
+          {
+            "id": "cn-4c",
+            "label": "Suspendre l’IA et réexaminer le dispositif avec les patients",
+            "detail": "Interrompre la transcription pendant un mois et inviter d’anciens patients et des interprètes à réfléchir à son fonctionnement.",
+            "consequence": "La pause mobilise davantage d’heures de bénévolat. La réflexion fait émerger la meilleure idée de la clinique à ce jour : les interprètes relisent aux patients les informations essentielles avant la validation de la note. C’est plus lent et les erreurs deviennent rares.",
+            "reflection": "Les personnes concernées par un système sont souvent les mieux placées pour repérer ses défaillances. Faire une pause pour écouter n’est pas un échec : c’est ainsi que la redevabilité humanitaire se concrétise.",
+            "impacts": {
+              "doNoHarm": 2,
+              "humanity": -1,
+              "impartiality": 1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "invoice-engine",
+    "title": "Le moteur de facturation",
+    "tagline": "Automatiser la gestion financière au siège national aux Pays-Bas",
+    "role": "Directeur des finances et de l’administration, siège de la Société nationale à The Hague",
+    "context": "Votre équipe financière traite 40 000 factures par an : fournisseurs de centres d’hébergement, remboursements aux bénévoles, paiements à des organisations partenaires à l’étranger et transferts monétaires aux personnes touchées par les inondations dans le Limburg. Trois de vos huit collaborateurs partent à la retraite. Un grand éditeur de logiciels propose un agent d’IA qui lit les factures, les impute, signale les fraudes et approuve automatiquement les paiements courants. Le conseil d’administration souhaite réaliser des économies au profit des programmes.",
+    "topics": [
+      "Automatisation des processus",
+      "Redevabilité financière",
+      "Empreinte énergétique"
+    ],
+    "roles": [
+      "Finances et administration",
+      "TIC",
+      "Audit et conformité"
+    ],
+    "debrief": "Le moteur de facturation montre que l’IA des services administratifs détermine qui est payé, qui fait l’objet d’un signalement et combien d’énergie l’organisation consomme pour cela. L’efficacité est un objectif humanitaire légitime, mais seulement si des personnes restent responsables des paiements, si les signalements peuvent être contestés et si l’on privilégie l’outil fonctionnel le plus léger plutôt que le plus impressionnant.",
+    "steps": [
+      {
+        "id": "ie-1",
+        "title": "Quel outil pour cette tâche ?",
+        "narrative": "L’agent du fournisseur fait passer chaque facture par un grand modèle d’IA généraliste dans le cloud, même les factures simples qui suivent le même modèle chaque mois. Votre contrôleur de gestion note que 80 % des factures proviennent de seulement 200 fournisseurs réguliers. Un bénévole spécialiste des TIC suggère qu’une automatisation classique fondée sur des règles, complétée par un petit modèle pour les cas complexes restants, ferait l’essentiel du travail.",
+        "options": [
+          {
+            "id": "ie-1a",
+            "label": "Acheter l’agent d’IA complet",
+            "detail": "Une plateforme unique pour tout. Chaque facture, simple ou complexe, passe par un grand modèle.",
+            "consequence": "Le système fonctionne de manière impressionnante. Mais il coûte aussi plus cher que le personnel qu’il remplace et son rapport d’utilisation révèle que chaque facture récurrente simple mobilise autant de calcul qu’une longue conversation en ligne, et cela des dizaines de milliers de fois par an.",
+            "reflection": "Utiliser un grand modèle d’IA pour une tâche qu’une simple règle peut accomplir revient à envoyer un camion livrer une lettre. Chaque requête inutile a un coût en énergie, en eau et en matériel.",
+            "impacts": {
+              "doNoHarm": -1,
+              "independence": -1
+            }
+          },
+          {
+            "id": "ie-1b",
+            "label": "Des règles d’abord, une petite IA pour le reste",
+            "detail": "Une automatisation simple pour les factures récurrentes ; un petit modèle ne lit que les factures inhabituelles ; le personnel traite les exceptions.",
+            "consequence": "La mise en place prend trois mois avec votre équipe TIC. Les factures récurrentes sont traitées à grande vitesse, presque sans calcul. Le petit modèle prend en charge les reçus manuscrits des bénévoles. Les coûts de fonctionnement et la consommation d’énergie ne représentent qu’une fraction de ceux de l’offre du fournisseur.",
+            "reflection": "La conception frugale est un principe, pas un compromis : commencer par l’outil le plus simple et n’ajouter l’IA que là où elle apporte une valeur manifeste. C’est aussi ainsi que le système reste compréhensible pour les auditeurs.",
+            "impacts": {
+              "doNoHarm": 2,
+              "independence": 1
+            }
+          },
+          {
+            "id": "ie-1c",
+            "label": "Recruter et former plutôt qu’automatiser",
+            "detail": "Remplacer les départs à la retraite par deux recrutements et améliorer le système existant.",
+            "consequence": "Les paiements restent exacts et les responsabilités restent humaines. Mais le recrutement prend des mois, les retards atteignent six semaines et certains petits fournisseurs des zones inondées attendent trop longtemps leur paiement.",
+            "reflection": "Ne pas automatiser est un choix légitime, mais le retard de paiement est aussi un préjudice, surtout pour les petites entreprises locales et les bénévoles qui avancent leur propre argent.",
+            "impacts": {
+              "doNoHarm": 1,
+              "humanity": -1
+            }
+          }
+        ]
+      },
+      {
+        "id": "ie-2",
+        "title": "Le signalement de fraude",
+        "narrative": "Les contrôles automatisés commencent à signaler des paiements « à haut risque ». Vous remarquez une tendance : les remboursements aux bénévoles portant des noms non néerlandais et les transferts aux organisations partenaires en Syrie et au Soudan sont signalés trois fois plus souvent. Chaque signalement bloque le paiement jusqu’à trois semaines.",
+        "options": [
+          {
+            "id": "ie-2a",
+            "label": "Faire confiance aux signalements : le risque avant tout",
+            "detail": "La conformité n’est pas négociable. Le blocage des paiements est le prix de la sécurité.",
+            "consequence": "Deux organisations partenaires au Soudan ne peuvent pas verser les salaires à temps. Une bénévole d’origine érythréenne qui a acheté des couvertures avec son propre argent attend un mois son remboursement et démissionne. Les signalements ne détectent aucune fraude réelle.",
+            "reflection": "Un modèle entraîné sur les tendances passées reproduit les soupçons du passé. Appliqué aux noms et aux destinations, il devient discriminatoire envers les personnes et les partenaires mêmes qu’une organisation humanitaire a pour mission de servir.",
+            "impacts": {
+              "impartiality": -2,
+              "humanity": -1,
+              "doNoHarm": -1
+            }
+          },
+          {
+            "id": "ie-2b",
+            "label": "Auditer les signalements pour détecter les biais",
+            "detail": "Suspendre les blocages automatiques, confronter les signalements aux résultats et supprimer les noms et la nationalité des critères utilisés.",
+            "consequence": "L’audit montre que les signalements reposaient surtout sur les noms et la géographie, pas sur le risque. Après les changements, les taux de signalement sont similaires entre les groupes et les deux véritables cas de fraude de l’année sont tout de même détectés, par un enquêteur humain donnant suite à un renseignement.",
+            "reflection": "L’impartialité s’applique aussi aux systèmes administratifs. Vérifier si les décisions automatisées produisent des résultats inéquitables est un devoir, pas un simple avantage.",
+            "impacts": {
+              "impartiality": 2,
+              "doNoHarm": 1
+            }
+          },
+          {
+            "id": "ie-2c",
+            "label": "Des signalements consultatifs ; une décision humaine sous 48 heures",
+            "detail": "Aucun blocage automatique. Un agent financier examine chaque signalement et doit décider sous deux jours.",
+            "consequence": "L’équipe proteste contre la charge de travail supplémentaire, mais les paiements bloqués deviennent presque inexistants. Les agents commencent aussi à consigner les raisons pour lesquelles ils lèvent les alertes, ce qui fournit des éléments utiles pour améliorer les règles.",
+            "reflection": "Maintenir les humains dans la décision, avec un délai qui protège la personne en attente, permet de concilier contrôle et dignité.",
+            "impacts": {
+              "impartiality": 1,
+              "humanity": 1,
+              "doNoHarm": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "ie-3",
+        "title": "Où les calculs sont-ils effectués ?",
+        "narrative": "Le fournisseur prévoit de transférer tous les traitements vers un nouveau centre de données dans le nord des Pays-Bas, dans la région même où les habitants ont protesté contre l’accaparement des terres, de l’électricité et de l’eau par ces centres. Un journaliste local demande si la Croix-Rouge fait partie du problème.",
+        "options": [
+          {
+            "id": "ie-3a",
+            "label": "Laisser le fournisseur décider",
+            "detail": "Le lieu où le fournisseur effectue ses calculs le regarde. Son rapport de durabilité indique « neutre en carbone ».",
+            "consequence": "L’article du journaliste souligne votre silence. Lorsque vous demandez des chiffres au fournisseur, il apparaît que la « neutralité carbone » repose sur des compensations achetées ailleurs ; la consommation réelle d’eau et d’électricité n’est pas publiée.",
+            "reflection": "La responsabilité ne s’arrête pas au contrat. Un approvisionnement éthique suppose de demander où les calculs sont effectués et quel en est le coût pour la communauté locale et l’environnement.",
+            "impacts": {
+              "doNoHarm": -2,
+              "independence": -1
+            }
+          },
+          {
+            "id": "ie-3b",
+            "label": "Inscrire le suivi énergétique dans le contrat",
+            "detail": "Exiger du fournisseur un rapport annuel sur l’énergie, l’eau et les lieux de traitement, avec un droit de résiliation si les objectifs ne sont pas atteints.",
+            "consequence": "Les négociations prennent deux mois de plus. Le fournisseur accepte, en partie parce que d’autres ONG suivent votre exemple. Vous publiez le premier rapport : les chiffres restent modestes grâce à votre conception privilégiant les règles.",
+            "reflection": "Les achats sont un levier de pouvoir. Lorsque les organisations humanitaires formulent ensemble leurs demandes, les fournisseurs commencent à divulguer ce qu’ils cacheraient autrement.",
+            "impacts": {
+              "doNoHarm": 2,
+              "independence": 1
+            }
+          },
+          {
+            "id": "ie-3c",
+            "label": "Exécuter le petit modèle sur vos propres serveurs",
+            "detail": "Héberger le modèle de traitement des factures dans votre salle de serveurs existante, alimentée par vos panneaux solaires en toiture et votre contrat d’électricité verte.",
+            "consequence": "Votre équipe TIC doit désormais entretenir un système supplémentaire et les performances baissent pendant le pic de fin d’année. Mais vous savez exactement ce que le système consomme, et c’est moins que les machines à café du bureau.",
+            "reflection": "Posséder l’infrastructure apporte des responsabilités autant que de la maîtrise. Pour des charges de travail faibles et régulières, l’hébergement local peut offrir à la fois plus d’indépendance et une empreinte moindre.",
+            "impacts": {
+              "independence": 2,
+              "doNoHarm": 1,
+              "humanity": -1
+            }
+          }
+        ]
+      },
+      {
+        "id": "ie-4",
+        "title": "Qui signe ?",
+        "narrative": "Le système fonctionne désormais bien. Le conseil d’administration propose la dernière étape : le laisser approuver et payer automatiquement toutes les factures de moins de 5 000 €, y compris les petits transferts monétaires aux ménages touchés par les inondations dans le Limburg. Aucun humain ne les examinerait.",
+        "options": [
+          {
+            "id": "ie-4a",
+            "label": "Automatisation complète en dessous de 5 000 €",
+            "detail": "Une efficacité maximale. Les exceptions sont examinées après coup.",
+            "consequence": "Une erreur de données lors de l’importation d’une liste entraîne des doubles paiements à 300 ménages, puis leur récupération automatique une semaine plus tard. Des familles qui ont déjà dépensé l’argent pour des réparations reçoivent des courriers de recouvrement. Les gros titres ne parlent pas d’efficacité.",
+            "reflection": "Lorsque les paiements automatisés concernent des personnes touchées par une crise, les erreurs causent des préjudices à grande échelle. De petits montants ne sont pas petits pour les personnes qui les reçoivent.",
+            "impacts": {
+              "doNoHarm": -2,
+              "humanity": -1
+            }
+          },
+          {
+            "id": "ie-4b",
+            "label": "Automatiser pour les fournisseurs, garder une validation humaine pour les personnes",
+            "detail": "Les factures courantes des fournisseurs sont traitées automatiquement. Les paiements aux particuliers exigent toujours une validation humaine.",
+            "consequence": "L’essentiel du volume est automatisé ; les paiements qui touchent la vie des personnes restent associés à un responsable identifié. Lorsque l’erreur d’importation survient, un agent financier la repère avant qu’un seul double paiement ne soit effectué.",
+            "reflection": "Fixez la limite de l’automatisation là où les erreurs cessent d’être administratives pour devenir personnelles.",
+            "impacts": {
+              "doNoHarm": 2,
+              "humanity": 1
+            }
+          },
+          {
+            "id": "ie-4c",
+            "label": "Automatiser, mais publier les modalités de recours",
+            "detail": "Automatisation en dessous de 5 000 €, avec une ligne téléphonique clairement indiquée et l’engagement de corriger tout paiement erroné sous 5 jours.",
+            "consequence": "La ligne de recours permet de repérer rapidement les problèmes et la plupart sont résolus en quelques jours. Mais elle fait peser sur les personnes concernées la charge de détecter les erreurs et de les signaler ; celles qui ont le moins de temps et de compétences linguistiques se plaignent le moins.",
+            "reflection": "Une voie de recours est indispensable, mais elle ne remplace pas la prévention des préjudices. La redevabilité est plus efficace avant l’erreur, pas seulement après.",
+            "impacts": {
+              "doNoHarm": 1,
+              "humanity": 1,
+              "impartiality": -1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "volunteer-roster",
+    "title": "Le planning des bénévoles",
+    "tagline": "Planifier par IA les permanences des bénévoles chargés de l’accueil des réfugiés en Pologne",
+    "role": "Coordinateur des bénévoles, section de la Croix-Rouge à Kraków",
+    "context": "Deux ans après la première vague d’arrivées d’Ukraine, votre section assure toujours l’accueil, des cafés linguistiques et un point de distribution alimentaire. Vous coordonnez 1 800 bénévoles à l’aide de tableurs, de groupes WhatsApp et de nombreux appels tard le soir. Des permanences restent sans bénévole et les mêmes personnes fiables sont sollicitées sans cesse. Une entreprise technologique polonaise propose un système d’IA qui prévoit la demande, établit le planning et envoie automatiquement des messages aux bénévoles.",
+    "topics": [
+      "Planification par IA",
+      "Bien-être des bénévoles",
+      "Empreinte énergétique"
+    ],
+    "roles": [
+      "Gestion des bénévoles",
+      "Opérations",
+      "Protection"
+    ],
+    "debrief": "Le planning des bénévoles montre qu’une IA qui optimise le temps des personnes prend aussi des décisions à leur sujet : à qui faire confiance, qui négliger, qui solliciter excessivement. Les bénévoles ne sont pas des ressources à exploiter au maximum. Un système adapté protège leur bien-être, recueille le moins d’informations possible à leur sujet et ne mobilise pas plus de calcul que nécessaire.",
+    "steps": [
+      {
+        "id": "vr-1",
+        "title": "Ce que le système veut savoir",
+        "narrative": "Pour prévoir qui viendra, le fournisseur souhaite accéder aux données de localisation des téléphones des bénévoles, à leur activité sur les réseaux sociaux et à leurs agendas, et attribuer à chacun une note de « fiabilité ». La démonstration est impressionnante : le système prévoit les absences avec une précision de 85 %.",
+        "options": [
+          {
+            "id": "vr-1a",
+            "label": "Tout connecter : la précision compte",
+            "detail": "Plus il y a de données, meilleur est le planning.",
+            "consequence": "Les prévisions sont exactes. Puis les bénévoles découvrent le dispositif. Plusieurs bénévoles ukrainiens, eux-mêmes réfugiés, partent immédiatement : ils ont fui une guerre où le suivi des téléphones était synonyme de danger. D’autres se sentent surveillés pendant leur temps libre.",
+            "reflection": "Les bénévoles sont des personnes, pas des sources de données. Suivre leur vie en dehors de leur mission brise la confiance et peut mettre en danger ceux qui ont eux-mêmes des besoins de protection.",
+            "impacts": {
+              "doNoHarm": -2,
+              "humanity": -1
+            }
+          },
+          {
+            "id": "vr-1b",
+            "label": "Uniquement ce que les bénévoles choisissent de communiquer",
+            "detail": "Les disponibilités qu’ils saisissent eux-mêmes, leurs compétences et leurs langues. Aucun suivi, aucune note de fiabilité.",
+            "consequence": "Les prévisions sont moins précises. Mais les bénévoles font confiance au système et actualisent leurs disponibilités, ce qui s’avère plus important que n’importe quelle donnée de suivi.",
+            "reflection": "La minimisation des données est une forme concrète de respect. Les informations que les personnes donnent volontairement sont souvent plus fiables que celles qu’on leur soutire.",
+            "impacts": {
+              "doNoHarm": 2,
+              "humanity": 1
+            }
+          },
+          {
+            "id": "vr-1c",
+            "label": "Un calendrier partagé, sans IA",
+            "detail": "Un outil simple de planification à code source ouvert. Les bénévoles choisissent eux-mêmes leurs permanences.",
+            "consequence": "Son fonctionnement ne coûte presque rien et consomme à peine de l’énergie. Les créneaux prisés sont immédiatement pourvus ; la distribution alimentaire matinale reste sans bénévole et vous passez toujours les appels de 6 heures du matin.",
+            "reflection": "Des outils simples suffisent souvent, mais il vaut la peine de se demander quels problèmes ils laissent sans réponse, et pour qui.",
+            "impacts": {
+              "doNoHarm": 1,
+              "independence": 1,
+              "humanity": -1
+            }
+          }
+        ]
+      },
+      {
+        "id": "vr-2",
+        "title": "Le planning optimisé",
+        "narrative": "Le système de planification apprend qu’un petit groupe de bénévoles répond presque toujours oui. Il commence à leur attribuer la plupart des permanences difficiles. L’une d’elles, une enseignante retraitée bénévole chaque semaine depuis deux ans, vous confie qu’elle n’arrive plus à dormir.",
+        "options": [
+          {
+            "id": "vr-2a",
+            "label": "Continuer à optimiser la couverture des permanences",
+            "detail": "Les personnes qui arrivent ont besoin que toutes les permanences soient assurées. Les bénévoles disponibles veulent aider.",
+            "consequence": "La couverture atteint 98 %. En trois mois, six de vos bénévoles les plus expérimentés s’épuisent et partent en même temps. Le système s’adapte en sollicitant davantage le groupe suivant le plus disposé à aider.",
+            "reflection": "Optimiser un seul indicateur rend tout le reste invisible. Le bien-être des bénévoles relève du principe d’humanité : celui-ci s’applique autant aux personnes qui aident qu’à celles qui sont aidées.",
+            "impacts": {
+              "humanity": -2,
+              "doNoHarm": -1
+            }
+          },
+          {
+            "id": "vr-2b",
+            "label": "Intégrer des limites et du repos",
+            "detail": "Un nombre maximal de permanences par semaine, un repos obligatoire après les permanences de nuit et un « non merci » qui ne pénalise jamais personne.",
+            "consequence": "La couverture tombe à 90 % et vous recrutez pour combler l’écart. La fidélisation des bénévoles s’améliore nettement et l’enseignante retraitée revient après un mois de repos.",
+            "reflection": "Les bons systèmes intègrent le souci des personnes. Les règles qui les protègent d’une sollicitation excessive sont des garanties humanitaires, pas des inefficacités.",
+            "impacts": {
+              "humanity": 2,
+              "doNoHarm": 1
+            }
+          },
+          {
+            "id": "vr-2c",
+            "label": "Permettre aux bénévoles de consulter et de façonner les règles",
+            "detail": "Publier la méthode d’élaboration du planning et créer un comité de bénévoles pouvant modifier les priorités.",
+            "consequence": "Le comité demande l’équité entre les groupes linguistiques et une rotation des permanences de fin de semaine. Le système évolue plus lentement, mais inspire bien davantage confiance.",
+            "reflection": "La transparence sur la prise de décision permet aux personnes de contester les décisions. Des règles partagées sont plus faciles à accepter que des règles cachées.",
+            "impacts": {
+              "humanity": 1,
+              "impartiality": 1,
+              "doNoHarm": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "vr-3",
+        "title": "Des messages incessants",
+        "narrative": "Le fournisseur propose un assistant conversationnel d’IA qui envoie à chaque bénévole des messages personnalisés, des rappels et des « encouragements à agir », rédigés à chaque fois par un grand modèle de langage : environ 30 000 messages par mois en polonais, en ukrainien et en anglais.",
+        "options": [
+          {
+            "id": "vr-3a",
+            "label": "Activer les messages personnalisés par IA",
+            "detail": "Des messages chaleureux et adaptés en trois langues, générés un par un.",
+            "consequence": "Les bénévoles trouvent d’abord les messages sympathiques, puis étranges : l’un reçoit « Vous nous manquez ! » alors qu’il est à l’hôpital. Le rapport énergétique montre que les messages sont désormais le premier poste de consommation d’énergie du système, pour des textes qui disent à peu près toujours la même chose.",
+            "reflection": "Générer un nouveau texte pour chaque message courant multiplie les calculs pour un gain minime. L’IA générative n’est pas gratuite : chaque message a un coût en énergie et en eau.",
+            "impacts": {
+              "doNoHarm": -2,
+              "humanity": -1
+            }
+          },
+          {
+            "id": "vr-3b",
+            "label": "Des modèles rédigés par des humains dans chaque langue",
+            "detail": "Des bénévoles de chaque communauté linguistique rédigent une fois pour toutes de courts modèles de messages. Le système insère les noms et les horaires.",
+            "consequence": "Les messages ont une voix humaine parce que des humains les ont écrits. Les besoins de calcul deviennent presque nuls et les bénévoles apprécient de rédiger les modèles ensemble.",
+            "reflection": "Souvent, la bonne dose d’IA, c’est moins d’IA. Réutiliser des textes rédigés par des humains est moins coûteux, plus léger et plus digne de confiance.",
+            "impacts": {
+              "doNoHarm": 2,
+              "humanity": 1,
+              "independence": 1
+            }
+          },
+          {
+            "id": "vr-3c",
+            "label": "Moins de messages, selon le choix des bénévoles",
+            "detail": "Les bénévoles choisissent comment et à quelle fréquence vous les contactez. Par défaut, ils reçoivent un récapitulatif hebdomadaire.",
+            "consequence": "Le volume de messages baisse de 80 %. Certaines permanences se remplissent un peu plus lentement, mais les bénévoles disent se sentir respectés plutôt que harcelés.",
+            "reflection": "Permettre aux personnes de fixer leurs propres limites réduit à la fois la pression et l’empreinte.",
+            "impacts": {
+              "doNoHarm": 1,
+              "humanity": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": "vr-4",
+        "title": "Une demande des autorités",
+        "narrative": "Les autorités régionales demandent les données de votre planning de bénévoles, noms, nationalités et disponibilités, pour organiser leur propre réponse de protection civile. Le système permet de les exporter en un clic. Nombre de vos bénévoles sont des citoyens ukrainiens bénéficiant d’une protection temporaire.",
+        "options": [
+          {
+            "id": "vr-4a",
+            "label": "Transmettre l’export complet",
+            "detail": "Une bonne coopération avec les autorités contribue à l’ensemble de la réponse.",
+            "consequence": "Les données servent à la planification, puis à la vérification des titres de séjour. Les bénévoles l’apprennent dans un reportage local. Le recrutement de bénévoles ukrainiens s’effondre.",
+            "reflection": "Utiliser à d’autres fins des données communiquées pour un objectif précis trahit la confiance et peut compromettre l’indépendance et la neutralité du Mouvement aux yeux des communautés qu’il sert.",
+            "impacts": {
+              "independence": -2,
+              "neutrality": -1,
+              "doNoHarm": -2
+            }
+          },
+          {
+            "id": "vr-4b",
+            "label": "Ne communiquer que des chiffres agrégés",
+            "detail": "Proposer des effectifs par compétence, langue et district, sans noms ni nationalités.",
+            "consequence": "Les autorités obtiennent ce dont elles ont besoin pour planifier. Elles protestent d’abord, puis adoptent votre format comme modèle pour les autres organisations.",
+            "reflection": "La limitation des finalités consiste à ne partager que ce qui est nécessaire à l’objectif annoncé. Les données agrégées protègent les individus tout en permettant la coopération.",
+            "impacts": {
+              "independence": 1,
+              "neutrality": 1,
+              "doNoHarm": 2
+            }
+          },
+          {
+            "id": "vr-4c",
+            "label": "Demander un accord explicite aux bénévoles",
+            "detail": "Expliquer la demande et laisser chaque bénévole décider s’il souhaite figurer sur la liste transmise aux autorités.",
+            "consequence": "Environ la moitié accepte. Les autres sont reconnaissants d’avoir été consultés. Cela prend trois semaines : les autorités trouvent ce délai long, mais l’acceptent.",
+            "reflection": "Le consentement et la transparence permettent aux personnes de garder la maîtrise de leurs informations, même lorsque la demande vient d’un partenaire.",
+            "impacts": {
+              "independence": 1,
+              "doNoHarm": 1,
+              "humanity": 1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "heat-wave",
+    "title": "La carte des risques liés à la chaleur",
+    "tagline": "Prévoir par IA pour protéger les personnes âgées pendant une canicule en Sicile",
+    "role": "Responsable de la santé en situation d’urgence, comité régional de la Croix-Rouge à Palermo",
+    "context": "En Sicile, les températures estivales dépassent désormais régulièrement 45 °C. En juillet dernier, des personnes âgées vivant seules sont mortes dans leur appartement avant que quiconque prenne de leurs nouvelles. Un consortium de recherche européen propose un modèle d’IA combinant prévisions météorologiques, dossiers médicaux, données téléphoniques et images satellites pour prévoir quelles rues et quelles personnes sont les plus exposées, afin que vos bénévoles sachent à quelles portes frapper en premier. Son fonctionnement nécessite une puissante grappe de calcul en Europe du Nord.",
+    "topics": [
+      "IA prédictive",
+      "Adaptation au changement climatique",
+      "Empreinte énergétique"
+    ],
+    "roles": [
+      "Santé en situation d’urgence",
+      "Gestion de l’information",
+      "Engagement communautaire"
+    ],
+    "debrief": "La carte des risques liés à la chaleur illustre un paradoxe difficile : l’IA utilisée pour répondre au changement climatique peut elle-même accroître la consommation d’énergie et de ressources qui l’alimente. La prévision peut sauver des vies, mais seulement si elle n’exclut pas les personnes qu’elle ne voit pas, ne recueille pas plus de données que nécessaire et est dimensionnée en tenant honnêtement compte de sa propre empreinte.",
+    "steps": [
+      {
+        "id": "hw-1",
+        "title": "Quelle taille de modèle ?",
+        "narrative": "Le modèle du consortium est immense : il retraite les images satellites européennes et les simulations climatiques toutes les quelques heures. Votre responsable de l’information estime qu’un été d’utilisation consommerait autant d’électricité qu’un petit village sicilien. Une université locale propose une solution plus simple : un indice statistique de risque lié à la chaleur, construit à partir des prévisions, de l’ancienneté des bâtiments et des données d’âge par quartier.",
+        "options": [
+          {
+            "id": "hw-1a",
+            "label": "Utiliser le grand modèle d’IA",
+            "detail": "Les prévisions les plus précises disponibles, au prix de la consommation énergétique d’un village.",
+            "consequence": "Les prévisions sont excellentes pour le centre-ville. Mais les besoins de calcul du modèle ne permettent de l’exécuter que deux fois par jour et sa lourde empreinte fait les gros titres de la presse italienne : « La Croix-Rouge lutte contre la chaleur avec une machine qui réchauffe la planète ».",
+            "reflection": "Les outils de réponse au changement climatique doivent être évalués à l’aune de leur propre empreinte climatique. Le modèle le plus puissant n’est pas automatiquement le plus humain.",
+            "impacts": {
+              "humanity": 1,
+              "doNoHarm": -2
+            }
+          },
+          {
+            "id": "hw-1b",
+            "label": "Utiliser l’indice simple de risque lié à la chaleur",
+            "detail": "Moins précis, il fonctionne sur un ordinateur portable et peut être expliqué à n’importe quel bénévole.",
+            "consequence": "L’indice désigne les mêmes zones à haut risque dans 90 % des cas. Les bénévoles comprennent pourquoi une rue est en rouge et les responsables communautaires peuvent le corriger, ce qu’ils font en ajoutant deux quartiers absents des données.",
+            "reflection": "Les modèles simples et explicables favorisent la participation et les corrections. Un outil adapté à l’usage vaut souvent mieux qu’une technologie de pointe.",
+            "impacts": {
+              "doNoHarm": 2,
+              "humanity": 1,
+              "independence": 1
+            }
+          },
+          {
+            "id": "hw-1c",
+            "label": "Le grand modèle, mais uniquement pendant les alertes canicule",
+            "detail": "N’exécuter le grand modèle que lorsque le service national émet une alerte rouge.",
+            "consequence": "La consommation d’énergie baisse de 80 %. Mais le modèle démarre « à froid » les jours d’alerte et met des heures à produire des résultats utiles : le premier jour, le plus meurtrier, est celui qu’il couvre le moins bien.",
+            "reflection": "Limiter l’utilisation est un bon réflexe. Mais il faut vérifier les compromis au regard des moments où les personnes sont réellement le plus exposées.",
+            "impacts": {
+              "doNoHarm": 1,
+              "humanity": -1
+            }
+          }
+        ]
+      },
+      {
+        "id": "hw-2",
+        "title": "Qui est invisible ?",
+        "narrative": "Le modèle repose sur les données téléphoniques et les dossiers médicaux enregistrés. Vos bénévoles soulignent qui en est absent : les travailleurs agricoles migrants sans papiers vivant dans des installations informelles hors de la ville et les personnes âgées sans smartphone. Aucun de ces deux groupes ne figure sur la carte des risques liés à la chaleur.",
+        "options": [
+          {
+            "id": "hw-2a",
+            "label": "Faire confiance à la carte",
+            "detail": "Le nombre de bénévoles est limité. Aller là où les données indiquent le risque le plus élevé.",
+            "consequence": "Les visites sont efficaces et de nombreuses vies sont protégées en ville. Dans une installation informelle près de Campobello, deux travailleurs agricoles sont hospitalisés pour un coup de chaleur. Personne ne leur avait rendu visite.",
+            "reflection": "Les données reflètent les personnes recensées, pas les personnes en danger. Répartir l’aide sur la seule base des données peut exclure silencieusement les plus vulnérables.",
+            "impacts": {
+              "impartiality": -2,
+              "humanity": -1
+            }
+          },
+          {
+            "id": "hw-2b",
+            "label": "Réserver des équipes aux personnes absentes de la carte",
+            "detail": "Un tiers des capacités bénévoles est consacré aux lieux et aux groupes que les données ne voient pas, avec l’appui de contacts communautaires.",
+            "consequence": "La couverture en ville est légèrement réduite. Les visites dans les installations apportent de l’eau, de l’ombre et des soins précoces à des centaines de travailleurs dont le modèle ignorait l’existence.",
+            "reflection": "L’impartialité signifie apporter une aide selon les besoins, et non selon la visibilité. La connaissance humaine doit corriger les angles morts des données.",
+            "impacts": {
+              "impartiality": 2,
+              "humanity": 1
+            }
+          },
+          {
+            "id": "hw-2c",
+            "label": "Recueillir davantage de données sur les personnes absentes",
+            "detail": "Demander aux travailleurs migrants d’enregistrer leur localisation dans une application téléphonique afin que le modèle puisse les inclure.",
+            "consequence": "Peu s’inscrivent : beaucoup craignent les autorités chargées de l’immigration. Ceux qui le font créent un jeu de données que le consortium demande ensuite à partager avec d’autres partenaires.",
+            "reflection": "Rendre visibles dans un système des personnes jusque-là invisibles peut les exposer à de nouveaux risques. Parfois, la réponse la plus sûre consiste à agir sans ces données plutôt qu’à les compléter.",
+            "impacts": {
+              "impartiality": 1,
+              "doNoHarm": -2
+            }
+          }
+        ]
+      },
+      {
+        "id": "hw-3",
+        "title": "Refroidir les serveurs",
+        "narrative": "Le consortium propose d’installer une grappe de calcul locale à Palermo pour accélérer les prévisions. En période de canicule, les serveurs nécessiteraient eux-mêmes une climatisation permanente, alimentée par le même réseau sous tension qui fait fonctionner les ventilateurs des personnes âgées. Pendant la canicule de l’an dernier, certains secteurs de la ville ont subi des coupures de courant.",
+        "options": [
+          {
+            "id": "hw-3a",
+            "label": "Installer la grappe locale",
+            "detail": "Des prévisions plus rapides, une maîtrise locale.",
+            "consequence": "Le jour le plus chaud, le gestionnaire du réseau demande des réductions volontaires de consommation. Vos serveurs continuent de fonctionner, et d’être refroidis, alors que deux quartiers subissent des coupures tournantes.",
+            "reflection": "Les infrastructures d’IA entrent en concurrence avec les personnes pour l’énergie et l’eau, parfois précisément au moment où ces deux ressources sont les plus rares. Cette concurrence est une question humanitaire.",
+            "impacts": {
+              "doNoHarm": -2,
+              "humanity": -1
+            }
+          },
+          {
+            "id": "hw-3b",
+            "label": "Privilégier la légèreté et l’énergie solaire",
+            "detail": "Exécuter l’indice simple sur des ordinateurs portables au centre opérationnel, alimentés par des panneaux solaires en toiture avec des batteries de secours.",
+            "consequence": "Le système fonctionne même pendant la panne. Les batteries maintiennent aussi en service les téléphones du centre opérationnel et les réfrigérateurs destinés aux médicaments.",
+            "reflection": "Une conception résiliente et peu énergivore protège les opérations lorsque les infrastructures défaillent, précisément lorsque les outils de gestion de crise sont les plus importants.",
+            "impacts": {
+              "doNoHarm": 2,
+              "independence": 1
+            }
+          },
+          {
+            "id": "hw-3c",
+            "label": "Effectuer les calculs en Europe du Nord, avec des énergies renouvelables",
+            "detail": "Laisser les calculs lourds dans un centre de données alimenté par l’hydroélectricité en Norvège ou en Suède.",
+            "consequence": "Le réseau local est épargné et l’électricité est renouvelable. Mais la connectivité est peu fiable pendant la canicule et vous dépendez d’une liaison que vous ne maîtrisez pas au moment le plus crucial.",
+            "reflection": "Déplacer les calculs vers une énergie décarbonée réduit les émissions, mais pas la dépendance. Évaluez à la fois l’empreinte et la question de savoir qui garde la maîtrise en situation de crise.",
+            "impacts": {
+              "doNoHarm": 1,
+              "independence": -1
+            }
+          }
+        ]
+      },
+      {
+        "id": "hw-4",
+        "title": "Frapper à la porte",
+        "narrative": "Les jours d’alerte, le système donne à chaque bénévole une liste d’adresses classées selon le risque prévu. Un bénévole demande : « Que dois-je dire lorsqu’un homme âgé me demande pourquoi nous l’avons choisi ? » Un autre rapporte que certains habitants se sentent étiquetés comme « sur le point de mourir ».",
+        "options": [
+          {
+            "id": "hw-4a",
+            "label": "Ne pas expliquer : simplement aider",
+            "detail": "Le modèle est trop complexe pour être expliqué sur le pas de la porte.",
+            "consequence": "La plupart des personnes acceptent la visite. Certaines n’ouvrent pas. Une rumeur se répand : la Croix-Rouge aurait des listes secrètes provenant de l’hôpital.",
+            "reflection": "Lorsque les personnes ignorent pourquoi elles ont été choisies, le soupçon comble ce vide. L’opacité érode la confiance dont dépend l’action humanitaire.",
+            "impacts": {
+              "doNoHarm": -1,
+              "humanity": -1
+            }
+          },
+          {
+            "id": "hw-4b",
+            "label": "Expliquer simplement et permettre le refus",
+            "detail": "Une formule simple : « Cette rue est très chaude et compte de nombreux habitants âgés. Souhaitez-vous que nous prenions de vos nouvelles pendant la canicule ? » Les personnes peuvent refuser et être retirées de la liste.",
+            "consequence": "Presque tout le monde accepte. Quelques personnes refusent et leur choix est respecté. Des voisins commencent à signaler aux bénévoles d’autres personnes vivant seules.",
+            "reflection": "Expliquer clairement pourquoi une aide est proposée, et accepter un refus, respecte la dignité et transforme une prévision en relation humaine.",
+            "impacts": {
+              "humanity": 2,
+              "doNoHarm": 1
+            }
+          },
+          {
+            "id": "hw-4c",
+            "label": "Confier la gestion de la liste aux quartiers",
+            "detail": "Partager la carte des risques liés à la chaleur à l’échelle des zones avec les groupes paroissiaux et les associations de quartier, qui décident à qui rendre visite.",
+            "consequence": "La couverture devient inégale : forte dans les quartiers organisés, faible ailleurs. Mais là où cela fonctionne, les visites se poursuivent tout l’été, sans aucun modèle.",
+            "reflection": "Confier la responsabilité aux communautés renforce durablement leurs capacités, mais il faut toujours veiller aux personnes qui ne bénéficient pas d’un solide entourage communautaire.",
+            "impacts": {
+              "humanity": 1,
+              "independence": 1,
+              "impartiality": -1
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

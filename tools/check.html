@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Check content — AI in Humanitarian Action</title>
+  <link rel="stylesheet" href="tools.css" />
+</head>
+<body>
+  <main>
+    <h1>Check your content</h1>
+    <p>Finds common mistakes in <b>content/</b>: broken JSON, missing fields, unknown principle names, scores outside −2…2, and translations whose ids don't match English. Nothing is uploaded.</p>
+    <label class="pick">Choose game folder<input id="dir" type="file" webkitdirectory directory multiple /></label>
+    <div id="out"></div>
+  </main>
+  <script src="checker.js"></script>
+  <script src="tools.js"></script>
+  <script>
+    pickFolder(function (files, out) {
+      var r = checkContent(files);
+      out.innerHTML = report(r) + (r.errors.length ? "" : '<p class="ok">No errors. You can now open build.html.</p>');
+    });
+  </script>
+</body>
+</html>
