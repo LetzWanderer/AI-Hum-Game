@@ -35,17 +35,35 @@
       if (!Array.isArray(list)) { errors.push(file + ": should be a list [ ... ] of scenarios."); return; }
       list.forEach(function (s, i) {
         var where = file + " → scenario " + (i + 1) + (s && s.id ? " (" + s.id + ")" : "");
+        if (!s || typeof s !== "object" || Array.isArray(s)) { errors.push(where + ": should be an object { ... }."); return; }
         SCEN_FIELDS.forEach(function (f) { if (s[f] == null) errors.push(where + ": missing \"" + f + "\"."); });
+        if (s.topics != null && !Array.isArray(s.topics)) errors.push(where + ": \"topics\" must be a list.");
+        if (s.roles != null && !Array.isArray(s.roles)) errors.push(where + ": \"roles\" must be a list.");
         if (isEn) { if (ids[s.id]) errors.push(where + ": id \"" + s.id + "\" is used twice."); ids[s.id] = s; }
         else if (!ids[s.id]) warnings.push(where + ": no English scenario with this id, so it will not appear.");
         var ref = ids[s.id];
+        var seenSteps = {}, seenOpts = {};
+        if (s.steps != null && !Array.isArray(s.steps)) { errors.push(where + ": \"steps\" must be a list [ ... ]."); return; }
         (s.steps || []).forEach(function (stp, j) {
           var w2 = where + " → step " + (j + 1);
+          if (!stp || typeof stp !== "object" || Array.isArray(stp)) { errors.push(w2 + ": should be an object."); return; }
           if (!stp.id) errors.push(w2 + ": missing \"id\".");
-          if (!Array.isArray(stp.options) || stp.options.length < 2) errors.push(w2 + ": needs at least 2 options.");
-          (stp.options || []).forEach(function (o, k) {
+          else if (seenSteps[stp.id]) errors.push(w2 + ": id \"" + stp.id + "\" is used twice in this scenario.");
+          else seenSteps[stp.id] = true;
+          if (!stp.title) errors.push(w2 + ": missing \"title\".");
+          if (!stp.narrative) errors.push(w2 + ": missing \"narrative\".");
+          var options = Array.isArray(stp.options) ? stp.options : [];
+          if (options.length < 2) errors.push(w2 + ": needs at least 2 options.");
+          options.forEach(function (o, k) {
             var w3 = w2 + " → option " + (k + 1);
+            if (!o || typeof o !== "object" || Array.isArray(o)) { errors.push(w3 + ": should be an object."); return; }
+            if (o.id && seenOpts[o.id]) errors.push(w3 + ": id \"" + o.id + "\" is used twice in this scenario.");
+            if (o.id) seenOpts[o.id] = true;
             OPT_FIELDS.forEach(function (f) { if (o[f] == null) errors.push(w3 + ": missing \"" + f + "\"."); });
+            if (o.impacts != null && (typeof o.impacts !== "object" || Array.isArray(o.impacts))) {
+              errors.push(w3 + ": \"impacts\" must be an object of principle scores.");
+              return;
+            }
             Object.keys(o.impacts || {}).forEach(function (p) {
               if (KEYS.indexOf(p) < 0) errors.push(w3 + ": unknown principle \"" + p + "\". Use: " + KEYS.join(", "));
               else if (typeof o.impacts[p] !== "number" || o.impacts[p] < -2 || o.impacts[p] > 2) errors.push(w3 + ": impact for " + p + " must be a number from -2 to 2.");
@@ -58,12 +76,22 @@
             }
           });
         });
-        if (!isEn && ref && (s.steps || []).length !== ref.steps.length) errors.push(where + ": has " + s.steps.length + " steps; English has " + ref.steps.length + ".");
+        if (!isEn && ref && (s.steps || []).length !== (ref.steps || []).length) errors.push(where + ": has " + (s.steps || []).length + " steps; English has " + (ref.steps || []).length + ".");
       });
     }
     checkList("scenarios-en.json", en, true);
 
     var uiEn = parsed["i18n-en.json"] || {};
+    function checkPrinciples(ui, name) {
+      var list = ui && ui.principles;
+      if (!Array.isArray(list)) { warnings.push(name + ": \"principles\" should be a list."); return; }
+      var have = list.map(function (p) { return p && p.key; });
+      KEYS.forEach(function (k) {
+        if (have.indexOf(k) < 0) warnings.push(name + ": principles list has no \"" + k + "\".");
+      });
+    }
+    checkPrinciples(uiEn, "i18n-en.json");
+    if (!Array.isArray(uiEn.discussPrompts) || !uiEn.discussPrompts.length) warnings.push("i18n-en.json: \"discussPrompts\" should be a list of questions.");
     Object.keys(parsed).forEach(function (name) {
       var m = name.match(/^scenarios-([a-z]{2,3})\.json$/);
       if (m && m[1] !== "en") {
@@ -73,6 +101,8 @@
       }
       var u = name.match(/^i18n-([a-z]{2,3})\.json$/);
       if (u && u[1] !== "en") {
+        checkPrinciples(parsed[name], name);
+        if (parsed[name].discussPrompts != null && !Array.isArray(parsed[name].discussPrompts)) warnings.push(name + ": \"discussPrompts\" should be a list of questions.");
         Object.keys(uiEn).forEach(function (k) { if (parsed[name][k] == null) warnings.push(name + ": missing \"" + k + "\" — English will be used."); });
         if (!parsed["scenarios-" + u[1] + ".json"]) warnings.push("i18n-" + u[1] + ".json has no scenarios-" + u[1] + ".json — all scenarios will be in English.");
       }
