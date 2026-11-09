@@ -106,6 +106,13 @@
       return '<option value="' + l[0] + '"' + (l[0] === state.lang ? " selected" : "") + ">" + l[1] + "</option>";
     }).join("") + "</select>";
   }
+  function otherOptions(t, step, chosen) {
+    var rest = (step.options || []).filter(function (opt) { return opt.id !== chosen.id; });
+    if (!rest.length) return "";
+    return '<details class="box"><summary>' + esc(t.otherOptions) + '</summary><div class="alts">' + rest.map(function (opt) {
+      return '<div><b>' + esc(opt.label) + "</b><p>" + esc(opt.reflection) + "</p>" + impacts(t, opt.impacts) + "</div>";
+    }).join("") + "</div></details>";
+  }
   function impacts(t, imp) {
     return KEYS.filter(function (k) { return imp[k]; }).map(function (k) {
       var v = imp[k];
@@ -219,6 +226,7 @@
         (ws ? esc(t.groupChose + ": " + o.label) : fmt(t.youDecided, { label: o.label })) + "</div>" +
         box(t.whatHappened, esc(o.consequence)) + box(t.whyItMatters, esc(o.reflection)) +
         '<div><p class="muted" style="font-weight:600;margin-bottom:8px">' + esc(t.impactLabel) + "</p>" + impacts(t, o.impacts) + "</div>" +
+        otherOptions(t, step, o) +
         (ws ? '<div class="takeaways"><p class="label">' + esc(t.discussHeading) + "</p>" + esc(t.afterDiscuss) + "</div>" : "");
       dock = '<button class="btn" data-act="' + (end ? "debrief" : "next") + '">' + esc(end ? t.seeDebrief : t.nextDecision) + "</button>";
     } else {
