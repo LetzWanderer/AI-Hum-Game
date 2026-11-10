@@ -39,6 +39,9 @@
         if (isEn) { if (ids[s.id]) errors.push(where + ": id \"" + s.id + "\" is used twice."); ids[s.id] = s; }
         else if (!ids[s.id]) warnings.push(where + ": no English scenario with this id, so it will not appear.");
         var ref = ids[s.id];
+        if (s.discuss != null && (!Array.isArray(s.discuss) || !s.discuss.length || s.discuss.some(function (q) { return typeof q !== "string" || !String(q).trim(); }))) {
+          errors.push(where + ": \"discuss\" must be a list of questions.");
+        }
         (s.steps || []).forEach(function (stp, j) {
           var w2 = where + " → step " + (j + 1);
           if (!stp.id) errors.push(w2 + ": missing \"id\".");

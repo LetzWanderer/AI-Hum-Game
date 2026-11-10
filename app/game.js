@@ -206,7 +206,7 @@
       body = '<p class="acc" style="font-weight:600;font-size:14px">' + fmt(t.decisionOf, { scenario: s.title, i: idx + 1, n: n }) + "</p><div class=\"scene\"><h1>" + esc(step.title) +
         '</h1><p style="font-size:18px;margin-bottom:0">' + esc(step.narrative) + "</p></div>" +
         (ws ? '<section class="discuss"><h2 style="font-size:18px">' + esc(t.discussHeading) + "</h2><ul>" +
-          t.discussPrompts.map(function (q) { return "<li>" + esc(q) + "</li>"; }).join("") + '</ul><div class="timer" aria-live="polite"><div class="row"><span>' + esc(t.timer) +
+           ((s.discuss && s.discuss.length) ? s.discuss : (t.discussPrompts || [])).map(function (q) { return "<li>" + esc(q) + "</li>"; }).join("") + '</ul><div class="timer" aria-live="polite"><div class="row"><span>' + esc(t.timer) +
           '</span><button class="round" data-timer="-1">−</button><span class="clock" dir="ltr" data-clock>' + mm + ":" + ss +
           '</span><button class="round" data-timer="1">+</button></div><div class="two-btn"><button class="btn small" data-timer="toggle"' + (timer.left ? "" : " disabled") + ">" +
           esc(timer.running ? t.timerPause : t.timerStart) + '</button><button class="btn ghost small" data-timer="reset">' + esc(t.timerReset) + "</button></div>" +

@@ -15,6 +15,11 @@
       "Gestión de información",
       "Participación comunitaria"
     ],
+    "discuss": [
+      "¿Quién no puede llegar a un teléfono, y qué pasa con esas personas si el chatbot es la puerta de entrada?",
+      "¿Qué respuestas serían inseguras antes de que una persona las revise?",
+      "¿Dónde se guardarían las preguntas y las ubicaciones de quienes llaman?"
+    ],
     "steps": [
       {
         "id": "fl-1",
