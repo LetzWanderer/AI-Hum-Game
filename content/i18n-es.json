@@ -34,13 +34,51 @@
   "decisionLabel": "Decisión {i} · {title}",
   "takeawayHeading": "Preguntas para llevar a tu equipo",
   "takeaways": [
-    "¿Quién rinde cuentas cuando un sistema automatizado daña a una persona afectada, y puede apagarlo?",
-    "¿Podrías explicar, ante la comunidad y ante un periodista, exactamente quién custodia los datos de las personas y por qué?",
-    "¿De quiénes son invisibles las necesidades para tus datos, y quién revisa los puntos ciegos del modelo?",
-    "Si tu proveedor de nube o de IA cambiara sus condiciones, fuera adquirido o se vinculara con una parte de un conflicto, ¿podrías salir, y con qué rapidez?",
-    "Antes de lanzar cualquier herramienta de IA, ¿quién evalúa el daño que podría causar a las comunidades afectadas, y participan esas comunidades en la evaluación?",
-    "¿Qué energía, agua y conectividad exige la herramienta, y quién asume ese costo?",
-    "¿Dónde firma una persona, dejando constancia, antes de que la recomendación de un algoritmo se convierta en la realidad de alguien?"
+    {
+      "text": "¿Quién rinde cuentas cuando un sistema automatizado daña a una persona afectada, y puede apagarlo?",
+      "principles": [
+        "doNoHarm",
+        "independence"
+      ]
+    },
+    {
+      "text": "¿Podrías explicar, ante la comunidad y ante un periodista, exactamente quién custodia los datos de las personas y por qué?",
+      "principles": [
+        "doNoHarm"
+      ]
+    },
+    {
+      "text": "¿De quiénes son invisibles las necesidades para tus datos, y quién revisa los puntos ciegos del modelo?",
+      "principles": [
+        "impartiality"
+      ]
+    },
+    {
+      "text": "Si tu proveedor de nube o de IA cambiara sus condiciones, fuera adquirido o se vinculara con una parte de un conflicto, ¿podrías salir, y con qué rapidez?",
+      "principles": [
+        "independence"
+      ]
+    },
+    {
+      "text": "Antes de lanzar cualquier herramienta de IA, ¿quién evalúa el daño que podría causar a las comunidades afectadas, y participan esas comunidades en la evaluación?",
+      "principles": [
+        "humanity",
+        "doNoHarm"
+      ]
+    },
+    {
+      "text": "¿Qué energía, agua y conectividad exige la herramienta, y quién asume ese costo?",
+      "principles": [
+        "doNoHarm"
+      ]
+    },
+    {
+      "text": "¿Dónde firma una persona, dejando constancia, antes de que la recomendación de un algoritmo se convierta en la realidad de alguien?",
+      "principles": [
+        "humanity",
+        "independence"
+      ]
+    }
   ],
   "replay": "Repetir este escenario",
   "chooseAnother": "Elegir otro escenario",
@@ -147,5 +185,7 @@
   "playSolo": "Jugar individualmente",
   "yourDecisions": "Tus decisiones",
   "otherOptions": "Las opciones que no elegiste",
+  "debriefWeak": "Donde este recorrido es más débil",
+  "debriefWeakDetail": "{principle} — {rating}. La nota más baja en este recorrido: {choice}.",
   "principlesToggle": "Sobre los principios"
 }

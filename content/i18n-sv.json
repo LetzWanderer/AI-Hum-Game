@@ -34,13 +34,51 @@
   "decisionLabel": "Beslut {i} · {title}",
   "takeawayHeading": "Frågor att ta med tillbaka till teamet",
   "takeaways": [
-    "Vem ansvarar när ett automatiserat system skadar en drabbad person — och kan hen stänga av det?",
-    "Skulle du kunna förklara, för lokalsamhället och för en journalist, exakt vem som förvarar människors data och varför?",
-    "Vems behov är osynliga för era data — och vem granskar modellens blinda fläckar?",
-    "Om er moln- eller AI-leverantör ändrade sina villkor, köptes upp eller kopplades till en part i en konflikt, skulle ni kunna lämna — och hur snabbt?",
-    "Vilken energi, vatten och uppkoppling kräver verktyget — och vem bär den kostnaden?",
-    "Innan något AI-verktyg lanseras: vem bedömer skadan det kan orsaka drabbade samhällen — och är dessa samhällen en del av bedömningen?",
-    "Var skriver en människa under, officiellt, innan en algoritms rekommendation blir någons verklighet?"
+    {
+      "text": "Vem ansvarar när ett automatiserat system skadar en drabbad person — och kan hen stänga av det?",
+      "principles": [
+        "doNoHarm",
+        "independence"
+      ]
+    },
+    {
+      "text": "Skulle du kunna förklara, för lokalsamhället och för en journalist, exakt vem som förvarar människors data och varför?",
+      "principles": [
+        "doNoHarm"
+      ]
+    },
+    {
+      "text": "Vems behov är osynliga för era data — och vem granskar modellens blinda fläckar?",
+      "principles": [
+        "impartiality"
+      ]
+    },
+    {
+      "text": "Om er moln- eller AI-leverantör ändrade sina villkor, köptes upp eller kopplades till en part i en konflikt, skulle ni kunna lämna — och hur snabbt?",
+      "principles": [
+        "independence"
+      ]
+    },
+    {
+      "text": "Vilken energi, vatten och uppkoppling kräver verktyget — och vem bär den kostnaden?",
+      "principles": [
+        "humanity",
+        "doNoHarm"
+      ]
+    },
+    {
+      "text": "Innan något AI-verktyg lanseras: vem bedömer skadan det kan orsaka drabbade samhällen — och är dessa samhällen en del av bedömningen?",
+      "principles": [
+        "doNoHarm"
+      ]
+    },
+    {
+      "text": "Var skriver en människa under, officiellt, innan en algoritms rekommendation blir någons verklighet?",
+      "principles": [
+        "humanity",
+        "independence"
+      ]
+    }
   ],
   "replay": "Spela om detta scenario",
   "chooseAnother": "Välj ett annat scenario",
@@ -147,5 +185,7 @@
   "playSolo": "Spela själv",
   "yourDecisions": "Dina beslut",
   "otherOptions": "PUT SOMETHING",
+  "debriefWeak": "Där den här vägen är svagast",
+  "debriefWeakDetail": "{principle} — {rating}. Lägst på den här vägen: {choice}.",
   "principlesToggle": "Om principerna"
 }

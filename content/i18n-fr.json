@@ -34,13 +34,51 @@
   "decisionLabel": "Décision {i} · {title}",
   "takeawayHeading": "Questions à rapporter à votre équipe",
   "takeaways": [
-    "Qui est comptable lorsqu’un système automatisé nuit à une personne affectée — et peut-on l’éteindre ?",
-    "Pourriez-vous expliquer, à la communauté comme à un journaliste, exactement qui détient les données des personnes et pourquoi ?",
-    "Quels besoins sont invisibles à vos données — et qui vérifie les angles morts du modèle ?",
-    "Si votre fournisseur de cloud ou d’IA modifiait ses conditions, était racheté ou se retrouvait lié à une partie à un conflit, pourriez-vous vous retirer — et à quelle vitesse ?",
-    "Avant le lancement de tout outil d’IA, qui évalue les préjudices qu’il pourrait causer aux communautés affectées — et ces communautés participent-elles à cette évaluation ?",
-    "Quelle énergie, quelle eau et quelle connectivité l’outil exige-t-il — et qui en supporte le coût ?",
-    "Où un humain signe-t-il, officiellement, avant que la recommandation d’un algorithme ne devienne la réalité de quelqu’un ?"
+    {
+      "text": "Qui est comptable lorsqu'un système automatisé nuit à une personne affectée — et peut-on l'éteindre ?",
+      "principles": [
+        "doNoHarm",
+        "independence"
+      ]
+    },
+    {
+      "text": "Pourriez-vous expliquer, à la communauté comme à un journaliste, exactement qui détient les données des personnes et pourquoi ?",
+      "principles": [
+        "doNoHarm"
+      ]
+    },
+    {
+      "text": "Quels besoins sont invisibles à vos données — et qui vérifie les angles morts du modèle ?",
+      "principles": [
+        "impartiality"
+      ]
+    },
+    {
+      "text": "Si votre fournisseur de cloud ou d’IA modifiait ses conditions, était racheté ou se retrouvait lié à une partie à un conflit, pourriez-vous vous retirer - et à quelle vitesse ?",
+      "principles": [
+        "independence"
+      ]
+    },
+    {
+      "text": "Avant le lancement de tout outil d’IA, qui évalue les préjudices qu’il pourrait causer aux communautés affectées — et ces communautés participent-elles à cette évaluation ?",
+      "principles": [
+        "humanity",
+        "doNoHarm"
+      ]
+    },
+    {
+      "text": "Quelle énergie, quelle eau et quelle connectivité l’outil exige-t-il — et qui en supporte le coût ?",
+      "principles": [
+        "doNoHarm"
+      ]
+    },
+    {
+      "text": "Où un humain signe-t-il, officiellement, avant que la recommandation d’un algorithme ne devienne la réalité de quelqu’un ?",
+      "principles": [
+        "humanity",
+        "independence"
+      ]
+    }
   ],
   "replay": "Rejouer ce scénario",
   "chooseAnother": "Choisir un autre scénario",
@@ -147,5 +185,7 @@
   "playSolo": "Jouer seul·e",
   "yourDecisions": "Vos décisions",
   "otherOptions": "Les options que vous n'avez pas retenues",
+  "debriefWeak": "Là où ce parcours est le plus faible",
+  "debriefWeakDetail": "{principle} — {rating}. Note la plus basse sur ce parcours : {choice}.",
   "principlesToggle": "À propos des principes"
 }

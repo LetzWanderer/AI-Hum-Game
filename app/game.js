@@ -84,6 +84,34 @@
     if (best > 0 && net >= best * SHARE) return [t.verdictStrong, "success"];
     return [t.verdictMixed, "warning"];
   }
+  function takeawayText(q) { return typeof q === "string" ? q : q.text; }
+  function takeawayKeys(q) { return typeof q === "string" || !q.principles ? [] : q.principles; }
+  function weakest(t, totals, bounds) {
+    var best = null;
+    KEYS.forEach(function (k) {
+      var r = rating(t, totals[k], bounds.max[k], bounds.min[k]);
+      if (r[0] === t.ratingNotTested) return;
+      var rank = totals[k] < 0 ? 0 : (r[1] === "success" ? 2 : 1);
+      if (!best || rank < best.rank || (rank === best.rank && totals[k] < best.score)) best = { key: k, rank: rank, score: totals[k], rating: r[0] };
+    });
+    return best;
+  }
+  function lowestChoice(s, choices, key) {
+    var found = null, low = Infinity;
+    choices.forEach(function (c) {
+      var o = findOption(s, c.stepId, c.optionId);
+      if (!o) return;
+      var v = (o.impacts && o.impacts[key]) || 0;
+      if (v < low) { low = v; found = o; }
+    });
+    return found;
+  }
+  function weakKeys(t, totals, bounds) {
+    return KEYS.filter(function (k) {
+      var r = rating(t, totals[k], bounds.max[k], bounds.min[k]);
+      return r[1] !== "success" && r[0] !== t.ratingNotTested;
+    });
+  }
   // Workshop: option with most votes (ties → earlier option), or none if nobody voted.
   function leading(votes, ids) {
     var best = null, max = 0;
@@ -231,8 +259,18 @@
       dock = '<button class="btn" data-act="' + (end ? "debrief" : "next") + '">' + esc(end ? t.seeDebrief : t.nextDecision) + "</button>";
     } else {
       var tot = totalsFor(s, ch), b = boundsFor(s), v = verdict(t, tot, b.max);
+      var weak = weakest(t, tot, b), low = weak && lowestChoice(s, ch, weak.key);
+      var lead = weak ? '<section class="box"><p class="label">' + esc(t.debriefWeak) + "</p><p>" +
+        fmt(t.debriefWeakDetail, { principle: pname(t, weak.key), rating: weak.rating, choice: low ? low.label : "" }) + "</p></section>" : "";
+      var keys = weakKeys(t, tot, b);
+      var questions = t.takeaways.filter(function (q) {
+        if (!keys.length) return true;
+        var ps = takeawayKeys(q);
+        return ps.some(function (k) { return keys.indexOf(k) !== -1; });
+      });
       body = '<div class="banner grad"><p class="kicker">' + fmt(t.debriefKicker, { scenario: s.title }) + "</p><h1>" + esc(t.debriefHeading) + "</h1></div>" +
         '<p><span class="muted" style="font-weight:600">' + esc(t.overallVerdict) + ':</span> <span class="tone big ' + v[1] + '">' + esc(v[0]) + "</span></p>" +
+        lead +
         "<section><h2>" + esc(t.principlesBalance) + '</h2><div class="grid two">' + KEYS.map(function (k) { return meter(t, k, tot[k], b.max[k], b.min[k]); }).join("") + "</div></section>" +
         "<p>" + esc(s.debrief) + "</p><section><h2>" + esc(ws ? t.groupPath : t.pathYouTook) + '</h2><div class="grid">' +
         ch.map(function (c, i) {
@@ -240,7 +278,7 @@
           return '<div class="box"><p class="label" style="text-transform:none;letter-spacing:0">' + fmt(t.decisionLabel, { i: i + 1, title: st.title }) + "</p><b>" + esc(op.label) + "</b>" +
             (hasVotes(vv) ? '<p class="muted">' + fmt(t.splitVote, { votes: split(t, st, vv) }) + "</p>" : "") + '<div style="margin-top:8px">' + impacts(t, op.impacts) + "</div></div>";
         }).join("") + '</div></section><section class="takeaways"><h2>' + esc(t.takeawayHeading) + "</h2><ul>" +
-        t.takeaways.map(function (q) { return "<li>" + esc(q) + "</li>"; }).join("") + "</ul></section>" +
+        questions.map(function (q) { return "<li>" + esc(takeawayText(q)) + "</li>"; }).join("") + "</ul></section>" +
         (ws ? '<div class="modebtns"><button class="btn ghost" data-act="copy">' + esc(state.copied ? "✓ " + t.copied : t.copySummary) +
           '</button><button class="btn ghost" data-act="download">' + esc(t.downloadSummary) + "</button></div>" : "") +
         '<button class="btn" data-act="replay">' + esc(t.replay) + '</button><button class="btn ghost" data-act="home">' + esc(t.chooseAnother) + "</button>";
@@ -259,7 +297,7 @@
       lines.push("");
     });
     lines.push(t.takeawayHeading);
-    t.takeaways.forEach(function (q) { lines.push("• " + q); });
+    t.takeaways.forEach(function (q) { lines.push("• " + takeawayText(q)); });
     return lines.join("\n");
   }
 
