@@ -2,14 +2,43 @@
 
 A phone-friendly decision game about the trade-offs in AI decisions. Plain HTML, CSS and JavaScript: no libraries, no AI, no internet needed, no tracking. Progress is saved only in the player's own browser.
 
-## 1. Play
-**Double-click `START-HERE.html`.** That one file holds everything. You can email it, put it on a USB stick, or upload it to any website (rename it `index.html`).
-Fonts load from Google when online; offline, the game uses your system fonts.
+## 1. Run the game
+You need a current browser: Chrome, Edge, Firefox, or Safari. Nothing to install, no account, and no internet connection after the file is open. The game does not send scores, votes, or stories anywhere. Progress stays in this browser only.
+### First time
+A fresh copy of this folder does not include the playable file. Build it once:
+1. Open `tools/build.html` in your browser.
+2. Click **Choose game folder** and pick this project folder — the one that contains `content` and `app`. Allow the browser to read the folder if it asks.
+3. Click **Try it first** to play in a temporary tab, or **Download START-HERE.html** and save that file into this same folder. `app/shell.html` on its own is not the game. It has no stories until the builder packs them in.
+### Open it
+Double-click `START-HERE.html`, or drag that file onto a browser window. You can also email it, put it on a USB stick, or upload it to any website (rename it `index.html` if the host expects that name).
+Fonts load from Google when you are online. Offline, the game uses the fonts already on the computer. Play is the same either way.
+### What you do
+1. Choose a language. English, Swedish, French, Spanish and Arabic are included. Arabic lays the page out right to left.
+2. Choose **Play on my own** or **Run a group workshop**.
+3. Open a scenario. Read your role and the situation, then start.
+4. Each scenario is four decisions, with three options each. Tap an option, then **Confirm decision**.
+5. Read what happened, why it matters, and the effect on the principles. Open **The options that were not taken** to see the other two choices.
+6. After the fourth decision, the debrief shows an overall verdict and a meter for each principle. **Replay** starts the same scenario again. **Choose another scenario** returns home.
+A check mark on the home screen means that scenario is finished. An in-progress label means a draft is saved. Open the card to resume. Leaving for home keeps confirmed steps. An option you have only tapped, and not confirmed, is not saved.
+On a phone, scroll the situation, then use the button fixed to the bottom of the screen to confirm.
+
+### Run a workshop
+Choose **Run a group workshop** and put one screen where everyone can see it. The home screen then shows a short facilitator guide.
+For each decision the group gets the same five discussion questions, a timer (3 minutes, adjustable from 1 to 15), and + / − counters for a show of hands. The option with the most votes is selected. You can still tap a different option before confirming. Nothing is uploaded.
+At the debrief, **Copy workshop summary** or **Download summary**. Copy needs the clipboard, which some browsers block for a file opened from a folder. 
+Download writes a `.txt` file and works either way.
+### Saved on this device
+Language, solo or workshop mode, finished scenarios, and drafts are stored in this browser under the key `hai-game-v1`. Another browser, another computer, or a cleared site-data setting starts fresh. There is no account to sign in to.
+### If it does not open
+- You opened `app/shell.html` or a folder of JSON files. Build `START-HERE.html` and open that file.
+- The builder says a file is missing. Choose the folder that contains both `content` and `app`, not a folder inside it.
+- The page is blank. Reload it. If you edited the JSON, open `tools/check.html`, pick the same folder, and fix anything listed in red before building 
+again.
 
 ## 2. What's in the folder
 | Folder / file | What it is | Edit it? |
 | --- | --- | --- |
-| `START-HERE.html` | The ready-to-play game | No — it is rebuilt from the files below |
+| `START-HERE.html` | The ready-to-play game, after you build it | No — it is rebuilt from the files below |
 | `content/settings.json` | Principle weightings and scoring thresholds | Yes |
 | `content/scenarios-xx.json` | Scenario stories, options and scores, one file per language | Yes |
 | `content/i18n-xx.json` | Buttons, headings, principle names and descriptions | Yes |
@@ -22,7 +51,7 @@ Use any plain text editor (Notepad, TextEdit in plain-text mode, VS Code). Save 
 
 ## 3. The edit → check → build loop
 1. Edit files in `content/`.
-2. Open `tools/check.html`, click **Choose game folder**, and pick the `ai-humanitarian-game` folder. Fix anything listed in red.
+2. Open `tools/check.html`, click **Choose game folder**, and pick this project folder (the one that contains `content` and `app`). Fix anything listed in red.
 3. Open `tools/build.html`, pick the same folder, click **Try it first**, then **Download START-HERE.html** and save it over the old one.
 
 No installs or command line needed. Works in Chrome, Edge, Firefox and Safari.
