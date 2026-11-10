@@ -15,6 +15,11 @@
       "Information management",
       "Community engagement"
     ],
+    "discuss": [
+      "Who cannot reach a phone, and what happens to them if the chatbot is the front door?",
+      "Which answers would be unsafe to give before a person has checked them?",
+      "Where would callers' questions and locations be stored?"
+    ],
     "steps": [
       {
         "id": "fl-1",
