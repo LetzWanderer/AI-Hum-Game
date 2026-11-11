@@ -34,13 +34,51 @@
   "decisionLabel": "Decision {i} · {title}",
   "takeawayHeading": "Questions to take back to your team",
   "takeaways": [
-    "Who is accountable when an automated system harms an affected person — and can they switch it off?",
-    "Could you explain, to the community and to a journalist, exactly who holds people’s data and why?",
-    "Whose needs are invisible to your data — and who checks the model’s blind spots?",
-    "If your cloud or AI vendor changed its terms, was acquired, or became linked to a party in a conflict, could you exit — and how fast?",
-    "Before any AI tool launches, who assesses the harm it could do to affected communities — and are those communities part of the assessment?",
-    "What energy, water, and connectivity does the tool demand — and who bears that cost?",
-    "Where does a human sign, on the record, before an algorithm’s recommendation becomes someone’s reality?"
+    {
+      "text": "Who is accountable when an automated system harms an affected person — and can they switch it off?",
+      "principles": [
+        "doNoHarm",
+        "independence"
+      ]
+    },
+    {
+      "text": "Could you explain, to the community and to a journalist, exactly who holds people’s data and why?",
+      "principles": [
+        "doNoHarm"
+      ]
+    },
+    {
+      "text": "Whose needs are invisible to your data — and who checks the model's blind spots?",
+      "principles": [
+        "impartiality"
+      ]
+    },
+    {
+      "text": "If your cloud or AI vendor changed its terms, was acquired, or became linked to a party in a conflict, could you exit — and how fast?",
+      "principles": [
+        "independence"
+      ]
+    },
+    {
+      "text": "Before any AI tool launches, who assesses the harm it could do to affected communities — and are those communities part of the assessment?",
+      "principles": [
+        "humanity",
+        "doNoHarm"
+      ]
+    },
+    {
+      "text": "What energy, water, and connectivity does the tool demand — and who bears that cost?",
+      "principles": [
+        "doNoHarm"
+      ]
+    },
+    {
+      "text": "Where does a human sign, on the record, before an algorithm's recommendation becomes someone's reality?",
+      "principles": [
+        "humanity",
+        "independence"
+      ]
+    }
   ],
   "replay": "Replay this scenario",
   "chooseAnother": "Choose another scenario",
