@@ -147,5 +147,7 @@
   "playSolo": "Play solo",
   "yourDecisions": "Your decisions",
   "otherOptions": "The options that were not taken",
+  "filterLabel": "Filter by topic",
+  "allTopics": "All topics",
   "principlesToggle": "About the principles"
 }
