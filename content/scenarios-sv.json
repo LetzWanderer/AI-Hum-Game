@@ -15,6 +15,11 @@
       "Informationshantering",
       "Samverkan med lokalsamhällen"
     ],
+    "discuss": [
+      "Vem når inte en telefon, och vad händer med dem om chattboten är vägen in?",
+      "Vilka svar vore osäkra att ge innan en människa har granskat dem?",
+      "Var skulle de uppringandes frågor och platser lagras?"
+    ],
     "steps": [
       {
         "id": "fl-1",

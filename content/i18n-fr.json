@@ -185,7 +185,7 @@
   "playSolo": "Jouer seul·e",
   "yourDecisions": "Vos décisions",
   "otherOptions": "Les options que vous n'avez pas retenues",
-  "debriefWeak": "Là où ce parcours est le plus faible",
-  "debriefWeakDetail": "{principle} — {rating}. Note la plus basse sur ce parcours : {choice}.",
+  "filterLabel": "Filtrer par sujet",
+  "allTopics": "Tous les sujets",
   "principlesToggle": "À propos des principes"
 }

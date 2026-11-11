@@ -35,7 +35,7 @@
   var state = {
     lang: saved.lang || "en", mode: saved.mode === "workshop" ? "workshop" : "solo",
     progress: saved.progress || {}, drafts: saved.drafts || {},
-    view: "home", id: null, phase: "briefing", play: null, selected: null, more: false, copied: false,
+    view: "home", id: null, phase: "briefing", play: null, selected: null, more: false, copied: false, topic: "",
   };
   var timer = { minutes: 3, left: 180, running: false, handle: null };
   function save() {
@@ -183,21 +183,27 @@
       '</ol><p class="muted" style="margin-top:12px;font-size:12px">' + esc(t.guideNote) + "</p></details>" : "";
     var record = count ? '<section class="box"><h2>' + esc(t.recordHeading) + '</h2><p class="muted">' + fmt(t.recordSummary, { n: count }) +
       '</p><div class="grid two">' + KEYS.map(function (k) { return meter(t, k, totals[k], max[k], min[k]); }).join("") + "</div></section>" : "";
-    var cards = list.map(function (s) {
+    var cards = (state.topic ? list.filter(function (s) { return (s.topics || []).indexOf(state.topic) >= 0; }) : list).map (function (s) {
       var dr = state.drafts[s.id];
       var go = dr ? fmt(t.inProgress, { i: dr.choices.length + 1, n: s.steps.length }) + " · " + esc(t.resume)
         : esc(done(s) ? t.playAgain : t.startScenario);
       return '<li ' + accent(s) + '><button class="scard" data-open="' + esc(s.id) + '"><div class="strip grad"></div><div class="body"><div class="titlerow"><h3>' + esc(s.title) + "</h3>" +
         (done(s) ? '<span class="chip">✓</span>' : "") + '</div><span class="muted clamp2">' + esc(s.tagline) + "</span><div>" +
-        s.topics.slice(0, 2).map(function (x) { return '<span class="chip">' + esc(x) + "</span>"; }).join("") + '</div><span class="go">' + go + " →</span></div></button></li>";
+        (s.topics || []).map(function (x) { return '<span class="chip">' + esc(x) + "</span>"; }).join("") + '</div><span class="go">' + go + " →</span></div></button></li>";
     }).join("");
+    var topics = [];
+    list.forEach(function (s) { (s.topics || []).forEach(function (x) { if (topics.indexOf(x) < 0) topics.push(x); }); });
+    var filter = '<label class="muted" style="display:block;margin-bottom:12px">' + esc(t.filterLabel) +
+      ' <select data-topic>' + '<option value="">' + esc(t.allTopics) + "</option>" +
+      topics.map(function (x) { return '<option value="' + esc(x) + '"' + (state.topic === x ? " selected" : "") + ">" + esc(x) + "</option>"; }).join("") +
+      "</select></label>";
     var principles = t.principles.map(function (p) {
       return '<li class="prow pc-' + p.key + '"><span class="icon">' + icon(p.key) + "</span><div><b>" + esc(p.name) + '</b><p class="muted">' + esc(p.description) + "</p></div></li>";
     }).join("");
     return '<div class="accent-brand"><header class="grad"><div class="wrap hero"><div class="top">' + langSelect(t) + '</div><p class="kicker" style="margin-top:24px">' +
       esc(t.kicker) + "</p><h1>" + esc(t.appTitle) + '</h1><p class="intro">' + esc(t.intro) + '</p></div></header><main class="wrap stack"><div class="modes" role="radiogroup">' + modes + "</div>" + guide +
       '<section><div class="rowhead"><h2>' + esc(t.scenariosHeading) + '</h2><span class="muted">' + fmt(t.progressOverall, { n: count, m: list.length }) +
-      '</span></div><div class="pbar"><div style="width:' + (count / list.length) * 100 + '%"></div></div><ul class="grid two">' + cards + "</ul></section>" + record +
+      '</span></div><div class="pbar"><div style="width:' + (count / list.length) * 100 + '%"></div></div>' + filter + '<ul class="grid two">' + cards + "</ul></section>" + record +
       '<details class="box"><summary>' + esc(t.principlesHeading) + ' +</summary><ul class="grid">' + principles + "</ul></details>" +
       '<footer class="footer"><p>' + esc(t.footerNote) + '</p><a href="https://preparecenter.org/site/ict-resolution/" target="_blank" rel="noreferrer">' +
       esc(t.ictLinkLabel) + "</a></footer></main></div>";
@@ -221,7 +227,9 @@
     if (ph === "briefing") {
       var prev = state.progress[s.id] || [], dr = state.drafts[s.id];
       body = '<div class="banner grad"><p class="kicker">' + fmt(t.scenarioKicker, { n: n }) + "</p><h1>" + esc(s.title) + "</h1><p>" + esc(s.tagline) + "</p></div>" +
-        box(t.yourRole, "<b>" + esc(s.role) + "</b>") + box(t.theSituation, esc(s.context)) +
+        box(t.yourRole, "<b>" + esc(s.role) + "</b>") +
+        (s.roles && s.roles.length ? box(t.rolesLabel, s.roles.map(function (r) { return '<span class="chip">' + esc(r) + "</span>"; }).join(" ")) : "") +
+        box(t.theSituation, esc(s.context)) +
         '<div><p class="muted" style="font-weight:600;margin-bottom:8px">' + esc(t.roadmapLabel) + '</p><ol class="steps">' +
         s.steps.map(function (st, i) { return '<li><span class="letter">' + (i + 1) + "</span>" + esc(st.title) + "</li>"; }).join("") + "</ol></div>" +
         (dr ? '<button class="btn" data-act="resume">' + esc(t.resume) + " · " + fmt(t.inProgress, { i: dr.choices.length + 1, n: n }) + "</button>" : "") +
@@ -234,7 +242,7 @@
       body = '<p class="acc" style="font-weight:600;font-size:14px">' + fmt(t.decisionOf, { scenario: s.title, i: idx + 1, n: n }) + "</p><div class=\"scene\"><h1>" + esc(step.title) +
         '</h1><p style="font-size:18px;margin-bottom:0">' + esc(step.narrative) + "</p></div>" +
         (ws ? '<section class="discuss"><h2 style="font-size:18px">' + esc(t.discussHeading) + "</h2><ul>" +
-          t.discussPrompts.map(function (q) { return "<li>" + esc(q) + "</li>"; }).join("") + '</ul><div class="timer" aria-live="polite"><div class="row"><span>' + esc(t.timer) +
+           ((s.discuss && s.discuss.length) ? s.discuss : (t.discussPrompts || [])).map(function (q) { return "<li>" + esc(q) + "</li>"; }).join("") + '</ul><div class="timer" aria-live="polite"><div class="row"><span>' + esc(t.timer) +
           '</span><button class="round" data-timer="-1">−</button><span class="clock" dir="ltr" data-clock>' + mm + ":" + ss +
           '</span><button class="round" data-timer="1">+</button></div><div class="two-btn"><button class="btn small" data-timer="toggle"' + (timer.left ? "" : " disabled") + ">" +
           esc(timer.running ? t.timerPause : t.timerStart) + '</button><button class="btn ghost small" data-timer="reset">' + esc(t.timerReset) + "</button></div>" +
@@ -328,7 +336,8 @@
   }
 
   root.addEventListener("change", function (e) {
-    if (e.target.matches("[data-lang]")) { state.lang = e.target.value; save(); render(); }
+    if (e.target.matches("[data-lang]")) { state.lang = e.target.value; state.topic = ""; save(); render(); }
+    else if (e.target.matches("[data-topic]")) { state.topic = e.target.value; render(); }
   });
   root.addEventListener("click", function (e) {
     var el = e.target.closest("[data-open],[data-choose],[data-act],[data-mode],[data-begin],[data-vote],[data-timer]");

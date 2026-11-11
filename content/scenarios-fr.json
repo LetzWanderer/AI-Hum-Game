@@ -15,6 +15,11 @@
       "Gestion de l’information",
       "Engagement communautaire"
     ],
+    "discuss": [
+      "Qui n'a pas accès à un téléphone, et que deviennent ces personnes si le chatbot est la porte d'entrée ?",
+      "Quelles réponses seraient dangereuses avant qu'une personne ne les ait vérifiées ?",
+      "Où les questions et les lieux des appelants seraient-ils conservés ?"
+    ],
     "steps": [
       {
         "id": "fl-1",

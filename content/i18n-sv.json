@@ -184,8 +184,8 @@
   "startWorkshop": "Starta workshop",
   "playSolo": "Spela själv",
   "yourDecisions": "Dina beslut",
-  "otherOptions": "PUT SOMETHING",
-  "debriefWeak": "Där den här vägen är svagast",
-  "debriefWeakDetail": "{principle} — {rating}. Lägst på den här vägen: {choice}.",
+  "otherOptions": "De alternativerna ni inte har valt",
+  "filterLabel": "Filtrera efter ämne",
+  "allTopics": "Alla ämnen",
   "principlesToggle": "Om principerna"
 }

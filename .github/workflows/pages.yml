@@ -1,0 +1,57 @@
+name: Publish the game
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Build the game
+        run: |
+          node << 'EOF'
+          const fs = require("fs");
+          const path = require("path");
+          const { buildGame } = require("./tools/builder.js");
+          const files = {};
+          function walk(dir) {
+            for (const name of fs.readdirSync(dir)) {
+              const p = path.join(dir, name);
+              if (fs.statSync(p).isDirectory()) walk(p);
+              else files[p.split(path.sep).join("/")] = fs.readFileSync(p, "utf8");
+            }
+          }
+          walk("app");
+          walk("content");
+          const { html } = buildGame(files);
+          fs.mkdirSync("site", { recursive: true });
+          fs.writeFileSync("site/index.html", html);
+          fs.writeFileSync("site/START-HERE.html", html);
+          EOF
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

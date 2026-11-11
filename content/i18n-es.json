@@ -185,7 +185,7 @@
   "playSolo": "Jugar individualmente",
   "yourDecisions": "Tus decisiones",
   "otherOptions": "Las opciones que no elegiste",
-  "debriefWeak": "Donde este recorrido es más débil",
-  "debriefWeakDetail": "{principle} — {rating}. La nota más baja en este recorrido: {choice}.",
+  "filterLabel": "Filtrar por tema",
+  "allTopics": "Todos los temas",
   "principlesToggle": "Sobre los principios"
 }

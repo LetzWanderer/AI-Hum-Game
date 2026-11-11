@@ -185,7 +185,7 @@
   "playSolo": "Play solo",
   "yourDecisions": "Your decisions",
   "otherOptions": "The options that were not taken",
-  "debriefWeak": "Where this path is weakest",
-  "debriefWeakDetail": "{principle} — {rating}. Lowest mark on this path: {choice}.",
+  "filterLabel": "Filter by topic",
+  "allTopics": "All topics",
   "principlesToggle": "About the principles"
 }

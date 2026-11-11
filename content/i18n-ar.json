@@ -184,8 +184,8 @@
   "startWorkshop": "ابدأ الورشة",
   "playSolo": "العب بمفردك",
   "yourDecisions": "قراراتك",
-  "otherOptions": "PUT SOMETHING",
-  "debriefWeak": "حيث يكون هذا المسار أضعف",
-  "debriefWeakDetail": "{principle} — {rating}. أدنى علامة في هذا المسار: {choice}.",
+  "otherOptions": "الخيارات التي لم تخترها",
+  "filterLabel": "تصفية حسب الموضوع",
+  "allTopics": "كل المواضيع",
   "principlesToggle": "عن المبادئ"
 }
