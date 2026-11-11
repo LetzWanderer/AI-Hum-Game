@@ -147,5 +147,7 @@
   "playSolo": "Jouer seul·e",
   "yourDecisions": "Vos décisions",
   "otherOptions": "Les options que vous n'avez pas retenues",
+  "filterLabel": "Filtrer par sujet",
+  "allTopics": "Tous les sujets",
   "principlesToggle": "À propos des principes"
 }

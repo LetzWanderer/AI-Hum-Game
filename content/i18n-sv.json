@@ -147,5 +147,7 @@
   "playSolo": "Spela själv",
   "yourDecisions": "Dina beslut",
   "otherOptions": "De alternativerna ni inte har valt",
+  "filterLabel": "Filtrera efter ämne",
+  "allTopics": "Alla ämnen",
   "principlesToggle": "Om principerna"
 }
