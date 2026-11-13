@@ -247,7 +247,7 @@
           '</span><button class="round" data-timer="1">+</button></div><div class="two-btn"><button class="btn small" data-timer="toggle"' + (timer.left ? "" : " disabled") + ">" +
           esc(timer.running ? t.timerPause : t.timerStart) + '</button><button class="btn ghost small" data-timer="reset">' + esc(t.timerReset) + "</button></div>" +
           (timer.left ? "" : '<p class="acc" style="font-weight:600;font-size:14px">' + esc(t.timeUp) + "</p>") + "</div></section>" : "") +
-        '<div><h2 style="font-family:var(--sans);font-size:16px">' + esc(ws ? t.voteHeading : t.whatDoYouDo) + '</h2><p class="muted">' + esc(ws ? t.voteHint : t.selectFirst) + '</p></div><div class="stack">' +
+        '<div><h2 style="font-size:16px">' + esc(ws ? t.voteHeading : t.whatDoYouDo) + '</h2><p class="muted">' + esc(ws ? t.voteHint : t.selectFirst) + '</p></div><div class="stack">' +
         step.options.map(function (o, i) {
           var on = chosen === o.id;
           return '<div class="optwrap' + (on ? " sel" : "") + '"><button class="opt" data-choose="' + esc(o.id) + '" aria-pressed="' + on + '"><span class="letter">' +

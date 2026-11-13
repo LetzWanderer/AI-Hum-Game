@@ -1,6 +1,5 @@
 {
-  "_help": "Copy everything inside the { } of \"scenario\" below and paste it into the list in scenarios-en.json (add a comma after the previous scenario). Keep ids short, lowercase, with dashes, and unique. Impacts are -2 (harms the principle) to +2 (strengthens it); leave a principle out if it is not affected. Principles: humanity, impartiality, neutrality, independence, doNoHarm. Energy and environmental costs count under doNoHarm. 'colors' is optional: two hex colours for the card. 'discuss' is optional: questions for a workshop of this scenario; leave it out to use the shared questions.",
-  "scenario": {
+    "_help": "Copy everything inside the { } of \"scenario\" below and paste it into the list in scenarios-en.json (add a comma after the previous scenario). Keep ids short, lowercase, with dashes, and unique. Impacts are -2 (harms the principle) to +2 (strengthens it); leave a principle out if it is not affected. Principles: humanity, impartiality, neutrality, independence, doNoHarm. Energy and environmental costs count under doNoHarm. 'colors' is optional: two hex colours for the card, a dark field then a stripe, such as #011E41 and #EE2435. 'discuss' is optional: questions for a workshop of this scenario; leave it out to use the shared questions.",
     "id": "my-new-scenario",
     "title": "The Translation Desk",
     "tagline": "Machine translation for asylum information in Vienna",
@@ -12,7 +11,7 @@
       "Who cannot read the translated notice, and how will they get the same information?",
       "Which sentences must a person check before they are sent?"
     ],
-    "colors": ["#1d4ed8", "#38bdf8"],
+    "colors": ["#011E41", "#EE2435"],
     "debrief": "One or two sentences to reflect on after the last decision.",
     "steps": [
       {
