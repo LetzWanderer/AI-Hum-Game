@@ -3,7 +3,8 @@
   --bg: #fbf8f3; --fg: #2a1f1a; --muted: #6b6560; --card: #fff; --line: #e9e4dc; --soft: #f1ede6;
   --brand: #c8102e; --ok: #15803d; --warn: #b45309; --bad: #c8102e; --on: #fff;
   --p-humanity: #e11d48; --p-impartiality: #0891b2; --p-neutrality: #64748b; --p-independence: #7c3aed; --p-doNoHarm: #059669;
-  --display: "Fraunces", Georgia, serif; --sans: "Public Sans", system-ui, sans-serif;
+  --sans: system-ui, "Segoe UI", Roboto, "Noto Sans", "Noto Sans Arabic", "Helvetica Neue", Arial, sans-serif;
+  --display: var(--sans);
 }
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.55 var(--sans); }
