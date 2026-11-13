@@ -11,7 +11,7 @@
   "startScenario": "Starta scenariot",
   "recordHeading": "Ditt ledarskapsresultat hittills",
   "recordSummary": "Sammantagna resultat från {n} avslutade scenario(n). Spela om med andra val för att se hur balansen förändras.",
-  "footerNote": "Alla scenarier och personer är fiktiva. Innehåll och terminologi är inspirerade av Röda Kors- och Röda Halvmånerörelsens IKT-resolution (preparecenter.org/site/ict-resolution) och av scenariobaserade humanitära lärospel som ”In 90 Days” och ”Mission Zhobia” (humanitariangames.com).",
+  "footerNote": "Alla scenarier och personer är fiktiva. Innehåll och terminologi är inspirerade av Röda Kors- och Röda Halvmånerörelsens resolution om principiell och ansvarsfull användning av teknik, och av scenariobaserade humanitära lärospel som ”In 90 Days” och ”Mission Zhobia” (humanitariangames.com).",
   "scenarioKicker": "Scenario · {n} beslut",
   "yourRole": "Din roll",
   "theSituation": "Situationen",
@@ -99,7 +99,7 @@
     "C"
   ],
   "rolesLabel": "Roller i detta scenario",
-  "ictLinkLabel": "Läs Rörelsens IKT-resolution",
+  "ictLinkLabel": "Röda Kors- och Röda Halvmånerörelsens resolution om principiell och ansvarsfull användning av teknik",
   "codeLinkLabel": "Visa och ladda ner spelets källdata",
   "codeTitle": "Källdata",
   "codeIntro": "Allt spelet säger lever i dessa filer. Sidan visar livedatan exakt som den är publicerad — ladda ner den, redigera i valfri textredigerare, och dina ändringar följer med nästa publicering.",
