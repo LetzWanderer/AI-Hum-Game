@@ -11,7 +11,7 @@
   "startScenario": "Commencer le scénario",
   "recordHeading": "Votre bilan de leadership pour l’instant",
   "recordSummary": "Résultats combinés sur {n} scénario(s) terminé(s). Rejouez avec d’autres choix pour voir l’équilibre évoluer.",
-  "footerNote": "Tous les scénarios et personnages sont fictifs. Le contenu et la terminologie s’inspirent de la Résolution TIC du Mouvement de la Croix-Rouge et du Croissant-Rouge (preparecenter.org/site/ict-resolution) et de jeux humanitaires d’apprentissage par scénarios comme « In 90 Days » et « Mission Zhobia » (humanitariangames.com).",
+  "footerNote": "Tous les scénarios et personnages sont fictifs. Le contenu et la terminologie s’inspirent de la résolution du Mouvement de la Croix-Rouge et du Croissant-Rouge sur l’utilisation principielle et responsable de la technologie, et de jeux humanitaires d’apprentissage par scénarios comme « In 90 Days » et « Mission Zhobia » (humanitariangames.com).",
   "scenarioKicker": "Scénario · {n} décisions",
   "yourRole": "Votre rôle",
   "theSituation": "La situation",
@@ -99,7 +99,7 @@
     "C"
   ],
   "rolesLabel": "Rôles dans ce scénario",
-  "ictLinkLabel": "Lire la Résolution TIC du Mouvement",
+  "ictLinkLabel": "Résolution du Mouvement de la Croix-Rouge et du Croissant-Rouge sur l’utilisation principielle et responsable de la technologie",
   "codeLinkLabel": "Voir et télécharger les données source du jeu",
   "codeTitle": "Données source",
   "codeIntro": "Tout ce que dit le jeu vit dans ces fichiers. Cette page affiche les données en direct, telles que déployées — téléchargez-les, modifiez-les dans n’importe quel éditeur de texte, et vos changements partent au prochain déploiement.",

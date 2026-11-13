@@ -11,7 +11,7 @@
   "startScenario": "Start scenario",
   "recordHeading": "Your leadership record so far",
   "recordSummary": "Combined results across {n} completed scenario(s). Replay with different choices to see how the balance shifts.",
-  "footerNote": "All scenarios and characters are fictional. Content and terminology are inspired by the Red Cross Red Crescent Movement’s ICT Resolution (preparecenter.org/site/ict-resolution) and by scenario-based humanitarian learning games such as “In 90 Days” and “Mission Zhobia” (humanitariangames.com).",
+  "footerNote": "All scenarios and characters are fictional. Content and terminology are inspired by the Red Cross and Red Crescent Movement's resolution on principled and accountable use of technology, and by scenario-based humanitarian learning games such as “In 90 Days” and “Mission Zhobia” (humanitariangames.com).",
   "scenarioKicker": "Scenario · {n} decisions",
   "yourRole": "Your role",
   "theSituation": "The situation",
@@ -99,7 +99,7 @@
     "C"
   ],
   "rolesLabel": "Roles in this scenario",
-  "ictLinkLabel": "Read the RCRC ICT Resolution",
+  "ictLinkLabel": "Red Cross and Red Crescent Movement's resolution on principled and accountable use of technology",
   "codeLinkLabel": "View & download the game source data",
   "codeTitle": "Source data",
   "codeIntro": "Everything the game says lives in these files. This page renders the live data exactly as deployed — download it, edit it in any text editor, and your edits ship with the next deploy.",

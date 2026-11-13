@@ -11,7 +11,7 @@
   "startScenario": "Comenzar escenario",
   "recordHeading": "Tu historial de liderazgo hasta ahora",
   "recordSummary": "Resultados combinados de {n} escenario(s) completado(s). Vuelve a jugar con otras decisiones para ver cómo cambia el equilibrio.",
-  "footerNote": "Todos los escenarios y personajes son ficticios. El contenido y la terminología se inspiran en la Resolución sobre TIC del Movimiento de la Cruz Roja y la Media Luna Roja (preparecenter.org/site/ict-resolution) y en juegos humanitarios de aprendizaje basados en escenarios como «In 90 Days» y «Mission Zhobia» (humanitariangames.com).",
+  "footerNote": "Todos los escenarios y personajes son ficticios. El contenido y la terminología se inspiran en la resolución del Movimiento de la Cruz Roja y de la Media Luna Roja sobre el uso basado en principios y responsable de la tecnología, y en juegos humanitarios de aprendizaje basados en escenarios como «In 90 Days» y «Mission Zhobia» (humanitariangames.com).",
   "scenarioKicker": "Escenario · {n} decisiones",
   "yourRole": "Tu función",
   "theSituation": "La situación",
@@ -99,7 +99,7 @@
     "C"
   ],
   "rolesLabel": "Roles en este escenario",
-  "ictLinkLabel": "Leer la Resolución TIC del Movimiento",
+  "ictLinkLabel": "Resolución del Movimiento de la Cruz Roja y de la Media Luna Roja sobre el uso basado en principios y responsable de la tecnología",
   "codeLinkLabel": "Ver y descargar los datos fuente del juego",
   "codeTitle": "Datos fuente",
   "codeIntro": "Todo lo que dice el juego vive en estos archivos. Esta página muestra los datos en vivo tal como están desplegados: descárgalos, edítalos en cualquier editor de texto, y tus cambios se publican con el próximo despliegue.",
