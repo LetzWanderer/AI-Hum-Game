@@ -2,12 +2,11 @@
    Colours and type: red #EE2435, dark blue #011E41,
    black, white, and the theme palettes. Montserrat for titles, Open Sans for text. */
 :root {
-  --bg: #f2f2f2; --fg: #000; --muted: #3d3d3d; --card: #fff; --line: #d9d9d9; --soft: #f2f2f2;
-  --brand: #ee2435; --navy: #011e41; --ok: #009579; --warn: #ff8300; --bad: #d7282f; --on: #fff;
-  --p-humanity: #ee2435; --p-impartiality: #073a50; --p-neutrality: #011e41; --p-independence: #522d6d; --p-doNoHarm: #009579;
-  --display: "Montserrat", Arial, "Noto Sans Arabic", sans-serif;
-  --sans: "Open Sans", Arial, "Noto Sans Arabic", sans-serif;
-  --radius: 4px;
+  --bg: #fbf8f3; --fg: #2a1f1a; --muted: #6b6560; --card: #fff; --line: #e9e4dc; --soft: #f1ede6;
+  --brand: #c8102e; --ok: #15803d; --warn: #b45309; --bad: #c8102e; --on: #fff;
+  --p-humanity: #e11d48; --p-impartiality: #0891b2; --p-neutrality: #64748b; --p-independence: #7c3aed; --p-doNoHarm: #059669;
+  --sans: system-ui, "Segoe UI", Roboto, "Noto Sans", "Noto Sans Arabic", "Helvetica Neue", Arial, sans-serif;
+  --display: var(--sans);
 }
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.55 var(--sans); }
