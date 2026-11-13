@@ -11,7 +11,8 @@ A fresh copy of this folder does not include the playable file. Build it once:
 3. Click **Try it first** to play in a temporary tab, or **Download START-HERE.html** and save that file into this same folder. `app/shell.html` on its own is not the game. It has no stories until the builder packs them in.
 ### Open it
 Double-click `START-HERE.html`, or drag that file onto a browser window. You can also email it, put it on a USB stick, or upload it to any website (rename it `index.html` if the host expects that name).
-Fonts load from Google when you are online. Offline, the game uses the fonts already on the computer. Play is the same either way.
+Titles use Montserrat and the story uses Open Sans. If those files do not load, the page uses Arial.
+
 ### What you do
 1. Choose a language. English, Swedish, French, Spanish and Arabic are included. Arabic lays the page out right to left.
 2. Choose **Play on my own** or **Run a group workshop**.

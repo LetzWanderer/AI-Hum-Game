@@ -1,9 +1,9 @@
-body { font-family: system-ui, sans-serif; background: #faf7f2; color: #1c1917; margin: 0; line-height: 1.55; }
+body { font-family: "Open Sans", Arial, "Noto Sans Arabic", sans-serif; background: #f2f2f2; color: #000; margin: 0; line-height: 1.55; }
 main { max-width: 720px; margin: 0 auto; padding: 24px 16px 64px; }
-h1 { font-size: 28px; margin: 0 0 8px; }
-.pick { display: inline-block; margin: 16px 0; background: #c8102e; color: #fff; font-weight: 600; padding: 12px 20px; border-radius: 99px; cursor: pointer; }
+h1 { font-family: Montserrat, Arial, "Noto Sans Arabic", sans-serif; font-weight: 700; font-size: 28px; margin: 0 0 8px; }
+.pick { display: inline-block; margin: 16px 0; background: #ee2435; color: #fff; font-family: Montserrat, Arial, sans-serif; font-weight: 600; padding: 12px 20px; border-radius: 4px; cursor: pointer; }
 .pick input { display: none; }
-.btn { display: inline-block; background: #c8102e; color: #fff; font-weight: 600; padding: 10px 18px; border-radius: 99px; text-decoration: none; margin-top: 8px; }
-.btn.ghost { background: #fff; color: #c8102e; border: 2px solid #c8102e; }
-.err { color: #b91c1c; } .ok { color: #15803d; font-weight: 600; }
+.btn { display: inline-block; background: #ee2435; color: #fff; font-family: Montserrat, Arial, sans-serif; font-weight: 600; padding: 10px 18px; border-radius: 4px; text-decoration: none; margin-top: 8px; }
+.btn.ghost { background: #fff; color: #ee2435; border: 2px solid #ee2435; }
+.err { color: #d7282f; } .ok { color: #009579; font-weight: 600; }
 li { margin-bottom: 4px; } summary { cursor: pointer; font-weight: 600; margin-top: 12px; }
