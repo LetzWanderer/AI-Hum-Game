@@ -5,13 +5,13 @@ A phone-friendly decision game about the trade-offs in AI decisions. Plain HTML,
 ## 1. Run the game
 You need a current browser: Chrome, Edge, Firefox, or Safari. Nothing to install, no account, and no internet connection after the file is open. The game does not send scores, votes, or stories anywhere. Progress stays in this browser only.
 ### First time
-A fresh copy of this folder does not include the playable file. Build it once:
+This update includes a freshly built playable file. Open START-HERE.html immediately, or rebuild after editing:
 1. Open `tools/build.html` in your browser.
 2. Click **Choose game folder** and pick this project folder — the one that contains `content` and `app`. Allow the browser to read the folder if it asks.
 3. Click **Try it first** to play in a temporary tab, or **Download START-HERE.html** and save that file into this same folder. `app/shell.html` on its own is not the game. It has no stories until the builder packs them in.
 ### Open it
 Double-click `START-HERE.html`, or drag that file onto a browser window. You can also email it, put it on a USB stick, or upload it to any website (rename it `index.html` if the host expects that name).
-Titles use Montserrat and the story uses Open Sans. If those files do not load, the page uses Arial.
+The game uses Arial and embeds its illustrations. It needs no external fonts or image downloads.
 
 ### What you do
 1. Choose a language. English, Swedish, French, Spanish and Arabic are included. Arabic lays the page out right to left.
@@ -64,13 +64,13 @@ Open `content/settings.json`:
 "strongShare": 0.5
 ```
 - Each choice's score for a principle is multiplied by its weight. `2` = counts double, `0.5` = half, `0` = ignored.
-  Example: set `"doNoHarm": 1.5` to give energy, environmental and safety harms more weight.
+  Example: legacy `doNoHarm` impacts are folded into Humanity before scoring; change `humanity` to weight the combined principle. The legacy `doNoHarm` setting is retained for compatibility but is not applied separately.
 - The "best possible" and "worst possible" in each meter are weighted the same way, so meters stay fair.
 - `strongShare` is how much of the best possible score a player needs for a **Strong** rating (0.5 = half). Below that but 0 or above is **Mixed**; below 0 is **At risk**.
 - To change *one* choice instead, edit its `"impacts"` in the scenario file (−2 to +2).
 
 ## 5. Add a scenario
-1. Open `content/scenario-template.json` and copy the block inside `"scenario": { … }`.
+1. Open `content/scenario-template.json` and copy the scenario object, leaving out its `_help` field.
 2. In `content/scenarios-en.json`, put a comma after the last scenario's closing `}` and paste your block before the final `]`.
 3. Give it a unique `id`, and unique step/option ids (e.g. `tr-1`, `tr-1a`).
 4. Optional: translate it by adding the same block (same ids and impacts, translated text) to `scenarios-sv.json` etc. Untranslated scenarios show in English.
@@ -88,3 +88,13 @@ Choose **Run a group workshop** on the home screen and put the game on one share
 
 ## 8. Scoring in short
 Score per principle = sum of (impact × weight) over the player's choices, shown against the best and worst achievable in that scenario. The leadership record adds up all finished scenarios.
+
+
+## GitHub update, November 2026
+See MERGE-INSTRUCTIONS.md before copying files. CHANGE-MANIFEST.md records changed paths and line counts; CHANGES.patch contains exact textual differences against AI-Hum-Game-main_3.zip.
+
+New optional inputs: content/humanity-reasons.json contains translated post-choice explanations; content/assets.json maps scenario/step IDs to JPEG files under app/assets/. The existing builder embeds all mapped images, so START-HERE.html remains a single offline file. The browser folder picker and GitHub Pages workflow now read JPEGs as data URLs.
+
+Run `node --test tools/tests/handoff.test.cjs` from the repository root to verify scoring parity, four gates per scenario, images and offline output. No package installation is needed.
+
+The standalone package intentionally does not include Lovable hosting or its Cloud feedback connection. No feedback form is rendered without a separate GAME_FEEDBACK adapter. Scores, votes, drafts and completion records remain in the browser's existing localStorage; they are not session-only and are not uploaded. Analytics remain outside the game. The unchanged tools/build.html and tools/check.html still reference their original external fonts, but the built game itself makes no external requests.

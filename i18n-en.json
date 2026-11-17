@@ -1,0 +1,229 @@
+{
+  "subtitle": "Humanitarian Action in the Age of New Technology",
+  "coverHook": "Technology can extend humanitarian reach, or erode the trust it depends on. Step into the command seat and see how the Principles hold up under pressure.",
+  "startGame": "Start game",
+  "kicker": "A branching decision game",
+  "appTitle": "Principled Tech: The Dilemma Game",
+  "intro": "New technology promises speed and scale, but our Fundamental Principles must always be our guiding light. What happens when technology and on the ground needs, meet?\n\nYou don’t need to be a coder or an IT specialist. From volunteers to coordinators, everyone in humanitarian action uses digital tools, and technology, collects or uses data and makes everyday decisions - shaping outcomes and impacting the world.\n\nStep into the command seat to test real-world dilemmas, challenge your instincts, and see how the Principles can guide us toward grounded technology choices that put people first.",
+  "principlesHeading": "The Principles guide your decisions",
+  "scenariosHeading": "Choose a scenario",
+  "completed": "Completed",
+  "stepOf": "Step {n} of {m}",
+  "playAgain": "Play again",
+  "continueGame": "Continue",
+  "startScenario": "Start scenario",
+  "recordHeading": "Your leadership record so far",
+  "recordSummary": "Combined results across {n} completed scenario(s). Replay with different choices to see how the balance shifts.",
+  "footerNote": "Developed by the Swedish Red Cross, with support from the International Committee of the Red Cross (ICRC) and drawing on the Movement’s PATH Principled and Accountable Use of Information and Communication Technologies in Humanitarian Action. All scenarios and characters are fictional, inspired by real operational dilemmas and scenario-based humanitarian learning games such as 'In 90 Days' and 'Mission Zhobia' (humanitariangames.com).",
+  "scenarioKicker": "Scenario · {n} decisions",
+  "yourRole": "Your role",
+  "theSituation": "The situation",
+  "takeCommand": "Take command",
+  "allScenarios": "All scenarios",
+  "exitGame": "Exit",
+  "decisionOf": "{scenario} · Decision {i} of {n}",
+  "progressLabel": "Scenario progress",
+  "whatDoYouDo": "What do you do?",
+  "youDecided": "You decided: {label}",
+  "whatHappened": "What happened",
+  "whyItMatters": "Why it matters",
+  "impactLabel": "Impact on principles",
+  "nextDecision": "Next decision",
+  "seeDebrief": "See your debrief",
+  "debriefKicker": "Debrief · {scenario}",
+  "debriefHeading": "How your choices held up",
+  "scenarioReflectionHeading": "The bigger picture",
+  "principlesBalance": "Principles balance",
+  "pathYouTook": "The path you took",
+  "decisionLabel": "Decision {i} · {title}",
+  "takeawayHeading": "Questions to take back to your team",
+  "takeaways": [
+    {
+      "text": "Who is accountable when an automated system harms an affected person — and can they switch it off?",
+      "principles": [
+        "doNoHarm",
+        "independence"
+      ]
+    },
+    {
+      "text": "Could you explain, to the community and to a journalist, exactly who holds people’s data and why?",
+      "principles": [
+        "doNoHarm"
+      ]
+    },
+    {
+      "text": "Whose needs are invisible to your data — and who checks the model's blind spots?",
+      "principles": [
+        "impartiality"
+      ]
+    },
+    {
+      "text": "If your cloud or AI vendor changed its terms, was acquired, or became linked to a party in a conflict, could you exit — and how fast?",
+      "principles": [
+        "independence"
+      ]
+    },
+    {
+      "text": "Before any AI tool launches, who assesses the harm it could do to affected communities — and are those communities part of the assessment?",
+      "principles": [
+        "humanity",
+        "doNoHarm"
+      ]
+    },
+    {
+      "text": "What energy, water, and connectivity does the tool demand — and who bears that cost?",
+      "principles": [
+        "doNoHarm"
+      ]
+    },
+    {
+      "text": "Where does a human sign, on the record, before an algorithm's recommendation becomes someone's reality?",
+      "principles": [
+        "humanity",
+        "independence"
+      ]
+    }
+  ],
+  "replay": "Replay this scenario",
+  "chooseAnother": "Choose another scenario",
+  "ratingStrong": "Strong",
+  "ratingMixed": "Mixed",
+  "ratingAtRisk": "At risk",
+  "ratingNotTested": "Not tested",
+  "journeyLabel": "Your journey through this scenario",
+  "roadmapLabel": "The road ahead",
+  "decisionsCount": "{n} decisions",
+  "overallVerdict": "Overall verdict",
+  "verdictStrong": "Principled leadership",
+  "verdictMixed": "A mixed record",
+  "verdictAtRisk": "A record at risk",
+  "optionLetters": [
+    "A",
+    "B",
+    "C"
+  ],
+  "rolesLabel": "Roles in this scenario",
+  "ictLinkLabel": "PATH Resolution: Principled and Accountable Use of Information and Communication Technologies in Humanitarian Action",
+  "codeLinkLabel": "View & download the game source data",
+  "codeTitle": "Source data",
+  "codeIntro": "Everything the game says lives in these files. This page renders the live data exactly as deployed — download it, edit it in any text editor, and your edits ship with the next deploy.",
+  "codeScenariosHeading": "Scenarios",
+  "codeStringsHeading": "Interface text",
+  "codeDownload": "Download JSON",
+  "codeShow": "Show",
+  "backHome": "Back to the game",
+  "languageLabel": "Language",
+  "principles": [
+    {
+      "key": "humanity",
+      "name": "Humanity",
+      "description": "Prevent and alleviate suffering, protect life and health, and ensure respect for every person. This includes doing no harm: protecting data, answering to communities and avoiding or reducing harm to affected people."
+    },
+    {
+      "key": "impartiality",
+      "name": "Impartiality",
+      "description": "Help based on need alone, without discrimination as to nationality, gender, belief, or status."
+    },
+    {
+      "key": "neutrality",
+      "name": "Neutrality",
+      "description": "Take no sides in hostilities or in political, racial, religious, or ideological controversies."
+    },
+    {
+      "key": "independence",
+      "name": "Independence",
+      "description": "Remain autonomous from governments, companies, and other interests so action stays humanitarian."
+    },
+    {
+      "key": "doNoHarm",
+      "name": "Do No Harm & Accountability",
+      "description": "PATH Resolution commitments: protect data, engage and answer to communities, procure ethically, and avoid or mitigate harm to affected people."
+    }
+  ],
+  "readMore": "Read more",
+  "readLess": "Show less",
+  "progressOverall": "{n} of {m} scenarios completed",
+  "modeSolo": "Play on my own",
+  "modeSoloHint": "Make the calls yourself, at your own pace.",
+  "modeWorkshop": "Run a group workshop",
+  "modeWorkshopHint": "One shared screen. The group discusses, votes and decides together.",
+  "inProgress": "In progress · decision {i} of {n}",
+  "resume": "Resume",
+  "confirmDecision": "Confirm decision",
+  "selectFirst": "Tap an option to select it",
+  "exitConfirm": "Leave this scenario? Your progress so far is saved.",
+  "workshopBadge": "Workshop",
+  "discussHeading": "Discuss in your group",
+  "questionsHeading": "Questions to consider",
+  "discussPrompts": [
+    "Who benefits from each option — and who could be harmed?",
+    "What data would be used, and is any of it sensitive?",
+    "Is AI actually needed here, or would something simpler work?",
+    "What would it cost in energy, water and hardware?",
+    "Where do humans stay in charge — and how could people challenge the outcome?"
+  ],
+  "timer": "Discussion timer",
+  "timerStart": "Start",
+  "timerPause": "Pause",
+  "timerReset": "Reset",
+  "timeUp": "Time is up — time to vote",
+  "voteHeading": "Group vote",
+  "voteHint": "Count a show of hands with + and −. The option with the most votes is selected — you can change it.",
+  "votes": "{n} votes",
+  "groupChose": "The group chose",
+  "afterDiscuss": "Before moving on: did this match what the group expected? What would you do differently?",
+  "groupPath": "How the group voted",
+  "splitVote": "Votes: {votes}",
+  "copySummary": "Copy workshop summary",
+  "copied": "Copied",
+  "downloadSummary": "Download summary",
+  "guideHeading": "How to run a workshop",
+  "guideSteps": [
+    "Plan 20–90 minutes for 2–20 people, or more. Put the game on a big screen or projector. It can even be played online, sharing your screen.",
+    "Before hand, go through the scenarios and pick one or two that fit your team's work. Read the role and situation aloud to the group. If a large group, encourage smaller breakouts",
+    "For each decision: read the situation, allow the group (s) to discuss for a few minutes with the timer, then vote by show of hands.",
+    "Read the consequence and 'why it matters' together, and pause on the discussion question.",
+    "Finish with the debrief and the questions for your team. Download the summary to share afterwards."
+  ],
+  "guideNote": "Choices and votes stay on this device. Only feedback you submit is sent to a central, self-hosted server. No data saved.",
+  "startWorkshop": "Start workshop",
+  "playSolo": "Play solo",
+  "yourDecisions": "Your decisions",
+  "otherOptions": "The options that were not taken",
+  "filterLabel": "Filter by topic",
+  "allTopics": "All topics",
+  "principlesToggle": "About the principles",
+  "debriefWeak": "Where your choices were weakest",
+  "debriefWeakDetail": "{principle} ended up {rating}. Reflect on how your decisions could better protect this principle.",
+  "debriefCostHeading": "Choices with the greatest negative impact",
+  "debriefCostExplain": "These choices tied for the largest combined negative impact across the four principles. Only negative scores are added, using the game’s principle weights; positive scores do not cancel them out. This describes the choices, not your final balance.",
+  "howToPlayHeading": "How to play",
+  "howToPlaySteps": [
+    "Pick a scenario: then step into a real-world operational role facing a technology decision.",
+    "At each decision, choose one of three options — there is rarely a perfect answer.",
+    "See what happened, why it matters, and how it moved the four principles.",
+    "At the end, the debrief shows your balance across the principles and questions to take back to your team.",
+    "Pause and reflect: after each scenario, talk through what you would do differently in your own work."
+  ],
+  "statusHeading": "Your situation",
+  "statusBalance": "Principles Tracker",
+  "searchTopics": "Search topics",
+  "sortLabel": "Sort scenarios",
+  "topRated": "Highest rated",
+  "feedbackCount": "{n} ratings",
+  "feedbackHeading": "Rate this scenario",
+  "feedbackQuestion": "How useful was this scenario? (1–5)",
+  "feedbackComment": "Short feedback (optional)",
+  "feedbackPrivacy": "Your rating is public in aggregate; comments are private. Do not include names or sensitive information.",
+  "feedbackSend": "Send feedback",
+  "feedbackThanks": "Thank you — feedback received.",
+  "feedbackError": "Could not send feedback. Please try again.",
+  "pickSolo": "Play Solo",
+  "pickTogether": "Play Together",
+  "pickHeading": "Your move.",
+  "pickSub": "Choose how you want to play",
+  "aboutHeading": "About the game",
+  "debriefReflect": "This isn't a test. Use your result to reflect",
+  "costEnvironmentHeading": "Cost and environment",
+  "costEnvironmentNote": "Not scored as a principle. Discuss: what did your path cost in money and in energy, devices and waste — and was a simpler option enough?"
+}
