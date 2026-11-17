@@ -1,8 +1,11 @@
 {
+  "subtitle": "L’action humanitaire à l’ère des nouvelles technologies",
+  "coverHook": "La technologie peut étendre la portée humanitaire, ou éroder la confiance dont elle dépend. Prenez les commandes et voyez comment les Principes résistent sous pression.",
+  "startGame": "Commencer",
   "kicker": "Un jeu de décisions à embranchements",
-  "appTitle": "L’IA dans l’action humanitaire",
-  "intro": "Chaque décision sur l’IA est un arbitrage. Faites vos choix, voyez les conséquences et découvrez pourquoi les principes humanitaires comptent à chaque étape.",
-  "principlesHeading": "Les critères selon lesquels vos choix sont évalués",
+  "appTitle": "Tech et principes : le jeu des dilemmes",
+  "intro": "Les nouvelles technologies promettent rapidité et passage à l’échelle, mais nos Principes fondamentaux doivent toujours nous servir de guide. Que se passe-t-il lorsque la technologie rencontre les besoins sur le terrain ?\n\nVous n’avez pas besoin d’être spécialiste du code ou de l’informatique. Des bénévoles aux responsables de coordination, toutes les personnes engagées dans l’action humanitaire utilisent des outils numériques et des technologies, collectent ou utilisent des données et prennent des décisions au quotidien — façonnant les résultats et influençant le monde.\n\nPrenez les commandes pour explorer des dilemmes inspirés du terrain, remettre en question vos réflexes et découvrir comment les Principes peuvent nous guider vers des choix technologiques éclairés qui placent les personnes au premier plan.",
+  "principlesHeading": "Les Principes guident vos décisions",
   "scenariosHeading": "Choisissez un scénario",
   "completed": "Terminé",
   "stepOf": "Étape {n} sur {m}",
@@ -11,7 +14,7 @@
   "startScenario": "Commencer le scénario",
   "recordHeading": "Votre bilan de leadership pour l’instant",
   "recordSummary": "Résultats combinés sur {n} scénario(s) terminé(s). Rejouez avec d’autres choix pour voir l’équilibre évoluer.",
-  "footerNote": "Tous les scénarios et personnages sont fictifs. Le contenu et la terminologie s’inspirent de la résolution du Mouvement de la Croix-Rouge et du Croissant-Rouge sur l’utilisation principielle et responsable de la technologie, et de jeux humanitaires d’apprentissage par scénarios comme « In 90 Days » et « Mission Zhobia » (humanitariangames.com).",
+  "footerNote": "Développé par la Croix-Rouge suédoise, avec le soutien du Comité international de la Croix-Rouge (CICR) et en s’appuyant sur la Résolution PATH du Mouvement sur l’utilisation fondée sur des principes et redevable des technologies de l’information et de la communication dans l’action humanitaire. Tous les scénarios et personnages sont fictifs, inspirés de dilemmes opérationnels réels et de jeux d’apprentissage humanitaires fondés sur des scénarios comme « In 90 Days » et « Mission Zhobia » (humanitariangames.com).",
   "scenarioKicker": "Scénario · {n} décisions",
   "yourRole": "Votre rôle",
   "theSituation": "La situation",
@@ -29,6 +32,7 @@
   "seeDebrief": "Voir votre bilan",
   "debriefKicker": "Bilan · {scenario}",
   "debriefHeading": "Comment vos choix ont résisté",
+  "scenarioReflectionHeading": "Une vue d’ensemble",
   "principlesBalance": "Équilibre des principes",
   "pathYouTook": "Le chemin que vous avez suivi",
   "decisionLabel": "Décision {i} · {title}",
@@ -99,7 +103,7 @@
     "C"
   ],
   "rolesLabel": "Rôles dans ce scénario",
-  "ictLinkLabel": "Résolution du Mouvement de la Croix-Rouge et du Croissant-Rouge sur l’utilisation principielle et responsable de la technologie",
+  "ictLinkLabel": "Résolution PATH : utilisation fondée sur des principes et redevable des technologies de l’information et de la communication dans l’action humanitaire",
   "codeLinkLabel": "Voir et télécharger les données source du jeu",
   "codeTitle": "Données source",
   "codeIntro": "Tout ce que dit le jeu vit dans ces fichiers. Cette page affiche les données en direct, telles que déployées — téléchargez-les, modifiez-les dans n’importe quel éditeur de texte, et vos changements partent au prochain déploiement.",
@@ -113,7 +117,7 @@
     {
       "key": "humanity",
       "name": "Humanité",
-      "description": "Prévenir et soulager la souffrance, protéger la vie et la santé, et garantir le respect de chaque personne."
+      "description": "Prévenir et soulager la souffrance, protéger la vie et la santé, et garantir le respect de chaque personne. Cela inclut de ne pas nuire : protéger les données, rendre des comptes aux communautés et éviter ou réduire les préjudices."
     },
     {
       "key": "impartiality",
@@ -133,7 +137,7 @@
     {
       "key": "doNoHarm",
       "name": "Ne pas nuire et redevabilité",
-      "description": "Engagements de la Résolution TIC : protéger les données, engager les communautés et leur rendre compte, procéder à des achats éthiques, éviter et atténuer les préjudices causés aux personnes affectées."
+      "description": "Engagements de la Résolution PATH : protéger les données, engager les communautés et leur rendre compte, procéder à des achats éthiques, éviter et atténuer les préjudices causés aux personnes affectées."
     }
   ],
   "readMore": "Lire la suite",
@@ -150,6 +154,7 @@
   "exitConfirm": "Quitter ce scénario ? Votre progression est enregistrée.",
   "workshopBadge": "Atelier",
   "discussHeading": "Discutez en groupe",
+  "questionsHeading": "Questions à se poser",
   "discussPrompts": [
     "Qui bénéficie de chaque option — et qui pourrait en pâtir ?",
     "Quelles données seraient utilisées, et certaines sont-elles sensibles ?",
@@ -180,12 +185,45 @@
     "Lisez ensemble la conséquence et « pourquoi c’est important », et arrêtez-vous sur la question de discussion.",
     "Terminez par le bilan et les questions pour l’équipe. Téléchargez le résumé pour le partager."
   ],
-  "guideNote": "Rien n’est envoyé : les votes et les résultats restent sur cet appareil.",
+  "guideNote": "Les choix et votes restent sur cet appareil. Seuls les avis envoyés sont transmis.",
   "startWorkshop": "Lancer l’atelier",
   "playSolo": "Jouer seul·e",
   "yourDecisions": "Vos décisions",
   "otherOptions": "Les options que vous n'avez pas retenues",
   "filterLabel": "Filtrer par sujet",
   "allTopics": "Tous les sujets",
-  "principlesToggle": "À propos des principes"
+  "principlesToggle": "À propos des principes",
+  "debriefWeak": "Là où vos choix étaient les plus fragiles",
+  "debriefWeakDetail": "{principle} est au niveau « {rating} ». Réfléchissez à la façon dont vos décisions pourraient mieux protéger ce principe.",
+  "debriefCostHeading": "Choix ayant le plus grand impact négatif",
+  "debriefCostExplain": "Ces choix ont le même impact négatif cumulé maximal sur les quatre principes. Seuls les scores négatifs sont additionnés, selon les pondérations du jeu ; les scores positifs ne les compensent pas. Cela décrit les choix, pas votre bilan final.",
+  "howToPlayHeading": "Comment jouer",
+  "howToPlaySteps": [
+    "Choisissez un scénario : puis endossez un rôle opérationnel réel face à une décision technologique.",
+    "À chaque décision, choisissez l’une des trois options — il y a rarement une réponse parfaite.",
+    "Découvrez ce qui s’est passé, pourquoi c’est important et l’effet sur les quatre principes.",
+    "À la fin, le bilan montre votre équilibre entre les principes et des questions à rapporter à votre équipe.",
+    "Faites une pause et réfléchissez : après chaque scénario, discutez de ce que vous feriez autrement dans votre propre travail."
+  ],
+  "statusHeading": "Votre situation",
+  "statusBalance": "Suivi des principes",
+  "searchTopics": "Rechercher un sujet",
+  "sortLabel": "Trier les scénarios",
+  "topRated": "Les mieux notés",
+  "feedbackCount": "{n} avis",
+  "feedbackHeading": "Évaluer ce scénario",
+  "feedbackQuestion": "Ce scénario était-il utile ? (1–5)",
+  "feedbackComment": "Commentaire court (facultatif)",
+  "feedbackPrivacy": "Les notes sont publiques en moyenne ; les commentaires sont privés. Aucun nom ni donnée sensible.",
+  "feedbackSend": "Envoyer",
+  "feedbackThanks": "Merci — avis reçu.",
+  "feedbackError": "Échec de l’envoi. Réessayez.",
+  "pickSolo": "Jouer seul·e",
+  "pickTogether": "Jouer ensemble",
+  "pickHeading": "À vous de jouer.",
+  "pickSub": "Choisissez comment jouer",
+  "aboutHeading": "À propos du jeu",
+  "debriefReflect": "Ce n'est pas un test. Utilisez votre résultat pour réfléchir : quel principe a subi le plus de pression, et qui en ressentirait l'impact ?",
+  "costEnvironmentHeading": "Coût et environnement",
+  "costEnvironmentNote": "Non noté comme un principe. Discutez : combien votre parcours a-t-il coûté en argent, en énergie, en matériel et en déchets — une option plus simple aurait-elle suffi ?"
 }

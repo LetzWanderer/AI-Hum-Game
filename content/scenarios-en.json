@@ -31,7 +31,7 @@
             "label": "Launch in 48 hours",
             "detail": "Speed over verification. Answers go out unreviewed, and you fix problems as they surface.",
             "consequence": "Within three days the chatbot answers 40,000 questions. But field teams report that roughly one answer in twelve is wrong — including shelter directions for a district where the site closed last night. Staff spend the week chasing corrections across WhatsApp groups.",
-            "reflection": "Speed can save lives, but unverified automated information can itself cause harm. The ICT Resolution commits the Movement to avoiding and mitigating harm to affected people — including harm caused by the tools we deploy.",
+            "reflection": "Speed can save lives, but unverified automated information can itself cause harm. The PATH Resolution commits the Movement to avoiding and mitigating harm to affected people — including harm caused by the tools we deploy.",
             "impacts": {
               "humanity": 1,
               "doNoHarm": -2
@@ -57,7 +57,6 @@
             "reflection": "Choosing not to use AI is also a decision with consequences. Independence from vendors is preserved, but humanity asks whether a reachable tool, carefully governed, could have alleviated more suffering.",
             "impacts": {
               "humanity": -1,
-              "doNoHarm": 1,
               "independence": 1
             }
           }
@@ -73,7 +72,7 @@
             "label": "Log everything for a better service",
             "detail": "Full interaction logs feed the vendor’s analytics pipeline. Personalisation improves.",
             "consequence": "Responses get noticeably more relevant. Months later you learn the logs were used to train a commercial product, and there is no practical way to withdraw the data of 40,000 displaced people who never agreed to that.",
-            "reflection": "Affected people rarely get to negotiate consent in a crisis. The ICT Resolution’s data protection commitment treats their data as theirs — collected for a stated purpose, protected, and never quietly repurposed.",
+            "reflection": "Affected people rarely get to negotiate consent in a crisis. The PATH Resolution’s data protection commitment treats their data as theirs — collected for a stated purpose, protected, and never quietly repurposed.",
             "impacts": {
               "humanity": 1,
               "doNoHarm": -2,
@@ -93,8 +92,8 @@
           },
           {
             "id": "fl-2c",
-            "label": "Share logs with the telecom partner",
-            "detail": "They offer network analytics in exchange. Affected users are not asked.",
+            "label": "Trade call logs for telecom movement maps",
+            "detail": "The mobile operator gives you cell-tower heatmaps of where people are moving, in exchange for the hotline's call logs and locations. Callers are not told.",
             "consequence": "The analytics help you map demand. Then a journalist asks why displaced people’s questions and locations flow to a private company. The story runs nationally; community trust in the hotline drops sharply.",
             "reflection": "Accountability to affected people includes being able to explain — before they read it in the news — who holds their data and why. Ethical partnership terms belong in procurement, not in crisis comms afterwards.",
             "impacts": {
@@ -154,7 +153,7 @@
             "label": "Convene a community feedback panel",
             "detail": "Affected people review answers weekly, flag harm, and shape what the chatbot covers.",
             "consequence": "The panel catches problems your dashboards never showed: answers that made sense in the capital but not in riverside dialects, and topics people were afraid to ask about. The service gets better and more trusted.",
-            "reflection": "Community engagement and accountability — a core ICT Resolution commitment — treats affected people as decision-makers about the tools that serve them, not just data points about usage.",
+            "reflection": "Community engagement and accountability — a core PATH Resolution commitment — treats affected people as decision-makers about the tools that serve them, not just data points about usage.",
             "impacts": {
               "doNoHarm": 2,
               "impartiality": 1
@@ -178,14 +177,14 @@
             "consequence": "Volunteers work hard, but without training or escalation routes, some harmful replies stand for weeks and sensitive questions get inconsistent treatment. Two volunteers burn out and quit.",
             "reflection": "Accountability cannot be outsourced to goodwill. Ethical deployment includes resourcing the humans who keep automated systems safe — or the automation is not really governed at all.",
             "impacts": {
-              "humanity": 1,
-              "doNoHarm": -1
+              "humanity": -1
             }
           }
         ]
       }
     ],
-    "debrief": "The Flood Line shows how quickly a well-intentioned chatbot touches every commitment in the ICT Resolution: verified information (do no harm), data minimisation and purpose (data protection), honest communication when things fail (accountability to communities), and governance that keeps affected people in charge of the tools meant to serve them."
+    "debrief": "The Flood Line shows how quickly a well-intentioned chatbot touches every commitment in the PATH Resolution: verified information (do no harm), data minimisation and purpose (data protection), honest communication when things fail (accountability to communities), and governance that keeps affected people in charge of the tools meant to serve them.",
+    "hook": "The water is still rising and 200,000 people are displaced. Your hotline is drowning in calls about shelter and missing relatives. A telecom partner offers a free AI chatbot that can go live in 48 hours — but nobody has checked its answers. Do you switch it on?"
   },
   {
     "id": "targeting-unseen",
@@ -225,11 +224,10 @@
             "label": "Collect fresh data door to door",
             "detail": "Enumerators with tablets and consent scripts. Six weeks, real coverage of the unregistered.",
             "consequence": "The delay is painful — one lean month passes before cash flows. But the model trains on current reality, including households no list had ever captured. Community leaders call it the fairest selection they have seen.",
-            "reflection": "Sometimes the responsible use of AI is slowing down to give it honest inputs. Consent-based collection also models the data protection standard the ICT Resolution asks for.",
+            "reflection": "Sometimes the responsible use of AI is slowing down to give it honest inputs. Consent-based collection also models the data protection standard the PATH Resolution asks for.",
             "impacts": {
               "impartiality": 2,
-              "doNoHarm": 1,
-              "humanity": -1
+              "humanity": 1
             }
           },
           {
@@ -240,8 +238,7 @@
             "reflection": "Proxy variables encode assumptions about what poverty looks like. When the assumptions are wrong, the bias is systematic — it hits the same kinds of households every time, which is the opposite of impartiality.",
             "impacts": {
               "impartiality": -1,
-              "doNoHarm": -1,
-              "humanity": 1
+              "humanity": -1
             }
           }
         ]
@@ -258,9 +255,8 @@
             "consequence": "15,000 households get cash on schedule — but the excluded include a disproportionate share of female-headed households. The appeals desk is overwhelmed, and a local radio host asks why the computer “forgot the widows.”",
             "reflection": "A known, unmitigated bias is not a technical footnote; it is a decision to discriminate at scale. Do no harm applies to the harms you can predict as much as the ones you cannot.",
             "impacts": {
-              "humanity": 1,
-              "impartiality": -2,
-              "doNoHarm": -1
+              "humanity": -1,
+              "impartiality": -2
             }
           },
           {
@@ -268,11 +264,10 @@
             "label": "Recalibrate with community validation",
             "detail": "Local committees review exclusion cases. Two more weeks before disbursement.",
             "consequence": "The delay is hard to defend to donors — until the revised list lands. Committees catch hundreds of wrongful exclusions, and because they helped shape the list, disputes drop sharply. The deadline slips; the legitimacy holds.",
-            "reflection": "Community engagement is one of the strongest bias-correction tools available. People who live the reality see patterns no validation metric captures — and their involvement builds the accountability the ICT Resolution calls for.",
+            "reflection": "Community engagement is one of the strongest bias-correction tools available. People who live the reality see patterns no validation metric captures — and their involvement builds the accountability the PATH Resolution calls for.",
             "impacts": {
               "impartiality": 2,
-              "doNoHarm": 1,
-              "humanity": -1
+              "humanity": 1
             }
           },
           {
@@ -299,10 +294,11 @@
             "label": "Share pseudonymised data under contract",
             "detail": "Names stripped, contract signed. The programme keeps its free tools.",
             "consequence": "The programme saves money. A year later, a researcher demonstrates that the “pseudonymised” household records can be re-identified by combining location and family size — and the contract’s enforcement clause turns out to be nearly useless across jurisdictions.",
-            "reflection": "Pseudonymisation is weaker than it looks in small populations, and a contract you cannot enforce is a hope, not a safeguard. Data protection must survive the end of the partnership.",
+            "reflection": "Pseudonymisation is weaker than it looks in small populations, and a contract you cannot enforce is a hope, not a safeguard. Data protection must survive the end of the partnership. It also risks making the programme look aligned with outside commercial interests, eroding the trust that lets it work with everyone.",
             "impacts": {
               "doNoHarm": -2,
-              "independence": -1
+              "independence": -1,
+              "neutrality": -1
             }
           },
           {
@@ -310,10 +306,11 @@
             "label": "Share only aggregated results",
             "detail": "The firm gets model performance numbers, never row-level data. They push back.",
             "consequence": "Negotiations get tense and the firm briefly threatens to walk. You hold the line, and they accept — aggregated metrics still let them improve the model. No household record ever leaves your control.",
-            "reflection": "Ethical procurement means the Movement sets the terms on which affected people’s data moves, not the vendor. “Free” tools are paid for in something — make sure it is not beneficiaries’ privacy.",
+            "reflection": "Ethical procurement means the Movement sets the terms on which affected people’s data moves, not the vendor. “Free” tools are paid for in something — make sure it is not beneficiaries’ privacy. Keeping individual records in-house protects your standing as a trusted, neutral actor that all sides can talk to.",
             "impacts": {
               "doNoHarm": 1,
-              "independence": 1
+              "independence": 1,
+              "neutrality": 1
             }
           },
           {
@@ -321,11 +318,11 @@
             "label": "Walk away and build in-house",
             "detail": "Slower, costlier, and entirely yours.",
             "consequence": "Your small data team builds a simpler model over three months. It is less sophisticated and the delay is real — but every line of it is auditable, every record stays in-house, and the skill now lives in the Movement.",
-            "reflection": "Independence sometimes costs speed and money. Owning your capability — rather than renting a black box — is a long-term investment in accountable, autonomous humanitarian action.",
+            "reflection": "Independence sometimes costs speed and money. Owning your capability — rather than renting a black box — is a long-term investment in accountable, autonomous humanitarian action. Refusing to hand over data keeps your neutral standing intact, even if it costs time.",
             "impacts": {
               "independence": 2,
-              "doNoHarm": 1,
-              "humanity": -1
+              "humanity": -1,
+              "neutrality": 1
             }
           }
         ]
@@ -340,11 +337,12 @@
             "label": "Auto-enrol the top 15,000",
             "detail": "No human review. Fastest possible cash, fully “objective.”",
             "consequence": "Cash moves in record time. Then the errors surface: duplicated households, a village mis-mapped by the model, families excluded by a data-entry typo no human ever saw. With no review step, every error is final until the appeals grind through.",
-            "reflection": "Full automation does not remove human judgement — it hides it inside the model and the data. Automated decision-making about people’s survival needs a human who can catch what the system cannot.",
+            "reflection": "Full automation does not remove human judgement — it hides it inside the model and the data. Automated decision-making about people’s survival needs a human who can catch what the system cannot. An unexplained score deciding who gets help invites suspicion that someone else is choosing, which undermines trust in your neutrality.",
             "impacts": {
               "doNoHarm": -2,
               "impartiality": -1,
-              "humanity": 1
+              "humanity": 1,
+              "neutrality": -1
             }
           },
           {
@@ -354,7 +352,6 @@
             "consequence": "Verification adds four weeks. Errors caught: hundreds. But the lean season bites before disbursement finishes, and you spend difficult nights defending the delay to community leaders who were promised speed.",
             "reflection": "Accountability has a price in time, and in a hunger crisis time is measured in meals. The honest lesson: build verification capacity before the emergency, so diligence and speed are not enemies.",
             "impacts": {
-              "doNoHarm": 1,
               "impartiality": 1,
               "humanity": -1
             }
@@ -373,7 +370,8 @@
         ]
       }
     ],
-    "debrief": "Targeting the Unseen is about who the data cannot see. Predictive targeting touches impartiality (does the model see today’s need?), data protection (who owns household data, and can “pseudonymised” people be re-identified?), ethical procurement (who sets the terms with vendors?), and accountability (can an excluded family challenge the machine’s answer?)."
+    "debrief": "Targeting the Unseen is about who the data cannot see. Predictive targeting touches impartiality (does the model see today’s need?), data protection (who owns household data, and can “pseudonymised” people be re-identified?), ethical procurement (who sets the terms with vendors?), and accountability (can an excluded family challenge the machine’s answer?).",
+    "hook": "60,000 households face hunger. Your cash can reach 15,000. An analytics firm promises a model that ranks families by need in days, not months. Who gets left off the list — and would you even know?"
   },
   {
     "id": "front-line",
@@ -405,9 +403,8 @@
             "consequence": "You get the first district-wide picture in months, and convoy planning accelerates. But the model reads intact roofs as intact lives: a shelled town with a new market roof scores “recovering,” while its water system is destroyed. Needs in invisible places go uncounted.",
             "reflection": "Remote sensing sees structures, not suffering. Used alone, it skews assistance toward what is visible from orbit — an impartiality problem hiding inside an impressive map.",
             "impacts": {
-              "humanity": 1,
-              "impartiality": -1,
-              "doNoHarm": -1
+              "humanity": -1,
+              "impartiality": -1
             }
           },
           {
@@ -459,7 +456,6 @@
             "reflection": "Where data lives decides who can be forced to surrender it. In conflict settings, control of infrastructure is not an IT detail — it is a protection decision.",
             "impacts": {
               "independence": 2,
-              "doNoHarm": 1,
               "humanity": -1
             }
           },
@@ -471,7 +467,6 @@
             "reflection": "Sometimes the independent choice costs capacity. The trade-off is real and should be made deliberately, with eyes open about what “free” platforms actually charge.",
             "impacts": {
               "independence": 1,
-              "doNoHarm": 1,
               "humanity": -1
             }
           }
@@ -498,7 +493,7 @@
             "label": "Restrict to vetted humanitarian partners",
             "detail": "Need-to-know access, sharing protocol, aggregation before anything goes wider.",
             "consequence": "Coordination is slower and some partners grumble about access tiers. But population movement data never circulates beyond organisations bound by humanitarian principles, and your teams can account for every copy.",
-            "reflection": "Responsible data sharing is designed, not defaulted: purpose-limited, access-tiered, and aggregated wherever possible. The ICT Resolution’s data protection commitment applies most where the stakes are highest.",
+            "reflection": "Responsible data sharing is designed, not defaulted: purpose-limited, access-tiered, and aggregated wherever possible. The PATH Resolution’s data protection commitment applies most where the stakes are highest.",
             "impacts": {
               "neutrality": 1,
               "doNoHarm": 2
@@ -551,7 +546,7 @@
             "label": "Dual sign-off: analyst plus field delegate",
             "detail": "No automated recommendation becomes a decision without two human signatures. Slower by design.",
             "consequence": "Every distribution plan takes an extra day. In exchange, data-gap traps like the besieged town are caught structurally, not by luck — the field delegate’s job is precisely to ask what the model cannot see.",
-            "reflection": "In high-stakes settings, redundancy in human judgement is a safeguard, not an inefficiency. The ICT Resolution’s call to avoid and mitigate harm argues for exactly this kind of deliberate friction.",
+            "reflection": "In high-stakes settings, redundancy in human judgement is a safeguard, not an inefficiency. The PATH Resolution’s call to avoid and mitigate harm argues for exactly this kind of deliberate friction.",
             "impacts": {
               "doNoHarm": 2,
               "impartiality": 1,
@@ -561,7 +556,8 @@
         ]
       }
     ],
-    "debrief": "Eyes on the Front Line shows AI at its highest stakes. The same model that accelerates needs assessment can blind you to invisible suffering; the same dashboard that coordinates aid can target it; the same algorithm that optimises distributions can erase a besieged town for lack of data. Neutrality, independence, and do no harm are not constraints on the technology — they are the design requirements."
+    "debrief": "Eyes on the Front Line shows AI at its highest stakes. The same model that accelerates needs assessment can blind you to invisible suffering; the same dashboard that coordinates aid can target it; the same algorithm that optimises distributions can erase a besieged town for lack of data. Neutrality, independence, and do no harm are not constraints on the technology — they are the design requirements.",
+    "hook": "Front lines shift every week and two districts have gone dark. A tech giant offers free satellite imagery with machine-learning damage detection. In a war, a map of where people are can become a target list. Do you use it?"
   },
   {
     "id": "cloud-question",
@@ -613,10 +609,9 @@
             "label": "Build on Movement-controlled infrastructure",
             "detail": "The regional consortium’s open stack. Costlier, slower, fully yours.",
             "consequence": "Launch takes four extra months and eats a third of the digitisation budget. But every record sits under your keys, in open formats, with a tested backup in a second country. When vendors and ministries come calling later, the answer is already built.",
-            "reflection": "Control of infrastructure is the foundation every other safeguard stands on. It costs money and time up front — the ICT Resolution’s ethical procurement commitment includes being willing to pay that price.",
+            "reflection": "Control of infrastructure is the foundation every other safeguard stands on. It costs money and time up front — the PATH Resolution’s ethical procurement commitment includes being willing to pay that price.",
             "impacts": {
               "independence": 2,
-              "doNoHarm": 1,
               "humanity": -1
             }
           }
@@ -686,7 +681,7 @@
             "label": "Run the full participatory assessment first",
             "detail": "Community representatives help test the tool, identify harms, and set mitigations. The season opener is missed.",
             "consequence": "The first storm is handled with old methods — slower, but no worse than last year. The assessment finds the informal-settlement gap plus two harms nobody predicted, and the community-designed mitigations become part of the tool’s operating manual.",
-            "reflection": "The ICT Resolution’s community engagement commitment applies to risk, not just feedback: the people exposed to a tool’s failures are the experts on what those failures would mean.",
+            "reflection": "The PATH Resolution’s community engagement commitment applies to risk, not just feedback: the people exposed to a tool’s failures are the experts on what those failures would mean.",
             "impacts": {
               "doNoHarm": 2,
               "impartiality": 1,
@@ -741,14 +736,14 @@
             "reflection": "Hybrid architectures can balance sovereignty with scale. The design question is always: which functions could we lose a vendor for tomorrow — and what would that loss cost affected people?",
             "impacts": {
               "independence": 1,
-              "doNoHarm": 1,
               "humanity": -1
             }
           }
         ]
       }
     ],
-    "debrief": "The Cloud Question is about the infrastructure beneath every other AI decision. Where data lives decides who can reach it (data sovereignty); whose models you depend on shapes how parties and communities read your neutrality (vendor neutrality); and whether you can exit decides whether your choices are really yours (independence). Do-no-harm assessment belongs before deployment — and the communities most exposed to a tool’s failures belong inside that assessment."
+    "debrief": "The Cloud Question is about the infrastructure beneath every other AI decision. Where data lives decides who can reach it (data sovereignty); whose models you depend on shapes how parties and communities read your neutrality (vendor neutrality); and whether you can exit decides whether your choices are really yours (independence). Do-no-harm assessment belongs before deployment — and the communities most exposed to a tool’s failures belong inside that assessment.",
+    "hook": "Hurricane season is coming and you are digitising everything at once. A global cloud giant offers free credits, a regional provider offers control, a government offers a national server. Whoever holds your data holds your neutrality. Which door do you open?"
   },
   {
     "id": "edge-network",
@@ -779,8 +774,7 @@
             "consequence": "In the regional hub, staff love it. At the field sites — where the questions are — it mostly shows a spinning wheel. You learn later that each thousand queries also carried an invisible invoice: datacenter electricity and cooling water, in a region that counts both in jerrycans.",
             "reflection": "Capability that only works where infrastructure already exists widens the gap between the connected and the cut off. Every AI query has an energy and water cost; in scarce settings that cost is part of the humanitarian calculation, not a footnote.",
             "impacts": {
-              "humanity": 1,
-              "doNoHarm": -1,
+              "humanity": -1,
               "impartiality": -1
             }
           },
@@ -803,8 +797,7 @@
             "consequence": "Reliable, trusted, and zero new footprint — but translation backlogs grow, case notes pile up unprocessed, and night-shift volunteers keep improvising answers a trained small model could have handled.",
             "reflection": "Declining AI is a legitimate choice with real costs. The question is not \"AI or principles\" but which tool, sized to the place, serves people best — and who decided, on what evidence.",
             "impacts": {
-              "humanity": -1,
-              "doNoHarm": 1
+              "humanity": -1
             }
           }
         ]
@@ -931,7 +924,8 @@
         ]
       }
     ],
-    "debrief": "The Edge of the Network is about sizing technology to the place it serves. Small models, offline-first design, local power, and local skills are not compromises — in low-connectivity settings they are the resilient choice. And every AI query carries an environmental cost in energy, water, and extraction; measuring it, disclosing it, and minimizing it is part of do no harm, not a separate agenda."
+    "debrief": "The Edge of the Network is about sizing technology to the place it serves. Small models, offline-first design, local power, and local skills are not compromises — in low-connectivity settings they are the resilient choice. And every AI query carries an environmental cost in energy, water, and extraction; measuring it, disclosing it, and minimizing it is part of do no harm, not a separate agenda.",
+    "hook": "Volunteers on a remote border need translation and referral advice, but the signal drops and the power comes from a generator. The slickest AI tools need a datacenter on another continent. What do you build for the people who are actually there?"
   },
   {
     "id": "signals-noise",
@@ -1112,7 +1106,8 @@
         ]
       }
     ],
-    "debrief": "Signals in the Noise is about listening without surveilling. Aggregation over collection, trusted messengers over loud rebuttals, verification habits over detection arms races, and a sunset over a dashboard that never sleeps — these are how a humanitarian organization hears a crisis without becoming something communities should fear."
+    "debrief": "Signals in the Noise is about listening without surveilling. Aggregation over collection, trusted messengers over loud rebuttals, verification habits over detection arms races, and a sunset over a dashboard that never sleeps — these are how a humanitarian organization hears a crisis without becoming something communities should fear.",
+    "hook": "A typhoon has hit, and rumours travel faster than the floodwater. An AI platform offers to scan public posts in four languages and flag misinformation in real time. Listening to communities can protect them — or quietly watch them. Where do you draw the line?"
   },
   {
     "id": "outbreak-signal",
@@ -1155,8 +1150,7 @@
             "consequence": "The labs confirm severe malaria — no outbreak. Your quiet prepositioning proves useful anyway. But your team models the counterfactual: had it been hemorrhagic fever, 48 silent hours at a border crossing would have been catastrophic.",
             "reflection": "Waiting for certainty is safe only when the disease is slow. The discipline is matching the threshold to the stakes: what does a false alarm cost, what do two lost days cost, and who bears each?",
             "impacts": {
-              "humanity": -1,
-              "doNoHarm": 1
+              "humanity": -1
             }
           },
           {
@@ -1185,9 +1179,8 @@
             "consequence": "Throughput jumps 40%. Then the pattern emerges: elderly patients describing symptoms indirectly score low; so do speakers of a border dialect the questionnaire translates poorly. Nobody is refused care — some just wait until they collapse, out of sight of the metrics.",
             "reflection": "A queue is a values statement. Automated triage optimizes for what its questionnaire can hear; the patients it hears worst are often the sickest. Impartiality in a clinic means auditing the order, not just the speed.",
             "impacts": {
-              "humanity": 1,
-              "impartiality": -2,
-              "doNoHarm": -1
+              "humanity": -1,
+              "impartiality": -2
             }
           },
           {
@@ -1224,7 +1217,7 @@
             "label": "Share the anonymized line list",
             "detail": "Names removed, agreement signed. The forecast improves for everyone.",
             "consequence": "The consortium’s model helps two ministries plan. But the line list is a thin disguise: symptom-date, age, and village together re-identify patients, and a local journalist demonstrates it with one phone call. In a border region, being identifiable as a patient is not a neutral fact.",
-            "reflection": "In small populations, “anonymized” health data is often a pseudonym, not a protection. Outbreak line lists carry double sensitivity — illness and location — and the ICT Resolution’s data protection standard treats them accordingly.",
+            "reflection": "In small populations, “anonymized” health data is often a pseudonym, not a protection. Outbreak line lists carry double sensitivity — illness and location — and the PATH Resolution’s data protection standard treats them accordingly.",
             "impacts": {
               "humanity": 1,
               "doNoHarm": -2,
@@ -1250,8 +1243,7 @@
             "consequence": "Nothing leaks, and nothing is learned. The regional forecast — which would have guided vaccine prepositioning next season — is built without your clinics’ data and is visibly weaker in exactly your districts.",
             "reflection": "Absolute protection has a price paid in foresight. The goal is not zero sharing but governed sharing: consent where possible, aggregation by default, and review by people answerable to the communities in the list.",
             "impacts": {
-              "humanity": -1,
-              "doNoHarm": 1
+              "humanity": -1
             }
           }
         ]
@@ -1289,7 +1281,7 @@
             "label": "Blend: AI drafts, local voices approve and deliver",
             "detail": "The model drafts and translates in an hour; community reviewers in each language approve or fix before anything ships; health workers deliver the hard parts in person.",
             "consequence": "Messages go out same-day in four languages, each signed off by someone who speaks it natively. The review step catches the “deathly” translation before it ships. Coverage and trust, mostly both.",
-            "reflection": "The pattern generalizes: machines for speed, communities for meaning. The ICT Resolution’s engagement commitment is what turns a translation pipeline into communication people can act on safely.",
+            "reflection": "The pattern generalizes: machines for speed, communities for meaning. The PATH Resolution’s engagement commitment is what turns a translation pipeline into communication people can act on safely.",
             "impacts": {
               "humanity": 1,
               "doNoHarm": 2
@@ -1298,7 +1290,8 @@
         ]
       }
     ],
-    "debrief": "The Outbreak Signal is about speed under uncertainty. Epidemic AI watches wider than any team can, but its confidence scores are not decisions, its triage queues encode what questionnaires can hear, its data hunger collides with the sensitivity of being identifiable as a patient, and its messages need native eyes before native ears. Health is where “move fast” meets “first, do no harm” most directly — the tooling must be built for both."
+    "debrief": "The Outbreak Signal is about speed under uncertainty. Epidemic AI watches wider than any team can, but its confidence scores are not decisions, its triage queues encode what questionnaires can hear, its data hunger collides with the sensitivity of being identifiable as a patient, and its messages need native eyes before native ears. Health is where “move fast” meets “first, do no harm” most directly — the tooling must be built for both.",
+    "hook": "Severe fever cases near a busy border crossing. An AI platform flags “possible hemorrhagic fever, 72% confidence”. The lab results are two days away and thousands cross every day. Do you raise the alarm on a probability?"
   },
   {
     "id": "boardroom-test",
@@ -1329,9 +1322,8 @@
             "consequence": "The donor is delighted and the press release writes itself. By month four you have eleven pilots, three vendors with access to internal data, two duplicated tools, and no one who can answer a simple question from the board: who approved each of these, against what criteria?",
             "reflection": "Funding-conditioned enthusiasm is still enthusiasm. Independence includes the freedom to adopt technology at the speed your governance can actually steer — donors fund your mission, not your tool count.",
             "impacts": {
-              "humanity": 1,
-              "independence": -2,
-              "doNoHarm": -1
+              "humanity": -1,
+              "independence": -2
             }
           },
           {
@@ -1461,7 +1453,7 @@
             "label": "Create an AI oversight group with an outside and community voice",
             "detail": "A small standing group — programmes, ICT, data protection, an external ethicist, and a community representative — with authority to approve, condition, or halt AI use, reviewed annually in public.",
             "consequence": "Meetings are monthly and occasionally uncomfortable. The community member’s first veto — on a face-recognition pilot at distribution points — saves you from a headline you never see. The annual public review is quiet, and that quiet is the achievement.",
-            "reflection": "This is the ICT Resolution made structural: data protection, community engagement, and harm mitigation embodied in a body that can act. Oversight with an outside voice catches what insiders are paid not to notice.",
+            "reflection": "This is the PATH Resolution made structural: data protection, community engagement, and harm mitigation embodied in a body that can act. Oversight with an outside voice catches what insiders are paid not to notice.",
             "impacts": {
               "doNoHarm": 2,
               "independence": 1
@@ -1481,7 +1473,8 @@
         ]
       }
     ],
-    "debrief": "The Boardroom Test is where every other scenario is decided in advance. Donor pressure, shadow AI, automation of your own workforce, and the question of who may say no — none of these are technology questions; they are governance questions with technology inside. A National Society that writes its red lines down, gives staff a governed lane, treats its own people as part of “humanity,” and seats community voices where decisions are made will make better field choices automatically."
+    "debrief": "The Boardroom Test is where every other scenario is decided in advance. Donor pressure, shadow AI, automation of your own workforce, and the question of who may say no — none of these are technology questions; they are governance questions with technology inside. A National Society that writes its red lines down, gives staff a governed lane, treats its own people as part of “humanity,” and seats community voices where decisions are made will make better field choices automatically.",
+    "hook": "Your board meets in three weeks. A donor hints that money will follow “AI-forward” partners, staff are pasting internal files into public chatbots, and an automation plan would replace forty jobs. What strategy do you put on the table?"
   },
   {
     "id": "clinic-notes",
@@ -1511,11 +1504,12 @@
             "label": "Accept the free cloud tool",
             "detail": "Fastest relief for volunteers and staff. Full recordings leave the clinic and are processed abroad by a model you cannot inspect.",
             "consequence": "Documentation time halves within a week. Then a patient's lawyer asks whether recordings of her client could be requested by authorities in a deportation case. You cannot say for certain where the audio is stored, for how long, or who can access it. Word spreads in the community, and three regular patients stop coming.",
-            "reflection": "For people living in fear of authorities, the record itself can be the harm. A free tool paid for with the most sensitive data of the most exposed people is not free. The ICT Resolution commits the Movement to protect personal data precisely where the consequences of a leak are greatest.",
+            "reflection": "For people living in fear of authorities, the record itself can be the harm. A free tool paid for with the most sensitive data of the most exposed people is not free. The PATH Resolution commits the Movement to protect personal data precisely where the consequences of a leak are greatest. A clinic must be a safe space for everyone; an unvetted outside cloud tool can make patients fear their words reach other hands.",
             "impacts": {
               "humanity": 1,
               "doNoHarm": -2,
-              "independence": -1
+              "independence": -1,
+              "neutrality": -1
             }
           },
           {
@@ -1523,11 +1517,12 @@
             "label": "Pilot a small model that runs in the clinic",
             "detail": "A compact speech model on a local computer. No audio leaves the building; notes are rougher and need more editing.",
             "consequence": "Setup takes a month and the notes need correcting, especially in Tigrinya and Dari. But nothing leaves the clinic, audio is deleted the moment the note is approved, and the machine draws about as much power as a desk lamp. Volunteers save a third of their typing time instead of half.",
-            "reflection": "Local, right-sized models trade polish for control. When processing stays on site, you know where the data is, how long it lives, and how much energy it consumes — three things a humanitarian organisation should always be able to answer.",
+            "reflection": "Local, right-sized models trade polish for control. When processing stays on site, you know where the data is, how long it lives, and how much energy it consumes — three things a humanitarian organisation should always be able to answer. Keeping recordings inside the clinic reassures patients from every side that the clinic stays neutral.",
             "impacts": {
               "doNoHarm": 2,
               "independence": 1,
-              "humanity": 1
+              "humanity": 1,
+              "neutrality": 1
             }
           },
           {
@@ -1535,10 +1530,11 @@
             "label": "No AI — fund admin volunteers instead",
             "detail": "Recruit volunteer medical secretaries to type notes after each shift.",
             "consequence": "Recruitment works in your city's student community, and patients notice no change. But secretaries are hard to keep through the exam season, and in the evening clinic doctors are back to typing until midnight.",
-            "reflection": "Saying no to AI is a legitimate choice with real costs, often carried by exhausted staff and volunteers. The question is not whether AI is good or bad, but whether a lighter alternative serves people better here.",
+            "reflection": "Saying no to AI is a legitimate choice with real costs, often carried by exhausted staff and volunteers. The question is not whether AI is good or bad, but whether a lighter alternative serves people better here. With no outside tool listening, patients from every side can trust that the clinic stays neutral.",
             "impacts": {
-              "doNoHarm": 1,
-              "humanity": -1
+              "humanity": -1,
+              "independence": 1,
+              "neutrality": 1
             }
           }
         ]
@@ -1594,10 +1590,11 @@
             "label": "Keep everything for future training",
             "detail": "More data might mean better models. Storage is cheap, and Sweden's grid is mostly fossil-free.",
             "consequence": "The archive grows to terabytes of the most sensitive conversations your organisation has ever held. Energy use climbs every month. Nobody ever trains the model, but the archive must still be secured, backed up and powered.",
-            "reflection": "A clean grid does not make waste harmless: electricity used here is electricity not available for other needs, and hardware has a heavy footprint before it is ever switched on. Data kept 'just in case' carries privacy risk and energy cost indefinitely.",
+            "reflection": "A clean grid does not make waste harmless: electricity used here is electricity not available for other needs, and hardware has a heavy footprint before it is ever switched on. Data kept 'just in case' carries privacy risk and energy cost indefinitely. A large archive of patient voices can be demanded by authorities, putting the clinic’s neutral role at risk.",
             "impacts": {
               "doNoHarm": -2,
-              "humanity": -1
+              "humanity": -1,
+              "neutrality": -1
             }
           },
           {
@@ -1665,7 +1662,8 @@
           }
         ]
       }
-    ]
+    ],
+    "hook": "A health clinic working with undocumented migrants in Sweden has long waiting lists and burning-out volunteers. A health-tech start-up offers free AI transcription that listens to consultations, translates, and drafts medical notes. Do you take the offer?"
   },
   {
     "id": "invoice-engine",
@@ -1719,7 +1717,6 @@
             "consequence": "Payments stay accurate and people stay accountable. But recruitment takes months, backlogs reach six weeks, and some small suppliers in flood areas wait too long to be paid.",
             "reflection": "Not automating is a legitimate choice — but late payment is also a harm, especially to small local businesses and volunteers who advance their own money.",
             "impacts": {
-              "doNoHarm": 1,
               "humanity": -1
             }
           }
@@ -1802,7 +1799,6 @@
             "reflection": "Owning the infrastructure brings responsibility as well as control. For small, steady workloads, local hosting can be both more independent and lighter.",
             "impacts": {
               "independence": 2,
-              "doNoHarm": 1,
               "humanity": -1
             }
           }
@@ -1849,7 +1845,8 @@
           }
         ]
       }
-    ]
+    ],
+    "hook": "40,000 invoices a year, three of eight finance staff retiring, and payments to flood-affected families in the queue. A software vendor offers an AI agent that reads and approves invoices on its own. What do you let a machine sign off?"
   },
   {
     "id": "volunteer-roster",
@@ -1903,7 +1900,6 @@
             "consequence": "It costs almost nothing to run and uses barely any energy. Popular shifts fill instantly; the early-morning food distribution still goes uncovered, and you are still making the 6 a.m. calls.",
             "reflection": "Simple tools are often enough — but it's worth asking which problems they leave unsolved, and for whom.",
             "impacts": {
-              "doNoHarm": 1,
               "independence": 1,
               "humanity": -1
             }
@@ -2035,7 +2031,8 @@
           }
         ]
       }
-    ]
+    ],
+    "hook": "1,800 volunteers, run through spreadsheets and late-night calls. The same reliable people are burning out while shifts go empty. An AI scheduler promises fair, automatic rosters — using data about everyone's lives. Do you let it decide who works when?"
   },
   {
     "id": "heat-wave",
@@ -2090,7 +2087,6 @@
             "consequence": "Energy use falls by 80%. But the model starts 'cold' on alert days and takes hours to produce useful results — the first, deadliest day is the one it covers worst.",
             "reflection": "Limiting use is a good instinct. But compromises have to be checked against when people are actually most at risk.",
             "impacts": {
-              "doNoHarm": 1,
               "humanity": -1
             }
           }
@@ -2128,10 +2124,11 @@
             "label": "Collect more data on the missing",
             "detail": "Ask migrant workers to register their location on a phone app so the model can include them.",
             "consequence": "Few register — many fear immigration authorities. Those who do create a dataset that the consortium later asks to share with other partners.",
-            "reflection": "Making invisible people visible to a system can expose them to new risks. Sometimes the safer answer is to work around the data, not to fill it.",
+            "reflection": "Making invisible people visible to a system can expose them to new risks. Sometimes the safer answer is to work around the data, not to fill it. Detailed records on hidden groups can be seized for enforcement, making you look like a scout for the authorities.",
             "impacts": {
               "impartiality": 1,
-              "doNoHarm": -2
+              "doNoHarm": -2,
+              "neutrality": -1
             }
           }
         ]
@@ -2186,10 +2183,11 @@
             "label": "Don't explain — just help",
             "detail": "The model is too complex to explain at the doorstep.",
             "consequence": "Most people accept the visit. Some don't open the door. A rumour spreads that the Red Cross has secret lists from the hospital.",
-            "reflection": "When people don't know why they've been selected, suspicion fills the gap. Opacity erodes the trust that humanitarian work depends on.",
+            "reflection": "When people don't know why they've been selected, suspicion fills the gap. Opacity erodes the trust that humanitarian work depends on. Arriving unannounced with city data can look like surveillance, eroding trust in you as a neutral helper.",
             "impacts": {
               "doNoHarm": -1,
-              "humanity": -1
+              "humanity": -1,
+              "neutrality": -1
             }
           },
           {
@@ -2197,10 +2195,11 @@
             "label": "Explain plainly and offer a way out",
             "detail": "A simple script: 'This street is hot and has many older residents. Would you like us to check in during the heatwave?' People can say no and be removed.",
             "consequence": "Almost everyone says yes. A few opt out, and their choice is respected. Neighbours start telling volunteers about other people living alone.",
-            "reflection": "Being clear about why help is offered — and accepting a 'no' — respects dignity and turns a prediction into a relationship.",
+            "reflection": "Being clear about why help is offered — and accepting a 'no' — respects dignity and turns a prediction into a relationship. Being open about the data, and keeping it away from enforcement, protects your role as a trusted, neutral actor.",
             "impacts": {
               "humanity": 2,
-              "doNoHarm": 1
+              "doNoHarm": 1,
+              "neutrality": 1
             }
           },
           {
@@ -2217,6 +2216,7 @@
           }
         ]
       }
-    ]
+    ],
+    "hook": "Last July, older people living alone died in their apartments before anyone knocked. Now it is 45°C again. A research consortium offers an AI model that predicts who is most at risk — using health records and phone data. How much do you let it see?"
   }
 ]

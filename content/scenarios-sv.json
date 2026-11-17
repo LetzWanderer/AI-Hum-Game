@@ -31,7 +31,7 @@
             "label": "Lansera inom 48 timmar",
             "detail": "Snabbhet före verifiering. Svaren går ut ogranskade, och du åtgärdar problemen allt eftersom de dyker upp.",
             "consequence": "Inom tre dagar svarar chattboten på 40 000 frågor. Men fältteamen rapporterar att ungefär var tolfte svar är fel — inklusive vägbeskrivningar till ett boende i ett distrikt där platsen stängdes i går kväll. Personalen tillbringar veckan med att jaga rättelser i WhatsApp-grupper.",
-            "reflection": "Snabbhet kan rädda liv, men overifierad automatiserad information kan i sig orsaka skada. IKT-resolutionen ålägger Rörelsen att undvika och mildra skada på drabbade människor — inklusive skada orsakad av verktygen vi använder.",
+            "reflection": "Snabbhet kan rädda liv, men overifierad automatiserad information kan i sig orsaka skada. PATH-resolutionen ålägger Rörelsen att undvika och mildra skada på drabbade människor — inklusive skada orsakad av verktygen vi använder.",
             "impacts": {
               "humanity": 1,
               "doNoHarm": -2
@@ -57,7 +57,6 @@
             "reflection": "Att välja bort AI är också ett beslut med konsekvenser. Oberoendet från leverantörer bevaras, men mänskligheten frågar om ett nåbart verktyg, varsamt styrt, kunde ha lindrat mer lidande.",
             "impacts": {
               "humanity": -1,
-              "doNoHarm": 1,
               "independence": 1
             }
           }
@@ -73,7 +72,7 @@
             "label": "Logga allt för en bättre tjänst",
             "detail": "Fullständiga interaktionsloggar matar leverantörens analysmotor. Personanpassningen förbättras.",
             "consequence": "Svaren blir märkbart mer relevanta. Månader senare får du veta att loggarna användes för att träna en kommersiell produkt, och det finns inget praktiskt sätt att dra tillbaka uppgifter om 40 000 fördrivna människor som aldrig samtyckte till det.",
-            "reflection": "Drabbade människor får sällan förhandla om sitt samtycke i en kris. IKT-resolutionens dataskyddsåtagande behandlar deras data som deras egna — insamlade för ett angivet syfte, skyddade och aldrig tyst återanvända.",
+            "reflection": "Drabbade människor får sällan förhandla om sitt samtycke i en kris. PATH-resolutionens dataskyddsåtagande behandlar deras data som deras egna — insamlade för ett angivet syfte, skyddade och aldrig tyst återanvända.",
             "impacts": {
               "humanity": 1,
               "doNoHarm": -2,
@@ -93,8 +92,8 @@
           },
           {
             "id": "fl-2c",
-            "label": "Dela loggarna med telekompartnern",
-            "detail": "De erbjuder nätverksanalys i utbyte. De drabbade användarna tillfrågas inte.",
+            "label": "Byt samtalsloggar mot rörelsekartor från teleoperatören",
+            "detail": "Mobiloperatören ger er värmekartor från mobilmaster över hur människor förflyttar sig, i utbyte mot hotlinens samtalsloggar och platser. De som ringer informeras inte.",
             "consequence": "Analysen hjälper dig att kartlägga efterfrågan. Sedan frågar en journalist varför fördrivna människors frågor och platser flödar till ett privat företag. Storyn publiceras rikstäckande; samhällenas förtroende för linjen sjunker kraftigt.",
             "reflection": "Ansvarsskyldighet gentemot drabbade människor innebär att kunna förklara — innan de läser det i tidningen — vem som förvarar deras data och varför. Etiska partnervillkor hör hemma i upphandlingen, inte i kriskommunikationen efteråt.",
             "impacts": {
@@ -154,7 +153,7 @@
             "label": "Kalla till en panel med återkoppling från lokalsamhället",
             "detail": "Drabbade människor granskar svar varje vecka, flaggar skador och formar vad chattboten täcker.",
             "consequence": "Panelen fångar problem som dina mätinstrument aldrig visade: svar som var rimliga i huvudstaden men inte i floddialekterna, och ämnen som människor var rädda att fråga om. Tjänsten blir bättre och mer betrodd.",
-            "reflection": "Samverkan med lokalsamhällen och ansvarsskyldighet — ett centralt åtagande i IKT-resolutionen — behandlar drabbade människor som beslutsfattare om verktygen som tjänar dem, inte bara som användningsstatistik.",
+            "reflection": "Samverkan med lokalsamhällen och ansvarsskyldighet — ett centralt åtagande i PATH-resolutionen — behandlar drabbade människor som beslutsfattare om verktygen som tjänar dem, inte bara som användningsstatistik.",
             "impacts": {
               "doNoHarm": 2,
               "impartiality": 1
@@ -178,14 +177,13 @@
             "consequence": "Volontärerna arbetar hårt, men utan utbildning eller eskaleringsvägar står vissa skadliga svar kvar i veckor och känsliga frågor får inkonsekvent behandling. Två volontärer bränner ut sig och slutar.",
             "reflection": "Ansvarsskyldighet kan inte läggas ut på god vilja. Etisk användning inkluderar att finansiera människorna som håller automatiserade system säkra — annars är automatiseringen inte verkligt styrd.",
             "impacts": {
-              "humanity": 1,
-              "doNoHarm": -1
+              "humanity": -1
             }
           }
         ]
       }
     ],
-    "debrief": "Översvämningens linje visar hur snabbt en välmenande chattbot berör varje åtagande i IKT-resolutionen: verifierad information (att inte skada), dataminimering och ändamål (dataskydd), ärlig kommunikation när saker går fel (ansvarsskyldighet gentemot samhällen) och styrning som låter drabbade människor behålla kontrollen över verktygen som är tänkta att tjäna dem."
+    "debrief": "Översvämningens linje visar hur snabbt en välmenande chattbot berör varje åtagande i PATH-resolutionen: verifierad information (att inte skada), dataminimering och ändamål (dataskydd), ärlig kommunikation när saker går fel (ansvarsskyldighet gentemot samhällen) och styrning som låter drabbade människor behålla kontrollen över verktygen som är tänkta att tjäna dem."
   },
   {
     "id": "targeting-unseen",
@@ -225,11 +223,10 @@
             "label": "Samla in färsk data från dörr till dörr",
             "detail": "Intervjuare med surfplattor och samtyckesmanus. Sex veckor, verklig täckning av de oregistrerade.",
             "consequence": "Fördröjningen är smärtsam — en månad av knapphet hinner passera innan pengarna flödar. Men modellen tränas på dagens verklighet, inklusive hushåll som ingen lista någonsin fångat. Lokala ledare kallar det det rättvisaste urval de sett.",
-            "reflection": "Ibland är ansvarsfull AI-användning att sakta ner för att ge den ärliga indata. Samtyckesbaserad insamling förevisar också den dataskyddsstandard som IKT-resolutionen efterfrågar.",
+            "reflection": "Ibland är ansvarsfull AI-användning att sakta ner för att ge den ärliga indata. Samtyckesbaserad insamling förevisar också den dataskyddsstandard som PATH-resolutionen efterfrågar.",
             "impacts": {
               "impartiality": 2,
-              "doNoHarm": 1,
-              "humanity": -1
+              "humanity": 1
             }
           },
           {
@@ -240,8 +237,7 @@
             "reflection": "Proxyvariabler kodar antaganden om hur fattigdom ser ut. När antagandena är fel blir snedvridningen systematisk — den träffar samma typer av hushåll varje gång, vilket är motsatsen till opartiskhet.",
             "impacts": {
               "impartiality": -1,
-              "doNoHarm": -1,
-              "humanity": 1
+              "humanity": -1
             }
           }
         ]
@@ -258,9 +254,8 @@
             "consequence": "15 000 hushåll får pengar enligt plan — men bland de uteslutna finns en oproportionerligt stor andel kvinnohushåll. Besvärsavdelningen överbelastas, och en lokal radiopratare frågar varför datorn ”glömde änkorna”.",
             "reflection": "En känd, oåtgärdad snedvridning är ingen teknisk fotnot; det är ett beslut att diskriminera i stor skala. Att inte skada gäller de skador du kan förutse lika mycket som de du inte kan.",
             "impacts": {
-              "humanity": 1,
-              "impartiality": -2,
-              "doNoHarm": -1
+              "humanity": -1,
+              "impartiality": -2
             }
           },
           {
@@ -268,11 +263,10 @@
             "label": "Kalibrera om med validering från lokalsamhället",
             "detail": "Lokala kommittéer granskar uteslutningsfall. Två veckor till före utbetalning.",
             "consequence": "Fördröjningen är svår att försvara inför givare — tills den reviderade listan landar. Kommittéerna fångar hundratals felaktiga uteslutningar, och eftersom de hjälpt till att forma listan minskar tvisterna kraftigt. Deadlinen spricker; legitimiteten håller.",
-            "reflection": "Samverkan med lokalsamhällen är ett av de starkaste verktygen för att korrigera snedvridning. De som lever verkligheten ser mönster som inga valideringsmått fångar — och deras medverkan bygger den ansvarsskyldighet som IKT-resolutionen efterlyser.",
+            "reflection": "Samverkan med lokalsamhällen är ett av de starkaste verktygen för att korrigera snedvridning. De som lever verkligheten ser mönster som inga valideringsmått fångar — och deras medverkan bygger den ansvarsskyldighet som PATH-resolutionen efterlyser.",
             "impacts": {
               "impartiality": 2,
-              "doNoHarm": 1,
-              "humanity": -1
+              "humanity": 1
             }
           },
           {
@@ -299,10 +293,11 @@
             "label": "Dela pseudonymiserad data enligt avtal",
             "detail": "Namn borttagna, avtal undertecknat. Programmet behåller sina gratisverktyg.",
             "consequence": "Programmet sparar pengar. Ett år senare visar en forskare att de ”pseudonymiserade” hushållsuppgifterna kan återidentifieras genom att kombinera plats och hushållsstorlek — och avtalets sanktionsklausul visar sig nästan värdelös över jurisdiktionsgränser.",
-            "reflection": "Pseudonymisering är svagare än det ser ut i små populationer, och ett avtal du inte kan driva igenom är ett hopp, inte en skyddsåtgärd. Dataskydd måste överleva partnerskapets slut.",
+            "reflection": "Pseudonymisering är svagare än det ser ut i små populationer, och ett avtal du inte kan driva igenom är ett hopp, inte en skyddsåtgärd. Dataskydd måste överleva partnerskapets slut. Det riskerar också att programmet uppfattas som knutet till externa kommersiella intressen, vilket urholkar förtroendet som gör att det kan arbeta med alla.",
             "impacts": {
               "doNoHarm": -2,
-              "independence": -1
+              "independence": -1,
+              "neutrality": -1
             }
           },
           {
@@ -310,10 +305,11 @@
             "label": "Dela bara aggregerade resultat",
             "detail": "Företaget får modellens prestandamått, aldrig data på radnivå. De invänder.",
             "consequence": "Förhandlingarna blir spända och företaget hotar kort med att dra sig ur. Du står fast, och de accepterar — aggregerade mätvärden låter dem fortfarande förbättra modellen. Ingen hushållsuppgift lämnar någonsin din kontroll.",
-            "reflection": "Etisk upphandling betyder att Rörelsen sätter villkoren för hur drabbade människors data rör sig, inte leverantören. ”Gratis” verktyg betalas med något — se till att det inte är mottagarnas integritet.",
+            "reflection": "Etisk upphandling betyder att Rörelsen sätter villkoren för hur drabbade människors data rör sig, inte leverantören. ”Gratis” verktyg betalas med något — se till att det inte är mottagarnas integritet. Att behålla individuella uppgifter internt skyddar er ställning som en betrodd, neutral aktör som alla parter kan tala med.",
             "impacts": {
               "doNoHarm": 1,
-              "independence": 1
+              "independence": 1,
+              "neutrality": 1
             }
           },
           {
@@ -321,11 +317,11 @@
             "label": "Dra dig ur och bygg internt",
             "detail": "Långsammare, dyrare, och helt ditt eget.",
             "consequence": "Ditt lilla datateam bygger en enklare modell på tre månader. Den är mindre sofistikerad och förseningen är verklig — men varje rad är granskningsbar, varje uppgift stannar internt, och kompetensen lever nu i Rörelsen.",
-            "reflection": "Oberoende kostar ibland snabbhet och pengar. Att äga sin förmåga — i stället för att hyra en svart låda — är en långsiktig investering i ansvarstagande, självständigt humanitärt arbete.",
+            "reflection": "Oberoende kostar ibland snabbhet och pengar. Att äga sin förmåga — i stället för att hyra en svart låda — är en långsiktig investering i ansvarstagande, självständigt humanitärt arbete. Att vägra lämna ut data bevarar er neutrala ställning, även om det kostar tid.",
             "impacts": {
               "independence": 2,
-              "doNoHarm": 1,
-              "humanity": -1
+              "humanity": -1,
+              "neutrality": 1
             }
           }
         ]
@@ -340,11 +336,12 @@
             "label": "Registrera de 15 000 främsta automatiskt",
             "detail": "Ingen mänsklig granskning. Snabbaste möjliga pengar, fullt ”objektivt”.",
             "consequence": "Pengarna flödar i rekordtid. Sedan dyker felen upp: dubblerade hushåll, en by som modellen felmappat, familjer uteslutna av ett inmatningsfel som ingen människa såg. Utan granskningssteg är varje fel slutgiltigt tills besvären malts igenom.",
-            "reflection": "Full automatisering tar inte bort mänskligt omdöme — den gömmer det inuti modellen och datan. Automatiserade beslut om människors överlevnad behöver en människa som kan fånga det systemet inte kan.",
+            "reflection": "Full automatisering tar inte bort mänskligt omdöme — den gömmer det inuti modellen och datan. Automatiserade beslut om människors överlevnad behöver en människa som kan fånga det systemet inte kan. När en oförklarad poäng avgör vem som får hjälp väcks misstanken att någon annan väljer, vilket undergräver förtroendet för er neutralitet.",
             "impacts": {
               "doNoHarm": -2,
               "impartiality": -1,
-              "humanity": 1
+              "humanity": 1,
+              "neutrality": -1
             }
           },
           {
@@ -354,7 +351,6 @@
             "consequence": "Verifieringen tillför fyra veckor. Fångade fel: hundratals. Men hungersäsongen biter innan utbetalningen är klar, och du tillbringar svåra nätter med att försvara förseningen inför lokala ledare som lovats snabbhet.",
             "reflection": "Ansvarsskyldighet har ett pris i tid, och i en hungerkris mäts tid i måltider. Den ärliga läxan: bygg verifieringskapacitet före katastrofen, så att noggrannhet och snabbhet inte är fiender.",
             "impacts": {
-              "doNoHarm": 1,
               "impartiality": 1,
               "humanity": -1
             }
@@ -405,9 +401,8 @@
             "consequence": "Du får den första distriktsövergripande bilden på månader, och konvojplaneringen accelererar. Men modellen läser intakta tak som intakta liv: en beskjuten stad med ett nytt marknadstak poängsätts som ”i återhämtning”, medan dess vattensystem är förstört. Behov på osynliga platser räknas inte.",
             "reflection": "Fjärranalys ser strukturer, inte lidande. Använd ensam snedvrider den hjälpen mot det som är synligt från omloppsbanan — ett opartiskhetsproblem som gömmer sig i en imponerande karta.",
             "impacts": {
-              "humanity": 1,
-              "impartiality": -1,
-              "doNoHarm": -1
+              "humanity": -1,
+              "impartiality": -1
             }
           },
           {
@@ -459,7 +454,6 @@
             "reflection": "Var data bor avgör vem som kan tvingas lämna ut den. I konfliktmiljöer är kontroll över infrastruktur inte en IT-detalj — det är ett skyddsbeslut.",
             "impacts": {
               "independence": 2,
-              "doNoHarm": 1,
               "humanity": -1
             }
           },
@@ -471,7 +465,6 @@
             "reflection": "Ibland kostar det självständiga valet kapacitet. Avvägningen är verklig och bör fattas medvetet, med öppna ögon för vad ”gratis” plattformar faktiskt tar betalt.",
             "impacts": {
               "independence": 1,
-              "doNoHarm": 1,
               "humanity": -1
             }
           }
@@ -498,7 +491,7 @@
             "label": "Begränsa till granskade humanitära partner",
             "detail": "Åtkomst efter behov att veta, delningsprotokoll, aggregering innan något sprids vidare.",
             "consequence": "Samordningen blir långsammare och vissa partner muttrar om åtkomstnivåerna. Men befolkningsrörelsedata cirkulerar aldrig utanför organisationer bundna av humanitära principer, och dina team kan redovisa varje kopia.",
-            "reflection": "Ansvarsfull datadelning är designad, inte standard: ändamålsbegränsad, åtkomsttrappad och aggregerad där det är möjligt. IKT-resolutionens dataskyddsåtagande gäller mest där insatserna är högst.",
+            "reflection": "Ansvarsfull datadelning är designad, inte standard: ändamålsbegränsad, åtkomsttrappad och aggregerad där det är möjligt. PATH-resolutionens dataskyddsåtagande gäller mest där insatserna är högst.",
             "impacts": {
               "neutrality": 1,
               "doNoHarm": 2
@@ -551,7 +544,7 @@
             "label": "Dubbel signering: analytiker plus fältdelegat",
             "detail": "Ingen automatiserad rekommendation blir beslut utan två mänskliga underskrifter. Långsammare, med avsikt.",
             "consequence": "Varje utdelningsplan tar en extra dag. I utbyte fångas dataluckor som den belägrade staden strukturellt, inte av en händelse — fältdelegatens jobb är just att fråga vad modellen inte kan se.",
-            "reflection": "I högriskmiljöer är redundans i mänskligt omdöme en skyddsåtgärd, inte en ineffektivitet. IKT-resolutionens uppmaning att undvika och mildra skada talar för exakt denna typ av avsiktlig friktion.",
+            "reflection": "I högriskmiljöer är redundans i mänskligt omdöme en skyddsåtgärd, inte en ineffektivitet. PATH-resolutionens uppmaning att undvika och mildra skada talar för exakt denna typ av avsiktlig friktion.",
             "impacts": {
               "doNoHarm": 2,
               "impartiality": 1,
@@ -613,10 +606,9 @@
             "label": "Bygg på infrastruktur som Rörelsen kontrollerar",
             "detail": "Det regionala konsortiets öppna stack. Dyrare, långsammare, helt ditt eget.",
             "consequence": "Lanseringen tar fyra extra månader och äter en tredjedel av digitaliseringsbudgeten. Men varje uppgift vilar under dina nycklar, i öppna format, med en testad säkerhetskopia i ett andra land. När leverantörer och ministerier knackar på senare är svaret redan byggt.",
-            "reflection": "Kontroll över infrastrukturen är grunden som alla andra skydd står på. Det kostar pengar och tid i förskott — IKT-resolutionens åtagande om etisk upphandling inkluderar viljan att betala det priset.",
+            "reflection": "Kontroll över infrastrukturen är grunden som alla andra skydd står på. Det kostar pengar och tid i förskott — PATH-resolutionens åtagande om etisk upphandling inkluderar viljan att betala det priset.",
             "impacts": {
               "independence": 2,
-              "doNoHarm": 1,
               "humanity": -1
             }
           }
@@ -686,7 +678,7 @@
             "label": "Gör den fullständiga deltagarbedömningen först",
             "detail": "Samhällsrepresentanter hjälper till att testa verktyget, identifiera skador och sätta mildrande åtgärder. Säsongsstarten missas.",
             "consequence": "Den första stormen hanteras med gamla metoder — långsammare, men inte sämre än förra året. Bedömningen hittar gapet för informella bosättningar plus två skador som ingen förutspådde, och de samhällsdesignade mildringarna blir en del av verktygets driftmanual.",
-            "reflection": "IKT-resolutionens åtagande om samverkan med lokalsamhällen gäller risk, inte bara återkoppling: människorna som utsätts för ett verktygs fel är experterna på vad dessa fel skulle betyda.",
+            "reflection": "PATH-resolutionens åtagande om samverkan med lokalsamhällen gäller risk, inte bara återkoppling: människorna som utsätts för ett verktygs fel är experterna på vad dessa fel skulle betyda.",
             "impacts": {
               "doNoHarm": 2,
               "impartiality": 1,
@@ -741,7 +733,6 @@
             "reflection": "Hybridarkitekturer kan balansera suveränitet mot skala. Designfrågan är alltid: vilka funktioner skulle vi kunna förlora en leverantör för i morgon — och vad skulle den förlusten kosta drabbade människor?",
             "impacts": {
               "independence": 1,
-              "doNoHarm": 1,
               "humanity": -1
             }
           }
@@ -779,8 +770,7 @@
             "consequence": "På regionala hubben älskar personalen den. På fältplatserna — där frågorna finns — visar den mestadels ett snurrande hjul. Du får senare veta att varje tusen frågor också bar en osynlig faktura: datacentrens el och kylvatten, i en region som räknar båda i dunkar.",
             "reflection": "Kapacitet som bara fungerar där infrastruktur redan finns vidgar klyftan mellan de uppkopplade och de avskurna. Varje AI-fråga har en energi- och vattenkostnad; i knappa miljöer är den kostnaden en del av den humanitära kalkylen, inte en fotnot.",
             "impacts": {
-              "humanity": 1,
-              "doNoHarm": -1,
+              "humanity": -1,
               "impartiality": -1
             }
           },
@@ -803,8 +793,7 @@
             "consequence": "Pålitligt, betrott och noll nytt avtryck — men översättningsköerna växer, fallanteckningar hopas obearbetade, och nattvolontärer fortsätter improvisera svar som en tränad liten modell kunde ha hanterat.",
             "reflection": "Att avstå från AI är ett legitimt val med verkliga kostnader. Frågan är inte ”AI eller principer” utan vilket verktyg, dimensionerat för platsen, som tjänar människor bäst — och vem som beslutade, på vilka bevis.",
             "impacts": {
-              "humanity": -1,
-              "doNoHarm": 1
+              "humanity": -1
             }
           }
         ]
@@ -1155,8 +1144,7 @@
             "consequence": "Labben bekräftar svår malaria — inget utbrott. Din tysta förberedelse visar sig ändå användbar. Men ditt team modellerar motfaktiskan: hade det varit hemorragisk feber hade 48 tysta timmar vid en gränsövergång varit katastrofala.",
             "reflection": "Att vänta på visshet är bara säkert när sjukdomen är långsam. Disciplinen är att matcha tröskeln mot insatserna: vad kostar ett falskt larm, vad kostar två förlorade dagar, och vem bär vardera?",
             "impacts": {
-              "humanity": -1,
-              "doNoHarm": 1
+              "humanity": -1
             }
           },
           {
@@ -1185,9 +1173,8 @@
             "consequence": "Genomflödet hoppar 40 procent. Sedan framträder mönstret: äldre patienter som beskriver symtom indirekt får låga poäng; liksom talare av en gränsdialekt som frågeformuläret översätter dåligt. Ingen nekas vård — vissa väntar bara tills de kollapsar, utom synhåll för statistiken.",
             "reflection": "En kö är ett värderingsdokument. Automatiserad triage optimerar för det dess frågeformulär kan höra; patienterna den hör sämst är ofta de sjukaste. Opartiskhet på en klinik betyder att granska ordningen, inte bara hastigheten.",
             "impacts": {
-              "humanity": 1,
-              "impartiality": -2,
-              "doNoHarm": -1
+              "humanity": -1,
+              "impartiality": -2
             }
           },
           {
@@ -1224,7 +1211,7 @@
             "label": "Dela den anonymiserade fallistan",
             "detail": "Namn borttagna, avtal undertecknat. Prognosen förbättras för alla.",
             "consequence": "Konsortiets modell hjälper två ministerier att planera. Men fallistan är en tunn förklädnad: symtomdatum, ålder och by tillsammans återidentifierar patienter, och en lokal journalist visar det med ett telefonsamtal. I en gränsregion är det inte ett neutralt faktum att vara identifierbar som patient.",
-            "reflection": "I små populationer är ”anonymiserad” hälsodata ofta en pseudonym, inte ett skydd. Utbrottslistor bär dubbel känslighet — sjukdom och plats — och IKT-resolutionens dataskyddsstandard behandlar dem därefter.",
+            "reflection": "I små populationer är ”anonymiserad” hälsodata ofta en pseudonym, inte ett skydd. Utbrottslistor bär dubbel känslighet — sjukdom och plats — och PATH-resolutionens dataskyddsstandard behandlar dem därefter.",
             "impacts": {
               "humanity": 1,
               "doNoHarm": -2,
@@ -1250,8 +1237,7 @@
             "consequence": "Ingenting läcker, och ingenting lärs. Den regionala prognosen — som skulle ha styrt vaccinförberedelserna nästa säsong — byggs utan era klinikers data och är synbart svagare i just era distrikt.",
             "reflection": "Absolut skydd har ett pris som betalas i framsyn. Målet är inte noll delning utan styrd delning: samtycke där det är möjligt, aggregering som standard, och granskning av människor som står till svars inför samhällena i listan.",
             "impacts": {
-              "humanity": -1,
-              "doNoHarm": 1
+              "humanity": -1
             }
           }
         ]
@@ -1289,7 +1275,7 @@
             "label": "Blanda: AI:n skriver, lokala röster godkänner och levererar",
             "detail": "Modellen skriver och översätter på en timme; samhällsgranskare för varje språk godkänner eller korrigerar innan något skickas; hälsoutövare levererar de svåra delarna personligen.",
             "consequence": "Meddelanden går ut samma dag på fyra språk, var och ett undertecknat av någon som talar det som modersmål. Granskningssteget fångar den ”dödliga” översättningen innan den skickas. Täckning och förtroende, mestadels båda.",
-            "reflection": "Mönstret generaliserar: maskiner för snabbhet, samhällen för mening. IKT-resolutionens engagemangsåtagande är det som förvandlar en översättningspipeline till kommunikation som människor kan agera på säkert.",
+            "reflection": "Mönstret generaliserar: maskiner för snabbhet, samhällen för mening. PATH-resolutionens engagemangsåtagande är det som förvandlar en översättningspipeline till kommunikation som människor kan agera på säkert.",
             "impacts": {
               "humanity": 1,
               "doNoHarm": 2
@@ -1329,9 +1315,8 @@
             "consequence": "Givaren är förtjust och pressmeddelandet skriver sig självt. Vid fjärde månaden har du elva piloter, tre leverantörer med tillgång till intern data, två dubblerade verktyg, och ingen som kan svara på en enkel styrelsefråga: vem godkände var och en av dessa, mot vilka kriterier?",
             "reflection": "Finansieringsbetingad entusiasm är fortfarande entusiasm. Oberoende inkluderar friheten att anta teknik i den takt din styrning faktiskt kan styra — givare finansierar er mission, inte ert verktygsantal.",
             "impacts": {
-              "humanity": 1,
-              "independence": -2,
-              "doNoHarm": -1
+              "humanity": -1,
+              "independence": -2
             }
           },
           {
@@ -1461,7 +1446,7 @@
             "label": "Skapa en AI-tillsynsgrupp med extern och samhällelig röst",
             "detail": "En liten permanent grupp — program, ITK, dataskydd, en extern etiker och en samhällsrepresentant — med makt att godkänna, villkorlägga eller stoppa AI-användning, granskad årligen offentligt.",
             "consequence": "Mötena är månatliga och ibland obekväma. Samhällsmedlemmens första veto — mot en ansiktsigenkänningspilot vid utdelningsplatser — besparar er en rubrik ni aldrig ser. Den årliga offentliga granskningen är stilla, och den stillheten är bedriften.",
-            "reflection": "Detta är IKT-resolutionen gjord till struktur: dataskydd, samhällsengagemang och skademildring förkroppsligade i ett organ som kan agera. Tillsyn med en utomstående röst fångar det insiders betalas för att inte märka.",
+            "reflection": "Detta är PATH-resolutionen gjord till struktur: dataskydd, samhällsengagemang och skademildring förkroppsligade i ett organ som kan agera. Tillsyn med en utomstående röst fångar det insiders betalas för att inte märka.",
             "impacts": {
               "doNoHarm": 2,
               "independence": 1
@@ -1511,11 +1496,12 @@
             "label": "Tacka ja till det kostnadsfria molnverktyget",
             "detail": "Snabbast avlastning för de frivilliga. Fullständiga inspelningar lämnar mottagningen och behandlas utomlands av en modell som ni inte kan granska.",
             "consequence": "Dokumentationstiden halveras inom en vecka. Sedan frågar en patients advokat om myndigheter kan begära ut inspelningar av hennes klient i ett utvisningsärende. Du kan inte säkert säga var ljudet lagras, hur länge eller vem som har tillgång till det. Ryktet sprids bland dem ni möter och tre återkommande patienter slutar komma.",
-            "reflection": "För människor som lever i rädsla för myndigheter kan själva inspelningen vara skadan. Ett gratisverktyg som betalas med de mest utsatta människornas känsligaste uppgifter är inte gratis. Resolutionen om informations- och kommunikationsteknik förpliktar rödakors- och rödahalvmånerörelsen att skydda personuppgifter just där konsekvenserna av en läcka är som störst.",
+            "reflection": "För människor som lever i rädsla för myndigheter kan själva inspelningen vara skadan. Ett gratisverktyg som betalas med de mest utsatta människornas känsligaste uppgifter är inte gratis. Resolutionen om informations- och kommunikationsteknik förpliktar rödakors- och rödahalvmånerörelsen att skydda personuppgifter just där konsekvenserna av en läcka är som störst. En klinik måste vara en trygg plats för alla; ett ogranskat externt molnverktyg kan få patienter att frukta att deras ord hamnar hos andra.",
             "impacts": {
               "humanity": 1,
               "doNoHarm": -2,
-              "independence": -1
+              "independence": -1,
+              "neutrality": -1
             }
           },
           {
@@ -1523,11 +1509,12 @@
             "label": "Prova en liten modell som körs på mottagningen",
             "detail": "En kompakt talmodell på en lokal dator. Inget ljud lämnar byggnaden; anteckningarna är mindre välformulerade och behöver bearbetas mer.",
             "consequence": "Det tar en månad att komma i gång och anteckningarna behöver rättas, särskilt på tigrinja och dari. Men inget lämnar mottagningen, ljudet raderas så snart anteckningen godkänts och datorn drar ungefär lika mycket el som en skrivbordslampa. De frivilliga sparar en tredjedel av sin skrivtid i stället för hälften.",
-            "reflection": "Lokala, rätt dimensionerade modeller ger mer kontroll på bekostnad av språklig finish. När behandlingen sker på plats vet ni var uppgifterna finns, hur länge de sparas och hur mycket energi behandlingen kräver — tre frågor som en humanitär organisation alltid bör kunna svara på.",
+            "reflection": "Lokala, rätt dimensionerade modeller ger mer kontroll på bekostnad av språklig finish. När behandlingen sker på plats vet ni var uppgifterna finns, hur länge de sparas och hur mycket energi behandlingen kräver — tre frågor som en humanitär organisation alltid bör kunna svara på. Att behålla inspelningarna inom kliniken försäkrar patienter från alla håll om att kliniken förblir neutral.",
             "impacts": {
               "doNoHarm": 2,
               "independence": 1,
-              "humanity": 1
+              "humanity": 1,
+              "neutrality": 1
             }
           },
           {
@@ -1535,10 +1522,11 @@
             "label": "Ingen AI — finansiera frivilligt administrativt stöd i stället",
             "detail": "Rekrytera frivilliga medicinska sekreterare som skriver anteckningar efter varje arbetspass.",
             "consequence": "Det går bra att rekrytera bland studenter i Göteborg och patienterna märker ingen skillnad. Men det är svårt att behålla sekreterarna under tentamensperioderna och på kvällsmottagningen sitter läkarna åter och skriver till midnatt.",
-            "reflection": "Att säga nej till AI är ett legitimt val med verkliga kostnader, som ofta bärs av utmattade anställda och frivilliga. Frågan är inte om AI är bra eller dålig, utan om ett mindre resurskrävande alternativ hjälper människor bättre här.",
+            "reflection": "Att säga nej till AI är ett legitimt val med verkliga kostnader, som ofta bärs av utmattade anställda och frivilliga. Frågan är inte om AI är bra eller dålig, utan om ett mindre resurskrävande alternativ hjälper människor bättre här. Utan något externt verktyg som lyssnar kan patienter från alla håll lita på att kliniken förblir neutral.",
             "impacts": {
-              "doNoHarm": 1,
-              "humanity": -1
+              "humanity": -1,
+              "independence": 1,
+              "neutrality": 1
             }
           }
         ]
@@ -1594,10 +1582,11 @@
             "label": "Spara allt för framtida träning",
             "detail": "Mer data kan ge bättre modeller. Lagring är billigt och Sveriges elförsörjning är till största delen fossilfri.",
             "consequence": "Arkivet växer till terabyte med de känsligaste samtal er organisation någonsin haft. Energianvändningen ökar varje månad. Ingen tränar någonsin modellen, men arkivet måste ändå skyddas, säkerhetskopieras och hållas i drift.",
-            "reflection": "Ren el gör inte slöseri ofarligt: el som används här kan inte användas för andra behov, och hårdvara har stor miljöpåverkan redan innan den slås på. Uppgifter som sparas ”för säkerhets skull” medför integritetsrisker och energikostnader utan slutdatum.",
+            "reflection": "Ren el gör inte slöseri ofarligt: el som används här kan inte användas för andra behov, och hårdvara har stor miljöpåverkan redan innan den slås på. Uppgifter som sparas ”för säkerhets skull” medför integritetsrisker och energikostnader utan slutdatum. Ett stort arkiv med patienters röster kan begäras ut av myndigheter, vilket sätter klinikens neutrala roll på spel.",
             "impacts": {
               "doNoHarm": -2,
-              "humanity": -1
+              "humanity": -1,
+              "neutrality": -1
             }
           },
           {
@@ -1719,7 +1708,6 @@
             "consequence": "Betalningarna förblir korrekta och ansvaret ligger kvar hos människor. Men rekryteringen tar månader, ärendebalansen växer till sex veckor och vissa små leverantörer i översvämningsområden får vänta för länge på betalning.",
             "reflection": "Att inte automatisera är ett legitimt val — men sena betalningar orsakar också skada, särskilt för små lokala företag och frivilliga som lägger ut egna pengar.",
             "impacts": {
-              "doNoHarm": 1,
               "humanity": -1
             }
           }
@@ -1802,7 +1790,6 @@
             "reflection": "Att äga infrastrukturen innebär både ansvar och kontroll. För små, jämna arbetsbelastningar kan lokal drift ge både större oberoende och lägre resursförbrukning.",
             "impacts": {
               "independence": 2,
-              "doNoHarm": 1,
               "humanity": -1
             }
           }
@@ -1903,7 +1890,6 @@
             "consequence": "Det kostar nästan inget att driva och använder knappt någon energi. Populära pass fylls direkt; matutdelningen tidigt på morgonen står fortfarande obemannad och du ringer fortfarande samtalen klockan 6.",
             "reflection": "Enkla verktyg räcker ofta — men det är värt att fråga vilka problem de lämnar olösta och för vem.",
             "impacts": {
-              "doNoHarm": 1,
               "independence": 1,
               "humanity": -1
             }
@@ -2090,7 +2076,6 @@
             "consequence": "Energianvändningen minskar med 80%. Men modellen får en ”kallstart” på varningsdagarna och behöver timmar för att ge användbara resultat — den första och dödligaste dagen är den som täcks sämst.",
             "reflection": "Att begränsa användningen är en god utgångspunkt. Men kompromisser måste prövas mot när människor faktiskt löper störst risk.",
             "impacts": {
-              "doNoHarm": 1,
               "humanity": -1
             }
           }
@@ -2128,10 +2113,11 @@
             "label": "Samla in mer data om dem som saknas",
             "detail": "Be migrantarbetare registrera sin plats i en mobilapp så att modellen kan ta med dem.",
             "consequence": "Få registrerar sig — många är rädda för migrationsmyndigheterna. De som gör det skapar en datamängd som konsortiet senare ber att få dela med andra partner.",
-            "reflection": "Att göra osynliga människor synliga för ett system kan utsätta dem för nya risker. Ibland är det säkrare att arbeta utan dessa uppgifter än att fylla luckorna.",
+            "reflection": "Att göra osynliga människor synliga för ett system kan utsätta dem för nya risker. Ibland är det säkrare att arbeta utan dessa uppgifter än att fylla luckorna. Detaljerade uppgifter om dolda grupper kan beslagtas för myndighetsingripanden, så att ni ser ut som myndigheternas spanare.",
             "impacts": {
               "impartiality": 1,
-              "doNoHarm": -2
+              "doNoHarm": -2,
+              "neutrality": -1
             }
           }
         ]
@@ -2186,10 +2172,11 @@
             "label": "Förklara inte — hjälp bara",
             "detail": "Modellen är för komplicerad för att förklara vid dörren.",
             "consequence": "De flesta tar emot besöket. Några öppnar inte dörren. Ett rykte sprids om att Röda Korset har hemliga listor från sjukhuset.",
-            "reflection": "När människor inte vet varför de har valts ut fylls tomrummet av misstänksamhet. Brist på insyn urholkar det förtroende som humanitärt arbete bygger på.",
+            "reflection": "När människor inte vet varför de har valts ut fylls tomrummet av misstänksamhet. Brist på insyn urholkar det förtroende som humanitärt arbete bygger på. Att dyka upp oanmäld med kommunens data kan se ut som övervakning och urholkar förtroendet för er som neutral hjälpare.",
             "impacts": {
               "doNoHarm": -1,
-              "humanity": -1
+              "humanity": -1,
+              "neutrality": -1
             }
           },
           {
@@ -2197,10 +2184,11 @@
             "label": "Förklara enkelt och ge möjlighet att avstå",
             "detail": "En enkel formulering: ”Den här gatan är varm och här bor många äldre. Vill du att vi tittar till dig under värmeböljan?” Människor kan säga nej och tas bort från listan.",
             "consequence": "Nästan alla säger ja. Några avstår och deras val respekteras. Grannar börjar tipsa de frivilliga om andra som bor ensamma.",
-            "reflection": "Att tydligt förklara varför hjälp erbjuds — och acceptera ett nej — respekterar människors värdighet och gör en prognos till en relation.",
+            "reflection": "Att tydligt förklara varför hjälp erbjuds — och acceptera ett nej — respekterar människors värdighet och gör en prognos till en relation. Att vara öppen om datan och hålla den borta från myndighetsingripanden skyddar er roll som betrodd, neutral aktör.",
             "impacts": {
               "humanity": 2,
-              "doNoHarm": 1
+              "doNoHarm": 1,
+              "neutrality": 1
             }
           },
           {
