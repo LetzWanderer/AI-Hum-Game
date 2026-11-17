@@ -1,8 +1,11 @@
 {
+  "subtitle": "Humanitärt arbete i den nya teknikens tid",
+  "coverHook": "Teknik kan utöka den humanitära räckvidden – eller urholka det förtroende den bygger på. Kliv in i ledningsrollen och se hur Grundprinciperna håller under press.",
+  "startGame": "Starta spelet",
   "kicker": "Ett förgrenat beslutsspel",
-  "appTitle": "AI i humanitärt arbete",
-  "intro": "Varje AI-beslut är en avvägning. Fatta besluten, se konsekvenserna och upptäck varför de humanitära principerna spelar roll i varje val.",
-  "principlesHeading": "Det som dina val mäts mot",
+  "appTitle": "Principfast teknik: Dilemmaspelet",
+  "intro": "Ny teknik lovar snabbhet och räckvidd, men våra Grundprinciper måste alltid vara vår ledstjärna. Vad händer när tekniken möter behoven på plats?\n\nDu behöver inte vara programmerare eller IT-specialist. Från volontärer till samordnare använder alla inom humanitärt arbete digitala verktyg och teknik, samlar in eller använder data och fattar vardagliga beslut – som formar resultat och påverkar världen.\n\nKliv in i ledningsrollen för att pröva verklighetsnära dilemman, utmana dina instinkter och se hur Grundprinciperna kan vägleda oss till välgrundade teknikval som sätter människor först.",
+  "principlesHeading": "Grundprinciperna vägleder dina beslut",
   "scenariosHeading": "Välj ett scenario",
   "completed": "Avslutat",
   "stepOf": "Steg {n} av {m}",
@@ -11,7 +14,7 @@
   "startScenario": "Starta scenariot",
   "recordHeading": "Ditt ledarskapsresultat hittills",
   "recordSummary": "Sammantagna resultat från {n} avslutade scenario(n). Spela om med andra val för att se hur balansen förändras.",
-  "footerNote": "Alla scenarier och personer är fiktiva. Innehåll och terminologi är inspirerade av Röda Kors- och Röda Halvmånerörelsens resolution om principiell och ansvarsfull användning av teknik, och av scenariobaserade humanitära lärospel som ”In 90 Days” och ”Mission Zhobia” (humanitariangames.com).",
+  "footerNote": "Utvecklat av Svenska Röda Korset, med stöd från Internationella rödakorskommittén (ICRC) och med utgångspunkt i Rörelsens PATH-resolution om principfast och ansvarsfull användning av informations- och kommunikationsteknik i humanitärt arbete. Alla scenarier och personer är fiktiva, inspirerade av verkliga operativa dilemman och scenariobaserade humanitära lärospel som ”In 90 Days” och ”Mission Zhobia” (humanitariangames.com).",
   "scenarioKicker": "Scenario · {n} beslut",
   "yourRole": "Din roll",
   "theSituation": "Situationen",
@@ -29,6 +32,7 @@
   "seeDebrief": "Se din genomgång",
   "debriefKicker": "Genomgång · {scenario}",
   "debriefHeading": "Hur dina val höll måttet",
+  "scenarioReflectionHeading": "Det större sammanhanget",
   "principlesBalance": "Principbalans",
   "pathYouTook": "Vägen du tog",
   "decisionLabel": "Beslut {i} · {title}",
@@ -99,7 +103,7 @@
     "C"
   ],
   "rolesLabel": "Roller i detta scenario",
-  "ictLinkLabel": "Röda Kors- och Röda Halvmånerörelsens resolution om principiell och ansvarsfull användning av teknik",
+  "ictLinkLabel": "PATH-resolutionen: Principfast och ansvarsfull användning av informations- och kommunikationsteknik i humanitärt arbete",
   "codeLinkLabel": "Visa och ladda ner spelets källdata",
   "codeTitle": "Källdata",
   "codeIntro": "Allt spelet säger lever i dessa filer. Sidan visar livedatan exakt som den är publicerad — ladda ner den, redigera i valfri textredigerare, och dina ändringar följer med nästa publicering.",
@@ -113,7 +117,7 @@
     {
       "key": "humanity",
       "name": "Mänsklighet",
-      "description": "Förhindra och lindra lidande, skydda liv och hälsa och säkerställa respekt för varje människa."
+      "description": "Förhindra och lindra lidande, skydda liv och hälsa och säkerställa respekt för varje människa. Detta inkluderar att inte göra skada: skydda data, stå till svars inför samhällen och undvika eller minska skada."
     },
     {
       "key": "impartiality",
@@ -133,7 +137,7 @@
     {
       "key": "doNoHarm",
       "name": "Inte skada & ansvarsskyldighet",
-      "description": "IKT-resolutionens åtaganden: skydda data, involvera lokalsamhällen och stå till svars inför dem, upphandla etiskt, samt undvika eller mildra skada på drabbade människor."
+      "description": "PATH-resolutionens åtaganden: skydda data, involvera lokalsamhällen och stå till svars inför dem, upphandla etiskt, samt undvika eller mildra skada på drabbade människor."
     }
   ],
   "readMore": "Läs mer",
@@ -150,6 +154,7 @@
   "exitConfirm": "Lämna scenariot? Det du gjort hittills sparas.",
   "workshopBadge": "Workshop",
   "discussHeading": "Diskutera i gruppen",
+  "questionsHeading": "Frågor att fundera på",
   "discussPrompts": [
     "Vem gynnas av varje alternativ – och vem kan skadas?",
     "Vilka data skulle användas, och är något av det känsligt?",
@@ -180,12 +185,45 @@
     "Läs konsekvensen och ”varför det spelar roll” tillsammans och stanna vid diskussionsfrågan.",
     "Avsluta med genomgången och frågorna till teamet. Ladda ner sammanfattningen och dela efteråt."
   ],
-  "guideNote": "Inget skickas någonstans: röster och resultat stannar på den här enheten.",
+  "guideNote": "Beslut och röster stannar på enheten. Bara feedback du skickar överförs.",
   "startWorkshop": "Starta workshop",
   "playSolo": "Spela själv",
   "yourDecisions": "Dina beslut",
   "otherOptions": "De alternativerna ni inte har valt",
   "filterLabel": "Filtrera efter ämne",
   "allTopics": "Alla ämnen",
-  "principlesToggle": "Om principerna"
+  "principlesToggle": "Om principerna",
+  "debriefWeak": "Där dina val var svagast",
+  "debriefWeakDetail": "{principle} hamnade på {rating}. Reflektera över hur dina beslut bättre kan skydda denna grundprincip.",
+  "debriefCostHeading": "Val med störst negativ påverkan",
+  "debriefCostExplain": "Dessa val hade lika stor sammanlagd negativ påverkan på de fyra grundprinciperna. Endast negativa poäng summeras, med spelets viktning; positiva poäng räknas inte av. Detta beskriver valen, inte din slutliga balans.",
+  "howToPlayHeading": "Så spelar du",
+  "howToPlaySteps": [
+    "Välj ett scenario: kliv sedan in i en verklig operativ roll som står inför ett teknikbeslut.",
+    "Vid varje beslut väljer du ett av tre alternativ — det finns sällan ett perfekt svar.",
+    "Se vad som hände, varför det spelar roll och hur det påverkade de fyra principerna.",
+    "I slutet visar genomgången din balans mellan principerna och frågor att ta med till ditt team.",
+    "Pausa och reflektera: efter varje scenario, prata om vad du skulle göra annorlunda i ditt eget arbete."
+  ],
+  "statusHeading": "Din situation",
+  "statusBalance": "Grundprinciperna hittills",
+  "searchTopics": "Sök ämnen",
+  "sortLabel": "Sortera scenarier",
+  "topRated": "Högst betyg",
+  "feedbackCount": "{n} betyg",
+  "feedbackHeading": "Betygsätt scenariot",
+  "feedbackQuestion": "Hur användbart var scenariot? (1–5)",
+  "feedbackComment": "Kort feedback (valfritt)",
+  "feedbackPrivacy": "Betyg visas sammanlagt; kommentarer är privata. Ange inte namn eller känslig information.",
+  "feedbackSend": "Skicka feedback",
+  "feedbackThanks": "Tack — feedback mottagen.",
+  "feedbackError": "Kunde inte skicka. Försök igen.",
+  "pickSolo": "Spela själv",
+  "pickTogether": "Spela tillsammans",
+  "pickHeading": "Ditt drag.",
+  "pickSub": "Välj hur du vill spela",
+  "aboutHeading": "Om spelet",
+  "debriefReflect": "Det här är inget prov. Använd ditt resultat för att reflektera: vilken princip sattes under störst press, och vem skulle känna av konsekvenserna?",
+  "costEnvironmentHeading": "Kostnad och miljö",
+  "costEnvironmentNote": "Poängsätts inte som en princip. Diskutera: vad kostade er väg i pengar, energi, utrustning och avfall – och hade ett enklare alternativ räckt?"
 }

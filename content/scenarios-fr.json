@@ -31,7 +31,7 @@
             "label": "Lancer en 48 heures",
             "detail": "La vitesse avant la vérification. Les réponses partent sans révision, et vous corrigez au fur et à mesure.",
             "consequence": "En trois jours, le chatbot répond à 40 000 questions. Mais les équipes de terrain rapportent qu’environ une réponse sur douze est fausse — y compris des indications vers un abri d’un district où le site a fermé la veille. Le personnel passe la semaine à courir après les corrections sur WhatsApp.",
-            "reflection": "La vitesse peut sauver des vies, mais une information automatisée non vérifiée peut elle-même causer du tort. La Résolution TIC engage le Mouvement à éviter et à atténuer les préjudices causés aux personnes affectées — y compris ceux causés par les outils que nous déployons.",
+            "reflection": "La vitesse peut sauver des vies, mais une information automatisée non vérifiée peut elle-même causer du tort. La Résolution PATH engage le Mouvement à éviter et à atténuer les préjudices causés aux personnes affectées — y compris ceux causés par les outils que nous déployons.",
             "impacts": {
               "humanity": 1,
               "doNoHarm": -2
@@ -57,7 +57,6 @@
             "reflection": "Choisir de ne pas utiliser l’IA est aussi une décision qui a des conséquences. L’indépendance vis-à-vis des fournisseurs est préservée, mais l’humanité demande si un outil accessible, soigneusement gouverné, aurait pu soulager davantage de souffrances.",
             "impacts": {
               "humanity": -1,
-              "doNoHarm": 1,
               "independence": 1
             }
           }
@@ -73,7 +72,7 @@
             "label": "Tout enregistrer pour un meilleur service",
             "detail": "Les journaux complets alimentent l’analytique du fournisseur. La personnalisation s’améliore.",
             "consequence": "Les réponses deviennent nettement plus pertinentes. Des mois plus tard, vous apprenez que les journaux ont servi à entraîner un produit commercial, et qu’il n’existe aucun moyen pratique de retirer les données de 40 000 personnes déplacées qui n’ont jamais accepté cela.",
-            "reflection": "Les personnes affectées ont rarement l’occasion de négocier leur consentement en temps de crise. L’engagement de protection des données de la Résolution TIC considère leurs données comme leur appartenant : collectées pour une finalité déclarée, protégées, et jamais réutilisées en silence.",
+            "reflection": "Les personnes affectées ont rarement l’occasion de négocier leur consentement en temps de crise. L’engagement de protection des données de la Résolution PATH considère leurs données comme leur appartenant : collectées pour une finalité déclarée, protégées, et jamais réutilisées en silence.",
             "impacts": {
               "humanity": 1,
               "doNoHarm": -2,
@@ -93,8 +92,8 @@
           },
           {
             "id": "fl-2c",
-            "label": "Partager les journaux avec le partenaire télécom",
-            "detail": "Ils offrent de l’analytique réseau en échange. Les utilisateurs affectés ne sont pas consultés.",
+            "label": "Échanger les journaux d’appels contre des cartes de déplacements",
+            "detail": "L’opérateur mobile vous fournit des cartes de chaleur des déplacements issues des antennes-relais, en échange des journaux d’appels et des localisations de la ligne d’assistance. Les appelants ne sont pas informés.",
             "consequence": "L’analytique vous aide à cartographier la demande. Puis un journaliste demande pourquoi les questions et localisations de personnes déplacées affluent vers une entreprise privée. L’article paraît dans la presse nationale ; la confiance des communautés dans la ligne chute brutalement.",
             "reflection": "La redevabilité envers les personnes affectées inclut la capacité d’expliquer — avant qu’elles ne le lisent dans la presse — qui détient leurs données et pourquoi. Les conditions éthiques des partenariats relèvent de l’achat, pas de la communication de crise après coup.",
             "impacts": {
@@ -154,7 +153,7 @@
             "label": "Convoquer un panel communautaire de retour",
             "detail": "Des personnes affectées révisent les réponses chaque semaine, signalent les préjudices et orientent ce que couvre le chatbot.",
             "consequence": "Le panel détecte des problèmes que vos tableaux de bord n’ont jamais montrés : des réponses sensées dans la capitale mais pas dans les dialectes riverains, et des sujets que les gens n’osaient pas aborder. Le service s’améliore et gagne en confiance.",
-            "reflection": "L’engagement communautaire et la redevabilité — un engagement central de la Résolution TIC — traitent les personnes affectées comme des décisionnaires sur les outils qui les servent, et non comme de simples statistiques d’usage.",
+            "reflection": "L’engagement communautaire et la redevabilité — un engagement central de la Résolution PATH — traitent les personnes affectées comme des décisionnaires sur les outils qui les servent, et non comme de simples statistiques d’usage.",
             "impacts": {
               "doNoHarm": 2,
               "impartiality": 1
@@ -178,14 +177,13 @@
             "consequence": "Les volontaires travaillent dur, mais sans formation ni filière d’escalade, certaines réponses nuisibles restent en ligne des semaines et les questions sensibles reçoivent un traitement incohérent. Deux volontaires s’épuisent et démissionnent.",
             "reflection": "La redevabilité ne se sous-traite pas à la bonne volonté. Un déploiement éthique inclut le financement des humains qui gardent les systèmes automatisés sûrs — sinon l’automatisation n’est pas vraiment gouvernée.",
             "impacts": {
-              "humanity": 1,
-              "doNoHarm": -1
+              "humanity": -1
             }
           }
         ]
       }
     ],
-    "debrief": "La ligne de crue montre à quelle vitesse un chatbot bien intentionné touche chaque engagement de la Résolution TIC : information vérifiée (ne pas nuire), minimisation et finalité des données (protection des données), communication honnête en cas d’échec (redevabilité envers les communautés), et gouvernance qui laisse les personnes affectées maîtresses des outils censés les servir."
+    "debrief": "La ligne de crue montre à quelle vitesse un chatbot bien intentionné touche chaque engagement de la Résolution PATH : information vérifiée (ne pas nuire), minimisation et finalité des données (protection des données), communication honnête en cas d’échec (redevabilité envers les communautés), et gouvernance qui laisse les personnes affectées maîtresses des outils censés les servir."
   },
   {
     "id": "targeting-unseen",
@@ -225,11 +223,10 @@
             "label": "Collecter des données fraîches porte à porte",
             "detail": "Des enquêteurs avec tablettes et scripts de consentement. Six semaines, une vraie couverture des non-enregistrés.",
             "consequence": "Le retard est douloureux — un mois de soudure passe avant que l’argent ne coule. Mais le modèle s’entraîne sur la réalité actuelle, y compris des ménages qu’aucune liste n’avait jamais captés. Les leaders communautaires parlent de la sélection la plus juste qu’ils aient vue.",
-            "reflection": "Parfois, l’usage responsable de l’IA consiste à ralentir pour lui donner des intrants honnêtes. La collecte fondée sur le consentement incarne aussi la norme de protection des données demandée par la Résolution TIC.",
+            "reflection": "Parfois, l’usage responsable de l’IA consiste à ralentir pour lui donner des intrants honnêtes. La collecte fondée sur le consentement incarne aussi la norme de protection des données demandée par la Résolution PATH.",
             "impacts": {
               "impartiality": 2,
-              "doNoHarm": 1,
-              "humanity": -1
+              "humanity": 1
             }
           },
           {
@@ -240,8 +237,7 @@
             "reflection": "Les variables indirectes encodent des hypothèses sur ce à quoi ressemble la pauvreté. Quand les hypothèses sont fausses, le biais est systématique — il frappe les mêmes types de ménages à chaque fois, c’est-à-dire l’inverse de l’impartialité.",
             "impacts": {
               "impartiality": -1,
-              "doNoHarm": -1,
-              "humanity": 1
+              "humanity": -1
             }
           }
         ]
@@ -258,9 +254,8 @@
             "consequence": "15 000 ménages reçoivent l’argent comme prévu — mais les exclus comptent une part disproportionnée de ménages dirigés par des femmes. Le bureau des appels est débordé, et un animateur radio local demande pourquoi l’ordinateur a « oublié les veuves ».",
             "reflection": "Un biais connu et non corrigé n’est pas une note technique de bas de page ; c’est une décision de discriminer à grande échelle. Ne pas nuire s’applique autant aux préjudices prévisibles qu’aux imprévisibles.",
             "impacts": {
-              "humanity": 1,
-              "impartiality": -2,
-              "doNoHarm": -1
+              "humanity": -1,
+              "impartiality": -2
             }
           },
           {
@@ -268,11 +263,10 @@
             "label": "Recalibrer avec une validation communautaire",
             "detail": "Des comités locaux examinent les cas d’exclusion. Deux semaines de plus avant le décaissement.",
             "consequence": "Le retard est difficile à défendre devant les donateurs — jusqu’à l’arrivée de la liste révisée. Les comités détectent des centaines d’exclusions injustifiées et, parce qu’ils ont contribué à façonner la liste, les contestations chutent fortement. Le délai glisse ; la légitimité tient.",
-            "reflection": "L’engagement communautaire est l’un des outils de correction des biais les plus puissants. Ceux qui vivent la réalité voient des schémas qu’aucune métrique de validation ne capture — et leur implication construit la redevabilité que la Résolution TIC appelle de ses vœux.",
+            "reflection": "L’engagement communautaire est l’un des outils de correction des biais les plus puissants. Ceux qui vivent la réalité voient des schémas qu’aucune métrique de validation ne capture — et leur implication construit la redevabilité que la Résolution PATH appelle de ses vœux.",
             "impacts": {
               "impartiality": 2,
-              "doNoHarm": 1,
-              "humanity": -1
+              "humanity": 1
             }
           },
           {
@@ -299,10 +293,11 @@
             "label": "Partager des données pseudonymisées sous contrat",
             "detail": "Noms retirés, contrat signé. Le programme garde ses outils gratuits.",
             "consequence": "Le programme économise de l’argent. Un an plus tard, un chercheur démontre que les dossiers de ménages « pseudonymisés » peuvent être ré-identifiés en croisant localisation et taille du ménage — et la clause d’exécution du contrat s’avère quasi inutilisable d’une juridiction à l’autre.",
-            "reflection": "La pseudonymisation est plus faible qu’il n’y paraît dans les petites populations, et un contrat inapplicable est un espoir, pas une garantie. La protection des données doit survivre à la fin du partenariat.",
+            "reflection": "La pseudonymisation est plus faible qu’il n’y paraît dans les petites populations, et un contrat inapplicable est un espoir, pas une garantie. La protection des données doit survivre à la fin du partenariat. Cela risque aussi de faire paraître le programme aligné sur des intérêts commerciaux extérieurs, ce qui érode la confiance qui lui permet de travailler avec tous.",
             "impacts": {
               "doNoHarm": -2,
-              "independence": -1
+              "independence": -1,
+              "neutrality": -1
             }
           },
           {
@@ -310,10 +305,11 @@
             "label": "Ne partager que des résultats agrégés",
             "detail": "Le cabinet reçoit des métriques de performance du modèle, jamais de données ligne par ligne. Ils protestent.",
             "consequence": "Les négociations se tendent et le cabinet menace brièvement de partir. Vous tenez bon, et ils acceptent — les métriques agrégées leur permettent toujours d’améliorer le modèle. Aucun dossier de ménage ne quitte jamais votre contrôle.",
-            "reflection": "L’achat éthique signifie que c’est le Mouvement qui fixe les conditions de circulation des données des personnes affectées, pas le fournisseur. Les outils « gratuits » se paient en quelque chose — veillez à ce que ce ne soit pas la vie privée des bénéficiaires.",
+            "reflection": "L’achat éthique signifie que c’est le Mouvement qui fixe les conditions de circulation des données des personnes affectées, pas le fournisseur. Les outils « gratuits » se paient en quelque chose — veillez à ce que ce ne soit pas la vie privée des bénéficiaires. Garder les données individuelles en interne protège votre position d’acteur neutre et digne de confiance avec qui toutes les parties peuvent dialoguer.",
             "impacts": {
               "doNoHarm": 1,
-              "independence": 1
+              "independence": 1,
+              "neutrality": 1
             }
           },
           {
@@ -321,11 +317,11 @@
             "label": "Partir et développer en interne",
             "detail": "Plus lent, plus coûteux, et entièrement à vous.",
             "consequence": "Votre petite équipe données construit un modèle plus simple en trois mois. Il est moins sophistiqué et le retard est réel — mais chaque ligne est auditable, chaque dossier reste en interne, et la compétence vit désormais dans le Mouvement.",
-            "reflection": "L’indépendance coûte parfois de la vitesse et de l’argent. Posséder sa capacité — plutôt que louer une boîte noire — est un investissement à long terme dans une action humanitaire autonome et comptable.",
+            "reflection": "L’indépendance coûte parfois de la vitesse et de l’argent. Posséder sa capacité — plutôt que louer une boîte noire — est un investissement à long terme dans une action humanitaire autonome et comptable. Refuser de transmettre les données préserve votre neutralité, même si cela prend du temps.",
             "impacts": {
               "independence": 2,
-              "doNoHarm": 1,
-              "humanity": -1
+              "humanity": -1,
+              "neutrality": 1
             }
           }
         ]
@@ -340,11 +336,12 @@
             "label": "Inscrire automatiquement les 15 000 premiers",
             "detail": "Aucune révision humaine. L’argent le plus rapide possible, totalement « objectif ».",
             "consequence": "L’argent circule en un temps record. Puis les erreurs affleurent : ménages en double, village mal cartographié par le modèle, familles exclues par une faute de saisie qu’aucun humain n’a vue. Sans étape de révision, chaque erreur est définitive jusqu’à ce que les appels aboutissent.",
-            "reflection": "L’automatisation totale ne supprime pas le jugement humain — elle le cache dans le modèle et les données. Une décision automatisée sur la survie des personnes a besoin d’un humain capable d’attraper ce que le système ne voit pas.",
+            "reflection": "L’automatisation totale ne supprime pas le jugement humain — elle le cache dans le modèle et les données. Une décision automatisée sur la survie des personnes a besoin d’un humain capable d’attraper ce que le système ne voit pas. Un score inexpliqué qui décide qui reçoit de l’aide fait soupçonner que quelqu’un d’autre choisit, ce qui sape la confiance dans votre neutralité.",
             "impacts": {
               "doNoHarm": -2,
               "impartiality": -1,
-              "humanity": 1
+              "humanity": 1,
+              "neutrality": -1
             }
           },
           {
@@ -354,7 +351,6 @@
             "consequence": "La vérification ajoute quatre semaines. Erreurs détectées : des centaines. Mais la soudure mord avant la fin du décaissement, et vous passez des nuits difficiles à défendre le retard devant des leaders communautaires à qui l’on a promis la rapidité.",
             "reflection": "La redevabilité a un prix en temps, et dans une crise de faim le temps se mesure en repas. La leçon honnête : construire la capacité de vérification avant l’urgence, pour que rigueur et rapidité ne soient pas ennemies.",
             "impacts": {
-              "doNoHarm": 1,
               "impartiality": 1,
               "humanity": -1
             }
@@ -405,9 +401,8 @@
             "consequence": "Vous obtenez la première image d’ensemble des districts depuis des mois, et la planification des convois s’accélère. Mais le modèle lit des toits intacts comme des vies intactes : une ville bombardée avec un toit de marché neuf est notée « en rétablissement » alors que son réseau d’eau est détruit. Les besoins des lieux invisibles restent non comptés.",
             "reflection": "La télédétection voit des structures, pas des souffrances. Utilisée seule, elle biaise l’aide vers ce qui est visible depuis l’orbite — un problème d’impartialité caché dans une carte impressionnante.",
             "impacts": {
-              "humanity": 1,
-              "impartiality": -1,
-              "doNoHarm": -1
+              "humanity": -1,
+              "impartiality": -1
             }
           },
           {
@@ -459,7 +454,6 @@
             "reflection": "L’endroit où vivent les données décide qui peut être forcé de les remettre. En contexte de conflit, le contrôle de l’infrastructure n’est pas un détail informatique — c’est une décision de protection.",
             "impacts": {
               "independence": 2,
-              "doNoHarm": 1,
               "humanity": -1
             }
           },
@@ -471,7 +465,6 @@
             "reflection": "Parfois, le choix indépendant coûte de la capacité. L’arbitrage est réel et doit être fait délibérément, les yeux ouverts sur ce que les plateformes « gratuites » facturent réellement.",
             "impacts": {
               "independence": 1,
-              "doNoHarm": 1,
               "humanity": -1
             }
           }
@@ -498,7 +491,7 @@
             "label": "Restreindre aux partenaires humanitaires habilités",
             "detail": "Accès selon le besoin d’en connaître, protocole de partage, agrégation avant toute diffusion plus large.",
             "consequence": "La coordination est plus lente et certains partenaires râlent devant les niveaux d’accès. Mais les données de mouvement de population ne circulent jamais au-delà d’organisations liées par les principes humanitaires, et vos équipes peuvent rendre compte de chaque copie.",
-            "reflection": "Le partage responsable des données se conçoit, il n’est pas le défaut : limité par la finalité, gradué par l’accès, agrégé dès que possible. L’engagement de protection des données de la Résolution TIC s’applique d’autant plus que les enjeux sont élevés.",
+            "reflection": "Le partage responsable des données se conçoit, il n’est pas le défaut : limité par la finalité, gradué par l’accès, agrégé dès que possible. L’engagement de protection des données de la Résolution PATH s’applique d’autant plus que les enjeux sont élevés.",
             "impacts": {
               "neutrality": 1,
               "doNoHarm": 2
@@ -551,7 +544,7 @@
             "label": "Double signature : analyste plus délégué de terrain",
             "detail": "Aucune recommandation automatisée ne devient décision sans deux signatures humaines. Plus lent, volontairement.",
             "consequence": "Chaque plan de distribution prend un jour de plus. En échange, les pièges de lacunes de données comme la ville assiégée sont détectés structurellement, pas par chance — le travail du délégué de terrain est précisément de demander ce que le modèle ne peut pas voir.",
-            "reflection": "Dans les contextes à haut risque, la redondance du jugement humain est une garantie, pas une inefficacité. L’appel de la Résolution TIC à éviter et atténuer les préjudices plaide exactement pour ce type de friction délibérée.",
+            "reflection": "Dans les contextes à haut risque, la redondance du jugement humain est une garantie, pas une inefficacité. L’appel de la Résolution PATH à éviter et atténuer les préjudices plaide exactement pour ce type de friction délibérée.",
             "impacts": {
               "doNoHarm": 2,
               "impartiality": 1,
@@ -613,10 +606,9 @@
             "label": "Bâtir sur une infrastructure contrôlée par le Mouvement",
             "detail": "La pile ouverte du consortium régional. Plus chère, plus lente, entièrement à vous.",
             "consequence": "Le lancement prend quatre mois de plus et absorbe un tiers du budget de numérisation. Mais chaque dossier repose sous vos clés, dans des formats ouverts, avec une sauvegarde testée dans un second pays. Quand fournisseurs et ministères viendront frapper plus tard, la réponse sera déjà construite.",
-            "reflection": "Le contrôle de l’infrastructure est la fondation sur laquelle toutes les autres garanties reposent. Il coûte de l’argent et du temps d’avance — l’engagement d’achat éthique de la Résolution TIC inclut la volonté de payer ce prix.",
+            "reflection": "Le contrôle de l’infrastructure est la fondation sur laquelle toutes les autres garanties reposent. Il coûte de l’argent et du temps d’avance — l’engagement d’achat éthique de la Résolution PATH inclut la volonté de payer ce prix.",
             "impacts": {
               "independence": 2,
-              "doNoHarm": 1,
               "humanity": -1
             }
           }
@@ -686,7 +678,7 @@
             "label": "Mener d’abord l’évaluation participative complète",
             "detail": "Des représentants communautaires aident à tester l’outil, à identifier les préjudices et à fixer les atténuations. Le début de saison est manqué.",
             "consequence": "La première tempête est gérée avec les anciennes méthodes — plus lentement, mais pas pire que l’an dernier. L’évaluation trouve l’écart des quartiers informels plus deux préjudices que personne n’avait prévus, et les atténuations conçues par la communauté entrent dans le manuel opérationnel de l’outil.",
-            "reflection": "L’engagement communautaire de la Résolution TIC s’applique au risque, pas seulement au retour d’expérience : les personnes exposées aux défaillances d’un outil sont les expertes de ce que ces défaillances signifieraient.",
+            "reflection": "L’engagement communautaire de la Résolution PATH s’applique au risque, pas seulement au retour d’expérience : les personnes exposées aux défaillances d’un outil sont les expertes de ce que ces défaillances signifieraient.",
             "impacts": {
               "doNoHarm": 2,
               "impartiality": 1,
@@ -741,7 +733,6 @@
             "reflection": "Les architectures hybrides peuvent concilier souveraineté et échelle. La question de conception est toujours : quelles fonctions pourrions-nous perdre demain avec un fournisseur — et que coûterait cette perte aux personnes affectées ?",
             "impacts": {
               "independence": 1,
-              "doNoHarm": 1,
               "humanity": -1
             }
           }
@@ -779,8 +770,7 @@
             "consequence": "Au hub régional, le personnel l’adore. Sur les sites de terrain — là où sont les questions — il affiche surtout une roue de chargement. Vous apprenez plus tard que chaque millier de requêtes portait aussi une facture invisible : l’électricité des centres de données et l’eau de refroidissement, dans une région qui compte les deux en jerricans.",
             "reflection": "Une capacité qui ne fonctionne que là où l’infrastructure existe déjà creuse l’écart entre les connectés et les coupés. Chaque requête d’IA a un coût en énergie et en eau ; dans les contextes de pénurie, ce coût fait partie du calcul humanitaire, pas d’une note de bas de page.",
             "impacts": {
-              "humanity": 1,
-              "doNoHarm": -1,
+              "humanity": -1,
               "impartiality": -1
             }
           },
@@ -803,8 +793,7 @@
             "consequence": "Fiable, éprouvé, et zéro nouvelle empreinte — mais les retards de traduction s’accumulent, les notes de cas s’empilent non traitées, et les volontaires de nuit continuent d’improviser des réponses qu’un petit modèle entraîné aurait pu gérer.",
             "reflection": "Refuser l’IA est un choix légitime avec de vrais coûts. La question n’est pas « l’IA ou les principes », mais quel outil, dimensionné au lieu, sert le mieux les gens — et qui l’a décidé, sur quelles preuves.",
             "impacts": {
-              "humanity": -1,
-              "doNoHarm": 1
+              "humanity": -1
             }
           }
         ]
@@ -1155,8 +1144,7 @@
             "consequence": "Les laboratoires confirment un paludisme sévère — pas d’épidémie. Votre prépositionnement discret s’avère utile quand même. Mais votre équipe modélise le contrefactuel : s’il s’était agi d’une fièvre hémorragique, 48 heures de silence à un poste frontière auraient été catastrophiques.",
             "reflection": "Attendre la certitude n’est sûr que lorsque la maladie est lente. La discipline consiste à ajuster le seuil aux enjeux : que coûte une fausse alerte, que coûtent deux jours perdus, et qui paie chacun ?",
             "impacts": {
-              "humanity": -1,
-              "doNoHarm": 1
+              "humanity": -1
             }
           },
           {
@@ -1185,9 +1173,8 @@
             "consequence": "Le débit bondit de 40 %. Puis le schéma émerge : les patients âgés qui décrivent leurs symptômes indirectement obtiennent des scores bas ; de même que les locuteurs d’un dialecte frontalier que le questionnaire traduit mal. Personne n’est refusé — certains attendent simplement jusqu’à s’effondrer, hors de vue des métriques.",
             "reflection": "Une file d’attente est une déclaration de valeurs. Le triage automatisé optimise ce que son questionnaire peut entendre ; les patients qu’il entend le moins bien sont souvent les plus graves. L’impartialité dans une clinique, c’est auditer l’ordre, pas seulement la vitesse.",
             "impacts": {
-              "humanity": 1,
-              "impartiality": -2,
-              "doNoHarm": -1
+              "humanity": -1,
+              "impartiality": -2
             }
           },
           {
@@ -1224,7 +1211,7 @@
             "label": "Partager la liste anonymisée",
             "detail": "Noms retirés, accord signé. La prévision s’améliore pour tout le monde.",
             "consequence": "Le modèle du consortium aide deux ministères à planifier. Mais la liste est un déguisement mince : date des symptômes, âge et village ensemble ré-identifient les patients, et un journaliste local le démontre d’un coup de fil. Dans une région frontalière, être identifiable comme patient n’est pas un fait neutre.",
-            "reflection": "Dans les petites populations, les données de santé « anonymisées » sont souvent un pseudonyme, pas une protection. Les listes d’épidémie portent une double sensibilité — maladie et localisation — et la norme de protection des données de la Résolution TIC les traite en conséquence.",
+            "reflection": "Dans les petites populations, les données de santé « anonymisées » sont souvent un pseudonyme, pas une protection. Les listes d’épidémie portent une double sensibilité — maladie et localisation — et la norme de protection des données de la Résolution PATH les traite en conséquence.",
             "impacts": {
               "humanity": 1,
               "doNoHarm": -2,
@@ -1250,8 +1237,7 @@
             "consequence": "Rien ne fuit, et rien ne s’apprend. La prévision régionale — qui aurait guidé le prépositionnement des vaccins la saison prochaine — est construite sans les données de vos cliniques et est visiblement plus faible précisément dans vos districts.",
             "reflection": "La protection absolue a un prix payé en prévoyance. L’objectif n’est pas le partage zéro mais le partage gouverné : consentement quand c’est possible, agrégation par défaut, et revue par des personnes comptables envers les communautés de la liste.",
             "impacts": {
-              "humanity": -1,
-              "doNoHarm": 1
+              "humanity": -1
             }
           }
         ]
@@ -1289,7 +1275,7 @@
             "label": "Combiner : l’IA rédige, les voix locales approuvent et diffusent",
             "detail": "Le modèle rédige et traduit en une heure ; des réviseurs communautaires de chaque langue approuvent ou corrigent avant toute publication ; les agents de santé livrent les parties délicates en personne.",
             "consequence": "Les messages sortent le jour même en quatre langues, chacun validé par quelqu’un qui la parle nativement. L’étape de révision attrape la traduction « mortelle » avant publication. Couverture et confiance, pour l’essentiel les deux.",
-            "reflection": "Le schéma se généralise : les machines pour la vitesse, les communautés pour le sens. L’engagement de la Résolution TIC en matière de participation est ce qui transforme un pipeline de traduction en une communication sur laquelle on peut agir en sécurité.",
+            "reflection": "Le schéma se généralise : les machines pour la vitesse, les communautés pour le sens. L’engagement de la Résolution PATH en matière de participation est ce qui transforme un pipeline de traduction en une communication sur laquelle on peut agir en sécurité.",
             "impacts": {
               "humanity": 1,
               "doNoHarm": 2
@@ -1329,9 +1315,8 @@
             "consequence": "Le donateur est ravi et le communiqué s’écrit tout seul. Au quatrième mois vous avez onze pilotes, trois fournisseurs avec accès à des données internes, deux outils en double, et personne pour répondre à une question simple du conseil : qui a approuvé chacun d’eux, selon quels critères ?",
             "reflection": "L’enthousiasme conditionné par le financement reste de l’enthousiasme. L’indépendance inclut la liberté d’adopter la technologie à la vitesse que votre gouvernance peut réellement piloter — les donateurs financent votre mission, pas votre compteur d’outils.",
             "impacts": {
-              "humanity": 1,
-              "independence": -2,
-              "doNoHarm": -1
+              "humanity": -1,
+              "independence": -2
             }
           },
           {
@@ -1461,7 +1446,7 @@
             "label": "Créer un groupe de supervision de l’IA avec une voix extérieure et communautaire",
             "detail": "Un petit groupe permanent — programmes, TIC, protection des données, un éthicien externe et un représentant communautaire — avec pouvoir d’approuver, conditionner ou arrêter les usages de l’IA, revu chaque année en public.",
             "consequence": "Les réunions sont mensuelles et parfois inconfortables. Le premier veto du membre communautaire — sur un pilote de reconnaissance faciale aux points de distribution — vous épargne un titre de presse que vous ne verrez jamais. La revue publique annuelle est calme, et ce calme est la réussite.",
-            "reflection": "C’est la Résolution TIC rendue structurelle : protection des données, engagement communautaire et atténuation des préjudices incarnés dans un organe qui peut agir. Une supervision avec une voix extérieure attrape ce que les insiders sont payés pour ne pas remarquer.",
+            "reflection": "C’est la Résolution PATH rendue structurelle : protection des données, engagement communautaire et atténuation des préjudices incarnés dans un organe qui peut agir. Une supervision avec une voix extérieure attrape ce que les insiders sont payés pour ne pas remarquer.",
             "impacts": {
               "doNoHarm": 2,
               "independence": 1
@@ -1511,11 +1496,12 @@
             "label": "Accepter l’outil gratuit dans le cloud",
             "detail": "Le soulagement le plus rapide pour les bénévoles. Les enregistrements complets quittent la clinique et sont traités à l’étranger par un modèle que vous ne pouvez pas examiner.",
             "consequence": "En une semaine, le temps consacré à la documentation est divisé par deux. Puis l’avocate d’une patiente demande si les autorités pourraient réclamer les enregistrements de sa cliente dans le cadre d’une procédure d’expulsion. Vous ne pouvez pas dire avec certitude où l’audio est stocké, pendant combien de temps ni qui peut y accéder. La nouvelle se répand dans la communauté et trois patients réguliers cessent de venir.",
-            "reflection": "Pour les personnes qui vivent dans la crainte des autorités, l’enregistrement lui-même peut être source de préjudice. Un outil gratuit payé avec les données les plus sensibles des personnes les plus exposées n’est pas gratuit. La résolution sur les TIC engage le Mouvement à protéger les données à caractère personnel précisément là où les conséquences d’une fuite seraient les plus graves.",
+            "reflection": "Pour les personnes qui vivent dans la crainte des autorités, l’enregistrement lui-même peut être source de préjudice. Un outil gratuit payé avec les données les plus sensibles des personnes les plus exposées n’est pas gratuit. La résolution sur les TIC engage le Mouvement à protéger les données à caractère personnel précisément là où les conséquences d’une fuite seraient les plus graves. Une clinique doit être un lieu sûr pour tous ; un outil cloud externe non vérifié peut faire craindre aux patients que leurs paroles tombent entre d’autres mains.",
             "impacts": {
               "humanity": 1,
               "doNoHarm": -2,
-              "independence": -1
+              "independence": -1,
+              "neutrality": -1
             }
           },
           {
@@ -1523,11 +1509,12 @@
             "label": "Tester un petit modèle fonctionnant dans la clinique",
             "detail": "Un modèle compact de traitement de la parole installé sur un ordinateur local. Aucun enregistrement audio ne quitte le bâtiment ; les notes sont moins abouties et nécessitent davantage de corrections.",
             "consequence": "L’installation prend un mois et les notes doivent être corrigées, surtout en tigrigna et en dari. Mais rien ne quitte la clinique, l’audio est supprimé dès que la note est validée et la machine consomme à peu près autant qu’une lampe de bureau. Les bénévoles économisent un tiers de leur temps de saisie plutôt que la moitié.",
-            "reflection": "Les modèles locaux, dimensionnés selon les besoins, privilégient la maîtrise à la qualité de présentation. Lorsque le traitement reste sur place, vous savez où sont les données, combien de temps elles sont conservées et combien d’énergie leur traitement consomme : trois questions auxquelles une organisation humanitaire devrait toujours pouvoir répondre.",
+            "reflection": "Les modèles locaux, dimensionnés selon les besoins, privilégient la maîtrise à la qualité de présentation. Lorsque le traitement reste sur place, vous savez où sont les données, combien de temps elles sont conservées et combien d’énergie leur traitement consomme : trois questions auxquelles une organisation humanitaire devrait toujours pouvoir répondre. Garder les enregistrements dans la clinique rassure les patients de tous bords sur sa neutralité.",
             "impacts": {
               "doNoHarm": 2,
               "independence": 1,
-              "humanity": 1
+              "humanity": 1,
+              "neutrality": 1
             }
           },
           {
@@ -1535,10 +1522,11 @@
             "label": "Pas d’IA : financer plutôt des bénévoles administratifs",
             "detail": "Recruter des secrétaires médicaux bénévoles pour saisir les notes après chaque permanence.",
             "consequence": "Le recrutement fonctionne auprès des étudiants de Gothenburg et les patients ne remarquent aucun changement. Mais il est difficile de garder les secrétaires pendant les examens et, lors des consultations du soir, les médecins se remettent à saisir leurs notes jusqu’à minuit.",
-            "reflection": "Refuser l’IA est un choix légitime qui a un coût réel, souvent supporté par du personnel et des bénévoles épuisés. La question n’est pas de savoir si l’IA est bonne ou mauvaise, mais si une solution plus légère répond mieux aux besoins des personnes dans ce contexte.",
+            "reflection": "Refuser l’IA est un choix légitime qui a un coût réel, souvent supporté par du personnel et des bénévoles épuisés. La question n’est pas de savoir si l’IA est bonne ou mauvaise, mais si une solution plus légère répond mieux aux besoins des personnes dans ce contexte. Sans outil externe à l’écoute, les patients de tous bords peuvent croire en la neutralité de la clinique.",
             "impacts": {
-              "doNoHarm": 1,
-              "humanity": -1
+              "humanity": -1,
+              "independence": 1,
+              "neutrality": 1
             }
           }
         ]
@@ -1594,10 +1582,11 @@
             "label": "Tout conserver pour un entraînement futur",
             "detail": "Davantage de données pourrait permettre de meilleurs modèles. Le stockage est peu coûteux et le réseau électrique suédois repose principalement sur des sources non fossiles.",
             "consequence": "Les archives atteignent plusieurs téraoctets de conversations parmi les plus sensibles que votre organisation ait jamais recueillies. La consommation d’énergie augmente chaque mois. Personne n’entraîne finalement le modèle, mais il faut toujours sécuriser les archives, les sauvegarder et alimenter les équipements.",
-            "reflection": "Une électricité décarbonée ne rend pas le gaspillage inoffensif : l’électricité utilisée ici n’est pas disponible pour d’autres besoins et le matériel a déjà une lourde empreinte avant même sa mise sous tension. Les données conservées « au cas où » entraînent indéfiniment des risques pour la vie privée et des coûts énergétiques.",
+            "reflection": "Une électricité décarbonée ne rend pas le gaspillage inoffensif : l’électricité utilisée ici n’est pas disponible pour d’autres besoins et le matériel a déjà une lourde empreinte avant même sa mise sous tension. Les données conservées « au cas où » entraînent indéfiniment des risques pour la vie privée et des coûts énergétiques. Une grande archive de voix de patients peut être réclamée par les autorités, mettant en danger le rôle neutre de la clinique.",
             "impacts": {
               "doNoHarm": -2,
-              "humanity": -1
+              "humanity": -1,
+              "neutrality": -1
             }
           },
           {
@@ -1719,7 +1708,6 @@
             "consequence": "Les paiements restent exacts et les responsabilités restent humaines. Mais le recrutement prend des mois, les retards atteignent six semaines et certains petits fournisseurs des zones inondées attendent trop longtemps leur paiement.",
             "reflection": "Ne pas automatiser est un choix légitime, mais le retard de paiement est aussi un préjudice, surtout pour les petites entreprises locales et les bénévoles qui avancent leur propre argent.",
             "impacts": {
-              "doNoHarm": 1,
               "humanity": -1
             }
           }
@@ -1802,7 +1790,6 @@
             "reflection": "Posséder l’infrastructure apporte des responsabilités autant que de la maîtrise. Pour des charges de travail faibles et régulières, l’hébergement local peut offrir à la fois plus d’indépendance et une empreinte moindre.",
             "impacts": {
               "independence": 2,
-              "doNoHarm": 1,
               "humanity": -1
             }
           }
@@ -1903,7 +1890,6 @@
             "consequence": "Son fonctionnement ne coûte presque rien et consomme à peine de l’énergie. Les créneaux prisés sont immédiatement pourvus ; la distribution alimentaire matinale reste sans bénévole et vous passez toujours les appels de 6 heures du matin.",
             "reflection": "Des outils simples suffisent souvent, mais il vaut la peine de se demander quels problèmes ils laissent sans réponse, et pour qui.",
             "impacts": {
-              "doNoHarm": 1,
               "independence": 1,
               "humanity": -1
             }
@@ -2090,7 +2076,6 @@
             "consequence": "La consommation d’énergie baisse de 80 %. Mais le modèle démarre « à froid » les jours d’alerte et met des heures à produire des résultats utiles : le premier jour, le plus meurtrier, est celui qu’il couvre le moins bien.",
             "reflection": "Limiter l’utilisation est un bon réflexe. Mais il faut vérifier les compromis au regard des moments où les personnes sont réellement le plus exposées.",
             "impacts": {
-              "doNoHarm": 1,
               "humanity": -1
             }
           }
@@ -2128,10 +2113,11 @@
             "label": "Recueillir davantage de données sur les personnes absentes",
             "detail": "Demander aux travailleurs migrants d’enregistrer leur localisation dans une application téléphonique afin que le modèle puisse les inclure.",
             "consequence": "Peu s’inscrivent : beaucoup craignent les autorités chargées de l’immigration. Ceux qui le font créent un jeu de données que le consortium demande ensuite à partager avec d’autres partenaires.",
-            "reflection": "Rendre visibles dans un système des personnes jusque-là invisibles peut les exposer à de nouveaux risques. Parfois, la réponse la plus sûre consiste à agir sans ces données plutôt qu’à les compléter.",
+            "reflection": "Rendre visibles dans un système des personnes jusque-là invisibles peut les exposer à de nouveaux risques. Parfois, la réponse la plus sûre consiste à agir sans ces données plutôt qu’à les compléter. Des données détaillées sur des groupes cachés peuvent être saisies à des fins répressives, vous faisant passer pour un éclaireur des autorités.",
             "impacts": {
               "impartiality": 1,
-              "doNoHarm": -2
+              "doNoHarm": -2,
+              "neutrality": -1
             }
           }
         ]
@@ -2186,10 +2172,11 @@
             "label": "Ne pas expliquer : simplement aider",
             "detail": "Le modèle est trop complexe pour être expliqué sur le pas de la porte.",
             "consequence": "La plupart des personnes acceptent la visite. Certaines n’ouvrent pas. Une rumeur se répand : la Croix-Rouge aurait des listes secrètes provenant de l’hôpital.",
-            "reflection": "Lorsque les personnes ignorent pourquoi elles ont été choisies, le soupçon comble ce vide. L’opacité érode la confiance dont dépend l’action humanitaire.",
+            "reflection": "Lorsque les personnes ignorent pourquoi elles ont été choisies, le soupçon comble ce vide. L’opacité érode la confiance dont dépend l’action humanitaire. Arriver sans prévenir avec des données municipales peut ressembler à de la surveillance et éroder la confiance en vous comme aidant neutre.",
             "impacts": {
               "doNoHarm": -1,
-              "humanity": -1
+              "humanity": -1,
+              "neutrality": -1
             }
           },
           {
@@ -2197,10 +2184,11 @@
             "label": "Expliquer simplement et permettre le refus",
             "detail": "Une formule simple : « Cette rue est très chaude et compte de nombreux habitants âgés. Souhaitez-vous que nous prenions de vos nouvelles pendant la canicule ? » Les personnes peuvent refuser et être retirées de la liste.",
             "consequence": "Presque tout le monde accepte. Quelques personnes refusent et leur choix est respecté. Des voisins commencent à signaler aux bénévoles d’autres personnes vivant seules.",
-            "reflection": "Expliquer clairement pourquoi une aide est proposée, et accepter un refus, respecte la dignité et transforme une prévision en relation humaine.",
+            "reflection": "Expliquer clairement pourquoi une aide est proposée, et accepter un refus, respecte la dignité et transforme une prévision en relation humaine. Être transparent sur les données et les tenir à l’écart des forces de l’ordre protège votre rôle d’acteur neutre et de confiance.",
             "impacts": {
               "humanity": 2,
-              "doNoHarm": 1
+              "doNoHarm": 1,
+              "neutrality": 1
             }
           },
           {

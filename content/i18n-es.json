@@ -1,8 +1,11 @@
 {
+  "subtitle": "La acción humanitaria en la era de las nuevas tecnologías",
+  "coverHook": "La tecnología puede ampliar el alcance humanitario o erosionar la confianza de la que depende. Toma el mando y descubre cómo resisten los Principios bajo presión.",
+  "startGame": "Empezar",
   "kicker": "Un juego de decisiones ramificadas",
-  "appTitle": "La IA en la acción humanitaria",
-  "intro": "Cada decisión sobre IA es un equilibrio. Toma las decisiones, mira las consecuencias y descubre por qué los principios humanitarios importan en cada elección.",
-  "principlesHeading": "Los criterios con los que se miden tus decisiones",
+  "appTitle": "Tecnología con principios: el juego de los dilemas",
+  "intro": "Las nuevas tecnologías prometen rapidez y alcance, pero nuestros Principios Fundamentales deben ser siempre nuestra guía. ¿Qué ocurre cuando la tecnología se encuentra con las necesidades sobre el terreno?\n\nNo necesitas saber programar ni ser especialista en informática. Desde quienes hacen voluntariado hasta quienes coordinan, todas las personas que trabajan en la acción humanitaria utilizan herramientas digitales y tecnología, recopilan o utilizan datos y toman decisiones cotidianas — dando forma a los resultados e influyendo en el mundo.\n\nToma el mando para explorar dilemas inspirados en situaciones reales, cuestionar tus instintos y descubrir cómo los Principios pueden guiarnos hacia decisiones tecnológicas fundamentadas que ponen a las personas en primer lugar.",
+  "principlesHeading": "Los Principios guían tus decisiones",
   "scenariosHeading": "Elige un escenario",
   "completed": "Completado",
   "stepOf": "Paso {n} de {m}",
@@ -11,7 +14,7 @@
   "startScenario": "Comenzar escenario",
   "recordHeading": "Tu historial de liderazgo hasta ahora",
   "recordSummary": "Resultados combinados de {n} escenario(s) completado(s). Vuelve a jugar con otras decisiones para ver cómo cambia el equilibrio.",
-  "footerNote": "Todos los escenarios y personajes son ficticios. El contenido y la terminología se inspiran en la resolución del Movimiento de la Cruz Roja y de la Media Luna Roja sobre el uso basado en principios y responsable de la tecnología, y en juegos humanitarios de aprendizaje basados en escenarios como «In 90 Days» y «Mission Zhobia» (humanitariangames.com).",
+  "footerNote": "Desarrollado por la Cruz Roja Sueca, con el apoyo del Comité Internacional de la Cruz Roja (CICR) y basado en la Resolución PATH del Movimiento sobre el uso basado en principios y responsable de las tecnologías de la información y la comunicación en la acción humanitaria. Todos los escenarios y personajes son ficticios, inspirados en dilemas operativos reales y en juegos de aprendizaje humanitario basados en escenarios como «In 90 Days» y «Mission Zhobia» (humanitariangames.com).",
   "scenarioKicker": "Escenario · {n} decisiones",
   "yourRole": "Tu función",
   "theSituation": "La situación",
@@ -29,6 +32,7 @@
   "seeDebrief": "Ver tu balance",
   "debriefKicker": "Balance · {scenario}",
   "debriefHeading": "Cómo resistieron tus decisiones",
+  "scenarioReflectionHeading": "El panorama general",
   "principlesBalance": "Equilibrio de principios",
   "pathYouTook": "El camino que seguiste",
   "decisionLabel": "Decisión {i} · {title}",
@@ -99,7 +103,7 @@
     "C"
   ],
   "rolesLabel": "Roles en este escenario",
-  "ictLinkLabel": "Resolución del Movimiento de la Cruz Roja y de la Media Luna Roja sobre el uso basado en principios y responsable de la tecnología",
+  "ictLinkLabel": "Resolución PATH: uso basado en principios y responsable de las tecnologías de la información y la comunicación en la acción humanitaria",
   "codeLinkLabel": "Ver y descargar los datos fuente del juego",
   "codeTitle": "Datos fuente",
   "codeIntro": "Todo lo que dice el juego vive en estos archivos. Esta página muestra los datos en vivo tal como están desplegados: descárgalos, edítalos en cualquier editor de texto, y tus cambios se publican con el próximo despliegue.",
@@ -113,7 +117,7 @@
     {
       "key": "humanity",
       "name": "Humanidad",
-      "description": "Prevenir y aliviar el sufrimiento, proteger la vida y la salud y garantizar el respeto de cada persona."
+      "description": "Prevenir y aliviar el sufrimiento, proteger la vida y la salud y garantizar el respeto de cada persona. Incluye no hacer daño: proteger los datos, rendir cuentas a las comunidades y evitar o reducir el daño a las personas afectadas."
     },
     {
       "key": "impartiality",
@@ -133,7 +137,7 @@
     {
       "key": "doNoHarm",
       "name": "No causar daño y rendición de cuentas",
-      "description": "Compromisos de la Resolución sobre TIC: proteger los datos, involucrar a las comunidades y rendirles cuentas, adquirir tecnología de forma ética y evitar o mitigar el daño a las personas afectadas."
+      "description": "Compromisos de la Resolución PATH: proteger los datos, involucrar a las comunidades y rendirles cuentas, adquirir tecnología de forma ética y evitar o mitigar el daño a las personas afectadas."
     }
   ],
   "readMore": "Leer más",
@@ -150,6 +154,7 @@
   "exitConfirm": "¿Salir de este escenario? Tu progreso se guarda.",
   "workshopBadge": "Taller",
   "discussHeading": "Debatan en grupo",
+  "questionsHeading": "Preguntas para reflexionar",
   "discussPrompts": [
     "¿Quién se beneficia de cada opción y quién podría salir perjudicado?",
     "¿Qué datos se usarían y hay alguno sensible?",
@@ -180,12 +185,45 @@
     "Lean juntos la consecuencia y «por qué importa», y deténganse en la pregunta de debate.",
     "Terminen con el balance y las preguntas para el equipo. Descarguen el resumen para compartirlo."
   ],
-  "guideNote": "No se envía nada: los votos y resultados se quedan en este dispositivo.",
+  "guideNote": "Decisiones y votos quedan en este dispositivo. Solo se envían las opiniones que mandes.",
   "startWorkshop": "Iniciar taller",
   "playSolo": "Jugar individualmente",
   "yourDecisions": "Tus decisiones",
   "otherOptions": "Las opciones que no elegiste",
   "filterLabel": "Filtrar por tema",
   "allTopics": "Todos los temas",
-  "principlesToggle": "Sobre los principios"
+  "principlesToggle": "Sobre los principios",
+  "debriefWeak": "Dónde tus decisiones fueron más débiles",
+  "debriefWeakDetail": "{principle} quedó en «{rating}». Reflexiona sobre cómo tus decisiones podrían proteger mejor este principio.",
+  "debriefCostHeading": "Decisiones con el mayor impacto negativo",
+  "debriefCostExplain": "Estas decisiones empatan en el mayor impacto negativo combinado sobre los cuatro principios. Solo se suman las puntuaciones negativas, con las ponderaciones del juego; las positivas no las compensan. Esto describe las decisiones, no tu balance final.",
+  "howToPlayHeading": "Cómo jugar",
+  "howToPlaySteps": [
+    "Elige un escenario: luego asume un rol operativo real ante una decisión tecnológica.",
+    "En cada decisión, elige una de tres opciones — rara vez hay una respuesta perfecta.",
+    "Mira qué pasó, por qué importa y cómo afectó a los cuatro principios.",
+    "Al final, el balance muestra tu equilibrio entre los principios y preguntas para llevar a tu equipo.",
+    "Haz una pausa y reflexiona: después de cada escenario, comenta qué harías de otra forma en tu propio trabajo."
+  ],
+  "statusHeading": "Tu situación",
+  "statusBalance": "Seguimiento de principios",
+  "searchTopics": "Buscar temas",
+  "sortLabel": "Ordenar escenarios",
+  "topRated": "Mejor valorados",
+  "feedbackCount": "{n} valoraciones",
+  "feedbackHeading": "Valorar este escenario",
+  "feedbackQuestion": "¿Qué tan útil fue el escenario? (1–5)",
+  "feedbackComment": "Comentario breve (opcional)",
+  "feedbackPrivacy": "Las valoraciones se muestran en promedio; los comentarios son privados. No incluyas nombres ni datos sensibles.",
+  "feedbackSend": "Enviar opinión",
+  "feedbackThanks": "Gracias — opinión recibida.",
+  "feedbackError": "No se pudo enviar. Inténtalo de nuevo.",
+  "pickSolo": "Jugar solo",
+  "pickTogether": "Jugar juntos",
+  "pickHeading": "Tu turno.",
+  "pickSub": "Elige cómo quieres jugar",
+  "aboutHeading": "Sobre el juego",
+  "debriefReflect": "Esto no es un examen. Usa tu resultado para reflexionar: ¿qué principio estuvo bajo más presión y quién sentiría el impacto?",
+  "costEnvironmentHeading": "Coste y medio ambiente",
+  "costEnvironmentNote": "No se puntúa como principio. Debatan: ¿cuánto costó su camino en dinero, energía, equipos y residuos? ¿Habría bastado una opción más sencilla?"
 }

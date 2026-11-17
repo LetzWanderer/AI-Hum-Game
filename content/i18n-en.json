@@ -1,8 +1,11 @@
 {
+  "subtitle": "Humanitarian Action in the Age of New Technology",
+  "coverHook": "Technology can extend humanitarian reach, or erode the trust it depends on. Step into the command seat and see how the Principles hold up under pressure.",
+  "startGame": "Start game",
   "kicker": "A branching decision game",
-  "appTitle": "AI in Humanitarian Action",
-  "intro": "Every AI decision is a trade-off. Make the calls, see the consequences, and discover why humanitarian principles matter in every choice.",
-  "principlesHeading": "What your choices are measured against",
+  "appTitle": "Principled Tech: The Dilemma Game",
+  "intro": "New technology promises speed and scale, but our Fundamental Principles must always be our guiding light. What happens when technology and on the ground needs, meet?\n\nYou don’t need to be a coder or an IT specialist. From volunteers to coordinators, everyone in humanitarian action uses digital tools, and technology, collects or uses data and makes everyday decisions - shaping outcomes and impacting the world.\n\nStep into the command seat to test real-world dilemmas, challenge your instincts, and see how the Principles can guide us toward grounded technology choices that put people first.",
+  "principlesHeading": "The Principles guide your decisions",
   "scenariosHeading": "Choose a scenario",
   "completed": "Completed",
   "stepOf": "Step {n} of {m}",
@@ -11,7 +14,7 @@
   "startScenario": "Start scenario",
   "recordHeading": "Your leadership record so far",
   "recordSummary": "Combined results across {n} completed scenario(s). Replay with different choices to see how the balance shifts.",
-  "footerNote": "All scenarios and characters are fictional. Content and terminology are inspired by the Red Cross and Red Crescent Movement's resolution on principled and accountable use of technology, and by scenario-based humanitarian learning games such as “In 90 Days” and “Mission Zhobia” (humanitariangames.com).",
+  "footerNote": "Developed by the Swedish Red Cross, with support from the International Committee of the Red Cross (ICRC) and drawing on the Movement’s PATH Principled and Accountable Use of Information and Communication Technologies in Humanitarian Action. All scenarios and characters are fictional, inspired by real operational dilemmas and scenario-based humanitarian learning games such as 'In 90 Days' and 'Mission Zhobia' (humanitariangames.com).",
   "scenarioKicker": "Scenario · {n} decisions",
   "yourRole": "Your role",
   "theSituation": "The situation",
@@ -29,6 +32,7 @@
   "seeDebrief": "See your debrief",
   "debriefKicker": "Debrief · {scenario}",
   "debriefHeading": "How your choices held up",
+  "scenarioReflectionHeading": "The bigger picture",
   "principlesBalance": "Principles balance",
   "pathYouTook": "The path you took",
   "decisionLabel": "Decision {i} · {title}",
@@ -99,7 +103,7 @@
     "C"
   ],
   "rolesLabel": "Roles in this scenario",
-  "ictLinkLabel": "Red Cross and Red Crescent Movement's resolution on principled and accountable use of technology",
+  "ictLinkLabel": "PATH Resolution: Principled and Accountable Use of Information and Communication Technologies in Humanitarian Action",
   "codeLinkLabel": "View & download the game source data",
   "codeTitle": "Source data",
   "codeIntro": "Everything the game says lives in these files. This page renders the live data exactly as deployed — download it, edit it in any text editor, and your edits ship with the next deploy.",
@@ -113,7 +117,7 @@
     {
       "key": "humanity",
       "name": "Humanity",
-      "description": "Prevent and alleviate suffering, protect life and health, and ensure respect for every person."
+      "description": "Prevent and alleviate suffering, protect life and health, and ensure respect for every person. This includes doing no harm: protecting data, answering to communities and avoiding or reducing harm to affected people."
     },
     {
       "key": "impartiality",
@@ -133,7 +137,7 @@
     {
       "key": "doNoHarm",
       "name": "Do No Harm & Accountability",
-      "description": "ICT Resolution commitments: protect data, engage and answer to communities, procure ethically, and avoid or mitigate harm to affected people."
+      "description": "PATH Resolution commitments: protect data, engage and answer to communities, procure ethically, and avoid or mitigate harm to affected people."
     }
   ],
   "readMore": "Read more",
@@ -150,6 +154,7 @@
   "exitConfirm": "Leave this scenario? Your progress so far is saved.",
   "workshopBadge": "Workshop",
   "discussHeading": "Discuss in your group",
+  "questionsHeading": "Questions to consider",
   "discussPrompts": [
     "Who benefits from each option — and who could be harmed?",
     "What data would be used, and is any of it sensitive?",
@@ -174,18 +179,51 @@
   "downloadSummary": "Download summary",
   "guideHeading": "How to run a workshop",
   "guideSteps": [
-    "Plan 60–90 minutes for 4–20 people. Put the game on a big screen or projector.",
-    "Pick one or two scenarios that fit your team's work. Read the role and situation aloud.",
-    "For each decision: read the situation, discuss for a few minutes with the timer, then vote by show of hands.",
+    "Plan 20–90 minutes for 2–20 people, or more. Put the game on a big screen or projector. It can even be played online, sharing your screen.",
+    "Before hand, go through the scenarios and pick one or two that fit your team's work. Read the role and situation aloud to the group. If a large group, encourage smaller breakouts",
+    "For each decision: read the situation, allow the group (s) to discuss for a few minutes with the timer, then vote by show of hands.",
     "Read the consequence and 'why it matters' together, and pause on the discussion question.",
     "Finish with the debrief and the questions for your team. Download the summary to share afterwards."
   ],
-  "guideNote": "Nothing is sent anywhere: votes and results stay on this device.",
+  "guideNote": "Choices and votes stay on this device. Only feedback you submit is sent to a central, self-hosted server. No data saved.",
   "startWorkshop": "Start workshop",
   "playSolo": "Play solo",
   "yourDecisions": "Your decisions",
   "otherOptions": "The options that were not taken",
   "filterLabel": "Filter by topic",
   "allTopics": "All topics",
-  "principlesToggle": "About the principles"
+  "principlesToggle": "About the principles",
+  "debriefWeak": "Where your choices were weakest",
+  "debriefWeakDetail": "{principle} ended up {rating}. Reflect on how your decisions could better protect this principle.",
+  "debriefCostHeading": "Choices with the greatest negative impact",
+  "debriefCostExplain": "These choices tied for the largest combined negative impact across the four principles. Only negative scores are added, using the game’s principle weights; positive scores do not cancel them out. This describes the choices, not your final balance.",
+  "howToPlayHeading": "How to play",
+  "howToPlaySteps": [
+    "Pick a scenario: then step into a real-world operational role facing a technology decision.",
+    "At each decision, choose one of three options — there is rarely a perfect answer.",
+    "See what happened, why it matters, and how it moved the four principles.",
+    "At the end, the debrief shows your balance across the principles and questions to take back to your team.",
+    "Pause and reflect: after each scenario, talk through what you would do differently in your own work."
+  ],
+  "statusHeading": "Your situation",
+  "statusBalance": "Principles Tracker",
+  "searchTopics": "Search topics",
+  "sortLabel": "Sort scenarios",
+  "topRated": "Highest rated",
+  "feedbackCount": "{n} ratings",
+  "feedbackHeading": "Rate this scenario",
+  "feedbackQuestion": "How useful was this scenario? (1–5)",
+  "feedbackComment": "Short feedback (optional)",
+  "feedbackPrivacy": "Your rating is public in aggregate; comments are private. Do not include names or sensitive information.",
+  "feedbackSend": "Send feedback",
+  "feedbackThanks": "Thank you — feedback received.",
+  "feedbackError": "Could not send feedback. Please try again.",
+  "pickSolo": "Play Solo",
+  "pickTogether": "Play Together",
+  "pickHeading": "Your move.",
+  "pickSub": "Choose how you want to play",
+  "aboutHeading": "About the game",
+  "debriefReflect": "This isn't a test. Use your result to reflect",
+  "costEnvironmentHeading": "Cost and environment",
+  "costEnvironmentNote": "Not scored as a principle. Discuss: what did your path cost in money and in energy, devices and waste — and was a simpler option enough?"
 }
