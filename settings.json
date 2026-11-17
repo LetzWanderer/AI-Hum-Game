@@ -1,0 +1,11 @@
+{
+  "_help": "Weights multiply every choice's impact for that principle. 1 = normal, 2 = counts double, 0.5 = counts half, 0 = ignored. strongShare = share of the best possible score needed for 'Strong' (0.5 = half).",
+  "weights": {
+    "humanity": 1,
+    "impartiality": 1,
+    "neutrality": 1,
+    "independence": 1,
+    "doNoHarm": 1
+  },
+  "strongShare": 0.5
+}
