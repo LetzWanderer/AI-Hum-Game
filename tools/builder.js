@@ -2,6 +2,8 @@
 // files = { "app/shell.html": "...text...", "content/scenarios-en.json": "...", ... }
 (function (root) {
   "use strict";
+  // The shareable file name. GitHub Pages still publishes the same HTML as index.html.
+  var PLAYABLE = "principled-tech-the-dilemma-game.html";
 
   function buildGame(files) {
     var need = ["app/shell.html", "app/styles.css", "app/game.js", "content/i18n-en.json", "content/scenarios-en.json"];
@@ -41,9 +43,9 @@
       .replace("<!--SCRIPTS-->", function () {
         return "<script>window.GAME_DATA = " + safe(JSON.stringify(data)) + ";</script>\n  <script>\n" + safe(files["app/game.js"]) + "\n</script>";
       });
-    return { html: html, languages: Object.keys(data.i18n), scenarioCount: (data.scenarios.en || []).length };
+    return { html: html, filename: PLAYABLE, languages: Object.keys(data.i18n), scenarioCount: (data.scenarios.en || []).length };
   }
 
   root.buildGame = buildGame;
-  if (typeof module !== "undefined") module.exports = { buildGame: buildGame };
+  if (typeof module !== "undefined") module.exports = { buildGame: buildGame, playableName: PLAYABLE };
 })(typeof window !== "undefined" ? window : globalThis);

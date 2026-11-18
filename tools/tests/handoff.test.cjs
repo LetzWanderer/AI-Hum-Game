@@ -54,7 +54,7 @@ test('original content checker has no errors or warnings',()=>assert.deepEqual(r
 test('offline builder embeds every image and translated explanation',()=>{
   const built=require('../builder.js').buildGame(files);assert.equal(built.scenarioCount,12);assert.equal(built.languages.length,5);
   for(const p of Object.values(assets.storyboards).concat(Object.values(assets.stepArt))) assert.ok(built.html.includes(files[p]),p);
-  assert.ok(built.html.includes(JSON.stringify(reasons)));assert.equal(built.html,read('START-HERE.html'));
+  assert.ok(built.html.includes(JSON.stringify(reasons)));assert.equal(built.html,read(require('../builder.js').playableName));
 });
 test('missing mapped image is a clear build error, not an invisible picture',()=>{
   const broken={...files};delete broken[assets.stepArt['fl-3']];assert.throws(()=>require('../builder.js').buildGame(broken),/Missing or invalid illustration/);

@@ -10,11 +10,11 @@
 <body>
   <main>
     <h1>Build the game</h1>
-    <p>After editing files in <b>content/</b>, use this page to make a fresh <b>START-HERE.html</b>. Everything happens on your computer — nothing is uploaded.</p>
+    <p>After editing files in <b>content/</b>, use this page to make a fresh <b>principled-tech-the-dilemma-game.html</b>. That file is Principled Tech: The Dilemma Game. Everything happens on your computer — nothing is uploaded.</p>
     <ol>
       <li>Click the button and choose the whole game folder (<b>ai-humanitarian-game</b>). Your browser may ask to confirm — that is fine.</li>
       <li>Your content is checked first. Fix any red items and try again.</li>
-      <li>Click <b>Download START-HERE.html</b> and save it into the game folder, replacing the old one.</li>
+      <li>Click <b>Download principled-tech-the-dilemma-game.html</b> and save it into the game folder, replacing the old one.</li>
     </ol>
     <label class="pick">Choose game folder<input id="dir" type="file" webkitdirectory directory multiple /></label>
     <div id="out"></div>
@@ -31,7 +31,7 @@
         var g = buildGame(files);
         var url = URL.createObjectURL(new Blob([g.html], { type: "text/html" }));
         out.innerHTML += '<p class="ok">Ready: ' + g.scenarioCount + " scenarios, languages: " + g.languages.join(", ") +
-          '.</p><a class="btn" download="START-HERE.html" href="' + url + '">Download START-HERE.html</a>' +
+          '.</p><a class="btn" download="' + g.filename + '" href="' + url + '">Download ' + g.filename + '</a>' +
           ' <a class="btn ghost" target="_blank" href="' + url + '">Try it first</a>';
       } catch (e) { out.innerHTML += '<p class="err">' + esc(e.message) + "</p>"; }
     });

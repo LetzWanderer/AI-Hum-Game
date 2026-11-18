@@ -5,12 +5,12 @@ A phone-friendly decision game about the trade-offs in AI decisions. Plain HTML,
 ## 1. Run the game
 You need a current browser: Chrome, Edge, Firefox, or Safari. Nothing to install, no account, and no internet connection after the file is open. The game does not send scores, votes, or stories anywhere. Progress stays in this browser only.
 ### First time
-This update includes a freshly built playable file. Open START-HERE.html immediately, or rebuild after editing:
+This update includes a freshly built playable file. Open principled-tech-the-dilemma-game.html immediately, or rebuild after editing:
 1. Open `tools/build.html` in your browser.
 2. Click **Choose game folder** and pick this project folder — the one that contains `content` and `app`. Allow the browser to read the folder if it asks.
-3. Click **Try it first** to play in a temporary tab, or **Download START-HERE.html** and save that file into this same folder. `app/shell.html` on its own is not the game. It has no stories until the builder packs them in.
+3. Click **Try it first** to play in a temporary tab, or **Download principled-tech-the-dilemma-game.html** and save that file into this same folder. `app/shell.html` on its own is not the game. It has no stories until the builder packs them in.
 ### Open it
-Double-click `START-HERE.html`, or drag that file onto a browser window. You can also email it, put it on a USB stick, or upload it to any website (rename it `index.html` if the host expects that name).
+Double-click `principled-tech-the-dilemma-game.html`, or drag that file onto a browser window. The name is the game: Principled Tech: The Dilemma Game, about humanitarian action in the age of new technology. You can also email it, put it on a USB stick, or upload it to any website (rename it `index.html` if the host expects that name).
 The game uses Arial and embeds its illustrations. It needs no external fonts or image downloads.
 
 ### What you do
@@ -31,7 +31,7 @@ Download writes a `.txt` file and works either way.
 ### Saved on this device
 Language, solo or workshop mode, finished scenarios, and drafts are stored in this browser under the key `hai-game-v1`. Another browser, another computer, or a cleared site-data setting starts fresh. There is no account to sign in to.
 ### If it does not open
-- You opened `app/shell.html` or a folder of JSON files. Build `START-HERE.html` and open that file.
+- You opened `app/shell.html` or a folder of JSON files. Build `principled-tech-the-dilemma-game.html` and open that file.
 - The builder says a file is missing. Choose the folder that contains both `content` and `app`, not a folder inside it.
 - The page is blank. Reload it. If you edited the JSON, open `tools/check.html`, pick the same folder, and fix anything listed in red before building 
 again.
@@ -39,21 +39,21 @@ again.
 ## 2. What's in the folder
 | Folder / file | What it is | Edit it? |
 | --- | --- | --- |
-| `START-HERE.html` | The ready-to-play game, after you build it | No — it is rebuilt from the files below |
+| `principled-tech-the-dilemma-game.html` | The ready-to-play game, after you build it | No — it is rebuilt from the files below |
 | `content/settings.json` | Principle weightings and scoring thresholds | Yes |
 | `content/scenarios-xx.json` | Scenario stories, options and scores, one file per language | Yes |
 | `content/i18n-xx.json` | Buttons, headings, principle names and descriptions | Yes |
 | `content/scenario-template.json` | A copy-and-fill example scenario | Copy from it |
 | `app/game.js`, `app/styles.css`, `app/shell.html` | The game's code and look | Only if you know HTML/CSS/JS |
 | `tools/check.html` | Checks your edits for mistakes | Open in a browser |
-| `tools/build.html` | Makes a fresh `START-HERE.html` | Open in a browser |
+| `tools/build.html` | Makes a fresh `principled-tech-the-dilemma-game.html` | Open in a browser |
 
 Use any plain text editor (Notepad, TextEdit in plain-text mode, VS Code). Save files as UTF-8.
 
 ## 3. The edit → check → build loop
 1. Edit files in `content/`.
 2. Open `tools/check.html`, click **Choose game folder**, and pick this project folder (the one that contains `content` and `app`). Fix anything listed in red.
-3. Open `tools/build.html`, pick the same folder, click **Try it first**, then **Download START-HERE.html** and save it over the old one.
+3. Open `tools/build.html`, pick the same folder, click **Try it first**, then **Download principled-tech-the-dilemma-game.html** and save it over the old one.
 
 No installs or command line needed. Works in Chrome, Edge, Firefox and Safari.
 
@@ -88,13 +88,3 @@ Choose **Run a group workshop** on the home screen and put the game on one share
 
 ## 8. Scoring in short
 Score per principle = sum of (impact × weight) over the player's choices, shown against the best and worst achievable in that scenario. The leadership record adds up all finished scenarios.
-
-
-## GitHub update, November 2026
-See MERGE-INSTRUCTIONS.md before copying files. CHANGE-MANIFEST.md records changed paths and line counts; CHANGES.patch contains exact textual differences against AI-Hum-Game-main_3.zip.
-
-New optional inputs: content/humanity-reasons.json contains translated post-choice explanations; content/assets.json maps scenario/step IDs to JPEG files under app/assets/. The existing builder embeds all mapped images, so START-HERE.html remains a single offline file. The browser folder picker and GitHub Pages workflow now read JPEGs as data URLs.
-
-Run `node --test tools/tests/handoff.test.cjs` from the repository root to verify scoring parity, four gates per scenario, images and offline output. No package installation is needed.
-
-The standalone package intentionally does not include Lovable hosting or its Cloud feedback connection. No feedback form is rendered without a separate GAME_FEEDBACK adapter. Scores, votes, drafts and completion records remain in the browser's existing localStorage; they are not session-only and are not uploaded. Analytics remain outside the game. The unchanged tools/build.html and tools/check.html still reference their original external fonts, but the built game itself makes no external requests.

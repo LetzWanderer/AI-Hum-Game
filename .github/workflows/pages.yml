@@ -42,10 +42,11 @@ jobs:
           const { checkContent } = require("./tools/checker.js");
           const report = checkContent(files);
           if (report.errors.length) throw new Error(report.errors.join("\n"));
-          const { html } = buildGame(files);
+          const built = buildGame(files);
+          const html = built.html;
           fs.mkdirSync("site", { recursive: true });
           fs.writeFileSync("site/index.html", html);
-          fs.writeFileSync("site/START-HERE.html", html);
+          fs.writeFileSync("site/" + built.filename, html);
           EOF
       - uses: actions/upload-pages-artifact@v3
         with:
